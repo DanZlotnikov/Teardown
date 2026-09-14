@@ -1,0 +1,36 @@
+schema_version: 1
+subject:
+  repository: https://github.com/open-webui/open-webui
+  commit: 0a7c15832fb30b1903753e83f81dc7d27e5b0944
+  version: 0.11.3
+  commit_date: '2026-09-04T19:43:32-04:00'
+pricing_snapshot:
+  fetched_at: '2026-09-12'
+  currency: USD
+  unit: per_1m_tokens
+  sources:
+    - https://developers.openai.com/api/docs/pricing
+    - https://developers.openai.com/api/docs/models
+  models:
+    gpt-5.6-sol: {input: 4.0, cached_input: 0.4, output: 20.0, role: priced_frontier_chat_model}
+    gpt-5.6-terra: {input: 2.0, cached_input: 0.2, output: 12.0, role: judge_candidate}
+    gpt-5.6-luna: {input: 0.2, cached_input: 0.02, output: 1.2, role: measured_small_model_candidate}
+    gpt-4o-mini: {input: 0.15, cached_input: 0.075, output: 0.6, role: compatibility_fallback}
+budget:
+  currency: USD
+  soft_stop: 23.0
+  hard_stop: 30.0
+  phase_caps: {baseline: 4.0, optimized: 1.0, quality_eval: 18.0, judge: 3.0, contingency: 4.0}
+  phase_overage_stop_multiplier: 1.5
+  max_retries: 3
+  long_run_threshold_calls: 50
+  progress_every_calls: 10
+  smoke_test:
+    required_before_batch: true
+    max_calls_per_phase: 2
+    max_cost_per_phase: 0.05
+    marker_directory: results/smoke
+paths:
+  spend_log: results/spend-log.jsonl
+  spend_total: results/spend-total.txt
+  budget_status: results/BUDGET-STATUS.md

@@ -1,0 +1,4 @@
+Historical paid-call ledger and proxy captures were removed by workspace cleanup.
+Do not remove this guard until historical spend is carried forward explicitly,
+the user accepts the lost pilot audit trail, and a persistent destination exists.
+See BUDGET-STATUS.md.
