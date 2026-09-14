@@ -83,6 +83,71 @@ LEVER_EVIDENCE = {
 }
 
 
+HYPOTHESIS_EVIDENCE = {
+    "H1_background_tasks_default_to_chat_model": {
+        "finding": "supported",
+        "already_fixed": False,
+        "summary": "The task-model settings default empty, and the resolver begins with the selected chat model before applying an optional task-model override.",
+        "evidence": [
+            Evidence("backend/open_webui/config.py", "TASK_MODEL = os.getenv('TASK_MODEL', '')", "the local task-model override defaults empty"),
+            Evidence("backend/open_webui/config.py", "TASK_MODEL_EXTERNAL = os.getenv('TASK_MODEL_EXTERNAL', '')", "the external task-model override defaults empty"),
+            Evidence("backend/open_webui/utils/task.py", "task_model_id = default_model_id", "task routing begins with the selected chat model"),
+        ],
+    },
+    "H2_some_task_calls_have_no_output_cap": {
+        "finding": "supported_with_title_caveat",
+        "already_fixed": False,
+        "summary": "Follow-up, tag, and query handlers have no endpoint-level output cap when global task.model.params is empty. Title now receives a 1,000-token fallback cap.",
+        "evidence": [
+            Evidence("backend/open_webui/config.py", "task_model_params = JSONCodec.loads(os.getenv('TASK_MODEL_PARAMS', '{}'))", "global task parameters default to an empty dictionary"),
+            Evidence("backend/open_webui/routers/tasks.py", "if not model or (not params and not payload.get('params')):", "empty task parameters leave the payload unchanged"),
+            Evidence("backend/open_webui/routers/tasks.py", "'max_tokens': models[task_model_id].get('info', {}).get('params', {}).get('max_tokens', 1000)", "title alone receives a fallback cap in this router"),
+        ],
+    },
+    "H3_title_resends_full_large_prompt": {
+        "finding": "supported",
+        "already_fixed": False,
+        "summary": "The default title template includes the final two messages without a content filter, so a first-turn large user prompt is included in full along with its answer.",
+        "evidence": [
+            Evidence("backend/open_webui/config.py", "{{MESSAGES:END:2}}", "the stock title template selects the last two complete messages"),
+            Evidence("backend/open_webui/utils/task.py", "selected = messages[-int(end_length) :]", "END selects message count rather than token count"),
+            Evidence("backend/open_webui/utils/task.py", "template = replace_messages_variable(template, messages)", "title generation expands the selected messages into its prompt"),
+        ],
+    },
+    "H4_no_builtin_context_trimmer": {
+        "finding": "already_fixed_but_disabled_by_default",
+        "already_fixed": True,
+        "summary": "Native summarize-and-replace context compaction now exists. It defaults off with an 80,000-token threshold, so the default resend-cost consequence remains testable.",
+        "evidence": [
+            Evidence("backend/open_webui/config.py", "ENABLE_CONTEXT_COMPACTION = os.getenv('ENABLE_CONTEXT_COMPACTION', 'False')", "native context compaction exists and defaults off"),
+            Evidence("backend/open_webui/config.py", "CONTEXT_COMPACTION_TOKEN_THRESHOLD = int(os.getenv('CONTEXT_COMPACTION_TOKEN_THRESHOLD', '80000'))", "the default trigger threshold is 80,000 tokens"),
+            Evidence("backend/open_webui/utils/middleware.py", "await compact_messages_for_request(", "the chat middleware invokes native compaction"),
+        ],
+    },
+    "H5_autocomplete_fires_on_every_keystroke": {
+        "finding": "already_fixed",
+        "already_fixed": True,
+        "summary": "Autocomplete is off by default at server and user levels; when enabled, input is debounced by 1,000 ms and guarded against concurrent dispatch.",
+        "evidence": [
+            Evidence("backend/open_webui/config.py", "ENABLE_AUTOCOMPLETE_GENERATION = os.getenv('ENABLE_AUTOCOMPLETE_GENERATION', 'False')", "the server feature defaults off"),
+            Evidence("src/lib/components/common/InterfaceSettings.svelte", "let promptAutocomplete = false;", "the user preference defaults off"),
+            Evidence("src/lib/components/common/RichTextInput/AutoCompletion.js", "debounceTime: 1000", "enabled autocomplete waits one second after input"),
+            Evidence("src/lib/components/common/RichTextInput/AutoCompletion.js", "if (loading) return true;", "the editor suppresses concurrent completion dispatch"),
+        ],
+    },
+    "H6_rag_and_web_query_generation_may_duplicate": {
+        "finding": "supported",
+        "already_fixed": False,
+        "summary": "The combined middleware can reuse web queries for later retrieval, but ENABLE_QUERIES_CACHE defaults false, leaving duplicate generation possible in stock configuration.",
+        "evidence": [
+            Evidence("backend/open_webui/env.py", "ENABLE_QUERIES_CACHE = os.getenv('ENABLE_QUERIES_CACHE', 'False')", "query reuse defaults off"),
+            Evidence("backend/open_webui/utils/middleware.py", "request.state.cached_queries = queries", "the web handler stores queries when reuse is enabled"),
+            Evidence("backend/open_webui/routers/tasks.py", "if getattr(request.state, 'cached_queries', None):", "the later query task checks the request cache"),
+        ],
+    },
+}
+
+
 def sha256(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
@@ -115,6 +180,14 @@ def audit(upstream: Path) -> dict:
     if package["version"] != PINNED_VERSION:
         raise AssertionError(f"Expected version {PINNED_VERSION}, found {package['version']}")
 
+    project = Path(__file__).parents[1]
+    brief = project / "teardown-01-openwebui-agent-prompt.md"
+    expected_brief_hash = "694aabface63efab0ea13c5b46d09c5ba72f8369581e06d605e72d91cc0b8db6"
+    if not brief.exists():
+        raise AssertionError(f"Original brief is missing: {brief}")
+    if sha256(brief) != expected_brief_hash:
+        raise AssertionError("Original brief hash changed; reconcile the source audit before continuing")
+
     file_hashes = {}
     levers = {}
     for lever, specification in LEVER_EVIDENCE.items():
@@ -134,18 +207,61 @@ def audit(upstream: Path) -> dict:
             )
         levers[lever] = {"finding": specification["finding"], "evidence": rows}
 
+    hypotheses = {}
+    for hypothesis, specification in HYPOTHESIS_EVIDENCE.items():
+        rows = []
+        for expected in specification["evidence"]:
+            source = upstream / expected.path
+            number, excerpt = locate(source, expected.needle)
+            file_hashes[expected.path] = sha256(source)
+            rows.append(
+                {
+                    "path": expected.path,
+                    "line": number,
+                    "excerpt": excerpt,
+                    "meaning": expected.meaning,
+                    "permalink": f"https://github.com/open-webui/open-webui/blob/{commit}/{expected.path}#L{number}",
+                }
+            )
+        hypotheses[hypothesis] = {
+            "finding": specification["finding"],
+            "already_fixed": specification["already_fixed"],
+            "summary": specification["summary"],
+            "evidence": rows,
+        }
+
     tasks = (upstream / "backend/open_webui/routers/tasks.py").read_text(encoding="utf-8")
     if tasks.count("payload = apply_task_model_params(payload, models, task_model_id, task_model_params)") < 6:
         raise AssertionError("Task parameter scope changed; repeat the L2 audit")
 
+    task_boundaries = {
+        "follow_up": ("@router.post('/follow_up/completions')", "@router.post('/tags/completions')"),
+        "tags": ("@router.post('/tags/completions')", "@router.post('/image_prompt/completions')"),
+        "queries": ("@router.post('/queries/completions')", "@router.post('/auto/completions')"),
+    }
+    for task, (start, end) in task_boundaries.items():
+        body = tasks[tasks.index(start) : tasks.index(end)]
+        if "max_tokens" in body:
+            raise AssertionError(f"{task} acquired an endpoint output cap; repeat H2 audit")
+
+    fixed_count = sum(1 for item in hypotheses.values() if item["already_fixed"])
+
     return {
-        "schema_version": 1,
+        "schema_version": 2,
         "subject": {"repository": "https://github.com/open-webui/open-webui", "commit": commit, "version": package["version"]},
+        "brief": {"path": brief.name, "sha256": expected_brief_hash},
         "status": "passed",
         "limits": [
-            "The original Sections 1-9 brief is absent, so its exact six-hypothesis stop rule has not been evaluated.",
             "Source existence does not replace an end-to-end experiment.",
+            "Confirmed source behavior remains provisional until observed at the wire through the pinned runtime.",
         ],
+        "hypotheses": hypotheses,
+        "stop_rule": {
+            "rule": "stop if more than two of the six hypotheses are already fixed",
+            "already_fixed_count": fixed_count,
+            "threshold_exceeded": fixed_count > 2,
+            "decision": "stop_and_ask" if fixed_count > 2 else "continue",
+        },
         "levers": levers,
         "source_file_sha256": dict(sorted(file_hashes.items())),
     }
@@ -158,7 +274,7 @@ def main() -> None:
     args = parser.parse_args()
     report = audit(args.upstream.resolve())
     atomic_json(args.output, report)
-    print(json.dumps({"status": report["status"], "commit": report["subject"]["commit"], "levers": len(report["levers"]), "output": str(args.output)}, sort_keys=True))
+    print(json.dumps({"status": report["status"], "commit": report["subject"]["commit"], "hypotheses": len(report["hypotheses"]), "fixed": report["stop_rule"]["already_fixed_count"], "decision": report["stop_rule"]["decision"], "levers": len(report["levers"]), "output": str(args.output)}, sort_keys=True))
 
 
 if __name__ == "__main__":

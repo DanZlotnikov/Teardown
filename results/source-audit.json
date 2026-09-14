@@ -1,4 +1,185 @@
 {
+  "brief": {
+    "path": "teardown-01-openwebui-agent-prompt.md",
+    "sha256": "694aabface63efab0ea13c5b46d09c5ba72f8369581e06d605e72d91cc0b8db6"
+  },
+  "hypotheses": {
+    "H1_background_tasks_default_to_chat_model": {
+      "already_fixed": false,
+      "evidence": [
+        {
+          "excerpt": "TASK_MODEL = os.getenv('TASK_MODEL', '')",
+          "line": 2193,
+          "meaning": "the local task-model override defaults empty",
+          "path": "backend/open_webui/config.py",
+          "permalink": "https://github.com/open-webui/open-webui/blob/0a7c15832fb30b1903753e83f81dc7d27e5b0944/backend/open_webui/config.py#L2193"
+        },
+        {
+          "excerpt": "TASK_MODEL_EXTERNAL = os.getenv('TASK_MODEL_EXTERNAL', '')",
+          "line": 2195,
+          "meaning": "the external task-model override defaults empty",
+          "path": "backend/open_webui/config.py",
+          "permalink": "https://github.com/open-webui/open-webui/blob/0a7c15832fb30b1903753e83f81dc7d27e5b0944/backend/open_webui/config.py#L2195"
+        },
+        {
+          "excerpt": "task_model_id = default_model_id",
+          "line": 18,
+          "meaning": "task routing begins with the selected chat model",
+          "path": "backend/open_webui/utils/task.py",
+          "permalink": "https://github.com/open-webui/open-webui/blob/0a7c15832fb30b1903753e83f81dc7d27e5b0944/backend/open_webui/utils/task.py#L18"
+        }
+      ],
+      "finding": "supported",
+      "summary": "The task-model settings default empty, and the resolver begins with the selected chat model before applying an optional task-model override."
+    },
+    "H2_some_task_calls_have_no_output_cap": {
+      "already_fixed": false,
+      "evidence": [
+        {
+          "excerpt": "task_model_params = JSONCodec.loads(os.getenv('TASK_MODEL_PARAMS', '{}'))",
+          "line": 2198,
+          "meaning": "global task parameters default to an empty dictionary",
+          "path": "backend/open_webui/config.py",
+          "permalink": "https://github.com/open-webui/open-webui/blob/0a7c15832fb30b1903753e83f81dc7d27e5b0944/backend/open_webui/config.py#L2198"
+        },
+        {
+          "excerpt": "if not model or (not params and not payload.get('params')):",
+          "line": 75,
+          "meaning": "empty task parameters leave the payload unchanged",
+          "path": "backend/open_webui/routers/tasks.py",
+          "permalink": "https://github.com/open-webui/open-webui/blob/0a7c15832fb30b1903753e83f81dc7d27e5b0944/backend/open_webui/routers/tasks.py#L75"
+        },
+        {
+          "excerpt": "'max_tokens': models[task_model_id].get('info', {}).get('params', {}).get('max_tokens', 1000)",
+          "line": 181,
+          "meaning": "title alone receives a fallback cap in this router",
+          "path": "backend/open_webui/routers/tasks.py",
+          "permalink": "https://github.com/open-webui/open-webui/blob/0a7c15832fb30b1903753e83f81dc7d27e5b0944/backend/open_webui/routers/tasks.py#L181"
+        }
+      ],
+      "finding": "supported_with_title_caveat",
+      "summary": "Follow-up, tag, and query handlers have no endpoint-level output cap when global task.model.params is empty. Title now receives a 1,000-token fallback cap."
+    },
+    "H3_title_resends_full_large_prompt": {
+      "already_fixed": false,
+      "evidence": [
+        {
+          "excerpt": "{{MESSAGES:END:2}}",
+          "line": 2244,
+          "meaning": "the stock title template selects the last two complete messages",
+          "path": "backend/open_webui/config.py",
+          "permalink": "https://github.com/open-webui/open-webui/blob/0a7c15832fb30b1903753e83f81dc7d27e5b0944/backend/open_webui/config.py#L2244"
+        },
+        {
+          "excerpt": "selected = messages[-int(end_length) :]",
+          "line": 222,
+          "meaning": "END selects message count rather than token count",
+          "path": "backend/open_webui/utils/task.py",
+          "permalink": "https://github.com/open-webui/open-webui/blob/0a7c15832fb30b1903753e83f81dc7d27e5b0944/backend/open_webui/utils/task.py#L222"
+        },
+        {
+          "excerpt": "template = replace_messages_variable(template, messages)",
+          "line": 307,
+          "meaning": "title generation expands the selected messages into its prompt",
+          "path": "backend/open_webui/utils/task.py",
+          "permalink": "https://github.com/open-webui/open-webui/blob/0a7c15832fb30b1903753e83f81dc7d27e5b0944/backend/open_webui/utils/task.py#L307"
+        }
+      ],
+      "finding": "supported",
+      "summary": "The default title template includes the final two messages without a content filter, so a first-turn large user prompt is included in full along with its answer."
+    },
+    "H4_no_builtin_context_trimmer": {
+      "already_fixed": true,
+      "evidence": [
+        {
+          "excerpt": "ENABLE_CONTEXT_COMPACTION = os.getenv('ENABLE_CONTEXT_COMPACTION', 'False').lower() == 'true'",
+          "line": 2207,
+          "meaning": "native context compaction exists and defaults off",
+          "path": "backend/open_webui/config.py",
+          "permalink": "https://github.com/open-webui/open-webui/blob/0a7c15832fb30b1903753e83f81dc7d27e5b0944/backend/open_webui/config.py#L2207"
+        },
+        {
+          "excerpt": "CONTEXT_COMPACTION_TOKEN_THRESHOLD = int(os.getenv('CONTEXT_COMPACTION_TOKEN_THRESHOLD', '80000'))",
+          "line": 2211,
+          "meaning": "the default trigger threshold is 80,000 tokens",
+          "path": "backend/open_webui/config.py",
+          "permalink": "https://github.com/open-webui/open-webui/blob/0a7c15832fb30b1903753e83f81dc7d27e5b0944/backend/open_webui/config.py#L2211"
+        },
+        {
+          "excerpt": "form_data['messages'], context_summary, _ = await compact_messages_for_request(",
+          "line": 2471,
+          "meaning": "the chat middleware invokes native compaction",
+          "path": "backend/open_webui/utils/middleware.py",
+          "permalink": "https://github.com/open-webui/open-webui/blob/0a7c15832fb30b1903753e83f81dc7d27e5b0944/backend/open_webui/utils/middleware.py#L2471"
+        }
+      ],
+      "finding": "already_fixed_but_disabled_by_default",
+      "summary": "Native summarize-and-replace context compaction now exists. It defaults off with an 80,000-token threshold, so the default resend-cost consequence remains testable."
+    },
+    "H5_autocomplete_fires_on_every_keystroke": {
+      "already_fixed": true,
+      "evidence": [
+        {
+          "excerpt": "ENABLE_AUTOCOMPLETE_GENERATION = os.getenv('ENABLE_AUTOCOMPLETE_GENERATION', 'False').lower() == 'true'",
+          "line": 2346,
+          "meaning": "the server feature defaults off",
+          "path": "backend/open_webui/config.py",
+          "permalink": "https://github.com/open-webui/open-webui/blob/0a7c15832fb30b1903753e83f81dc7d27e5b0944/backend/open_webui/config.py#L2346"
+        },
+        {
+          "excerpt": "let promptAutocomplete = false;",
+          "line": 55,
+          "meaning": "the user preference defaults off",
+          "path": "src/lib/components/common/InterfaceSettings.svelte",
+          "permalink": "https://github.com/open-webui/open-webui/blob/0a7c15832fb30b1903753e83f81dc7d27e5b0944/src/lib/components/common/InterfaceSettings.svelte#L55"
+        },
+        {
+          "excerpt": "debounceTime: 1000",
+          "line": 23,
+          "meaning": "enabled autocomplete waits one second after input",
+          "path": "src/lib/components/common/RichTextInput/AutoCompletion.js",
+          "permalink": "https://github.com/open-webui/open-webui/blob/0a7c15832fb30b1903753e83f81dc7d27e5b0944/src/lib/components/common/RichTextInput/AutoCompletion.js#L23"
+        },
+        {
+          "excerpt": "if (loading) return true;",
+          "line": 102,
+          "meaning": "the editor suppresses concurrent completion dispatch",
+          "path": "src/lib/components/common/RichTextInput/AutoCompletion.js",
+          "permalink": "https://github.com/open-webui/open-webui/blob/0a7c15832fb30b1903753e83f81dc7d27e5b0944/src/lib/components/common/RichTextInput/AutoCompletion.js#L102"
+        }
+      ],
+      "finding": "already_fixed",
+      "summary": "Autocomplete is off by default at server and user levels; when enabled, input is debounced by 1,000 ms and guarded against concurrent dispatch."
+    },
+    "H6_rag_and_web_query_generation_may_duplicate": {
+      "already_fixed": false,
+      "evidence": [
+        {
+          "excerpt": "ENABLE_QUERIES_CACHE = os.getenv('ENABLE_QUERIES_CACHE', 'False').lower() == 'true'",
+          "line": 366,
+          "meaning": "query reuse defaults off",
+          "path": "backend/open_webui/env.py",
+          "permalink": "https://github.com/open-webui/open-webui/blob/0a7c15832fb30b1903753e83f81dc7d27e5b0944/backend/open_webui/env.py#L366"
+        },
+        {
+          "excerpt": "request.state.cached_queries = queries",
+          "line": 1558,
+          "meaning": "the web handler stores queries when reuse is enabled",
+          "path": "backend/open_webui/utils/middleware.py",
+          "permalink": "https://github.com/open-webui/open-webui/blob/0a7c15832fb30b1903753e83f81dc7d27e5b0944/backend/open_webui/utils/middleware.py#L1558"
+        },
+        {
+          "excerpt": "if getattr(request.state, 'cached_queries', None):",
+          "line": 419,
+          "meaning": "the later query task checks the request cache",
+          "path": "backend/open_webui/routers/tasks.py",
+          "permalink": "https://github.com/open-webui/open-webui/blob/0a7c15832fb30b1903753e83f81dc7d27e5b0944/backend/open_webui/routers/tasks.py#L419"
+        }
+      ],
+      "finding": "supported",
+      "summary": "The combined middleware can reuse web queries for later retrieval, but ENABLE_QUERIES_CACHE defaults false, leaving duplicate generation possible in stock configuration."
+    }
+  },
   "levers": {
     "L1_task_model_tier": {
       "evidence": [
@@ -198,12 +379,13 @@
     }
   },
   "limits": [
-    "The original Sections 1-9 brief is absent, so its exact six-hypothesis stop rule has not been evaluated.",
-    "Source existence does not replace an end-to-end experiment."
+    "Source existence does not replace an end-to-end experiment.",
+    "Confirmed source behavior remains provisional until observed at the wire through the pinned runtime."
   ],
-  "schema_version": 1,
+  "schema_version": 2,
   "source_file_sha256": {
     "backend/open_webui/config.py": "ac066304d24dba70950f0332fa47de1a307cf09904e2e6ac832245760cf66848",
+    "backend/open_webui/env.py": "83267ca74c960c3a9bd28442cf5c3f8502202f45e00245a0e990ed8bbec36b6c",
     "backend/open_webui/routers/retrieval.py": "3b9f59cd388222b7b7e004d2ca6d08b4dc6bbc2059244a1cbcb3cd5ff5e6d646",
     "backend/open_webui/routers/tasks.py": "1ff4b882d74f09ea7c312d210c1cc372d524a6491620ed1ce831b4d05997d5ef",
     "backend/open_webui/utils/context_compaction.py": "fdd91c386a69b989a14cfc40ddfb70e18c67b5f7ec0abdd03a9900526dddce66",
@@ -213,6 +395,12 @@
     "src/lib/components/common/RichTextInput/AutoCompletion.js": "98e571016e3f6c5be5c5ca437d4430d79c4e7ae4bbc7e25b3ed2f5827cf32f35"
   },
   "status": "passed",
+  "stop_rule": {
+    "already_fixed_count": 2,
+    "decision": "continue",
+    "rule": "stop if more than two of the six hypotheses are already fixed",
+    "threshold_exceeded": false
+  },
   "subject": {
     "commit": "0a7c15832fb30b1903753e83f81dc7d27e5b0944",
     "repository": "https://github.com/open-webui/open-webui",

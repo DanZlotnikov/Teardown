@@ -66,7 +66,7 @@ grading rubric explicitly so readers can re-grade from the raw numbers.
 - L7: no answer-quality eval; report the UX tradeoff explicitly.
 - Token-count scenario payloads with cheap models and price arithmetically at
   the pinned rate snapshot. Cache all paid eval outputs. Smoke test before bulk
-  requests. Apply every limit in section 10, including $23/$30 stops.
+  requests. Apply every limit in section 10, including $15/$20 stops.
 
 ## 11.6 Deliverable: `results/lever-scorecard.md`
 

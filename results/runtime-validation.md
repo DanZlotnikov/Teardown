@@ -19,3 +19,17 @@ Two bounded builds used the exact source checkout, `USE_SLIM=true`, and build ha
 Both reached Dockerfile step 23, the backend dependency layer. The second history log shows PyTorch installed and `uv` resolving 337 packages; it was still downloading large wheels such as OpenCV, PyArrow, llvmlite, and ONNX Runtime when canceled. No source/compiler error was reported, but no `teardown-openwebui:0.11.3-pinned` image was produced. Only the verified orphaned build client processes were terminated; Docker Desktop and the pre-existing Postgres container were left running.
 
 Therefore the full mock path through a live pinned Open WebUI runtime, controlled-corpus indexing, and end-to-end scenario replay is **not passed** and remains a paid-smoke blocker. No third build retry was attempted.
+
+## Published image fallback: registry stalled
+
+After the original brief established that a pinned deployment, rather than a
+source-built image, is the requirement, the published
+`ghcr.io/open-webui/open-webui:v0.11.3` image was tried as a fallback. A manifest
+inspection timed out after 60 seconds. One subsequent `docker pull` produced no
+manifest or layer progress for two minutes and was canceled. The verified
+orphaned pull client was stopped; Docker Desktop and the pre-existing Postgres
+container were not targeted. No local image or digest was produced.
+
+This is a GHCR/network-progress blocker, not evidence of an Open WebUI source
+failure. A future attempt must capture the image digest before it is accepted as
+the pinned runtime.

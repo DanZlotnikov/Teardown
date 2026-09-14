@@ -9,15 +9,16 @@ Reproducible controlled-ablation study of Open WebUI 0.11.3, pinned to commit `0
 - `results/PAID-CALLS-BLOCKED` remains effective. No new paid call is authorized.
 - Frozen workload: 30 conversations / 129 user turns / 349 actions including 20 real retrieval-endpoint actions.
 - Frozen targeted eval set: 115 cases. See `eval/manifest.json` for hashes and counts.
-- Source audit: 7/7 proposed levers checked against the pinned checkout; native L3 token truncation is unsupported.
+- Original ten-section brief: preserved at `teardown-01-openwebui-agent-prompt.md` and bound by SHA-256 in `config.yaml`.
+- Hypothesis audit: 4/6 supported; 2/6 already fixed or materially changed. The brief's stop threshold is **more than two**, so it is not triggered.
+- Lever audit: 7/7 proposed ablation levers checked against the pinned checkout; native L3 token truncation is unsupported.
 - Local condition: Ollama `qwen2.5:14b-instruct`, deployability smoke passed at $0. This is not hosted-quality evidence.
 - Frozen generative eval mock: 95 cases execute and resume entirely from cache; this validates the harness, not model quality.
 - Pinned Docker runtime build: incomplete at backend dependency step 23/30 after two bounded attempts. See `results/runtime-validation.md`.
-- Original Sections 1–9 brief: missing. Its exact six hypotheses and stop rule remain unaudited, and publication is blocked until it is supplied.
 
 ## Safety invariants
 
-The budget guard counts the historical aggregate in total and per-phase exposure. Every provider attempt must first persist a cross-process-locked worst-case reservation. Unknown-usage failures retain their reservation; the soft stop is $23 and no reservation may cross $30. Paid results use stable cache keys bound to condition, fixture hash, endpoint, and payload.
+The budget guard counts the historical aggregate in total and per-phase exposure. Every provider attempt must first persist a cross-process-locked worst-case reservation. Unknown-usage failures retain their reservation; the soft stop is $15 and no reservation may cross $20. Continuing after the soft stop requires the auditable `results/POST-SOFT-STOP-AUTHORIZED` marker, created only after explicit user approval. The Section 10 phase caps are baseline $3, optimized $1, quality eval $12, judge $2, and contingency $2. Paid results use stable cache keys bound to condition, fixture hash, endpoint, and payload.
 
 The API key must remain outside this repository, supplied through a local environment variable such as `OPENAI_API_KEY`. Never add a key file here.
 
@@ -50,6 +51,7 @@ Pass the resulting `collection_id` to `scenario.run --retrieval-collection-id ..
 - `config.yaml`: frozen pricing and budget policy.
 - `results/historical-spend.json`: disclosed aggregate carry-forward.
 - `results/source-audit.json` and `results/source-call-graph.md`: pinned source evidence.
+- `findings/hypothesis-audit.md`: exact six-hypothesis reconciliation and stop-rule decision.
 - `scenario/`: deterministic chat fixture and controlled retrieval corpus.
 - `eval/cases.json` and `eval/manifest.json`: targeted evaluation inputs and hashes.
 - `configs/conditions.yaml`: one-variable condition matrix.

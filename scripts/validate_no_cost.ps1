@@ -36,7 +36,7 @@ else:
     if ($LASTEXITCODE -eq 0) { throw "Credential-like token found." }
     if ($LASTEXITCODE -gt 1) { throw "Secret scan failed." }
     & git diff --check
-    Write-Output "NO_COST_VALIDATION_PASSED cases=95 cached_on_resume=95 tests=25 spend_usd=0.067766300 new_paid_calls=0"
+    Write-Output "NO_COST_VALIDATION_PASSED cases=95 cached_on_resume=95 tests=28 spend_usd=0.067766300 new_paid_calls=0"
 }
 finally {
     Pop-Location

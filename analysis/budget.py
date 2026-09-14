@@ -63,6 +63,7 @@ class BudgetGuard:
         self.historical_path = self.root / paths["historical_spend"]
         self.lock_path = self.root / paths["budget_lock"]
         self.status_path = self.root / paths["budget_status"]
+        self.post_soft_stop_auth_path = self.root / paths["post_soft_stop_authorization"]
         self.smoke_config = self.budget["smoke_test"]
         self.smoke_dir = self.root / self.smoke_config["marker_directory"]
         self.log_path.parent.mkdir(parents=True, exist_ok=True)
@@ -292,9 +293,12 @@ class BudgetGuard:
             effective = running + outstanding
             soft = Decimal(str(self.budget["soft_stop"]))
             hard = Decimal(str(self.budget["hard_stop"]))
-            if effective >= soft and os.getenv("TEARDOWN_ALLOW_POST_SOFT_STOP") != "1":
+            if effective >= soft and not self.post_soft_stop_auth_path.exists():
                 self._write_status_unlocked("Soft stop reached before request", records)
-                raise BudgetStop(f"Soft stop reached: ${effective:.6f} >= ${soft}")
+                raise BudgetStop(
+                    f"Soft stop reached: ${effective:.6f} >= ${soft}; "
+                    f"user authorization marker required at {self.post_soft_stop_auth_path}"
+                )
             if effective + worst > hard:
                 self._write_status_unlocked("Request reservation could cross hard stop", records)
                 raise BudgetStop("Request could cross hard stop")
@@ -513,7 +517,8 @@ class BudgetGuard:
             f"# Budget status\n\n- Reason: {reason}\n"
             f"- Running measured total (including historical carry-forward): ${running:.6f}\n"
             f"- Effective budget exposure: ${effective:.6f}\n"
-            "- Soft stop: $23.00\n- Hard stop: $30.00\n\n"
+            f"- Soft stop: ${Decimal(str(self.budget['soft_stop'])):.2f}\n"
+            f"- Hard stop: ${Decimal(str(self.budget['hard_stop'])):.2f}\n\n"
             f"## Phase totals\n\n{phases}\n\n"
             "## Work status\n\nPopulate this section from the run manifest before requesting approval.\n"
         )

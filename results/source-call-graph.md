@@ -36,6 +36,6 @@ The task router loads `task.model.default`, `task.model.external`, and the singl
 
 The inspected task endpoints construct `stream: false` payloads. For those calls, the proxy records completion latency and marks time to first token unavailable. Any separate streaming calibration must remain clearly distinct from task-endpoint TTFT.
 
-## Outstanding source gate
+## Source-gate result
 
-The original Sections 1–9 brief is not in the recovered checkpoint. Its exact six hypotheses and stop rule cannot be audited until `teardown-01-openwebui-agent-prompt.md` is supplied; no publication claim should imply otherwise.
+The original brief is now preserved and hashed. Its six hypotheses were audited: four remain supported and two are already fixed or materially changed. Because the stop rule triggers only when more than two are fixed, source inspection permits the study to continue. These are source findings only; wire validation remains mandatory.

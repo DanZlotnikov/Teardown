@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import os
 import shutil
 import tempfile
 import threading
@@ -61,6 +62,61 @@ class BudgetTestCase(unittest.TestCase):
             "gpt-4o-mini", TokenUsage(1000, 100, cached_input_tokens=200)
         )
         self.assertEqual(cost, Decimal("0.000195"))
+
+    def test_section_10_budget_policy_is_exact(self) -> None:
+        guard = self.guard()
+        self.assertEqual(Decimal(str(guard.budget["soft_stop"])), Decimal("15.0"))
+        self.assertEqual(Decimal(str(guard.budget["hard_stop"])), Decimal("20.0"))
+        self.assertEqual(
+            guard.budget["phase_caps"],
+            {
+                "baseline": 3.0,
+                "optimized": 1.0,
+                "quality_eval": 12.0,
+                "judge": 2.0,
+                "contingency": 2.0,
+            },
+        )
+
+    def test_status_uses_configured_stops(self) -> None:
+        guard = self.guard()
+        guard.write_status("policy-test")
+        status = guard.status_path.read_text(encoding="utf-8")
+        self.assertIn("Soft stop: $15.00", status)
+        self.assertIn("Hard stop: $20.00", status)
+        self.assertNotIn("$23.00", status)
+        self.assertNotIn("$30.00", status)
+
+    def test_soft_stop_requires_durable_authorization_marker(self) -> None:
+        def mutate(data):
+            data["budget"]["smoke_test"]["required_before_batch"] = False
+            data["budget"]["soft_stop"] = 0.01
+
+        self.config(mutate)
+        guard = self.guard()
+        os.environ["TEARDOWN_ALLOW_POST_SOFT_STOP"] = "1"
+        try:
+            with self.assertRaisesRegex(BudgetStop, "authorization marker required"):
+                guard.reserve_call(
+                    phase="contingency",
+                    condition="soft-stop-without-marker",
+                    model="gpt-4o-mini",
+                    input_tokens=1,
+                    max_output_tokens=1,
+                    attempt=1,
+                )
+        finally:
+            os.environ.pop("TEARDOWN_ALLOW_POST_SOFT_STOP", None)
+        guard.post_soft_stop_auth_path.write_text("explicit test authorization\n", encoding="utf-8")
+        reservation = guard.reserve_call(
+            phase="contingency",
+            condition="soft-stop-with-marker",
+            model="gpt-4o-mini",
+            input_tokens=1,
+            max_output_tokens=1,
+            attempt=1,
+        )
+        self.assertIsNotNone(reservation.reservation_id)
 
     def test_blocker_prevents_persisted_reservation(self) -> None:
         guard = self.guard(blocked=True)

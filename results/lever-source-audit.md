@@ -14,5 +14,7 @@ application before a paid sweep. Existence is distinct from baseline defaults.
 | L6 retrieved chunk count | Supported | `rag.top_k` defaults to three in `backend/open_webui/config.py`; `backend/open_webui/routers/retrieval.py` passes it to collection and document searches. Test 3, 2 and 1 on one frozen corpus. |
 | L7 autocomplete | Supported, stock default off | `task.autocomplete.enable` gates `/tasks/auto/completions`. The frontend defaults to a 1000-ms debounce. The study's baseline deliberately enables it and must not present it as stock behavior. |
 
-No paid sweep is authorized by this audit. The missing historical ledger and
-persistent checkpoint are separate blockers in `results/BUDGET-STATUS.md`.
+The exact six hypotheses and stop rule from the recovered brief are reconciled
+in `findings/hypothesis-audit.md`. No paid sweep is authorized by either audit.
+The missing historical ledger and runtime gate are separate blockers in
+`results/BUDGET-STATUS.md`.
