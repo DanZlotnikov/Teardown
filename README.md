@@ -34,6 +34,14 @@ python -m venv .venv
 
 Re-running either fixture builder must leave the tracked files byte-identical. The pinned upstream checkout must be at `..\openwebui-upstream` or passed explicitly.
 
+Once a disposable pinned Open WebUI runtime is available, install the controlled corpus through its real APIs. The installer refuses implicit replacement, duplicate indexing without state, and ambiguous crash recovery:
+
+```powershell
+.\.venv\Scripts\python.exe -m scenario.install_corpus --base-url http://127.0.0.1:8088
+```
+
+Pass the resulting `collection_id` to `scenario.run --retrieval-collection-id ...`; the symbolic fixture ID is never presented as an already-indexed native collection.
+
 ## Evidence map
 
 - `config.yaml`: frozen pricing and budget policy.
