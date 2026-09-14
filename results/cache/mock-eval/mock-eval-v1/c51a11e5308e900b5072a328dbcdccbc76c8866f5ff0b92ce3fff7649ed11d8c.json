@@ -1,0 +1,13 @@
+{
+  "cache_key": "c51a11e5308e900b5072a328dbcdccbc76c8866f5ff0b92ce3fff7649ed11d8c",
+  "call_type": "main_chat_context",
+  "case_id": "context-14",
+  "completion_ms": 32.0,
+  "objective_score": 0.0,
+  "response_text": "Deterministic mock response.",
+  "usage": {
+    "completion_tokens": 7,
+    "prompt_tokens": 367,
+    "total_tokens": 374
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "cache_key": "5ebb3b5b97439172a405ef3e75295c98b851e193de0d0f1132de2c1ef2c240e1",
+  "call_type": "autocomplete",
+  "case_id": "autocomplete-10",
+  "completion_ms": 0.0,
+  "objective_score": 1.0,
+  "response_text": "{\"title\":\"Deterministic Test Title\"}",
+  "usage": {
+    "completion_tokens": 11,
+    "prompt_tokens": 54,
+    "total_tokens": 65
+  }
+}

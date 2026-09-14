@@ -1,0 +1,21 @@
+{
+  "api_cost_usd": "0",
+  "cached_cases": 95,
+  "completed_cases": 95,
+  "condition": "mock-eval-v1",
+  "eval_sha256": "4f71a9d609398d9b0794943a4669947ceb38339e9edb4f6a02dd6971d4c0cff6",
+  "note": "Harness execution pass only. Mock objective scores are not model-quality findings.",
+  "objective_mean_by_call_type": {
+    "autocomplete": 1.0,
+    "main_chat_context": 0.0,
+    "retrieval_query": 0.9,
+    "tags": 1.0,
+    "title": 1.0,
+    "web_query": 1.0
+  },
+  "planned_generative_cases": 95,
+  "provider": "deterministic_embedded_mock",
+  "schema_version": 1,
+  "skipped_retrieval_cases": 20,
+  "status": "passed"
+}

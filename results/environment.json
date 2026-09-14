@@ -1,5 +1,5 @@
 {
-  "captured_at": "2026-09-14T16:03:14.785469+00:00",
+  "captured_at": "2026-09-14T17:00:21.478528+00:00",
   "docker_client": {
     "available": true,
     "exit_code": 0,
@@ -8,9 +8,9 @@
   },
   "docker_daemon": {
     "available": true,
-    "exit_code": 1,
-    "stderr": "failed to connect to the docker API at npipe:////./pipe/dockerDesktopLinuxEngine; check if the path is correct and if the daemon is running: open //./pipe/dockerDesktopLinuxEngine: The system cannot find the file specified.",
-    "stdout": "\"\""
+    "exit_code": 0,
+    "stderr": "",
+    "stdout": "\"29.1.3\""
   },
   "hardware": {
     "cores": 24,

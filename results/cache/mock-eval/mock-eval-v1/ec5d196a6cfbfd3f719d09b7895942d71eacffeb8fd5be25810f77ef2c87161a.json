@@ -1,0 +1,13 @@
+{
+  "cache_key": "ec5d196a6cfbfd3f719d09b7895942d71eacffeb8fd5be25810f77ef2c87161a",
+  "call_type": "retrieval_query",
+  "case_id": "query-05",
+  "completion_ms": 15.0,
+  "objective_score": 1.0,
+  "response_text": "{\"query\":\"open webui cost optimization\"}",
+  "usage": {
+    "completion_tokens": 11,
+    "prompt_tokens": 116,
+    "total_tokens": 127
+  }
+}

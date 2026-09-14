@@ -1,0 +1,13 @@
+{
+  "cache_key": "ca9d9c279d9b8167d7f9561149708ed90d76720a940102bac03cf57dba72c138",
+  "call_type": "tags",
+  "case_id": "tags-14",
+  "completion_ms": 0.0,
+  "objective_score": 1.0,
+  "response_text": "{\"tags\":[\"test\",\"cost\"]}",
+  "usage": {
+    "completion_tokens": 11,
+    "prompt_tokens": 10404,
+    "total_tokens": 10415
+  }
+}

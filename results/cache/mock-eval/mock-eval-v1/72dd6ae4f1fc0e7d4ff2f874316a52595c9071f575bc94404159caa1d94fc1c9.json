@@ -1,0 +1,13 @@
+{
+  "cache_key": "72dd6ae4f1fc0e7d4ff2f874316a52595c9071f575bc94404159caa1d94fc1c9",
+  "call_type": "autocomplete",
+  "case_id": "autocomplete-07",
+  "completion_ms": 16.0,
+  "objective_score": 1.0,
+  "response_text": "Deterministic mock response.",
+  "usage": {
+    "completion_tokens": 7,
+    "prompt_tokens": 56,
+    "total_tokens": 63
+  }
+}

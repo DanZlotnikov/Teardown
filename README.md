@@ -11,6 +11,8 @@ Reproducible controlled-ablation study of Open WebUI 0.11.3, pinned to commit `0
 - Frozen targeted eval set: 115 cases. See `eval/manifest.json` for hashes and counts.
 - Source audit: 7/7 proposed levers checked against the pinned checkout; native L3 token truncation is unsupported.
 - Local condition: Ollama `qwen2.5:14b-instruct`, deployability smoke passed at $0. This is not hosted-quality evidence.
+- Frozen generative eval mock: 95 cases execute and resume entirely from cache; this validates the harness, not model quality.
+- Pinned Docker runtime build: incomplete at backend dependency step 23/30 after two bounded attempts. See `results/runtime-validation.md`.
 - Original Sections 1–9 brief: missing. Its exact six hypotheses and stop rule remain unaudited, and publication is blocked until it is supplied.
 
 ## Safety invariants
@@ -30,6 +32,7 @@ python -m venv .venv
 .\.venv\Scripts\python.exe -m analysis.source_audit --upstream ..\openwebui-upstream
 .\.venv\Scripts\python.exe -m scenario.build_retrieval_fixture
 .\.venv\Scripts\python.exe -m eval.build_cases
+.\scripts\validate_no_cost.ps1
 ```
 
 Re-running either fixture builder must leave the tracked files byte-identical. The pinned upstream checkout must be at `..\openwebui-upstream` or passed explicitly.

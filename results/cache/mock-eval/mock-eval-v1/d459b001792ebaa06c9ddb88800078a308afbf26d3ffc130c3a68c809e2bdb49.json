@@ -1,0 +1,13 @@
+{
+  "cache_key": "d459b001792ebaa06c9ddb88800078a308afbf26d3ffc130c3a68c809e2bdb49",
+  "call_type": "title",
+  "case_id": "title-13",
+  "completion_ms": 15.0,
+  "objective_score": 1.0,
+  "response_text": "{\"title\":\"Deterministic Test Title\"}",
+  "usage": {
+    "completion_tokens": 11,
+    "prompt_tokens": 148,
+    "total_tokens": 159
+  }
+}

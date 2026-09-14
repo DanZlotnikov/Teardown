@@ -1,0 +1,13 @@
+{
+  "cache_key": "300a33d823b6bb986a8b922a22aa9a56885684fcf280a693e47bad4835bc593d",
+  "call_type": "autocomplete",
+  "case_id": "autocomplete-09",
+  "completion_ms": 0.0,
+  "objective_score": 1.0,
+  "response_text": "{\"query\":\"open webui cost optimization\"}",
+  "usage": {
+    "completion_tokens": 11,
+    "prompt_tokens": 54,
+    "total_tokens": 65
+  }
+}
