@@ -1,0 +1,20 @@
+{
+  "counts": {
+    "autocomplete": 10,
+    "main_chat_context": 20,
+    "retrieval": 20,
+    "retrieval_query": 10,
+    "tags": 20,
+    "title": 25,
+    "web_query": 10
+  },
+  "frozen": true,
+  "schema_version": 1,
+  "sha256": {
+    "eval/cases.json": "4f71a9d609398d9b0794943a4669947ceb38339e9edb4f6a02dd6971d4c0cff6",
+    "scenario/cases.json": "f5bcb6f92c23d558fbc36cbbd581f08138568126d89e1698342bcf31269590e3",
+    "scenario/retrieval-cases.json": "a6ed0d14989af7f632fe2c122ca960ec433d5ea289fd6c702e39aad15c969dd4",
+    "scenario/retrieval-corpus.json": "f4e57fec49ee92a076f9626f3a247fb0af7f7b0c70cd9f412709e0341a083982"
+  },
+  "total_cases": 115
+}

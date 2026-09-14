@@ -1,0 +1,154 @@
+{
+  "collection_id": "teardown-fixed-corpus-v1",
+  "queries": [
+    {
+      "id": "r01",
+      "query": "Which background features use the configured task model?",
+      "relevant_document_ids": [
+        "task-model"
+      ]
+    },
+    {
+      "id": "r02",
+      "query": "Does a global task max token limit affect autocomplete and titles?",
+      "relevant_document_ids": [
+        "task-cap"
+      ]
+    },
+    {
+      "id": "r03",
+      "query": "Are MESSAGES END limits measured in messages, characters, or tokens?",
+      "relevant_document_ids": [
+        "title-template"
+      ]
+    },
+    {
+      "id": "r04",
+      "query": "What must be changed so context compaction actually triggers?",
+      "relevant_document_ids": [
+        "context-compaction"
+      ]
+    },
+    {
+      "id": "r05",
+      "query": "Why is replaying a standalone query endpoint invalid for query reuse?",
+      "relevant_document_ids": [
+        "query-cache"
+      ]
+    },
+    {
+      "id": "r06",
+      "query": "What is the default retrieved chunk count and which levels should be compared?",
+      "relevant_document_ids": [
+        "rag-top-k"
+      ]
+    },
+    {
+      "id": "r07",
+      "query": "Is autocomplete enabled by default and does it fire every keystroke?",
+      "relevant_document_ids": [
+        "autocomplete"
+      ]
+    },
+    {
+      "id": "r08",
+      "query": "How should concurrent calls be prevented from overspending?",
+      "relevant_document_ids": [
+        "budget"
+      ]
+    },
+    {
+      "id": "r09",
+      "query": "What must a stable paid-response cache key bind?",
+      "relevant_document_ids": [
+        "resume-cache"
+      ]
+    },
+    {
+      "id": "r10",
+      "query": "How should latency be reported for a nonstreaming task endpoint?",
+      "relevant_document_ids": [
+        "wire-capture"
+      ]
+    },
+    {
+      "id": "r11",
+      "query": "What evidence identifies a deployable local model condition?",
+      "relevant_document_ids": [
+        "local-ollama"
+      ]
+    },
+    {
+      "id": "r12",
+      "query": "When should a model judge be used instead of objective scoring?",
+      "relevant_document_ids": [
+        "quality"
+      ]
+    },
+    {
+      "id": "r13",
+      "query": "How can task costs fall without changing the main chat model, and what cap has broad scope?",
+      "relevant_document_ids": [
+        "task-model",
+        "task-cap"
+      ]
+    },
+    {
+      "id": "r14",
+      "query": "Contrast native title truncation with native context compaction units and defaults.",
+      "relevant_document_ids": [
+        "title-template",
+        "context-compaction"
+      ]
+    },
+    {
+      "id": "r15",
+      "query": "Explain the valid middleware path for cached queries and the retrieval depth it feeds.",
+      "relevant_document_ids": [
+        "query-cache",
+        "rag-top-k"
+      ]
+    },
+    {
+      "id": "r16",
+      "query": "Which two defaults make autocomplete opt-in and what timing behavior reduces calls?",
+      "relevant_document_ids": [
+        "autocomplete"
+      ]
+    },
+    {
+      "id": "r17",
+      "query": "How do atomic cache writes and pre-dispatch reservations address different crash risks?",
+      "relevant_document_ids": [
+        "resume-cache",
+        "budget"
+      ]
+    },
+    {
+      "id": "r18",
+      "query": "Which capture fields support frozen-price arithmetic and honest latency reporting?",
+      "relevant_document_ids": [
+        "wire-capture",
+        "budget"
+      ]
+    },
+    {
+      "id": "r19",
+      "query": "Why can a successful Ollama smoke not replace targeted hosted evaluation?",
+      "relevant_document_ids": [
+        "local-ollama",
+        "quality"
+      ]
+    },
+    {
+      "id": "r20",
+      "query": "Design a safe L6 test with the real retrieval path and objective scoring.",
+      "relevant_document_ids": [
+        "rag-top-k",
+        "quality",
+        "wire-capture"
+      ]
+    }
+  ],
+  "schema_version": 1
+}

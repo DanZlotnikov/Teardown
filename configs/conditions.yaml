@@ -1,0 +1,70 @@
+schema_version: 1
+controls:
+  open_webui_commit: 0a7c15832fb30b1903753e83f81dc7d27e5b0944
+  scenario_manifest: eval/manifest.json
+  temperature: 0
+  order: fixed
+  repetitions: 1
+  nondeterministic_repetitions: 3
+baseline:
+  id: baseline
+  task_model: main_chat_model
+  task_model_params: {}
+  title_template: stock
+  context_policy: none
+  enable_queries_cache: false
+  rag_top_k: 3
+  autocomplete: true
+  note: Autocomplete-on is a deliberate workload assumption, not the stock default.
+single_lever_conditions:
+  L1_task_model_tier:
+    affected_calls: [title, tags, retrieval_query, web_query, autocomplete]
+    main_chat_risk: false
+    levels:
+      - {id: l1-mid-hosted, change: {task_model: gpt-5.6-terra}}
+      - {id: l1-small-hosted, change: {task_model: gpt-5.6-luna}}
+      - id: l1-local-ollama
+        change: {task_model: 'qwen2.5:14b-instruct'}
+        evidence: results/local-model-smoke.json
+  L2_task_output_cap:
+    affected_calls: [title, tags, follow_up, retrieval_query, web_query, autocomplete]
+    main_chat_risk: false
+    scope_warning: task.model.params is global across these task endpoints.
+    levels:
+      - {id: l2-cap-512, change: {task_model_params: {max_tokens: 512}}}
+      - {id: l2-cap-128, change: {task_model_params: {max_tokens: 128}}}
+      - {id: l2-cap-32, change: {task_model_params: {max_tokens: 32}}}
+  L3_title_input_truncation:
+    status: unsupported
+    reason: Native prompt syntax counts messages and per-message characters, not tokens.
+    evidence: results/source-audit.json
+    levels: []
+  L4_context_management:
+    affected_calls: [main_chat_context]
+    main_chat_risk: true
+    levels:
+      - {id: l4-last-10-turns, change: {context_policy: {kind: sliding_turns, turns: 10}}}
+      - {id: l4-last-6-turns, change: {context_policy: {kind: sliding_turns, turns: 6}}}
+      - {id: l4-last-3-turns, change: {context_policy: {kind: sliding_turns, turns: 3}}}
+      - id: l4-native-compaction
+        change: {context_policy: {kind: native_compaction, enabled: true, token_threshold: 512, token_cap: 512, retention_percentage: 40}}
+        trigger_requirement: Every evaluated long chat must emit or persist evidence that compaction occurred.
+  L5_query_reuse:
+    affected_calls: [retrieval_query, web_query]
+    main_chat_risk: false
+    levels:
+      - {id: l5-query-reuse-on, change: {enable_queries_cache: true}}
+    path_requirement: combined_chat_middleware_with_web_and_file_retrieval
+  L6_retrieved_chunk_count:
+    affected_calls: [retrieval]
+    main_chat_risk: true
+    levels:
+      - {id: l6-top-k-2, change: {rag_top_k: 2}}
+      - {id: l6-top-k-1, change: {rag_top_k: 1}}
+    corpus: scenario/retrieval-corpus.json
+  L7_autocomplete:
+    affected_calls: [autocomplete]
+    main_chat_risk: false
+    quality_metric: none_ux_accounting_only
+    levels:
+      - {id: l7-autocomplete-off, change: {autocomplete: false}}

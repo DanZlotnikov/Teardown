@@ -1,0 +1,221 @@
+{
+  "levers": {
+    "L1_task_model_tier": {
+      "evidence": [
+        {
+          "excerpt": "'TASK_MODEL': 'task.model.default',",
+          "line": 42,
+          "meaning": "task-model config is loaded",
+          "path": "backend/open_webui/routers/tasks.py",
+          "permalink": "https://github.com/open-webui/open-webui/blob/0a7c15832fb30b1903753e83f81dc7d27e5b0944/backend/open_webui/routers/tasks.py#L42"
+        },
+        {
+          "excerpt": "@router.post('/title/completions')",
+          "line": 141,
+          "meaning": "title task endpoint",
+          "path": "backend/open_webui/routers/tasks.py",
+          "permalink": "https://github.com/open-webui/open-webui/blob/0a7c15832fb30b1903753e83f81dc7d27e5b0944/backend/open_webui/routers/tasks.py#L141"
+        },
+        {
+          "excerpt": "@router.post('/tags/completions')",
+          "line": 279,
+          "meaning": "tag task endpoint",
+          "path": "backend/open_webui/routers/tasks.py",
+          "permalink": "https://github.com/open-webui/open-webui/blob/0a7c15832fb30b1903753e83f81dc7d27e5b0944/backend/open_webui/routers/tasks.py#L279"
+        },
+        {
+          "excerpt": "@router.post('/queries/completions')",
+          "line": 403,
+          "meaning": "RAG/web query endpoint",
+          "path": "backend/open_webui/routers/tasks.py",
+          "permalink": "https://github.com/open-webui/open-webui/blob/0a7c15832fb30b1903753e83f81dc7d27e5b0944/backend/open_webui/routers/tasks.py#L403"
+        },
+        {
+          "excerpt": "@router.post('/auto/completions')",
+          "line": 479,
+          "meaning": "autocomplete endpoint",
+          "path": "backend/open_webui/routers/tasks.py",
+          "permalink": "https://github.com/open-webui/open-webui/blob/0a7c15832fb30b1903753e83f81dc7d27e5b0944/backend/open_webui/routers/tasks.py#L479"
+        }
+      ],
+      "finding": "supported"
+    },
+    "L2_task_output_cap": {
+      "evidence": [
+        {
+          "excerpt": "'TASK_MODEL_PARAMS': 'task.model.params',",
+          "line": 44,
+          "meaning": "one global task-parameter dictionary",
+          "path": "backend/open_webui/routers/tasks.py",
+          "permalink": "https://github.com/open-webui/open-webui/blob/0a7c15832fb30b1903753e83f81dc7d27e5b0944/backend/open_webui/routers/tasks.py#L44"
+        },
+        {
+          "excerpt": "payload = apply_task_model_params(payload, models, task_model_id, task_model_params)",
+          "line": 202,
+          "meaning": "same helper is called by title through autocomplete endpoints",
+          "path": "backend/open_webui/routers/tasks.py",
+          "permalink": "https://github.com/open-webui/open-webui/blob/0a7c15832fb30b1903753e83f81dc7d27e5b0944/backend/open_webui/routers/tasks.py#L202"
+        }
+      ],
+      "finding": "supported_broader_than_proposed"
+    },
+    "L3_title_input_token_truncation": {
+      "evidence": [
+        {
+          "excerpt": "def truncate_content(content: str, max_chars: int, mode: str = 'middletruncate') -> str:",
+          "line": 136,
+          "meaning": "content limit is explicitly characters",
+          "path": "backend/open_webui/utils/task.py",
+          "permalink": "https://github.com/open-webui/open-webui/blob/0a7c15832fb30b1903753e83f81dc7d27e5b0944/backend/open_webui/utils/task.py#L136"
+        },
+        {
+          "excerpt": "selected = messages[-int(end_length) :]",
+          "line": 222,
+          "meaning": "END selector counts messages",
+          "path": "backend/open_webui/utils/task.py",
+          "permalink": "https://github.com/open-webui/open-webui/blob/0a7c15832fb30b1903753e83f81dc7d27e5b0944/backend/open_webui/utils/task.py#L222"
+        },
+        {
+          "excerpt": "new_msg['content'] = truncate_content(new_msg['content'], max_chars, mode)",
+          "line": 182,
+          "meaning": "character filter is applied per message",
+          "path": "backend/open_webui/utils/task.py",
+          "permalink": "https://github.com/open-webui/open-webui/blob/0a7c15832fb30b1903753e83f81dc7d27e5b0944/backend/open_webui/utils/task.py#L182"
+        }
+      ],
+      "finding": "unsupported_natively"
+    },
+    "L4_context_management": {
+      "evidence": [
+        {
+          "excerpt": "ENABLE_CONTEXT_COMPACTION = os.getenv('ENABLE_CONTEXT_COMPACTION', 'False').lower() == 'true'",
+          "line": 2207,
+          "meaning": "native compaction defaults off",
+          "path": "backend/open_webui/config.py",
+          "permalink": "https://github.com/open-webui/open-webui/blob/0a7c15832fb30b1903753e83f81dc7d27e5b0944/backend/open_webui/config.py#L2207"
+        },
+        {
+          "excerpt": "CONTEXT_COMPACTION_TOKEN_THRESHOLD = int(os.getenv('CONTEXT_COMPACTION_TOKEN_THRESHOLD', '80000'))",
+          "line": 2211,
+          "meaning": "default threshold is 80k tokens",
+          "path": "backend/open_webui/config.py",
+          "permalink": "https://github.com/open-webui/open-webui/blob/0a7c15832fb30b1903753e83f81dc7d27e5b0944/backend/open_webui/config.py#L2211"
+        },
+        {
+          "excerpt": "form_data['messages'], context_summary, _ = await compact_messages_for_request(",
+          "line": 2471,
+          "meaning": "combined chat middleware invokes compaction",
+          "path": "backend/open_webui/utils/middleware.py",
+          "permalink": "https://github.com/open-webui/open-webui/blob/0a7c15832fb30b1903753e83f81dc7d27e5b0944/backend/open_webui/utils/middleware.py#L2471"
+        },
+        {
+          "excerpt": "if not _exceeds_token_threshold(messages, system_prompt, previous_summary, token_threshold) or len(messages) <= 3:",
+          "line": 60,
+          "meaning": "compaction requires threshold crossing",
+          "path": "backend/open_webui/utils/context_compaction.py",
+          "permalink": "https://github.com/open-webui/open-webui/blob/0a7c15832fb30b1903753e83f81dc7d27e5b0944/backend/open_webui/utils/context_compaction.py#L60"
+        }
+      ],
+      "finding": "supported_native_compaction_and_extension_windows"
+    },
+    "L5_query_reuse": {
+      "evidence": [
+        {
+          "excerpt": "request.state.cached_queries = queries",
+          "line": 1558,
+          "meaning": "web handler stores queries on request state",
+          "path": "backend/open_webui/utils/middleware.py",
+          "permalink": "https://github.com/open-webui/open-webui/blob/0a7c15832fb30b1903753e83f81dc7d27e5b0944/backend/open_webui/utils/middleware.py#L1558"
+        },
+        {
+          "excerpt": "if getattr(request.state, 'cached_queries', None):",
+          "line": 419,
+          "meaning": "query endpoint reuses request-state cache",
+          "path": "backend/open_webui/routers/tasks.py",
+          "permalink": "https://github.com/open-webui/open-webui/blob/0a7c15832fb30b1903753e83f81dc7d27e5b0944/backend/open_webui/routers/tasks.py#L419"
+        },
+        {
+          "excerpt": "form_data = await chat_web_search_handler(request, form_data, extra_params, user)",
+          "line": 2678,
+          "meaning": "web generation occurs in combined chat middleware",
+          "path": "backend/open_webui/utils/middleware.py",
+          "permalink": "https://github.com/open-webui/open-webui/blob/0a7c15832fb30b1903753e83f81dc7d27e5b0944/backend/open_webui/utils/middleware.py#L2678"
+        },
+        {
+          "excerpt": "form_data, flags = await chat_completion_files_handler(request, form_data, extra_params, user)",
+          "line": 3052,
+          "meaning": "retrieval follows on the same request",
+          "path": "backend/open_webui/utils/middleware.py",
+          "permalink": "https://github.com/open-webui/open-webui/blob/0a7c15832fb30b1903753e83f81dc7d27e5b0944/backend/open_webui/utils/middleware.py#L3052"
+        }
+      ],
+      "finding": "supported_only_in_combined_middleware_path"
+    },
+    "L6_retrieved_chunk_count": {
+      "evidence": [
+        {
+          "excerpt": "RAG_TOP_K = int(os.getenv('RAG_TOP_K', '3'))",
+          "line": 962,
+          "meaning": "default retrieved chunk count is three",
+          "path": "backend/open_webui/config.py",
+          "permalink": "https://github.com/open-webui/open-webui/blob/0a7c15832fb30b1903753e83f81dc7d27e5b0944/backend/open_webui/config.py#L962"
+        },
+        {
+          "excerpt": "k=form_data.k if form_data.k else config.TOP_K,",
+          "line": 3011,
+          "meaning": "document and collection retrieval use configured top-k",
+          "path": "backend/open_webui/routers/retrieval.py",
+          "permalink": "https://github.com/open-webui/open-webui/blob/0a7c15832fb30b1903753e83f81dc7d27e5b0944/backend/open_webui/routers/retrieval.py#L3011"
+        }
+      ],
+      "finding": "supported"
+    },
+    "L7_autocomplete": {
+      "evidence": [
+        {
+          "excerpt": "ENABLE_AUTOCOMPLETE_GENERATION = os.getenv('ENABLE_AUTOCOMPLETE_GENERATION', 'False').lower() == 'true'",
+          "line": 2346,
+          "meaning": "server feature defaults off",
+          "path": "backend/open_webui/config.py",
+          "permalink": "https://github.com/open-webui/open-webui/blob/0a7c15832fb30b1903753e83f81dc7d27e5b0944/backend/open_webui/config.py#L2346"
+        },
+        {
+          "excerpt": "let promptAutocomplete = false;",
+          "line": 55,
+          "meaning": "per-user preference defaults off",
+          "path": "src/lib/components/common/InterfaceSettings.svelte",
+          "permalink": "https://github.com/open-webui/open-webui/blob/0a7c15832fb30b1903753e83f81dc7d27e5b0944/src/lib/components/common/InterfaceSettings.svelte#L55"
+        },
+        {
+          "excerpt": "debounceTime: 1000",
+          "line": 23,
+          "meaning": "input changes are debounced by one second",
+          "path": "src/lib/components/common/RichTextInput/AutoCompletion.js",
+          "permalink": "https://github.com/open-webui/open-webui/blob/0a7c15832fb30b1903753e83f81dc7d27e5b0944/src/lib/components/common/RichTextInput/AutoCompletion.js#L23"
+        }
+      ],
+      "finding": "supported_stock_off_and_debounced"
+    }
+  },
+  "limits": [
+    "The original Sections 1-9 brief is absent, so its exact six-hypothesis stop rule has not been evaluated.",
+    "Source existence does not replace an end-to-end experiment."
+  ],
+  "schema_version": 1,
+  "source_file_sha256": {
+    "backend/open_webui/config.py": "ac066304d24dba70950f0332fa47de1a307cf09904e2e6ac832245760cf66848",
+    "backend/open_webui/routers/retrieval.py": "3b9f59cd388222b7b7e004d2ca6d08b4dc6bbc2059244a1cbcb3cd5ff5e6d646",
+    "backend/open_webui/routers/tasks.py": "1ff4b882d74f09ea7c312d210c1cc372d524a6491620ed1ce831b4d05997d5ef",
+    "backend/open_webui/utils/context_compaction.py": "fdd91c386a69b989a14cfc40ddfb70e18c67b5f7ec0abdd03a9900526dddce66",
+    "backend/open_webui/utils/middleware.py": "eb9a7c455894c4b3ed870541ed8f0040e5e5dededda2f39bfacd29419110153f",
+    "backend/open_webui/utils/task.py": "af5682e82b4d55e3a551597eab528b86943b5487426a3b2587acee575e198e43",
+    "src/lib/components/common/InterfaceSettings.svelte": "94748df1fb88cb43504b322f176ec488ed98237d5ae025b2ab170e619ca4f836",
+    "src/lib/components/common/RichTextInput/AutoCompletion.js": "98e571016e3f6c5be5c5ca437d4430d79c4e7ae4bbc7e25b3ed2f5827cf32f35"
+  },
+  "status": "passed",
+  "subject": {
+    "commit": "0a7c15832fb30b1903753e83f81dc7d27e5b0944",
+    "repository": "https://github.com/open-webui/open-webui",
+    "version": "0.11.3"
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "collection_id": "teardown-fixed-corpus-v1",
+  "documents": [
+    {
+      "id": "task-model",
+      "text": "Open WebUI routes titles, tags, follow-up suggestions, retrieval queries, web-search queries, and autocomplete through the configured task model. Administrators can set a local or smaller task model without changing the main chat model.",
+      "title": "Task model routing"
+    },
+    {
+      "id": "task-cap",
+      "text": "The task.model.params dictionary applies generation parameters across task endpoints. A max_tokens cap therefore reaches titles and autocomplete as well as tags, follow-ups, and queries; it is not a narrow tag-only control.",
+      "title": "Task output limits"
+    },
+    {
+      "id": "title-template",
+      "text": "Title prompt templates select messages with MESSAGES START, END, or MIDDLETRUNCATE counts. Optional start, end, and middletruncate filters limit characters within every selected message. These native limits do not count tokenizer tokens.",
+      "title": "Title history syntax"
+    },
+    {
+      "id": "context-compaction",
+      "text": "Native context compaction defaults to disabled. Its default threshold is 80000 tokens and retention defaults to 40 percent. Tests must enable it on a saved chat and lower the threshold enough to prove a summary was generated.",
+      "title": "Native context compaction"
+    },
+    {
+      "id": "query-cache",
+      "text": "ENABLE_QUERIES_CACHE stores web-search queries on request state so later file retrieval in the same combined chat request can reuse them. Repeating the standalone query endpoint cannot exercise this optimization.",
+      "title": "Query reuse"
+    },
+    {
+      "id": "rag-top-k",
+      "text": "The rag.top_k configuration defaults to three. Document and collection retrieval pass this value to vector or hybrid search unless a request-level k overrides it. Compare k values 3, 2, and 1 on one fixed indexed corpus.",
+      "title": "Retrieved chunk count"
+    },
+    {
+      "id": "autocomplete",
+      "text": "Autocomplete is disabled by default at the server and user preference levels. When enabled, the editor waits 1000 milliseconds after an input change and checks cursor and loading state, so requests are not sent on every keystroke.",
+      "title": "Autocomplete workload"
+    },
+    {
+      "id": "budget",
+      "text": "Before provider dispatch, acquire a cross-process lock and persist a worst-case reservation. Include the historical carry-forward and unresolved failures in exposure. Stop at 23 dollars softly and never reserve beyond 30 dollars.",
+      "title": "Paid-call budget guard"
+    },
+    {
+      "id": "resume-cache",
+      "text": "Cache every paid response under a stable key that binds condition, dataset hash, endpoint, and payload. Write the cache atomically before the append-only action manifest. On resume, a valid cache alone must prevent a repeated provider call.",
+      "title": "Paid output cache"
+    },
+    {
+      "id": "wire-capture",
+      "text": "Capture redacted provider request and response bodies, actual reported input, output, and cached tokens, completion latency, and all budget mutations. For nonstreaming task calls, mark time to first token unavailable rather than relabeling response time.",
+      "title": "Proxy evidence"
+    },
+    {
+      "id": "local-ollama",
+      "text": "A local model condition needs an exact installed model name, digest, quantization, Ollama version, and hardware record. A deployment smoke proves availability only; it does not establish equivalence to a hosted quality test.",
+      "title": "Local Ollama condition"
+    },
+    {
+      "id": "quality",
+      "text": "Evaluate only call types affected by each lever. Use objective format, exact-fact, retrieval-overlap, and grounding metrics first. Use a cached non-reasoning judge only when objective comparisons are insufficient.",
+      "title": "Targeted quality evaluation"
+    }
+  ],
+  "kind": "controlled_operational_corpus",
+  "schema_version": 1
+}

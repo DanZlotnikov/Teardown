@@ -39,6 +39,13 @@ def build_actions(data,model,profile):
         if c["features"]["autocomplete"] and profile=="baseline":
             for n in range(2):actions.append(Action(c["id"],"autocomplete","/api/v1/tasks/auto/completions",{"model":model,"messages":ps[-1],"prompt":ps[-1][-1]["content"],"type":"general","stream":False,"cursor_event":n+1}))
     return actions
+def build_retrieval_actions(data,retrieval_k=None):
+    actions=[]
+    for case in data["queries"]:
+        payload={"collection_names":[data["collection_id"]],"query":case["query"]}
+        if retrieval_k is not None:payload["k"]=retrieval_k
+        actions.append(Action(case["id"],"retrieval","/api/v1/retrieval/query/collection",payload))
+    return actions
 def cache_key(namespace,condition,scenario_sha256,profile,a):return hashlib.sha256(json.dumps({"namespace":namespace,"condition":condition,"scenario_sha256":scenario_sha256,"profile":profile,"conversation_id":a.conversation_id,"call_type":a.call_type,"endpoint":a.endpoint,"payload":a.payload},sort_keys=True,separators=(",",":")).encode()).hexdigest()
 def valid_row(row,key):return isinstance(row,dict) and row.get("cache_key")==key and not row.get("error") and row.get("response") is not None
 def call(base,token,a,timeout,attempts):
@@ -52,9 +59,9 @@ def call(base,token,a,timeout,attempts):
             if attempt==attempts:return None,attempt,f"{type(e).__name__}: {e}"
         time.sleep(2**(attempt-1))
 def main():
-    p=argparse.ArgumentParser();p.add_argument("--base-url",default="http://127.0.0.1:8088");p.add_argument("--scenario",type=Path,default=Path("scenario/cases.json"));p.add_argument("--condition",required=True);p.add_argument("--profile",choices=("baseline","optimized"),required=True);p.add_argument("--phase",choices=("baseline","optimized"),required=True);p.add_argument("--model",default="gpt-4o-mini");p.add_argument("--mode",choices=("mock","paid-smoke","paid-batch"),required=True);p.add_argument("--max-actions",type=int);p.add_argument("--timeout",type=int,default=180);a=p.parse_args()
+    p=argparse.ArgumentParser();p.add_argument("--base-url",default="http://127.0.0.1:8088");p.add_argument("--scenario",type=Path,default=Path("scenario/cases.json"));p.add_argument("--retrieval-scenario",type=Path,default=Path("scenario/retrieval-cases.json"));p.add_argument("--retrieval-k",type=int,choices=(1,2,3));p.add_argument("--condition",required=True);p.add_argument("--profile",choices=("baseline","optimized"),required=True);p.add_argument("--phase",choices=("baseline","optimized"),required=True);p.add_argument("--model",default="gpt-4o-mini");p.add_argument("--mode",choices=("mock","paid-smoke","paid-batch"),required=True);p.add_argument("--max-actions",type=int);p.add_argument("--timeout",type=int,default=180);a=p.parse_args()
     if not re.fullmatch(r"[a-z0-9][a-z0-9._-]*",a.condition):p.error("--condition must be a filesystem-safe lowercase identifier")
-    root=Path(__file__).parents[1];guard=BudgetGuard(root);scenario_bytes=a.scenario.read_bytes();scenario_sha256=hashlib.sha256(scenario_bytes).hexdigest();data=json.loads(scenario_bytes);actions=build_actions(data,a.model,a.profile)
+    root=Path(__file__).parents[1];guard=BudgetGuard(root);scenario_bytes=a.scenario.read_bytes();retrieval_bytes=a.retrieval_scenario.read_bytes();scenario_sha256=hashlib.sha256(scenario_bytes+b"\0"+retrieval_bytes).hexdigest();data=json.loads(scenario_bytes);retrieval_data=json.loads(retrieval_bytes);actions=build_actions(data,a.model,a.profile)+build_retrieval_actions(retrieval_data,a.retrieval_k)
     if a.max_actions is not None:actions=actions[:a.max_actions]
     if a.mode=="paid-smoke" and len(actions)>2:raise SystemExit("paid-smoke refuses more than two actions")
     if a.mode=="paid-batch" and not guard.smoke_passed(a.phase):raise BudgetStop(f"{a.phase} paid batch requires a passed smoke marker")

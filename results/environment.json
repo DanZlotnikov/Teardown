@@ -1,0 +1,94 @@
+{
+  "captured_at": "2026-09-14T16:03:14.785469+00:00",
+  "docker_client": {
+    "available": true,
+    "exit_code": 0,
+    "stderr": "",
+    "stdout": "Docker version 29.1.3, build f52814d"
+  },
+  "docker_daemon": {
+    "available": true,
+    "exit_code": 1,
+    "stderr": "failed to connect to the docker API at npipe:////./pipe/dockerDesktopLinuxEngine; check if the path is correct and if the daemon is running: open //./pipe/dockerDesktopLinuxEngine: The system cannot find the file specified.",
+    "stdout": "\"\""
+  },
+  "hardware": {
+    "cores": 24,
+    "cpu": "Intel(R) Core(TM) Ultra 9 275HX",
+    "logical_processors": 24,
+    "manufacturer": "ASUSTeK COMPUTER INC.",
+    "model": "ROG Strix SCAR 18 G835LX_G835LX",
+    "ram_bytes": 68049973248
+  },
+  "nvidia": {
+    "available": true,
+    "exit_code": 0,
+    "stderr": "",
+    "stdout": "NVIDIA GeForce RTX 5090 Laptop GPU, 24463, 591.91"
+  },
+  "ollama_models": {
+    "available": true,
+    "value": {
+      "models": [
+        {
+          "capabilities": [
+            "completion",
+            "tools"
+          ],
+          "details": {
+            "context_length": 32768,
+            "embedding_length": 5120,
+            "families": [
+              "qwen2"
+            ],
+            "family": "qwen2",
+            "format": "gguf",
+            "parameter_size": "14.8B",
+            "parent_model": "",
+            "quantization_level": "Q4_K_M"
+          },
+          "digest": "7cdf5a0187d5c58cc5d369b255592f7841d1c4696d45a8c8a9489440385b22f6",
+          "model": "qwen2.5:14b-instruct",
+          "modified_at": "2026-07-13T09:26:01.5879418-04:00",
+          "name": "qwen2.5:14b-instruct",
+          "size": 8988124069
+        },
+        {
+          "capabilities": [
+            "completion",
+            "tools"
+          ],
+          "details": {
+            "context_length": 131072,
+            "embedding_length": 2048,
+            "families": [
+              "llama"
+            ],
+            "family": "llama",
+            "format": "gguf",
+            "parameter_size": "1.2B",
+            "parent_model": "",
+            "quantization_level": "Q8_0"
+          },
+          "digest": "baf6a787fdffd633537aa2eb51cfd54cb93ff08e28040095462bb63daf552878",
+          "model": "llama3.2:1b",
+          "modified_at": "2026-04-28T12:27:05.344082-04:00",
+          "name": "llama3.2:1b",
+          "size": 1321098329
+        }
+      ]
+    }
+  },
+  "ollama_version": {
+    "available": true,
+    "value": {
+      "version": "0.33.3"
+    }
+  },
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": {
+    "executable": "C:\\Users\\Admin\\repos\\Teardown-remote\\.venv\\Scripts\\python.exe",
+    "version": "3.12.0 (tags/v3.12.0:0fb18b0, Oct  2 2023, 13:03:39) [MSC v.1935 64 bit (AMD64)]"
+  },
+  "schema_version": 1
+}

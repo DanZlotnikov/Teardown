@@ -1,0 +1,62 @@
+{
+  "api_cost_usd": "0",
+  "cases": [
+    {
+      "call_type": "title",
+      "completion_ms": 40719.0,
+      "done_reason": "stop",
+      "eval_count": 14,
+      "prompt_eval_count": 53,
+      "response_text": "{\n  \"title\": \"WebUI Knowledge Lists Issue\"\n}"
+    },
+    {
+      "call_type": "tags",
+      "completion_ms": 375.0,
+      "done_reason": "stop",
+      "eval_count": 23,
+      "prompt_eval_count": 52,
+      "response_text": "```json\n{\n  \"tags\": [\"webui\", \"upgrade\", \"knowledge-lists\"]\n}\n```"
+    },
+    {
+      "call_type": "retrieval_query",
+      "completion_ms": 500.0,
+      "done_reason": "stop",
+      "eval_count": 32,
+      "prompt_eval_count": 47,
+      "response_text": "```json\n{\n  \"query\": \"SELECT * FROM system_logs WHERE message LIKE '%knowledge-list%' ORDER BY timestamp DESC LIMIT 1;\"\n}\n```"
+    },
+    {
+      "call_type": "autocomplete",
+      "completion_ms": 203.0,
+      "done_reason": "stop",
+      "eval_count": 11,
+      "prompt_eval_count": 52,
+      "response_text": "low-resource model, enable caching, optimize queries."
+    }
+  ],
+  "model": "qwen2.5:14b-instruct",
+  "model_details": {
+    "context_length": 32768,
+    "embedding_length": 5120,
+    "families": [
+      "qwen2"
+    ],
+    "family": "qwen2",
+    "format": "gguf",
+    "parameter_size": "14.8B",
+    "parent_model": "",
+    "quantization_level": "Q4_K_M"
+  },
+  "model_digest": "7cdf5a0187d5c58cc5d369b255592f7841d1c4696d45a8c8a9489440385b22f6",
+  "model_size_bytes": 8988124069,
+  "options": {
+    "num_predict": 64,
+    "seed": 42,
+    "temperature": 0
+  },
+  "provider": "local_ollama",
+  "run_at": "2026-09-14T16:03:58.841968+00:00",
+  "schema_version": 1,
+  "scope_warning": "Deployability smoke only. These outputs are not evidence of hosted-model quality equivalence.",
+  "status": "passed"
+}

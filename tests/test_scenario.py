@@ -5,7 +5,7 @@ import unittest
 from collections import Counter
 from pathlib import Path
 
-from scenario.run import Action, build_actions, cache_key, valid_row
+from scenario.run import Action, build_actions, build_retrieval_actions, cache_key, valid_row
 
 
 PROJECT = Path(__file__).parents[1]
@@ -29,6 +29,11 @@ class ScenarioTestCase(unittest.TestCase):
         self.assertEqual(len(baseline), 329)
         self.assertEqual(len(optimized), 327)
         self.assertEqual(Counter(action.call_type for action in baseline)["autocomplete"], 2)
+        retrieval = json.loads((PROJECT / "scenario/retrieval-cases.json").read_text(encoding="utf-8"))
+        retrieval_actions = build_retrieval_actions(retrieval)
+        self.assertEqual(len(retrieval_actions), 20)
+        self.assertEqual(len(baseline) + len(retrieval_actions), 349)
+        self.assertTrue(all(action.endpoint == "/api/v1/retrieval/query/collection" for action in retrieval_actions))
 
     def test_cache_key_binds_condition_scenario_and_payload(self) -> None:
         action = Action("case", "title", "/endpoint", {"model": "m"})
