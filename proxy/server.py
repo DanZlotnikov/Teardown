@@ -1,11 +1,11 @@
 """OpenAI-compatible wire logger with mandatory paid-call budget controls."""
 from __future__ import annotations
-import argparse,json,re,time,urllib.error,urllib.parse,urllib.request
+import argparse,json,os,re,threading,time,urllib.error,urllib.parse,urllib.request
 from datetime import datetime,timezone
 from http.server import BaseHTTPRequestHandler,ThreadingHTTPServer
 from pathlib import Path
 import tiktoken
-from analysis.budget import BudgetGuard,BudgetStop,TokenUsage
+from analysis.budget import BudgetGuard,BudgetStop,Reservation,TokenUsage
 SECRET=re.compile(r"sk-[A-Za-z0-9_-]{12,}"); HOP={"connection","keep-alive","proxy-authenticate","proxy-authorization","te","trailers","transfer-encoding","upgrade"}
 def scrub(v):
     if isinstance(v,dict): return {k:("[REDACTED]" if k.lower() in {"authorization","api-key","x-api-key"} else scrub(x)) for k,x in v.items()}
@@ -42,13 +42,13 @@ class Handler(BaseHTTPRequestHandler):
         start=time.monotonic();raw=self.rfile.read(int(self.headers.get("content-length","0")));payload=None
         try:payload=json.loads(raw) if raw else None
         except Exception:pass
-        model=None;reserve=None;estimated=None;maximum=None;mut=[];forwarded=raw
+        model=None;reservation:Reservation|None=None;estimated=None;maximum=None;mut=[];forwarded=raw
         if self.server.paid and self.command=="POST":
             if not isinstance(payload,dict):return self.send_error(400,"paid POST requires a JSON body")
             model=payload.get("model")
             if not isinstance(model,str):return self.send_error(400,"paid request requires a model")
             maximum,fp,mut=output_limit(payload,self.path,self.server.safety);estimated=input_tokens(fp,model)
-            try:reserve=self.server.guard.preflight(phase=self.server.phase,model=model,input_tokens=estimated,max_output_tokens=maximum)
+            try:reservation=self.server.guard.reserve_call(phase=self.server.phase,condition=self.server.condition,model=model,input_tokens=estimated,max_output_tokens=maximum,attempt=1)
             except (BudgetStop,KeyError,ValueError) as e:return self.send_error(402,str(e))
             forwarded=json.dumps(fp,separators=(",",":")).encode()
         headers={k:v for k,v in self.headers.items() if k.lower() not in HOP|{"host","content-length"}}
@@ -59,19 +59,24 @@ class Handler(BaseHTTPRequestHandler):
         except urllib.error.HTTPError as e:status=e.code;rh=dict(e.headers.items());body=e.read();error=f"HTTPError: {e}"
         except Exception as e:error=f"{type(e).__name__}: {e}";body=json.dumps({"error":{"message":error}}).encode()
         usage=parse_usage(body)
-        if self.server.paid and self.command=="POST":
-            try:self.server.guard.record(phase=self.server.phase,model=model,usage=usage,status="success" if status<400 and usage else "failed_unknown_usage",attempt=1,error=error if error else (None if usage else "provider response omitted usage"),reserved_worst_case_cost=reserve)
+        if self.server.paid and self.command=="POST" and reservation is not None:
+            terminal_status="success" if status<400 and usage else "failed_with_usage" if usage else "failed_unknown_usage"
+            terminal_error=error if error else (None if usage else "provider response omitted usage")
+            try:self.server.guard.settle_call(reservation,usage=usage,status=terminal_status,error=terminal_error)
             except BudgetStop:pass
-        self.server.write({"timestamp":datetime.now(timezone.utc).isoformat(),"phase":self.server.phase,"method":self.command,"path":self.path,"status":status,"elapsed_ms":round((time.monotonic()-start)*1000,3),"request_headers":scrub(dict(self.headers.items())),"request_body":scrub(payload),"response_headers":scrub(rh),"response_body":response_log(body,rh),"usage":usage.__dict__ if usage else None,"estimated_input_tokens_for_preflight":estimated,"max_output_tokens_for_preflight":maximum,"mutations":mut,"error":error})
+        completion_ms=round((time.monotonic()-start)*1000,3)
+        self.server.write({"timestamp":datetime.now(timezone.utc).isoformat(),"phase":self.server.phase,"condition":self.server.condition,"method":self.command,"path":self.path,"status":status,"completion_ms":completion_ms,"ttft_ms":None,"ttft_observable":False,"ttft_note":"Nonstreaming response; time to first token is unavailable.","request_headers":scrub(dict(self.headers.items())),"request_body":scrub(payload),"response_headers":scrub(rh),"response_body":response_log(body,rh),"usage":usage.__dict__ if usage else None,"estimated_input_tokens_for_preflight":estimated,"max_output_tokens_for_preflight":maximum,"reservation_id":reservation.reservation_id if reservation else None,"mutations":mut,"error":error})
         self.send_response(status)
         for k,v in rh.items():
             if k.lower() not in HOP|{"content-length","content-encoding"}:self.send_header(k,v)
         self.send_header("content-length",str(len(body)));self.end_headers();self.wfile.write(body)
     def log_message(self,*args):pass
 class Server(ThreadingHTTPServer):
-    def __init__(self,address,root,upstream,log,paid,phase,safety,timeout):super().__init__(address,Handler);self.guard=BudgetGuard(root);self.upstream=upstream;self.log=log;self.paid=paid;self.phase=phase;self.safety=safety;self.timeout=timeout;log.parent.mkdir(parents=True,exist_ok=True)
+    def __init__(self,address,root,upstream,log,paid,phase,condition,safety,timeout):super().__init__(address,Handler);self.guard=BudgetGuard(root);self.upstream=upstream;self.log=log;self.paid=paid;self.phase=phase;self.condition=condition;self.safety=safety;self.timeout=timeout;self.capture_lock=threading.Lock();log.parent.mkdir(parents=True,exist_ok=True)
     def write(self,row):
-        with self.log.open("a") as h:h.write(json.dumps(row,ensure_ascii=False,sort_keys=True)+"\n");h.flush()
+        with self.capture_lock,self.log.open("a",encoding="utf-8",newline="\n") as h:h.write(json.dumps(row,ensure_ascii=False,sort_keys=True)+"\n");h.flush();os.fsync(h.fileno())
 def main():
-    p=argparse.ArgumentParser();p.add_argument("--host",default="127.0.0.1");p.add_argument("--port",type=int,default=8765);p.add_argument("--root",type=Path,default=Path.cwd());p.add_argument("--upstream",required=True);p.add_argument("--log",type=Path,required=True);p.add_argument("--paid",action="store_true");p.add_argument("--phase",default="contingency");p.add_argument("--safety-max-output",type=int,default=512);p.add_argument("--timeout",type=int,default=180);a=p.parse_args();log=a.log if a.log.is_absolute() else a.root/a.log;Server((a.host,a.port),a.root,a.upstream,log,a.paid,a.phase,a.safety_max_output,a.timeout).serve_forever()
+    p=argparse.ArgumentParser();p.add_argument("--host",default="127.0.0.1");p.add_argument("--port",type=int,default=8765);p.add_argument("--root",type=Path,default=Path.cwd());p.add_argument("--upstream",required=True);p.add_argument("--log",type=Path,required=True);p.add_argument("--paid",action="store_true");p.add_argument("--phase",default="contingency");p.add_argument("--condition",default="mock");p.add_argument("--safety-max-output",type=int,default=512);p.add_argument("--timeout",type=int,default=180);a=p.parse_args()
+    if a.paid and a.condition=="mock":p.error("--condition is required and must not be 'mock' for --paid")
+    log=a.log if a.log.is_absolute() else a.root/a.log;Server((a.host,a.port),a.root,a.upstream,log,a.paid,a.phase,a.condition,a.safety_max_output,a.timeout).serve_forever()
 if __name__=="__main__":main()

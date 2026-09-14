@@ -25,6 +25,9 @@ budget:
   max_retries: 3
   long_run_threshold_calls: 50
   progress_every_calls: 10
+  reservation:
+    input_token_multiplier: 1.25
+    input_token_fixed_margin: 256
   smoke_test:
     required_before_batch: true
     max_calls_per_phase: 2
@@ -33,4 +36,6 @@ budget:
 paths:
   spend_log: results/spend-log.jsonl
   spend_total: results/spend-total.txt
+  historical_spend: results/historical-spend.json
+  budget_lock: results/.budget.lock
   budget_status: results/BUDGET-STATUS.md

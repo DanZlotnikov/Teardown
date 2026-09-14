@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "kind": "verified_pre_ablation_aggregate_carry_forward",
+  "verified_at": "2026-09-13",
+  "successful_calls": 324,
+  "total_usd": "0.067766300",
+  "phases": {
+    "baseline": {
+      "successful_calls": 320,
+      "total_usd": "0.066599100",
+      "detail": "2 smoke calls and 318 subsequent pilot calls"
+    },
+    "optimized": {
+      "successful_calls": 2,
+      "total_usd": "0.000368400"
+    },
+    "quality_eval": {
+      "successful_calls": 2,
+      "total_usd": "0.000798800"
+    },
+    "judge": {
+      "successful_calls": 0,
+      "total_usd": "0"
+    },
+    "contingency": {
+      "successful_calls": 0,
+      "total_usd": "0"
+    }
+  },
+  "per_call_records_available": false,
+  "audit_limitation": "The prior 324 usage rows and proxy captures were lost during workspace cleanup. This aggregate is the last independently reconciled observation, not reconstructed per-call evidence and not ablation data.",
+  "paid_unblock_requires_user_acceptance": true
+}
