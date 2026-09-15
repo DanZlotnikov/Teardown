@@ -24,7 +24,7 @@ The global output-cap and context-pruning settings tested so far should not be d
 | L6: retrieval top-k 2 | Downstream hosted dollar saving not yet measured | Mean retrieval recall stayed 0.9583, equal to top-k 3. | Promising, but do not claim savings until downstream grounded-chat tokens are measured. |
 | L6: retrieval top-k 1 | No saving represented in the current retrieval-only cost model | Mean recall fell from 0.9583 to 0.8167. | Reject. |
 | L7: autocomplete off | 0.285% derived saving in the deliberate two-event workload | No main-answer quality path is affected, but the UX feature disappears. | Safe only where autocomplete is not wanted; savings scale directly with actual event frequency. |
-| L5: query reuse | Not yet measured through the complete combined web-plus-file path | Source inspection shows it can avoid a duplicate query-generation call, but affected retrieval behavior still needs a real-path check. | Pending; not yet a recommendation. |
+| L5: query reuse | **33.33% fewer model calls** and **27.73% lower uncached Sol-priced projection** on eight combined web-plus-file requests | Objective mean was unchanged at 0.875. Query generation fell from 16 calls to 8 while all 8 final grounded-chat calls remained. | **Deploy candidate** for workloads that commonly combine web search and attached-file retrieval. |
 
 ## Quality method
 
@@ -39,6 +39,7 @@ Local dollar figures are counterfactual projections: recorded Ollama tokens pric
 - Hosted model-tier costs and structures: `results/runs/l1-mid-hosted-paid-sample.json`, `results/runs/l1-small-hosted-paid-sample.json`
 - Blinded L1 quality: `results/runs/l1-task-model-tier-judge.json`
 - Stopped hosted cap-128 condition: `results/runs/paid-l2-cap-128-paid-sample.json`
+- Real combined-path query reuse: `results/runs/l5-query-reuse-on.json`
 - Local single-lever summaries: `results/runs/*.json`
 - Raw provider captures and cached outputs: `results/raw-proxy-logs/`, `results/actions/`, `results/cache/`
 - Measured project spend at this milestone: **$1.154566200**

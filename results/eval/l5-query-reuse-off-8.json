@@ -1,0 +1,80 @@
+{
+  "actual_api_cost_usd": "0",
+  "capture": "results/raw-proxy-logs/l5-query-reuse-off-8.jsonl",
+  "combined_web_and_file_path": true,
+  "completed_cases": 8,
+  "condition": "l5-query-reuse-off-8",
+  "final_answer_calls": 8,
+  "objective_mean": 0.875,
+  "payload_sha256s": [
+    "b39f9bbfd19b74c1bd6aff8a7a205ba1acd65d3b063699da75941da6cdb0344e",
+    "e02f441a61dec88df3f2bf9d2577506ba3dbe6e590d0d6081987bac2b9432f17",
+    "db3e73b559d8f585c022d9dfb1a40443c63ed0295f3e34262d3253c31c19307c",
+    "66a1493616a937e32059e3c7704768b4a7b025451deb11b7148b3376d0ee6c63",
+    "8f68adeb69b3000b21e97be6938954d80e3f933747ac0c92170bc3f3936c2031",
+    "8fac345d745574083624ca2745013247ef4e56a270ed5fe32afca6d59fcc9c9f",
+    "b83a3cbf3dcfe3769a3dc1c259aee6578806700ef8775d48ba525146d531ed9c",
+    "43752fdf1ee1dc87c0cc3b21a9833e30e876005c26aba46fd204442b4952d584"
+  ],
+  "provider_chat_calls": 24,
+  "query_generation_calls": 16,
+  "rows": [
+    {
+      "case_id": "task-model",
+      "completion_ms": 2083.737,
+      "objective_score": 1.0,
+      "payload_sha256": "b39f9bbfd19b74c1bd6aff8a7a205ba1acd65d3b063699da75941da6cdb0344e",
+      "response_text": "According to the context, a smaller task model configured by administrators can handle routing of titles, tags, follow-up suggestions, retrieval queries, web-search queries, and autocomplete, without changing the main chat model [1]."
+    },
+    {
+      "case_id": "task-cap",
+      "completion_ms": 2998.5,
+      "objective_score": 0.5,
+      "payload_sha256": "e02f441a61dec88df3f2bf9d2577506ba3dbe6e590d0d6081987bac2b9432f17",
+      "response_text": "According to the context, setting the `max_tokens` parameter in `task.model.params` affects not just tags but also titles, autocomplete, follow-ups, and queries. This means that adjusting `max_tokens` has broader implications beyond just the tagging system [1].\n\n[1] Task output limits: The task.model.params dictionary applies generation parameters across task endpoints. A max_tokens cap therefore reaches titles and autocomplete as well as tags, follow-ups, and queries; it is not a narrow tag-only control."
+    },
+    {
+      "case_id": "title-template",
+      "completion_ms": 1794.142,
+      "objective_score": 1.0,
+      "payload_sha256": "db3e73b559d8f585c022d9dfb1a40443c63ed0295f3e34262d3253c31c19307c",
+      "response_text": "According to the corpus, native title-template truncation counts characters within every selected message and does not count tokenizer tokens [1]."
+    },
+    {
+      "case_id": "context-compaction",
+      "completion_ms": 3911.833,
+      "objective_score": 1.0,
+      "payload_sha256": "66a1493616a937e32059e3c7704768b4a7b025451deb11b7148b3376d0ee6c63",
+      "response_text": "According to the corpus, native context compaction defaults to disabled and triggers when the token count reaches the default threshold of 80000 tokens [1]."
+    },
+    {
+      "case_id": "query-cache",
+      "completion_ms": 2121.694,
+      "objective_score": 1.0,
+      "payload_sha256": "8f68adeb69b3000b21e97be6938954d80e3f933747ac0c92170bc3f3936c2031",
+      "response_text": "According to the corpus, query reuse avoids the duplicate work of repeating the standalone query endpoint, which cannot exercise the optimization of reusing web-search queries stored in the request state for later file retrieval in the same combined chat request [1]."
+    },
+    {
+      "case_id": "rag-top-k",
+      "completion_ms": 2407.515,
+      "objective_score": 0.5,
+      "payload_sha256": "8fac345d745574083624ca2745013247ef4e56a270ed5fe32afca6d59fcc9c9f",
+      "response_text": "According to the corpus, the rag.top_k configuration defaults to three and controls the number of documents retrieved from the collection, which can be overridden by a request-level k value. This setting influences the number of documents passed to vector or hybrid search with default values being 3, 2, and 1 [1]."
+    },
+    {
+      "case_id": "budget",
+      "completion_ms": 1908.339,
+      "objective_score": 1.0,
+      "payload_sha256": "b83a3cbf3dcfe3769a3dc1c259aee6578806700ef8775d48ba525146d531ed9c",
+      "response_text": "Before a paid provider dispatch, a cross-process lock must be acquired and a worst-case reservation must be persisted, which includes the historical carry-forward and unresolved failures in exposure [1]."
+    },
+    {
+      "case_id": "resume-cache",
+      "completion_ms": 1856.794,
+      "objective_score": 1.0,
+      "payload_sha256": "43752fdf1ee1dc87c0cc3b21a9833e30e876005c26aba46fd204442b4952d584",
+      "response_text": "According to the corpus, a stable paid-output cache key must bind condition, dataset hash, endpoint, and payload [1]."
+    }
+  ],
+  "schema_version": 1
+}

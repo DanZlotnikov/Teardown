@@ -1,0 +1,12 @@
+{
+  "actual_api_cost_usd": "0",
+  "capture": "results/raw-proxy-logs/l5-query-reuse-off.jsonl",
+  "combined_web_and_file_path": true,
+  "completion_ms": 10307.704,
+  "condition": "l5-query-reuse-off",
+  "objective_score": 1.0,
+  "payload_sha256": "b39f9bbfd19b74c1bd6aff8a7a205ba1acd65d3b063699da75941da6cdb0344e",
+  "provider_chat_calls": 3,
+  "response_text": "According to the controlled teardown corpus, a smaller task model set by administrators can handle routing titles, tags, follow-up suggestions, retrieval queries, web-search queries, and autocomplete through the configured task model, while the main chat model remains unchanged [1].",
+  "schema_version": 1
+}

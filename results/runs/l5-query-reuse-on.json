@@ -1,0 +1,29 @@
+{
+  "actual_api_cost_usd": "0",
+  "baseline": {
+    "derived_uncached_sol_cost_usd": "0.061944",
+    "input_tokens": 10931,
+    "objective_mean": 0.875,
+    "output_tokens": 911,
+    "provider_chat_calls": 24,
+    "query_generation_calls": 16
+  },
+  "condition": "l5-query-reuse-on",
+  "derived_uncached_cost_saving_percent": 27.728271,
+  "lever": "L5_query_reuse",
+  "measurement": "Eight real Open WebUI combined web-search-plus-file-retrieval chat requests per condition",
+  "pricing_note": "Local Ollama usage is repriced at frozen Sol rates with all inputs treated as uncached to avoid cross-condition local-cache bias.",
+  "provider_call_saving_percent": 33.333333,
+  "quality_delta_points": 0.0,
+  "query_generation_call_saving_percent": 50.0,
+  "query_reuse": {
+    "derived_uncached_sol_cost_usd": "0.044768",
+    "input_tokens": 8207,
+    "objective_mean": 0.875,
+    "output_tokens": 597,
+    "provider_chat_calls": 16,
+    "query_generation_calls": 8
+  },
+  "schema_version": 1,
+  "scope_note": "The web-search handler executed query generation but used an intentionally unconfigured search engine; file retrieval and final grounded answers executed normally."
+}

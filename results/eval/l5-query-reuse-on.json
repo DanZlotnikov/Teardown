@@ -1,0 +1,12 @@
+{
+  "actual_api_cost_usd": "0",
+  "capture": "results/raw-proxy-logs/l5-query-reuse-on.jsonl",
+  "combined_web_and_file_path": true,
+  "completion_ms": 2062.164,
+  "condition": "l5-query-reuse-on",
+  "objective_score": 1.0,
+  "payload_sha256": "b39f9bbfd19b74c1bd6aff8a7a205ba1acd65d3b063699da75941da6cdb0344e",
+  "provider_chat_calls": 2,
+  "response_text": "According to the attached controlled corpus, a smaller task model can handle routing titles, tags, follow-up suggestions, retrieval queries, web-search queries, and autocomplete through the configured task model [1]. The main chat model remains unchanged [1].",
+  "schema_version": 1
+}

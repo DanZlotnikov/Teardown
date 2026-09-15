@@ -3,7 +3,7 @@
   "criteria": {
     "hosted_paired_comparison_complete": true,
     "real_local_affected_path_evaluations_complete": true,
-    "useful_single_lever_conclusions": 7,
+    "useful_single_lever_conclusions": 8,
     "cost_and_quality_documented": true
   },
   "effective_exposure_usd": "1.187398200",
