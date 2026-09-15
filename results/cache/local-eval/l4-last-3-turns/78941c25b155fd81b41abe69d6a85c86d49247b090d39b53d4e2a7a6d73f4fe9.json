@@ -1,0 +1,50 @@
+{
+  "cache_key": "78941c25b155fd81b41abe69d6a85c86d49247b090d39b53d4e2a7a6d73f4fe9",
+  "call_type": "main_chat_context",
+  "case_id": "context-02",
+  "completion_ms": 1411.354,
+  "condition": "l4-last-3-turns",
+  "endpoint": "/api/chat/completions",
+  "objective_score": 0.0,
+  "payload_sha256": "f54eb4c02ca0038ad81a4ee857c6128b8a828cf949e46ce7b01ea25ca825e516",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "It seems there might be some confusion as you've asked for specific details from the \"first turn,\" but I don't have information about a specific project name, incident code, or recovery region from previous exchanges since we just started this conversation. If you provide the necessary details or context, I'd be happy to assist you with your questions related to generic logging and deployment checks or any other topic you'd like to discuss.",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789441810,
+    "id": "qwen2.5:14b-instruct-7746715e-7189-427c-9e78-1a1eebbaf8f5",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m1s",
+      "completion_tokens": 85,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 85,
+      "eval_duration": 1342900000,
+      "input_tokens": 117,
+      "load_duration": 1557500,
+      "output_tokens": 85,
+      "prompt_eval_count": 117,
+      "prompt_eval_duration": 15124000,
+      "prompt_token/s": 7736.05,
+      "prompt_tokens": 117,
+      "response_token/s": 63.3,
+      "total_duration": 1361748300,
+      "total_tokens": 202
+    }
+  },
+  "response_text": "It seems there might be some confusion as you've asked for specific details from the \"first turn,\" but I don't have information about a specific project name, incident code, or recovery region from previous exchanges since we just started this conversation. If you provide the necessary details or context, I'd be happy to assist you with your questions related to generic logging and deployment checks or any other topic you'd like to discuss.",
+  "retrieved_document_ids": null
+}

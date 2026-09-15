@@ -1,0 +1,50 @@
+{
+  "cache_key": "f25fe8230b522c0a1f011fbbb6d764921e4a2ebb509616e5ef2f8823cb9e263f",
+  "call_type": "tags",
+  "case_id": "tags-18",
+  "completion_ms": 857.387,
+  "condition": "l2-cap-128",
+  "endpoint": "/api/v1/tasks/tags/completions",
+  "objective_score": 1.0,
+  "payload_sha256": "0127e7d3d9c723a963a630fcb229f3a858c6997e48a45b64856bfb3b7680eb6d",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "Based on the provided chat history, the main theme revolves around the usage and troubleshooting of a specific software feature. Here are the appropriate tags:\n\n```json\n{ \"tags\": [\"Technology\", \"Software\", \"Automation\"] }\n```",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789437441,
+    "id": "qwen2.5:14b-instruct-c25b7e46-6c0f-416b-9294-0d00153d7766",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 47,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 47,
+      "eval_duration": 763061000,
+      "input_tokens": 260,
+      "load_duration": 1739400,
+      "output_tokens": 47,
+      "prompt_eval_count": 260,
+      "prompt_eval_duration": 40221000,
+      "prompt_token/s": 6464.28,
+      "prompt_tokens": 260,
+      "response_token/s": 61.59,
+      "total_duration": 808860500,
+      "total_tokens": 307
+    }
+  },
+  "response_text": "Based on the provided chat history, the main theme revolves around the usage and troubleshooting of a specific software feature. Here are the appropriate tags:\n\n```json\n{ \"tags\": [\"Technology\", \"Software\", \"Automation\"] }\n```",
+  "retrieved_document_ids": null
+}

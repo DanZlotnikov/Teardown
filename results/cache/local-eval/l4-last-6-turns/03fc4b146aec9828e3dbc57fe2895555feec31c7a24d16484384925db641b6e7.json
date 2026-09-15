@@ -1,0 +1,50 @@
+{
+  "cache_key": "03fc4b146aec9828e3dbc57fe2895555feec31c7a24d16484384925db641b6e7",
+  "call_type": "main_chat_context",
+  "case_id": "context-20",
+  "completion_ms": 1579.327,
+  "condition": "l4-last-6-turns",
+  "endpoint": "/api/chat/completions",
+  "objective_score": 0.0,
+  "payload_sha256": "3b40f9c3af30e5908bf1100002cc460c0ee9101ef440f59388c66762c2015d68",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "It seems there was a misunderstanding; you asked for a discussion about generic logging and deployment checks in previous turns, and I provided generic responses. However, you didn't mention specific project names, incident codes, or recovery regions in those contexts.\n\nIf you'd like to discuss a particular project's details, such as its name, incident code, and recovery region, please provide those specifics, and I'll be happy to assist with that information or any related questions you have.",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789440793,
+    "id": "qwen2.5:14b-instruct-3e22d628-d034-4291-8cd3-d9044621fe49",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m1s",
+      "completion_tokens": 95,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 95,
+      "eval_duration": 1511501000,
+      "input_tokens": 222,
+      "load_duration": 1675600,
+      "output_tokens": 95,
+      "prompt_eval_count": 222,
+      "prompt_eval_duration": 18966000,
+      "prompt_token/s": 11705.16,
+      "prompt_tokens": 222,
+      "response_token/s": 62.85,
+      "total_duration": 1535145900,
+      "total_tokens": 317
+    }
+  },
+  "response_text": "It seems there was a misunderstanding; you asked for a discussion about generic logging and deployment checks in previous turns, and I provided generic responses. However, you didn't mention specific project names, incident codes, or recovery regions in those contexts.\n\nIf you'd like to discuss a particular project's details, such as its name, incident code, and recovery region, please provide those specifics, and I'll be happy to assist with that information or any related questions you have.",
+  "retrieved_document_ids": null
+}

@@ -1,0 +1,75 @@
+{
+  "cache_key": "62e67b3a085616e87caea4dad4e0c25188feafa2c9a4f8d96cdfe853bed525bd",
+  "call_type": "retrieval",
+  "case_id": "retrieval-r07",
+  "completion_ms": 61.074,
+  "condition": "baseline",
+  "endpoint": "/api/v1/retrieval/query/collection",
+  "objective_score": 1.0,
+  "payload_sha256": "c4c50ecacf7ea1bd055a2b6d5deae290adac3e8191cb9ffd9f2c5af41110d504",
+  "response": {
+    "distances": [
+      [
+        0.8999734818935394,
+        0.7921469807624817,
+        0.7844215929508209
+      ]
+    ],
+    "documents": [
+      [
+        "[DOC_ID:autocomplete] Autocomplete workload  \nAutocomplete is disabled by default at the server and user preference levels. When enabled, the editor waits 1000 milliseconds after an input change and checks cursor and loading state, so requests are not sent on every keystroke.",
+        "[DOC_ID:resume-cache] Paid output cache  \nCache every paid response under a stable key that binds condition, dataset hash, endpoint, and payload. Write the cache atomically before the append-only action manifest. On resume, a valid cache alone must prevent a repeated provider call.",
+        "[DOC_ID:task-cap] Task output limits  \nThe task.model.params dictionary applies generation parameters across task endpoints. A max_tokens cap therefore reaches titles and autocomplete as well as tags, follow-ups, and queries; it is not a narrow tag-only control."
+      ]
+    ],
+    "metadatas": [
+      [
+        {
+          "content_type": "text/plain; charset=utf-8",
+          "created_by": "b997c815-91d7-4e7f-b9bb-f554a9245ad7",
+          "data": "{}",
+          "embedding_config": "{'engine': 'ollama', 'model': 'nomic-embed-text'}",
+          "file_hash": "480288cc40cabdd34db5ee0b5e2398bf1cd6049b2bda2d0a675b4a8e880f2aad",
+          "file_id": "4998c46d-3e3e-4277-bcfe-faf0bcba7013",
+          "hash": "480288cc40cabdd34db5ee0b5e2398bf1cd6049b2bda2d0a675b4a8e880f2aad",
+          "name": "teardown-autocomplete.txt",
+          "size": 275,
+          "source": "teardown-autocomplete.txt",
+          "start_index": 0
+        },
+        {
+          "content_type": "text/plain; charset=utf-8",
+          "created_by": "b997c815-91d7-4e7f-b9bb-f554a9245ad7",
+          "data": "{}",
+          "embedding_config": "{'engine': 'ollama', 'model': 'nomic-embed-text'}",
+          "file_hash": "bd3d69d8e6dfac97f1cde34cb081bcfae0adfbb71c568ada12a835997ff2803e",
+          "file_id": "b5195914-9264-45ac-bb91-dfbc880f422a",
+          "hash": "bd3d69d8e6dfac97f1cde34cb081bcfae0adfbb71c568ada12a835997ff2803e",
+          "name": "teardown-resume-cache.txt",
+          "size": 281,
+          "source": "teardown-resume-cache.txt",
+          "start_index": 0
+        },
+        {
+          "content_type": "text/plain; charset=utf-8",
+          "created_by": "b997c815-91d7-4e7f-b9bb-f554a9245ad7",
+          "data": "{}",
+          "embedding_config": "{'engine': 'ollama', 'model': 'nomic-embed-text'}",
+          "file_hash": "601aa6f4f02b7e861bda7ec714141fe211c2fc4bfa33bca3bb82d3b92a0a9536",
+          "file_id": "4ab3479f-0f5f-4f6b-b410-bc6cb0307b19",
+          "hash": "601aa6f4f02b7e861bda7ec714141fe211c2fc4bfa33bca3bb82d3b92a0a9536",
+          "name": "teardown-task-cap.txt",
+          "size": 261,
+          "source": "teardown-task-cap.txt",
+          "start_index": 0
+        }
+      ]
+    ]
+  },
+  "response_text": "",
+  "retrieved_document_ids": [
+    "autocomplete",
+    "resume-cache",
+    "task-cap"
+  ]
+}

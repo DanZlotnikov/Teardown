@@ -1,0 +1,50 @@
+{
+  "cache_key": "dc8ab156896a2836ac03a40ec4a169c71c7209b6b467e926af284bf94fe07e3c",
+  "call_type": "main_chat_context",
+  "case_id": "context-01",
+  "completion_ms": 1237.969,
+  "condition": "l4-last-6-turns",
+  "endpoint": "/api/chat/completions",
+  "objective_score": 0.0,
+  "payload_sha256": "cc375f8207a96884aa39156d04f92c7802c651d1c39b35b331e8e53e53e09ddf",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "It appears there was a misunderstanding; I didn't specify a project name, incident code, or recovery region in the previous turns since they were intended to be generic discussions about logging and deployment checks. If you provide me with the details or the context of the previous conversation, I can help you recall or discuss those specifics.",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789440770,
+    "id": "qwen2.5:14b-instruct-d085644d-2fde-4a59-84a6-72e6999ca1ec",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m1s",
+      "completion_tokens": 65,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 65,
+      "eval_duration": 1032596000,
+      "input_tokens": 222,
+      "load_duration": 1246700,
+      "output_tokens": 65,
+      "prompt_eval_count": 222,
+      "prompt_eval_duration": 85984000,
+      "prompt_token/s": 2581.88,
+      "prompt_tokens": 222,
+      "response_token/s": 62.95,
+      "total_duration": 1184672600,
+      "total_tokens": 287
+    }
+  },
+  "response_text": "It appears there was a misunderstanding; I didn't specify a project name, incident code, or recovery region in the previous turns since they were intended to be generic discussions about logging and deployment checks. If you provide me with the details or the context of the previous conversation, I can help you recall or discuss those specifics.",
+  "retrieved_document_ids": null
+}

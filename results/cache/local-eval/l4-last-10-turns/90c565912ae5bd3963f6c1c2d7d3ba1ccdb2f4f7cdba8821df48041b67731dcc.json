@@ -1,0 +1,50 @@
+{
+  "cache_key": "90c565912ae5bd3963f6c1c2d7d3ba1ccdb2f4f7cdba8821df48041b67731dcc",
+  "call_type": "main_chat_context",
+  "case_id": "context-16",
+  "completion_ms": 791.219,
+  "condition": "l4-last-10-turns",
+  "endpoint": "/api/chat/completions",
+  "objective_score": 1.0,
+  "payload_sha256": "7233f0c372b70cbb19976f25df29c314a9fc7410e1870109dd8b5cc76ed706b7",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "From the first turn, the project name is Project Kestrel-16, its incident code is OWUI-7316, and its recovery region is La Paz.",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789439749,
+    "id": "qwen2.5:14b-instruct-6885d02e-709d-4675-a394-cd4250b39a71",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 38,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 38,
+      "eval_duration": 592127000,
+      "input_tokens": 334,
+      "load_duration": 1035000,
+      "output_tokens": 38,
+      "prompt_eval_count": 334,
+      "prompt_eval_duration": 123789000,
+      "prompt_token/s": 2698.14,
+      "prompt_tokens": 334,
+      "response_token/s": 64.18,
+      "total_duration": 749336300,
+      "total_tokens": 372
+    }
+  },
+  "response_text": "From the first turn, the project name is Project Kestrel-16, its incident code is OWUI-7316, and its recovery region is La Paz.",
+  "retrieved_document_ids": null
+}

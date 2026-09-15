@@ -1,0 +1,413 @@
+{
+  "actions": "results/actions/mock/l4-last-3-turns.jsonl",
+  "actual_api_cost_usd": "0",
+  "by_call_type": {
+    "autocomplete": {
+      "cached_input_tokens": 0,
+      "calls": 2,
+      "derived_cost_usd": "0.0063160",
+      "input_tokens": 974,
+      "output_tokens": 121,
+      "provider_completion_ms_p50": 1050.202,
+      "provider_completion_ms_p95": 1288.028,
+      "ttft_ms_p50": null,
+      "ttft_ms_p95": null
+    },
+    "follow_up": {
+      "cached_input_tokens": 0,
+      "calls": 129,
+      "derived_cost_usd": "0.5193240",
+      "input_tokens": 80571,
+      "output_tokens": 9852,
+      "provider_completion_ms_p50": 1288.302,
+      "provider_completion_ms_p95": 1999.096,
+      "ttft_ms_p50": null,
+      "ttft_ms_p95": null
+    },
+    "main": {
+      "cached_input_tokens": 0,
+      "calls": 129,
+      "derived_cost_usd": "1.4054400",
+      "input_tokens": 51615,
+      "output_tokens": 59949,
+      "provider_completion_ms_p50": 7834.913,
+      "provider_completion_ms_p95": 10143.121,
+      "ttft_ms_p50": null,
+      "ttft_ms_p95": null
+    },
+    "retrieval": {
+      "cached_input_tokens": 0,
+      "calls": 20,
+      "derived_cost_usd": "0.0000000",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "provider_completion_ms_p50": null,
+      "provider_completion_ms_p95": null,
+      "ttft_ms_p50": null,
+      "ttft_ms_p95": null
+    },
+    "retrieval_query": {
+      "cached_input_tokens": 0,
+      "calls": 4,
+      "derived_cost_usd": "0.0091920",
+      "input_tokens": 1553,
+      "output_tokens": 149,
+      "provider_completion_ms_p50": 651.394,
+      "provider_completion_ms_p95": 737.341,
+      "ttft_ms_p50": null,
+      "ttft_ms_p95": null
+    },
+    "tags": {
+      "cached_input_tokens": 0,
+      "calls": 30,
+      "derived_cost_usd": "0.0896000",
+      "input_tokens": 19260,
+      "output_tokens": 628,
+      "provider_completion_ms_p50": 390.057,
+      "provider_completion_ms_p95": 657.677,
+      "ttft_ms_p50": null,
+      "ttft_ms_p95": null
+    },
+    "title": {
+      "cached_input_tokens": 0,
+      "calls": 30,
+      "derived_cost_usd": "0.0918600",
+      "input_tokens": 21210,
+      "output_tokens": 351,
+      "provider_completion_ms_p50": 269.78,
+      "provider_completion_ms_p95": 294.258,
+      "ttft_ms_p50": null,
+      "ttft_ms_p95": null
+    },
+    "web_query": {
+      "cached_input_tokens": 0,
+      "calls": 5,
+      "derived_cost_usd": "0.0116320",
+      "input_tokens": 1923,
+      "output_tokens": 197,
+      "provider_completion_ms_p50": 673.524,
+      "provider_completion_ms_p95": 705.559,
+      "ttft_ms_p50": null,
+      "ttft_ms_p95": null
+    }
+  },
+  "condition": "l4-last-3-turns",
+  "configuration_diff": {
+    "context_policy": {
+      "kind": "sliding_turns",
+      "turns": 3
+    }
+  },
+  "counts": {
+    "cached_input_tokens": 0,
+    "calls": 349,
+    "input_tokens": 177106,
+    "output_tokens": 71247
+  },
+  "derived_cost_per_conversation_usd": "0.07111213333333333333333333333",
+  "derived_cost_usd": "2.1333640",
+  "derived_price_model": "gpt-5.6-sol",
+  "latency": {
+    "provider_completion_ms_p50": 1550.464,
+    "provider_completion_ms_p95": 9547.055,
+    "ttft_ms_p50": null,
+    "ttft_ms_p95": null
+  },
+  "latency_note": "Provider completion is Ollama total_duration. TTFT is unavailable because all controlled calls are nonstreaming.",
+  "lever": "L4_context_management",
+  "locks": {
+    "actions_sha256": "b4aedd40bc59ea96652377cf7aef5704dd543882fa9927e25dd43e9e391c7aa6",
+    "capture_sha256": "7727f326bbd639e22491059582edd8350e23daa0d577c9bfddb1d698b9bfa6bf",
+    "eval_sha256": "4f71a9d609398d9b0794943a4669947ceb38339e9edb4f6a02dd6971d4c0cff6",
+    "open_webui_commit": "0a7c15832fb30b1903753e83f81dc7d27e5b0944",
+    "open_webui_version": "0.11.3",
+    "pricing_snapshot_sha256": "6603440ced269ce2638c0ecf1657be2521974b2c6ce782c6a8435481dd91417e",
+    "scenario_sha256": "d0394ca6d75a788261b1659ae0ce61b3133efcd96f4ac202efc78b36c83608be"
+  },
+  "main_chat_path_risk": true,
+  "measurement": "Local Ollama wire-observed tokens; frozen-price costs are derived counterfactuals, not observed provider billing.",
+  "measurement_scope": {
+    "composed_unchanged_baseline_actions": 220,
+    "dropped_call_types": [],
+    "measured_condition_actions": 129,
+    "total_scenario_actions": 349
+  },
+  "quality": {
+    "lexical_agreement_vs_baseline_by_call_type": {
+      "autocomplete": 1.0,
+      "follow_up": 1.0,
+      "main": 0.359939,
+      "retrieval_query": 1.0,
+      "tags": 1.0,
+      "title": 1.0,
+      "web_query": 1.0
+    },
+    "lexical_agreement_warning": "Diagnostic only; not a semantic quality score and not used for final grading.",
+    "objective_mean_by_call_type": {
+      "autocomplete": 1.0,
+      "main_chat_context": 0.0,
+      "retrieval": 0.958333,
+      "retrieval_query": 0.0,
+      "tags": 1.0,
+      "title": 1.0,
+      "web_query": 0.0
+    },
+    "retrieval": {
+      "cases": [
+        {
+          "case_id": "retrieval-r01",
+          "recall": 1.0,
+          "relevant_document_ids": [
+            "task-model"
+          ],
+          "retrieved_document_ids": [
+            "task-model",
+            "task-cap",
+            "autocomplete"
+          ]
+        },
+        {
+          "case_id": "retrieval-r02",
+          "recall": 1.0,
+          "relevant_document_ids": [
+            "task-cap"
+          ],
+          "retrieved_document_ids": [
+            "task-cap",
+            "autocomplete",
+            "title-template"
+          ]
+        },
+        {
+          "case_id": "retrieval-r03",
+          "recall": 1.0,
+          "relevant_document_ids": [
+            "title-template"
+          ],
+          "retrieved_document_ids": [
+            "title-template",
+            "task-cap",
+            "context-compaction"
+          ]
+        },
+        {
+          "case_id": "retrieval-r04",
+          "recall": 1.0,
+          "relevant_document_ids": [
+            "context-compaction"
+          ],
+          "retrieved_document_ids": [
+            "context-compaction",
+            "autocomplete",
+            "task-cap"
+          ]
+        },
+        {
+          "case_id": "retrieval-r05",
+          "recall": 1.0,
+          "relevant_document_ids": [
+            "query-cache"
+          ],
+          "retrieved_document_ids": [
+            "query-cache",
+            "resume-cache",
+            "wire-capture"
+          ]
+        },
+        {
+          "case_id": "retrieval-r06",
+          "recall": 1.0,
+          "relevant_document_ids": [
+            "rag-top-k"
+          ],
+          "retrieved_document_ids": [
+            "rag-top-k",
+            "quality",
+            "context-compaction"
+          ]
+        },
+        {
+          "case_id": "retrieval-r07",
+          "recall": 1.0,
+          "relevant_document_ids": [
+            "autocomplete"
+          ],
+          "retrieved_document_ids": [
+            "autocomplete",
+            "resume-cache",
+            "task-cap"
+          ]
+        },
+        {
+          "case_id": "retrieval-r08",
+          "recall": 1.0,
+          "relevant_document_ids": [
+            "budget"
+          ],
+          "retrieved_document_ids": [
+            "budget",
+            "wire-capture",
+            "resume-cache"
+          ]
+        },
+        {
+          "case_id": "retrieval-r09",
+          "recall": 1.0,
+          "relevant_document_ids": [
+            "resume-cache"
+          ],
+          "retrieved_document_ids": [
+            "resume-cache",
+            "query-cache",
+            "autocomplete"
+          ]
+        },
+        {
+          "case_id": "retrieval-r10",
+          "recall": 1.0,
+          "relevant_document_ids": [
+            "wire-capture"
+          ],
+          "retrieved_document_ids": [
+            "wire-capture",
+            "quality",
+            "autocomplete"
+          ]
+        },
+        {
+          "case_id": "retrieval-r11",
+          "recall": 1.0,
+          "relevant_document_ids": [
+            "local-ollama"
+          ],
+          "retrieved_document_ids": [
+            "local-ollama",
+            "wire-capture",
+            "context-compaction"
+          ]
+        },
+        {
+          "case_id": "retrieval-r12",
+          "recall": 1.0,
+          "relevant_document_ids": [
+            "quality"
+          ],
+          "retrieved_document_ids": [
+            "quality",
+            "title-template",
+            "local-ollama"
+          ]
+        },
+        {
+          "case_id": "retrieval-r13",
+          "recall": 1.0,
+          "relevant_document_ids": [
+            "task-model",
+            "task-cap"
+          ],
+          "retrieved_document_ids": [
+            "task-cap",
+            "task-model",
+            "context-compaction"
+          ]
+        },
+        {
+          "case_id": "retrieval-r14",
+          "recall": 1.0,
+          "relevant_document_ids": [
+            "title-template",
+            "context-compaction"
+          ],
+          "retrieved_document_ids": [
+            "context-compaction",
+            "title-template",
+            "task-cap"
+          ]
+        },
+        {
+          "case_id": "retrieval-r15",
+          "recall": 0.5,
+          "relevant_document_ids": [
+            "query-cache",
+            "rag-top-k"
+          ],
+          "retrieved_document_ids": [
+            "query-cache",
+            "resume-cache",
+            "task-model"
+          ]
+        },
+        {
+          "case_id": "retrieval-r16",
+          "recall": 1.0,
+          "relevant_document_ids": [
+            "autocomplete"
+          ],
+          "retrieved_document_ids": [
+            "autocomplete",
+            "budget",
+            "wire-capture"
+          ]
+        },
+        {
+          "case_id": "retrieval-r17",
+          "recall": 1.0,
+          "relevant_document_ids": [
+            "resume-cache",
+            "budget"
+          ],
+          "retrieved_document_ids": [
+            "resume-cache",
+            "budget",
+            "query-cache"
+          ]
+        },
+        {
+          "case_id": "retrieval-r18",
+          "recall": 1.0,
+          "relevant_document_ids": [
+            "wire-capture",
+            "budget"
+          ],
+          "retrieved_document_ids": [
+            "wire-capture",
+            "budget",
+            "autocomplete"
+          ]
+        },
+        {
+          "case_id": "retrieval-r19",
+          "recall": 1.0,
+          "relevant_document_ids": [
+            "local-ollama",
+            "quality"
+          ],
+          "retrieved_document_ids": [
+            "local-ollama",
+            "quality",
+            "wire-capture"
+          ]
+        },
+        {
+          "case_id": "retrieval-r20",
+          "recall": 0.6666666666666666,
+          "relevant_document_ids": [
+            "rag-top-k",
+            "quality",
+            "wire-capture"
+          ],
+          "retrieved_document_ids": [
+            "quality",
+            "wire-capture",
+            "local-ollama"
+          ]
+        }
+      ],
+      "mean_recall": 0.958333,
+      "source": "targeted_eval_rows"
+    }
+  },
+  "raw_capture": "results/raw-proxy-logs/l4-last-3-turns.jsonl",
+  "run_count": 1,
+  "schema_version": 1
+}

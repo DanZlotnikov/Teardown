@@ -1,0 +1,50 @@
+{
+  "cache_key": "0db00d1182911f754c3a2848861f77203e134a4063b53abd209fb33b33a0df7e",
+  "call_type": "web_query",
+  "case_id": "query-18",
+  "completion_ms": 622.549,
+  "condition": "baseline",
+  "endpoint": "/api/v1/tasks/queries/completions",
+  "objective_score": 0.0,
+  "payload_sha256": "abdbb25ff75489b1be969c1cd9ecc36045b73279b57818752d13b74efe21d572",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"queries\": [\"Open WebUI model defaults behavior fix\", \"Open WebUI admin settings scroll issue\", \"Open WebUI panel scroll functionality update\"]\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789436521,
+    "id": "qwen2.5:14b-instruct-ed3cf403-ca23-4cf2-a3c2-83154f314eba",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 34,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 34,
+      "eval_duration": 544960000,
+      "input_tokens": 397,
+      "load_duration": 1329700,
+      "output_tokens": 34,
+      "prompt_eval_count": 397,
+      "prompt_eval_duration": 44832000,
+      "prompt_token/s": 8855.28,
+      "prompt_tokens": 397,
+      "response_token/s": 62.39,
+      "total_duration": 595683700,
+      "total_tokens": 431
+    }
+  },
+  "response_text": "{\n  \"queries\": [\"Open WebUI model defaults behavior fix\", \"Open WebUI admin settings scroll issue\", \"Open WebUI panel scroll functionality update\"]\n}",
+  "retrieved_document_ids": null
+}

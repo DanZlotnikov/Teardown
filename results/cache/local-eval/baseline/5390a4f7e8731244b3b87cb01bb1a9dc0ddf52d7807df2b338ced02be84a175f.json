@@ -1,0 +1,50 @@
+{
+  "cache_key": "5390a4f7e8731244b3b87cb01bb1a9dc0ddf52d7807df2b338ced02be84a175f",
+  "call_type": "title",
+  "case_id": "title-22",
+  "completion_ms": 283.362,
+  "condition": "baseline",
+  "endpoint": "/api/v1/tasks/title/completions",
+  "objective_score": 1.0,
+  "payload_sha256": "dc46f1c6f8f047e5b828ec502745d24086584a13f39341c813c3d348d2e0ab9f",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{ \"title\": \"Open WebUI Schedules\" }",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789436487,
+    "id": "qwen2.5:14b-instruct-630589ef-e3a7-487c-b4ca-7ab1cd3f196e",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 13,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 13,
+      "eval_duration": 197179000,
+      "input_tokens": 343,
+      "load_duration": 2594600,
+      "output_tokens": 13,
+      "prompt_eval_count": 343,
+      "prompt_eval_duration": 50004000,
+      "prompt_token/s": 6859.45,
+      "prompt_tokens": 343,
+      "response_token/s": 65.93,
+      "total_duration": 253889200,
+      "total_tokens": 356
+    }
+  },
+  "response_text": "{ \"title\": \"Open WebUI Schedules\" }",
+  "retrieved_document_ids": null
+}

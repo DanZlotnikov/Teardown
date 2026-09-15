@@ -1,0 +1,36 @@
+{
+  "cache_key": "5040e9b17439cf1f02a5debbc4ffe513cdd0d313ba63e893c99346fb1c96228a",
+  "call_type": "retrieval",
+  "case_id": "retrieval-r03",
+  "completion_ms": 82.775,
+  "condition": "baseline",
+  "endpoint": "/api/v1/retrieval/query/collection",
+  "objective_score": 0.0,
+  "payload_sha256": "a985dd0defd908b7e99cff0bfdaf836ad8fee2e021fb0f78da7dc234a492b77a",
+  "response": {
+    "distances": [
+      [
+        0.7556642293930054
+      ]
+    ],
+    "documents": [
+      [
+        "[DOC_ID:task-model] Task model routing  \nOpen WebUI routes titles, tags, follow-up suggestions, retrieval queries, web-search queries, and autocomplete through the configured task model. Administrators can set a local or smaller task model without changing the main chat model."
+      ]
+    ],
+    "metadatas": [
+      [
+        {
+          "created_by": "b997c815-91d7-4e7f-b9bb-f554a9245ad7",
+          "embedding_config": "{'engine': 'ollama', 'model': 'nomic-embed-text'}",
+          "name": "teardown:task-model",
+          "start_index": 0
+        }
+      ]
+    ]
+  },
+  "response_text": "",
+  "retrieved_document_ids": [
+    "task-model"
+  ]
+}

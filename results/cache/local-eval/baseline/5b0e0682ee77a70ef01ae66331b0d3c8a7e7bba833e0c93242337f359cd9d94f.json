@@ -1,0 +1,50 @@
+{
+  "cache_key": "5b0e0682ee77a70ef01ae66331b0d3c8a7e7bba833e0c93242337f359cd9d94f",
+  "call_type": "tags",
+  "case_id": "tags-16",
+  "completion_ms": 1125.567,
+  "condition": "baseline",
+  "endpoint": "/api/v1/tasks/tags/completions",
+  "objective_score": 1.0,
+  "payload_sha256": "56c7b0ead7786b7418277150f0ba6a44d3cfba2f6e03e57b7483114ee21ecf2a",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "Based on the chat history, the main theme revolves around the use and troubleshooting of a specific software tool (Open WebUI). The conversation is technical and focused on a specific issue encountered within the software.\n\n### Output:\n```json\n{ \"tags\": [\"Technology\", \"Software\", \"Troubleshooting\"] }\n```",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789436501,
+    "id": "qwen2.5:14b-instruct-c545faed-96eb-4671-b494-6602142a2f00",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m1s",
+      "completion_tokens": 64,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 64,
+      "eval_duration": 1032434000,
+      "input_tokens": 276,
+      "load_duration": 1639400,
+      "output_tokens": 64,
+      "prompt_eval_count": 276,
+      "prompt_eval_duration": 51001000,
+      "prompt_token/s": 5411.66,
+      "prompt_tokens": 276,
+      "response_token/s": 61.99,
+      "total_duration": 1089301600,
+      "total_tokens": 340
+    }
+  },
+  "response_text": "Based on the chat history, the main theme revolves around the use and troubleshooting of a specific software tool (Open WebUI). The conversation is technical and focused on a specific issue encountered within the software.\n\n### Output:\n```json\n{ \"tags\": [\"Technology\", \"Software\", \"Troubleshooting\"] }\n```",
+  "retrieved_document_ids": null
+}

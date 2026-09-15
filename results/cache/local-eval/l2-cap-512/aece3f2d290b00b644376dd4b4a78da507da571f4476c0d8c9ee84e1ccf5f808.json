@@ -1,0 +1,50 @@
+{
+  "cache_key": "aece3f2d290b00b644376dd4b4a78da507da571f4476c0d8c9ee84e1ccf5f808",
+  "call_type": "tags",
+  "case_id": "tags-14",
+  "completion_ms": 753.66,
+  "condition": "l2-cap-512",
+  "endpoint": "/api/v1/tasks/tags/completions",
+  "objective_score": 1.0,
+  "payload_sha256": "0eb9f606a9cadd6a40afde9ae7d53bd17d5abd28c5adae804e400961eaf1d15a",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "```json\n{ \"tags\": [\"Technology\", \"Software Development\", \"AI Platforms\"] }\n```",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789437161,
+    "id": "qwen2.5:14b-instruct-54621c46-872e-4efe-ae53-0f8a128d7a99",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 21,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 21,
+      "eval_duration": 328719000,
+      "input_tokens": 11159,
+      "load_duration": 2596800,
+      "output_tokens": 21,
+      "prompt_eval_count": 11159,
+      "prompt_eval_duration": 32051000,
+      "prompt_token/s": 348163.86,
+      "prompt_tokens": 11159,
+      "response_token/s": 63.88,
+      "total_duration": 699824800,
+      "total_tokens": 11180
+    }
+  },
+  "response_text": "```json\n{ \"tags\": [\"Technology\", \"Software Development\", \"AI Platforms\"] }\n```",
+  "retrieved_document_ids": null
+}

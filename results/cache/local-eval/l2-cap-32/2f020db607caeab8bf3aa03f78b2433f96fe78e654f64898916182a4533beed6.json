@@ -1,0 +1,50 @@
+{
+  "cache_key": "2f020db607caeab8bf3aa03f78b2433f96fe78e654f64898916182a4533beed6",
+  "call_type": "web_query",
+  "case_id": "query-14",
+  "completion_ms": 613.896,
+  "condition": "l2-cap-32",
+  "endpoint": "/api/v1/tasks/queries/completions",
+  "objective_score": 0.0,
+  "payload_sha256": "2ddf2e9b293cc64bf4166b7b2e252cf2b5059ac9a30757b08220bb9879e46599",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"queries\": [\"Open WebUI admin user count behavior fix\", \"How to verify accurate admin user counts in Open WebUI\", \"Open WebUI",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789437647,
+    "id": "qwen2.5:14b-instruct-95db2375-37a8-4268-81aa-def5fe32932c",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 32,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 32,
+      "eval_duration": 510519000,
+      "input_tokens": 401,
+      "load_duration": 2103100,
+      "output_tokens": 32,
+      "prompt_eval_count": 401,
+      "prompt_eval_duration": 45585000,
+      "prompt_token/s": 8796.75,
+      "prompt_tokens": 401,
+      "response_token/s": 62.68,
+      "total_duration": 563454900,
+      "total_tokens": 433
+    }
+  },
+  "response_text": "{\n  \"queries\": [\"Open WebUI admin user count behavior fix\", \"How to verify accurate admin user counts in Open WebUI\", \"Open WebUI",
+  "retrieved_document_ids": null
+}

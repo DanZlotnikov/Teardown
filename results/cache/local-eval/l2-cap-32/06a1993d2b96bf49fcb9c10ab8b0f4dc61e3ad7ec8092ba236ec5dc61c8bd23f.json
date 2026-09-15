@@ -1,0 +1,50 @@
+{
+  "cache_key": "06a1993d2b96bf49fcb9c10ab8b0f4dc61e3ad7ec8092ba236ec5dc61c8bd23f",
+  "call_type": "retrieval_query",
+  "case_id": "query-07",
+  "completion_ms": 602.207,
+  "condition": "l2-cap-32",
+  "endpoint": "/api/v1/tasks/queries/completions",
+  "objective_score": 0.0,
+  "payload_sha256": "0bda4f8ef374fed8d92a5753a0378ebd94fdaee4ea35237ced0722486091eb04",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"queries\": [\"Open WebUI rejected askuser calls behavior fix\", \"how to verify Open WebUI model continues after user refusal\"]\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789437636,
+    "id": "qwen2.5:14b-instruct-1acc49c6-afc1-4c45-bca2-5565ad09654f",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 31,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 31,
+      "eval_duration": 494415000,
+      "input_tokens": 417,
+      "load_duration": 1801700,
+      "output_tokens": 31,
+      "prompt_eval_count": 417,
+      "prompt_eval_duration": 49608000,
+      "prompt_token/s": 8405.9,
+      "prompt_tokens": 417,
+      "response_token/s": 62.7,
+      "total_duration": 550090800,
+      "total_tokens": 448
+    }
+  },
+  "response_text": "{\n  \"queries\": [\"Open WebUI rejected askuser calls behavior fix\", \"how to verify Open WebUI model continues after user refusal\"]\n}",
+  "retrieved_document_ids": null
+}

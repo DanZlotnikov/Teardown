@@ -1,0 +1,50 @@
+{
+  "cache_key": "93cb1b9d8a23da5cdcfee7daa52e04a9be82ac54de7336d4c7ec08c68d63f953",
+  "call_type": "title",
+  "case_id": "title-10",
+  "completion_ms": 235.757,
+  "condition": "l2-cap-512",
+  "endpoint": "/api/v1/tasks/title/completions",
+  "objective_score": 1.0,
+  "payload_sha256": "570fd827f4d0c61ad826cc2e439624ab432d758dd85f5eee11e96e4b9be3f182",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{ \"title\": \"Open WebUI Issues\" }",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789437147,
+    "id": "qwen2.5:14b-instruct-15370eb4-b812-4f57-9c3f-3d51e6e92b3a",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 12,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 12,
+      "eval_duration": 162602000,
+      "input_tokens": 338,
+      "load_duration": 2092600,
+      "output_tokens": 12,
+      "prompt_eval_count": 338,
+      "prompt_eval_duration": 45128000,
+      "prompt_token/s": 7489.81,
+      "prompt_tokens": 338,
+      "response_token/s": 73.8,
+      "total_duration": 215708500,
+      "total_tokens": 350
+    }
+  },
+  "response_text": "{ \"title\": \"Open WebUI Issues\" }",
+  "retrieved_document_ids": null
+}

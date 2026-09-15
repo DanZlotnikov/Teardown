@@ -1,0 +1,75 @@
+{
+  "cache_key": "cf0e4e3081dc07e643f88c41f55274b46e8fa39e151eb59fb8622cf410f40e27",
+  "call_type": "retrieval",
+  "case_id": "retrieval-r02",
+  "completion_ms": 59.315,
+  "condition": "baseline",
+  "endpoint": "/api/v1/retrieval/query/collection",
+  "objective_score": 1.0,
+  "payload_sha256": "9472cfb910651f410f39b3edccf60126f9a247d9d3a7f2e336e61d696ccd3280",
+  "response": {
+    "distances": [
+      [
+        0.8761854767799377,
+        0.8500916957855225,
+        0.8345769345760345
+      ]
+    ],
+    "documents": [
+      [
+        "[DOC_ID:task-cap] Task output limits  \nThe task.model.params dictionary applies generation parameters across task endpoints. A max_tokens cap therefore reaches titles and autocomplete as well as tags, follow-ups, and queries; it is not a narrow tag-only control.",
+        "[DOC_ID:autocomplete] Autocomplete workload  \nAutocomplete is disabled by default at the server and user preference levels. When enabled, the editor waits 1000 milliseconds after an input change and checks cursor and loading state, so requests are not sent on every keystroke.",
+        "[DOC_ID:title-template] Title history syntax  \nTitle prompt templates select messages with MESSAGES START, END, or MIDDLETRUNCATE counts. Optional start, end, and middletruncate filters limit characters within every selected message. These native limits do not count tokenizer tokens."
+      ]
+    ],
+    "metadatas": [
+      [
+        {
+          "content_type": "text/plain; charset=utf-8",
+          "created_by": "b997c815-91d7-4e7f-b9bb-f554a9245ad7",
+          "data": "{}",
+          "embedding_config": "{'engine': 'ollama', 'model': 'nomic-embed-text'}",
+          "file_hash": "601aa6f4f02b7e861bda7ec714141fe211c2fc4bfa33bca3bb82d3b92a0a9536",
+          "file_id": "4ab3479f-0f5f-4f6b-b410-bc6cb0307b19",
+          "hash": "601aa6f4f02b7e861bda7ec714141fe211c2fc4bfa33bca3bb82d3b92a0a9536",
+          "name": "teardown-task-cap.txt",
+          "size": 261,
+          "source": "teardown-task-cap.txt",
+          "start_index": 0
+        },
+        {
+          "content_type": "text/plain; charset=utf-8",
+          "created_by": "b997c815-91d7-4e7f-b9bb-f554a9245ad7",
+          "data": "{}",
+          "embedding_config": "{'engine': 'ollama', 'model': 'nomic-embed-text'}",
+          "file_hash": "480288cc40cabdd34db5ee0b5e2398bf1cd6049b2bda2d0a675b4a8e880f2aad",
+          "file_id": "4998c46d-3e3e-4277-bcfe-faf0bcba7013",
+          "hash": "480288cc40cabdd34db5ee0b5e2398bf1cd6049b2bda2d0a675b4a8e880f2aad",
+          "name": "teardown-autocomplete.txt",
+          "size": 275,
+          "source": "teardown-autocomplete.txt",
+          "start_index": 0
+        },
+        {
+          "content_type": "text/plain; charset=utf-8",
+          "created_by": "b997c815-91d7-4e7f-b9bb-f554a9245ad7",
+          "data": "{}",
+          "embedding_config": "{'engine': 'ollama', 'model': 'nomic-embed-text'}",
+          "file_hash": "e5c79eebe87c7fbc26ee23c9060b86d7c2e063aec2192dafc247c883db87806c",
+          "file_id": "82395368-bbd1-493d-8ca9-79da82bcd982",
+          "hash": "e5c79eebe87c7fbc26ee23c9060b86d7c2e063aec2192dafc247c883db87806c",
+          "name": "teardown-title-template.txt",
+          "size": 283,
+          "source": "teardown-title-template.txt",
+          "start_index": 0
+        }
+      ]
+    ]
+  },
+  "response_text": "",
+  "retrieved_document_ids": [
+    "task-cap",
+    "autocomplete",
+    "title-template"
+  ]
+}

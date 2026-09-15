@@ -1,0 +1,75 @@
+{
+  "cache_key": "4f96b4f67bd4edbee43115f284af82a54bc91905e5f29cc2b93667f30ac62c3a",
+  "call_type": "retrieval",
+  "case_id": "retrieval-r04",
+  "completion_ms": 26.122,
+  "condition": "baseline",
+  "endpoint": "/api/v1/retrieval/query/collection",
+  "objective_score": 1.0,
+  "payload_sha256": "794ede61210be1ee69c7e17b0743dcd00c48493756fb0e022a3f260c6d84c449",
+  "response": {
+    "distances": [
+      [
+        0.8870327174663544,
+        0.7828409671783447,
+        0.7640326619148254
+      ]
+    ],
+    "documents": [
+      [
+        "[DOC_ID:context-compaction] Native context compaction  \nNative context compaction defaults to disabled. Its default threshold is 80000 tokens and retention defaults to 40 percent. Tests must enable it on a saved chat and lower the threshold enough to prove a summary was generated.",
+        "[DOC_ID:autocomplete] Autocomplete workload  \nAutocomplete is disabled by default at the server and user preference levels. When enabled, the editor waits 1000 milliseconds after an input change and checks cursor and loading state, so requests are not sent on every keystroke.",
+        "[DOC_ID:task-cap] Task output limits  \nThe task.model.params dictionary applies generation parameters across task endpoints. A max_tokens cap therefore reaches titles and autocomplete as well as tags, follow-ups, and queries; it is not a narrow tag-only control."
+      ]
+    ],
+    "metadatas": [
+      [
+        {
+          "content_type": "text/plain; charset=utf-8",
+          "created_by": "b997c815-91d7-4e7f-b9bb-f554a9245ad7",
+          "data": "{}",
+          "embedding_config": "{'engine': 'ollama', 'model': 'nomic-embed-text'}",
+          "file_hash": "18c84b774e162dc059b9c2aa7794dee47d28f4005237211916e5549b5ff3bea5",
+          "file_id": "b7efbaad-d68a-4052-a4e7-31e24ae6e708",
+          "hash": "18c84b774e162dc059b9c2aa7794dee47d28f4005237211916e5549b5ff3bea5",
+          "name": "teardown-context-compaction.txt",
+          "size": 280,
+          "source": "teardown-context-compaction.txt",
+          "start_index": 0
+        },
+        {
+          "content_type": "text/plain; charset=utf-8",
+          "created_by": "b997c815-91d7-4e7f-b9bb-f554a9245ad7",
+          "data": "{}",
+          "embedding_config": "{'engine': 'ollama', 'model': 'nomic-embed-text'}",
+          "file_hash": "480288cc40cabdd34db5ee0b5e2398bf1cd6049b2bda2d0a675b4a8e880f2aad",
+          "file_id": "4998c46d-3e3e-4277-bcfe-faf0bcba7013",
+          "hash": "480288cc40cabdd34db5ee0b5e2398bf1cd6049b2bda2d0a675b4a8e880f2aad",
+          "name": "teardown-autocomplete.txt",
+          "size": 275,
+          "source": "teardown-autocomplete.txt",
+          "start_index": 0
+        },
+        {
+          "content_type": "text/plain; charset=utf-8",
+          "created_by": "b997c815-91d7-4e7f-b9bb-f554a9245ad7",
+          "data": "{}",
+          "embedding_config": "{'engine': 'ollama', 'model': 'nomic-embed-text'}",
+          "file_hash": "601aa6f4f02b7e861bda7ec714141fe211c2fc4bfa33bca3bb82d3b92a0a9536",
+          "file_id": "4ab3479f-0f5f-4f6b-b410-bc6cb0307b19",
+          "hash": "601aa6f4f02b7e861bda7ec714141fe211c2fc4bfa33bca3bb82d3b92a0a9536",
+          "name": "teardown-task-cap.txt",
+          "size": 261,
+          "source": "teardown-task-cap.txt",
+          "start_index": 0
+        }
+      ]
+    ]
+  },
+  "response_text": "",
+  "retrieved_document_ids": [
+    "context-compaction",
+    "autocomplete",
+    "task-cap"
+  ]
+}

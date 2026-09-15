@@ -1,0 +1,50 @@
+{
+  "cache_key": "c7ba4e115813312981c87e15f7a02279f25cc79ef4932567bd46740725bc8a80",
+  "call_type": "web_query",
+  "case_id": "query-10",
+  "completion_ms": 1592.949,
+  "condition": "l2-cap-128",
+  "endpoint": "/api/v1/tasks/queries/completions",
+  "objective_score": 0.0,
+  "payload_sha256": "92862fda20c1e116353162a2273fb55420ed3f0a62a04da74131f24082e4bbc8",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"queries\": [\"open webui calendar event visibility fix\", \"how to resolve open webui calendar event persistence bug\", \"open webui calendar event stuck visible troubleshooting\"]\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789437455,
+    "id": "qwen2.5:14b-instruct-43ae2e64-9c46-4cca-a7dd-f7ff918237f4",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m1s",
+      "completion_tokens": 38,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 38,
+      "eval_duration": 600472000,
+      "input_tokens": 400,
+      "load_duration": 1676100,
+      "output_tokens": 38,
+      "prompt_eval_count": 400,
+      "prompt_eval_duration": 46026000,
+      "prompt_token/s": 8690.74,
+      "prompt_tokens": 400,
+      "response_token/s": 63.28,
+      "total_duration": 1552354100,
+      "total_tokens": 438
+    }
+  },
+  "response_text": "{\n  \"queries\": [\"open webui calendar event visibility fix\", \"how to resolve open webui calendar event persistence bug\", \"open webui calendar event stuck visible troubleshooting\"]\n}",
+  "retrieved_document_ids": null
+}

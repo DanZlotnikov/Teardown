@@ -1,0 +1,50 @@
+{
+  "cache_key": "f12dff0ed7da3be984723d9dfb1dce2b0c2cd55a0e85610dcdbcd072ea49ff2b",
+  "call_type": "autocomplete",
+  "case_id": "autocomplete-05",
+  "completion_ms": 345.947,
+  "condition": "l2-cap-32",
+  "endpoint": "/api/v1/tasks/auto/completions",
+  "objective_score": 1.0,
+  "payload_sha256": "58833169b3a6770e9443f496ce4b2d6318c2c107ca66df82418fbd7c2de5def4",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{ \"text\": \"implementing more accurate predictive text algorithms.\" }",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789437652,
+    "id": "qwen2.5:14b-instruct-a9d14251-8722-47fd-a4c4-16ae30161e0b",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 15,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 15,
+      "eval_duration": 226889000,
+      "input_tokens": 374,
+      "load_duration": 2307400,
+      "output_tokens": 15,
+      "prompt_eval_count": 374,
+      "prompt_eval_duration": 35631000,
+      "prompt_token/s": 10496.48,
+      "prompt_tokens": 374,
+      "response_token/s": 66.11,
+      "total_duration": 270547500,
+      "total_tokens": 389
+    }
+  },
+  "response_text": "{ \"text\": \"implementing more accurate predictive text algorithms.\" }",
+  "retrieved_document_ids": null
+}

@@ -1,0 +1,50 @@
+{
+  "cache_key": "af73e839191480d8d43e1c8901f6e5b457446feaaf9233f9b39e6a12bea874b2",
+  "call_type": "main_chat_context",
+  "case_id": "context-02",
+  "completion_ms": 760.346,
+  "condition": "l4-last-10-turns",
+  "endpoint": "/api/chat/completions",
+  "objective_score": 1.0,
+  "payload_sha256": "f54eb4c02ca0038ad81a4ee857c6128b8a828cf949e46ce7b01ea25ca825e516",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "From the first turn, you mentioned Project Kestrel-02, with the incident code OWUI-7302, and its recovery region is Osaka.",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789439738,
+    "id": "qwen2.5:14b-instruct-0c33c947-6799-49d4-97da-f80ae0e68a14",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 35,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 35,
+      "eval_duration": 544756000,
+      "input_tokens": 333,
+      "load_duration": 1544700,
+      "output_tokens": 35,
+      "prompt_eval_count": 333,
+      "prompt_eval_duration": 122700000,
+      "prompt_token/s": 2713.94,
+      "prompt_tokens": 333,
+      "response_token/s": 64.25,
+      "total_duration": 707140100,
+      "total_tokens": 368
+    }
+  },
+  "response_text": "From the first turn, you mentioned Project Kestrel-02, with the incident code OWUI-7302, and its recovery region is Osaka.",
+  "retrieved_document_ids": null
+}

@@ -1,0 +1,50 @@
+{
+  "cache_key": "c8f13fb0b9359a76fcf14a5d2b1ee6bdeff0d9c0e13078a607fb157814b863be",
+  "call_type": "retrieval_query",
+  "case_id": "query-19",
+  "completion_ms": 559.459,
+  "condition": "l2-cap-512",
+  "endpoint": "/api/v1/tasks/queries/completions",
+  "objective_score": 0.0,
+  "payload_sha256": "d2452fd7a20fa5f73fc9ac8a00f8e7e0678aeb37204f23afae05e97541c895e4",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"queries\": [\"open webui dropdown behavior fix\", \"dropdown menu narrow screen visibility issues\", \"how to prevent dropdown menu from overflowing screen\"]\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789437182,
+    "id": "qwen2.5:14b-instruct-5cb75fd3-163d-41d2-b8a1-5550dc2fa393",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 33,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 33,
+      "eval_duration": 457635000,
+      "input_tokens": 404,
+      "load_duration": 1702800,
+      "output_tokens": 33,
+      "prompt_eval_count": 404,
+      "prompt_eval_duration": 41568000,
+      "prompt_token/s": 9719.01,
+      "prompt_tokens": 404,
+      "response_token/s": 72.11,
+      "total_duration": 504668100,
+      "total_tokens": 437
+    }
+  },
+  "response_text": "{\n  \"queries\": [\"open webui dropdown behavior fix\", \"dropdown menu narrow screen visibility issues\", \"how to prevent dropdown menu from overflowing screen\"]\n}",
+  "retrieved_document_ids": null
+}

@@ -1,0 +1,50 @@
+{
+  "cache_key": "902cb87ab5b3987deac5db8d16927bd7e7b7c881d4800b3c58a7d9b6d1285daf",
+  "call_type": "main_chat_context",
+  "case_id": "context-20",
+  "completion_ms": 774.585,
+  "condition": "baseline",
+  "endpoint": "/api/chat/completions",
+  "objective_score": 1.0,
+  "payload_sha256": "3b40f9c3af30e5908bf1100002cc460c0ee9101ef440f59388c66762c2015d68",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "From the first turn, you mentioned Project Kestrel-20 with the incident code OWUI-7320, and its recovery region is La Paz.",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789436539,
+    "id": "qwen2.5:14b-instruct-0a7d4411-0f41-4008-97ae-a064f43b0541",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 35,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 35,
+      "eval_duration": 559960000,
+      "input_tokens": 334,
+      "load_duration": 1676200,
+      "output_tokens": 35,
+      "prompt_eval_count": 334,
+      "prompt_eval_duration": 130089000,
+      "prompt_token/s": 2567.47,
+      "prompt_tokens": 334,
+      "response_token/s": 62.5,
+      "total_duration": 715377600,
+      "total_tokens": 369
+    }
+  },
+  "response_text": "From the first turn, you mentioned Project Kestrel-20 with the incident code OWUI-7320, and its recovery region is La Paz.",
+  "retrieved_document_ids": null
+}

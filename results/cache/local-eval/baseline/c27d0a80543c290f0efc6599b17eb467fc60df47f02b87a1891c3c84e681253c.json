@@ -1,0 +1,50 @@
+{
+  "cache_key": "c27d0a80543c290f0efc6599b17eb467fc60df47f02b87a1891c3c84e681253c",
+  "call_type": "retrieval_query",
+  "case_id": "query-19",
+  "completion_ms": 700.426,
+  "condition": "baseline",
+  "endpoint": "/api/v1/tasks/queries/completions",
+  "objective_score": 0.0,
+  "payload_sha256": "d2452fd7a20fa5f73fc9ac8a00f8e7e0678aeb37204f23afae05e97541c895e4",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"queries\": [\"Open WebUI dropdown behavior fix\", \"How to check and fix Open WebUI dropdown visibility issue\", \"Open WebUI dropdown stays on screen fix\"]\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789436522,
+    "id": "qwen2.5:14b-instruct-fb9528cf-bdab-4d7d-96b8-7f0cc350a1dd",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 38,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 38,
+      "eval_duration": 602800000,
+      "input_tokens": 404,
+      "load_duration": 2368100,
+      "output_tokens": 38,
+      "prompt_eval_count": 404,
+      "prompt_eval_duration": 45638000,
+      "prompt_token/s": 8852.27,
+      "prompt_tokens": 404,
+      "response_token/s": 63.04,
+      "total_duration": 656721300,
+      "total_tokens": 442
+    }
+  },
+  "response_text": "{\n  \"queries\": [\"Open WebUI dropdown behavior fix\", \"How to check and fix Open WebUI dropdown visibility issue\", \"Open WebUI dropdown stays on screen fix\"]\n}",
+  "retrieved_document_ids": null
+}

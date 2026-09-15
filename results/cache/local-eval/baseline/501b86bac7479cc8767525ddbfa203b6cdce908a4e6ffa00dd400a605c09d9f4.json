@@ -1,0 +1,75 @@
+{
+  "cache_key": "501b86bac7479cc8767525ddbfa203b6cdce908a4e6ffa00dd400a605c09d9f4",
+  "call_type": "retrieval",
+  "case_id": "retrieval-r10",
+  "completion_ms": 61.961,
+  "condition": "baseline",
+  "endpoint": "/api/v1/retrieval/query/collection",
+  "objective_score": 1.0,
+  "payload_sha256": "d14f41fee265261c633e65467d953ea99931e916ff0cf3a8f4b6beab724c0ab4",
+  "response": {
+    "distances": [
+      [
+        0.788248747587204,
+        0.7575705051422119,
+        0.7525316476821899
+      ]
+    ],
+    "documents": [
+      [
+        "[DOC_ID:wire-capture] Proxy evidence  \nCapture redacted provider request and response bodies, actual reported input, output, and cached tokens, completion latency, and all budget mutations. For nonstreaming task calls, mark time to first token unavailable rather than relabeling response time.",
+        "[DOC_ID:quality] Targeted quality evaluation  \nEvaluate only call types affected by each lever. Use objective format, exact-fact, retrieval-overlap, and grounding metrics first. Use a cached non-reasoning judge only when objective comparisons are insufficient.",
+        "[DOC_ID:autocomplete] Autocomplete workload  \nAutocomplete is disabled by default at the server and user preference levels. When enabled, the editor waits 1000 milliseconds after an input change and checks cursor and loading state, so requests are not sent on every keystroke."
+      ]
+    ],
+    "metadatas": [
+      [
+        {
+          "content_type": "text/plain; charset=utf-8",
+          "created_by": "b997c815-91d7-4e7f-b9bb-f554a9245ad7",
+          "data": "{}",
+          "embedding_config": "{'engine': 'ollama', 'model': 'nomic-embed-text'}",
+          "file_hash": "aaf20fd879c7af5885c665badc36284ae8dc24ae9c8201859ccf75561b94c42a",
+          "file_id": "2396eed1-0d57-456d-8b9f-89b3a78b5a9d",
+          "hash": "aaf20fd879c7af5885c665badc36284ae8dc24ae9c8201859ccf75561b94c42a",
+          "name": "teardown-wire-capture.txt",
+          "size": 292,
+          "source": "teardown-wire-capture.txt",
+          "start_index": 0
+        },
+        {
+          "content_type": "text/plain; charset=utf-8",
+          "created_by": "b997c815-91d7-4e7f-b9bb-f554a9245ad7",
+          "data": "{}",
+          "embedding_config": "{'engine': 'ollama', 'model': 'nomic-embed-text'}",
+          "file_hash": "01cddb57ba8e51c18e3a7f2a3c46257af80f516da6a1ff1f6306ad80c6c322b9",
+          "file_id": "0b43f959-edd6-4cba-8c80-c42d76fbdeaa",
+          "hash": "01cddb57ba8e51c18e3a7f2a3c46257af80f516da6a1ff1f6306ad80c6c322b9",
+          "name": "teardown-quality.txt",
+          "size": 259,
+          "source": "teardown-quality.txt",
+          "start_index": 0
+        },
+        {
+          "content_type": "text/plain; charset=utf-8",
+          "created_by": "b997c815-91d7-4e7f-b9bb-f554a9245ad7",
+          "data": "{}",
+          "embedding_config": "{'engine': 'ollama', 'model': 'nomic-embed-text'}",
+          "file_hash": "480288cc40cabdd34db5ee0b5e2398bf1cd6049b2bda2d0a675b4a8e880f2aad",
+          "file_id": "4998c46d-3e3e-4277-bcfe-faf0bcba7013",
+          "hash": "480288cc40cabdd34db5ee0b5e2398bf1cd6049b2bda2d0a675b4a8e880f2aad",
+          "name": "teardown-autocomplete.txt",
+          "size": 275,
+          "source": "teardown-autocomplete.txt",
+          "start_index": 0
+        }
+      ]
+    ]
+  },
+  "response_text": "",
+  "retrieved_document_ids": [
+    "wire-capture",
+    "quality",
+    "autocomplete"
+  ]
+}

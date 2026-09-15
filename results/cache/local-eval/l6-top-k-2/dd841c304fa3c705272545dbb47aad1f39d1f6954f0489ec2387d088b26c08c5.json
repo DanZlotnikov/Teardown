@@ -1,0 +1,59 @@
+{
+  "cache_key": "dd841c304fa3c705272545dbb47aad1f39d1f6954f0489ec2387d088b26c08c5",
+  "call_type": "retrieval",
+  "case_id": "retrieval-r18",
+  "completion_ms": 58.68,
+  "condition": "l6-top-k-2",
+  "endpoint": "/api/v1/retrieval/query/collection",
+  "objective_score": 1.0,
+  "payload_sha256": "189853b7238d389de658699f22bb898553c2851a6d9351dcb973668c1060f38f",
+  "response": {
+    "distances": [
+      [
+        0.8265331089496613,
+        0.7887574434280396
+      ]
+    ],
+    "documents": [
+      [
+        "[DOC_ID:wire-capture] Proxy evidence  \nCapture redacted provider request and response bodies, actual reported input, output, and cached tokens, completion latency, and all budget mutations. For nonstreaming task calls, mark time to first token unavailable rather than relabeling response time.",
+        "[DOC_ID:budget] Paid-call budget guard  \nBefore provider dispatch, acquire a cross-process lock and persist a worst-case reservation. Include the historical carry-forward and unresolved failures in exposure. Stop at 23 dollars softly and never reserve beyond 30 dollars."
+      ]
+    ],
+    "metadatas": [
+      [
+        {
+          "content_type": "text/plain; charset=utf-8",
+          "created_by": "b997c815-91d7-4e7f-b9bb-f554a9245ad7",
+          "data": "{}",
+          "embedding_config": "{'engine': 'ollama', 'model': 'nomic-embed-text'}",
+          "file_hash": "aaf20fd879c7af5885c665badc36284ae8dc24ae9c8201859ccf75561b94c42a",
+          "file_id": "2396eed1-0d57-456d-8b9f-89b3a78b5a9d",
+          "hash": "aaf20fd879c7af5885c665badc36284ae8dc24ae9c8201859ccf75561b94c42a",
+          "name": "teardown-wire-capture.txt",
+          "size": 292,
+          "source": "teardown-wire-capture.txt",
+          "start_index": 0
+        },
+        {
+          "content_type": "text/plain; charset=utf-8",
+          "created_by": "b997c815-91d7-4e7f-b9bb-f554a9245ad7",
+          "data": "{}",
+          "embedding_config": "{'engine': 'ollama', 'model': 'nomic-embed-text'}",
+          "file_hash": "476413f47cd8df021664df0eb60a66309bf8c049b99905d5e01e8215f703fb98",
+          "file_id": "1fd95377-8c3d-4777-b9b8-8d3193f99045",
+          "hash": "476413f47cd8df021664df0eb60a66309bf8c049b99905d5e01e8215f703fb98",
+          "name": "teardown-budget.txt",
+          "size": 269,
+          "source": "teardown-budget.txt",
+          "start_index": 0
+        }
+      ]
+    ]
+  },
+  "response_text": "",
+  "retrieved_document_ids": [
+    "wire-capture",
+    "budget"
+  ]
+}

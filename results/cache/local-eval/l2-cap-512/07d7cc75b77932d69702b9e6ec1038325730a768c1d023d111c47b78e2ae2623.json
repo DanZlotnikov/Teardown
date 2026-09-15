@@ -1,0 +1,50 @@
+{
+  "cache_key": "07d7cc75b77932d69702b9e6ec1038325730a768c1d023d111c47b78e2ae2623",
+  "call_type": "tags",
+  "case_id": "tags-04",
+  "completion_ms": 344.163,
+  "condition": "l2-cap-512",
+  "endpoint": "/api/v1/tasks/tags/completions",
+  "objective_score": 1.0,
+  "payload_sha256": "8823e84e4de0b668d1fc2a064c0aee072d0b85c2130958fb3e72147af65bfdc1",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "```json\n{ \"tags\": [\"Technology\", \"Software\", \"Internationalization\"] }\n```",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789437154,
+    "id": "qwen2.5:14b-instruct-4cc5da4f-79ea-4bbe-8507-91c51f70a2b9",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 20,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 20,
+      "eval_duration": 273345000,
+      "input_tokens": 278,
+      "load_duration": 2135500,
+      "output_tokens": 20,
+      "prompt_eval_count": 278,
+      "prompt_eval_duration": 46902000,
+      "prompt_token/s": 5927.25,
+      "prompt_tokens": 278,
+      "response_token/s": 73.17,
+      "total_duration": 325353800,
+      "total_tokens": 298
+    }
+  },
+  "response_text": "```json\n{ \"tags\": [\"Technology\", \"Software\", \"Internationalization\"] }\n```",
+  "retrieved_document_ids": null
+}

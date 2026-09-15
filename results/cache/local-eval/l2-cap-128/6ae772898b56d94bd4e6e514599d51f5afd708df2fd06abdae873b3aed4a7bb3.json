@@ -1,0 +1,50 @@
+{
+  "cache_key": "6ae772898b56d94bd4e6e514599d51f5afd708df2fd06abdae873b3aed4a7bb3",
+  "call_type": "tags",
+  "case_id": "tags-06",
+  "completion_ms": 905.671,
+  "condition": "l2-cap-128",
+  "endpoint": "/api/v1/tasks/tags/completions",
+  "objective_score": 1.0,
+  "payload_sha256": "5b51c79d19caa2321bc0aeb75491cc6ad2d9a299f1c7b95e9c8d9d7faa8e28e8",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "Based on the chat history, the main themes revolve around technology and software development, specifically related to the functionality and behavior of a web interface.\n\n```json\n{ \"tags\": [\"Technology\", \"Software Development\", \"Web Development\"] }\n```",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789437429,
+    "id": "qwen2.5:14b-instruct-a8aee248-346e-48d7-9358-7581356dab01",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 50,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 50,
+      "eval_duration": 806245000,
+      "input_tokens": 270,
+      "load_duration": 1805400,
+      "output_tokens": 50,
+      "prompt_eval_count": 270,
+      "prompt_eval_duration": 44349000,
+      "prompt_token/s": 6088.07,
+      "prompt_tokens": 270,
+      "response_token/s": 62.02,
+      "total_duration": 856548600,
+      "total_tokens": 320
+    }
+  },
+  "response_text": "Based on the chat history, the main themes revolve around technology and software development, specifically related to the functionality and behavior of a web interface.\n\n```json\n{ \"tags\": [\"Technology\", \"Software Development\", \"Web Development\"] }\n```",
+  "retrieved_document_ids": null
+}

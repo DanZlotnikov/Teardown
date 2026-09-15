@@ -1,0 +1,50 @@
+{
+  "cache_key": "6f6f5aad8a48a46e3fe1d2a9169cfd47d22a63e69a048f4afec9d94ea8a2f10d",
+  "call_type": "web_query",
+  "case_id": "query-20",
+  "completion_ms": 701.503,
+  "condition": "baseline",
+  "endpoint": "/api/v1/tasks/queries/completions",
+  "objective_score": 0.0,
+  "payload_sha256": "ac421497f261d0f4ce35b32d6277d0ebb5ebfd0c2d9fb68646abae5ba47cbaf1",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"queries\": [\"Open WebUI Valve dialog bounds fix\", \"how to verify Open WebUI dialog input bounds\", \"Open WebUI long input valve dialog stretch fix\"]\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789436523,
+    "id": "qwen2.5:14b-instruct-a277b102-1dc3-4542-bd86-89c8b0855f7f",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 38,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 38,
+      "eval_duration": 598694000,
+      "input_tokens": 404,
+      "load_duration": 2264000,
+      "output_tokens": 38,
+      "prompt_eval_count": 404,
+      "prompt_eval_duration": 43175000,
+      "prompt_token/s": 9357.27,
+      "prompt_tokens": 404,
+      "response_token/s": 63.47,
+      "total_duration": 648767300,
+      "total_tokens": 442
+    }
+  },
+  "response_text": "{\n  \"queries\": [\"Open WebUI Valve dialog bounds fix\", \"how to verify Open WebUI dialog input bounds\", \"Open WebUI long input valve dialog stretch fix\"]\n}",
+  "retrieved_document_ids": null
+}

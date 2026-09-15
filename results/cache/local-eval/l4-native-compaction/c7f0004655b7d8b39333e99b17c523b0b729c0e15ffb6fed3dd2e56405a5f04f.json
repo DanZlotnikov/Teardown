@@ -1,0 +1,51 @@
+{
+  "cache_key": "c7f0004655b7d8b39333e99b17c523b0b729c0e15ffb6fed3dd2e56405a5f04f",
+  "call_type": "main_chat_context",
+  "case_id": "context-20",
+  "chat_id": "e23920ef-b24e-4dbf-ab1a-bf09981fbaf6",
+  "compaction_triggered": true,
+  "completion_ms": 2566.195,
+  "condition": "l4-native-compaction",
+  "objective_score": 0.6666666666666666,
+  "persisted_summary_chars": 493,
+  "persisted_summary_sha256": "cddf346402120b3d45922e4d6e4f1c7ee143d595725ecea60d6b04ca83d8fa44",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "The exact details from the first turn are as follows:\n- Project name: Kestrel-20\n- Incident code: OWUI-7320\n- Recovery region: La Paz",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789442156,
+    "id": "qwen2.5:14b-instruct-9e61d404-d977-4eeb-a392-071427f848c5",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 41,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 41,
+      "eval_duration": 633215000,
+      "input_tokens": 238,
+      "load_duration": 1755200,
+      "output_tokens": 41,
+      "prompt_eval_count": 238,
+      "prompt_eval_duration": 94752000,
+      "prompt_token/s": 2511.82,
+      "prompt_tokens": 238,
+      "response_token/s": 64.75,
+      "total_duration": 772152400,
+      "total_tokens": 279
+    }
+  },
+  "response_text": "The exact details from the first turn are as follows:\n- Project name: Kestrel-20\n- Incident code: OWUI-7320\n- Recovery region: La Paz"
+}

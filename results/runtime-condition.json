@@ -1,0 +1,31 @@
+{
+  "autocomplete": true,
+  "condition": "l4-native-compaction",
+  "context_compaction": {
+    "cap": 256,
+    "enabled": true,
+    "retention_percentage": 40,
+    "threshold": 256
+  },
+  "declared_diff": {
+    "change": {
+      "context_policy": {
+        "enabled": true,
+        "kind": "native_compaction",
+        "retention_percentage": 40,
+        "token_cap": 256,
+        "token_threshold": 256
+      }
+    },
+    "lever": "L4_context_management"
+  },
+  "rag_top_k": 3,
+  "task_model": "",
+  "task_model_params": {},
+  "turn_filter": {
+    "active": false,
+    "global": false,
+    "installed": true,
+    "turns": 3
+  }
+}

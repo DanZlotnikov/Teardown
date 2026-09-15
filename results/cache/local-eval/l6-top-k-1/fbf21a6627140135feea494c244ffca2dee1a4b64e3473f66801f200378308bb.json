@@ -1,0 +1,43 @@
+{
+  "cache_key": "fbf21a6627140135feea494c244ffca2dee1a4b64e3473f66801f200378308bb",
+  "call_type": "retrieval",
+  "case_id": "retrieval-r03",
+  "completion_ms": 30.34,
+  "condition": "l6-top-k-1",
+  "endpoint": "/api/v1/retrieval/query/collection",
+  "objective_score": 1.0,
+  "payload_sha256": "dccdac12dcf579725f5dd9760672b2a9b745350645fc8b542a3861b261951b9e",
+  "response": {
+    "distances": [
+      [
+        0.8337955176830292
+      ]
+    ],
+    "documents": [
+      [
+        "[DOC_ID:title-template] Title history syntax  \nTitle prompt templates select messages with MESSAGES START, END, or MIDDLETRUNCATE counts. Optional start, end, and middletruncate filters limit characters within every selected message. These native limits do not count tokenizer tokens."
+      ]
+    ],
+    "metadatas": [
+      [
+        {
+          "content_type": "text/plain; charset=utf-8",
+          "created_by": "b997c815-91d7-4e7f-b9bb-f554a9245ad7",
+          "data": "{}",
+          "embedding_config": "{'engine': 'ollama', 'model': 'nomic-embed-text'}",
+          "file_hash": "e5c79eebe87c7fbc26ee23c9060b86d7c2e063aec2192dafc247c883db87806c",
+          "file_id": "82395368-bbd1-493d-8ca9-79da82bcd982",
+          "hash": "e5c79eebe87c7fbc26ee23c9060b86d7c2e063aec2192dafc247c883db87806c",
+          "name": "teardown-title-template.txt",
+          "size": 283,
+          "source": "teardown-title-template.txt",
+          "start_index": 0
+        }
+      ]
+    ]
+  },
+  "response_text": "",
+  "retrieved_document_ids": [
+    "title-template"
+  ]
+}

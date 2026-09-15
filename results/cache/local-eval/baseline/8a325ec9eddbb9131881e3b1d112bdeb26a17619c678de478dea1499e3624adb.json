@@ -1,0 +1,50 @@
+{
+  "cache_key": "8a325ec9eddbb9131881e3b1d112bdeb26a17619c678de478dea1499e3624adb",
+  "call_type": "web_query",
+  "case_id": "query-02",
+  "completion_ms": 654.698,
+  "condition": "baseline",
+  "endpoint": "/api/v1/tasks/queries/completions",
+  "objective_score": 0.0,
+  "payload_sha256": "1d894d433473bb476d827dcf5195defddf26accdda5440b675e2c7b06faeb8ca",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"queries\": [\"Open WebUI thinking behavior fix\", \"How to check and verify fix for Open WebUI thinking behavior\", \"Open WebUI Thoughts section troubleshooting\"]\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789436505,
+    "id": "qwen2.5:14b-instruct-d56ea7dc-c242-42c8-95d8-0a046c72da48",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 37,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 37,
+      "eval_duration": 582408000,
+      "input_tokens": 404,
+      "load_duration": 1353600,
+      "output_tokens": 37,
+      "prompt_eval_count": 404,
+      "prompt_eval_duration": 46021000,
+      "prompt_token/s": 8778.6,
+      "prompt_tokens": 404,
+      "response_token/s": 63.53,
+      "total_duration": 635161900,
+      "total_tokens": 441
+    }
+  },
+  "response_text": "{\n  \"queries\": [\"Open WebUI thinking behavior fix\", \"How to check and verify fix for Open WebUI thinking behavior\", \"Open WebUI Thoughts section troubleshooting\"]\n}",
+  "retrieved_document_ids": null
+}

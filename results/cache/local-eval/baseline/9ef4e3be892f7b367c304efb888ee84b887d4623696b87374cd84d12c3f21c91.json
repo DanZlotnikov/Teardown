@@ -1,0 +1,50 @@
+{
+  "cache_key": "9ef4e3be892f7b367c304efb888ee84b887d4623696b87374cd84d12c3f21c91",
+  "call_type": "main_chat_context",
+  "case_id": "context-16",
+  "completion_ms": 742.476,
+  "condition": "baseline",
+  "endpoint": "/api/chat/completions",
+  "objective_score": 1.0,
+  "payload_sha256": "7233f0c372b70cbb19976f25df29c314a9fc7410e1870109dd8b5cc76ed706b7",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "The details from the first turn were: Project Kestrel-16 uses incident code OWUI-7316 and its recovery region is La Paz.",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789436535,
+    "id": "qwen2.5:14b-instruct-33e0b751-2657-4976-81a3-14d1129986f1",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 34,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 34,
+      "eval_duration": 546593000,
+      "input_tokens": 334,
+      "load_duration": 1808100,
+      "output_tokens": 34,
+      "prompt_eval_count": 334,
+      "prompt_eval_duration": 125686000,
+      "prompt_token/s": 2657.42,
+      "prompt_tokens": 334,
+      "response_token/s": 62.2,
+      "total_duration": 707326200,
+      "total_tokens": 368
+    }
+  },
+  "response_text": "The details from the first turn were: Project Kestrel-16 uses incident code OWUI-7316 and its recovery region is La Paz.",
+  "retrieved_document_ids": null
+}

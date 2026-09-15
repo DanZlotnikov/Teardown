@@ -1,0 +1,50 @@
+{
+  "cache_key": "3f98d379a6048220ad2b2040c55262a2209c8a3807e8e51b1aa306d4e3ee122e",
+  "call_type": "web_query",
+  "case_id": "query-20",
+  "completion_ms": 781.293,
+  "condition": "l2-cap-128",
+  "endpoint": "/api/v1/tasks/queries/completions",
+  "objective_score": 0.0,
+  "payload_sha256": "ac421497f261d0f4ce35b32d6277d0ebb5ebfd0c2d9fb68646abae5ba47cbaf1",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"queries\": [\"how to fix valve dialog stretching in Open WebUI\", \"Open WebUI valve dialog input limit issue\", \"stopping valve dialog from stretching beyond bounds in Open WebUI\"]\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789437462,
+    "id": "qwen2.5:14b-instruct-44ab8936-33bc-42bf-99b3-18ffea44a38a",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 43,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 43,
+      "eval_duration": 694349000,
+      "input_tokens": 404,
+      "load_duration": 2306700,
+      "output_tokens": 43,
+      "prompt_eval_count": 404,
+      "prompt_eval_duration": 44318000,
+      "prompt_token/s": 9115.93,
+      "prompt_tokens": 404,
+      "response_token/s": 61.93,
+      "total_duration": 745944700,
+      "total_tokens": 447
+    }
+  },
+  "response_text": "{\n  \"queries\": [\"how to fix valve dialog stretching in Open WebUI\", \"Open WebUI valve dialog input limit issue\", \"stopping valve dialog from stretching beyond bounds in Open WebUI\"]\n}",
+  "retrieved_document_ids": null
+}

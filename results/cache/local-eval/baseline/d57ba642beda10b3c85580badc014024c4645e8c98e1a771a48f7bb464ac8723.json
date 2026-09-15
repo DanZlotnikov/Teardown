@@ -1,0 +1,50 @@
+{
+  "cache_key": "d57ba642beda10b3c85580badc014024c4645e8c98e1a771a48f7bb464ac8723",
+  "call_type": "web_query",
+  "case_id": "query-06",
+  "completion_ms": 708.09,
+  "condition": "baseline",
+  "endpoint": "/api/v1/tasks/queries/completions",
+  "objective_score": 0.0,
+  "payload_sha256": "3b6ea37809a9b0151439604d5553e946ab0c2dfd84e3c682f86efd3eadedd8d1",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"queries\": [\"open webui pinned models behavior change\", \"how to verify changes in open webui pinned models\", \"open webui chat model tools and skills behavior\"]\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789436507,
+    "id": "qwen2.5:14b-instruct-146df788-7a0c-4842-96c0-be21f7891d75",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 39,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 39,
+      "eval_duration": 610531000,
+      "input_tokens": 409,
+      "load_duration": 1869300,
+      "output_tokens": 39,
+      "prompt_eval_count": 409,
+      "prompt_eval_duration": 42989000,
+      "prompt_token/s": 9514.06,
+      "prompt_tokens": 409,
+      "response_token/s": 63.88,
+      "total_duration": 659099800,
+      "total_tokens": 448
+    }
+  },
+  "response_text": "{\n  \"queries\": [\"open webui pinned models behavior change\", \"how to verify changes in open webui pinned models\", \"open webui chat model tools and skills behavior\"]\n}",
+  "retrieved_document_ids": null
+}

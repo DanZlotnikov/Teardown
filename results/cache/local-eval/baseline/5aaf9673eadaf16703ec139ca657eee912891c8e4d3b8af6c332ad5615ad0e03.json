@@ -1,0 +1,50 @@
+{
+  "cache_key": "5aaf9673eadaf16703ec139ca657eee912891c8e4d3b8af6c332ad5615ad0e03",
+  "call_type": "title",
+  "case_id": "title-24",
+  "completion_ms": 241.917,
+  "condition": "baseline",
+  "endpoint": "/api/v1/tasks/title/completions",
+  "objective_score": 1.0,
+  "payload_sha256": "90b837552dd491bc2fdfe2f5442d598c2208659d34681447b0306a32ec493529",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{ \"title\": \"User Count Issue\" }",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789436487,
+    "id": "qwen2.5:14b-instruct-1d4bf8e0-0cda-47a3-8754-7efffdb00dbf",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 11,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 11,
+      "eval_duration": 164705000,
+      "input_tokens": 333,
+      "load_duration": 1018700,
+      "output_tokens": 11,
+      "prompt_eval_count": 333,
+      "prompt_eval_duration": 43625000,
+      "prompt_token/s": 7633.24,
+      "prompt_tokens": 333,
+      "response_token/s": 66.79,
+      "total_duration": 212950400,
+      "total_tokens": 344
+    }
+  },
+  "response_text": "{ \"title\": \"User Count Issue\" }",
+  "retrieved_document_ids": null
+}

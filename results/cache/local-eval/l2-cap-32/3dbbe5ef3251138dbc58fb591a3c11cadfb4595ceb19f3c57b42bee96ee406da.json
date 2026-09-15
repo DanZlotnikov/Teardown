@@ -1,0 +1,50 @@
+{
+  "cache_key": "3dbbe5ef3251138dbc58fb591a3c11cadfb4595ceb19f3c57b42bee96ee406da",
+  "call_type": "tags",
+  "case_id": "tags-16",
+  "completion_ms": 625.443,
+  "condition": "l2-cap-32",
+  "endpoint": "/api/v1/tasks/tags/completions",
+  "objective_score": 0.0,
+  "payload_sha256": "56c7b0ead7786b7418277150f0ba6a44d3cfba2f6e03e57b7483114ee21ecf2a",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "Based on the given chat history, the conversation revolves around a technical issue related to software or web applications. The primary domain is Technology, with a specific focus on",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789437630,
+    "id": "qwen2.5:14b-instruct-d37bcb59-fa57-48e1-b932-1782813fc935",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 32,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 32,
+      "eval_duration": 508360000,
+      "input_tokens": 276,
+      "load_duration": 2077400,
+      "output_tokens": 32,
+      "prompt_eval_count": 276,
+      "prompt_eval_duration": 49594000,
+      "prompt_token/s": 5565.19,
+      "prompt_tokens": 276,
+      "response_token/s": 62.95,
+      "total_duration": 565961600,
+      "total_tokens": 308
+    }
+  },
+  "response_text": "Based on the given chat history, the conversation revolves around a technical issue related to software or web applications. The primary domain is Technology, with a specific focus on",
+  "retrieved_document_ids": null
+}

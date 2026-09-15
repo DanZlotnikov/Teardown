@@ -8,7 +8,8 @@ param(
     [string]$BaseUrl = "http://127.0.0.1:8088",
     [int]$ProxyPort = 8765,
     [switch]$SkipSummary,
-    [switch]$Resume
+    [switch]$Resume,
+    [switch]$SkipScenario
 )
 
 $ErrorActionPreference = "Stop"
@@ -82,10 +83,12 @@ $scenarioArgs = @(
     "--timeout", "180"
 )
 if ($CallTypes) { $scenarioArgs += @("--call-types", $CallTypes) }
-& $python @scenarioArgs
-if ($LASTEXITCODE -ne 0) { throw "Scenario failed: $Condition" }
+if (-not $SkipScenario) {
+    & $python @scenarioArgs
+    if ($LASTEXITCODE -ne 0) { throw "Scenario failed: $Condition" }
+}
 
-if (-not $SkipSummary) {
+if (-not $SkipSummary -and -not $SkipScenario) {
     $summaryArgs = @(
         "-m", "analysis.summarize_local_run",
         "--condition", $Condition,

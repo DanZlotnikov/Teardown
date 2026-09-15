@@ -1,0 +1,43 @@
+{
+  "cache_key": "62113e34263a490c9633468d3c2ecff0dfbfc74c839cff972cf38e2616f1a2da",
+  "call_type": "retrieval",
+  "case_id": "retrieval-r16",
+  "completion_ms": 60.791,
+  "condition": "l6-top-k-1",
+  "endpoint": "/api/v1/retrieval/query/collection",
+  "objective_score": 1.0,
+  "payload_sha256": "cdb5f1ed9aa41c3479465944f5cf5e76b0a862a8bec7f14c8e38938a59019c75",
+  "response": {
+    "distances": [
+      [
+        0.8676816821098328
+      ]
+    ],
+    "documents": [
+      [
+        "[DOC_ID:autocomplete] Autocomplete workload  \nAutocomplete is disabled by default at the server and user preference levels. When enabled, the editor waits 1000 milliseconds after an input change and checks cursor and loading state, so requests are not sent on every keystroke."
+      ]
+    ],
+    "metadatas": [
+      [
+        {
+          "content_type": "text/plain; charset=utf-8",
+          "created_by": "b997c815-91d7-4e7f-b9bb-f554a9245ad7",
+          "data": "{}",
+          "embedding_config": "{'engine': 'ollama', 'model': 'nomic-embed-text'}",
+          "file_hash": "480288cc40cabdd34db5ee0b5e2398bf1cd6049b2bda2d0a675b4a8e880f2aad",
+          "file_id": "4998c46d-3e3e-4277-bcfe-faf0bcba7013",
+          "hash": "480288cc40cabdd34db5ee0b5e2398bf1cd6049b2bda2d0a675b4a8e880f2aad",
+          "name": "teardown-autocomplete.txt",
+          "size": 275,
+          "source": "teardown-autocomplete.txt",
+          "start_index": 0
+        }
+      ]
+    ]
+  },
+  "response_text": "",
+  "retrieved_document_ids": [
+    "autocomplete"
+  ]
+}

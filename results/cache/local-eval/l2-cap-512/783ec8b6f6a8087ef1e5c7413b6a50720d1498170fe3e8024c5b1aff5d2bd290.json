@@ -1,0 +1,50 @@
+{
+  "cache_key": "783ec8b6f6a8087ef1e5c7413b6a50720d1498170fe3e8024c5b1aff5d2bd290",
+  "call_type": "tags",
+  "case_id": "tags-09",
+  "completion_ms": 740.537,
+  "condition": "l2-cap-512",
+  "endpoint": "/api/v1/tasks/tags/completions",
+  "objective_score": 1.0,
+  "payload_sha256": "249474cd867b76086c78c5e8e70ce0f3a0edb27b43d34858d202e498de94312f",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "Based on the chat history, the main theme revolves around technical issues related to software and web technologies. Here are the tags:\n\n```json\n{ \"tags\": [\"Technology\", \"Software\", \"Web Development\"] }\n```",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789437158,
+    "id": "qwen2.5:14b-instruct-3c41342f-3c94-4506-822f-5900d302f172",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 45,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 45,
+      "eval_duration": 630794000,
+      "input_tokens": 272,
+      "load_duration": 1707600,
+      "output_tokens": 45,
+      "prompt_eval_count": 272,
+      "prompt_eval_duration": 43306000,
+      "prompt_token/s": 6280.88,
+      "prompt_tokens": 272,
+      "response_token/s": 71.34,
+      "total_duration": 680341500,
+      "total_tokens": 317
+    }
+  },
+  "response_text": "Based on the chat history, the main theme revolves around technical issues related to software and web technologies. Here are the tags:\n\n```json\n{ \"tags\": [\"Technology\", \"Software\", \"Web Development\"] }\n```",
+  "retrieved_document_ids": null
+}

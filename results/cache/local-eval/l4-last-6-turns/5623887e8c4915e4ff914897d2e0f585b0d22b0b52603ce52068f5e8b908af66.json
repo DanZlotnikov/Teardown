@@ -1,0 +1,50 @@
+{
+  "cache_key": "5623887e8c4915e4ff914897d2e0f585b0d22b0b52603ce52068f5e8b908af66",
+  "call_type": "main_chat_context",
+  "case_id": "context-09",
+  "completion_ms": 1465.55,
+  "condition": "l4-last-6-turns",
+  "endpoint": "/api/chat/completions",
+  "objective_score": 0.0,
+  "payload_sha256": "1299e699aeba5b0857ed62565fa855a4f5d75b434c4b70eac7174d1547e769b6",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "It seems there might be some confusion because the initial turns did not specify a particular project name, incident code, or recovery region. These details would typically be provided in the context of a specific incident or project scenario. Without these specifics, I can provide generic information about logging and deployment checks if that would be helpful. If you could provide more context or the specific details you're referring to, I'd be glad to help further.",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789440780,
+    "id": "qwen2.5:14b-instruct-b100666c-edd1-48cb-bbf1-e1dbf820e568",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m1s",
+      "completion_tokens": 87,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 87,
+      "eval_duration": 1391411000,
+      "input_tokens": 222,
+      "load_duration": 1276400,
+      "output_tokens": 87,
+      "prompt_eval_count": 222,
+      "prompt_eval_duration": 19223000,
+      "prompt_token/s": 11548.67,
+      "prompt_tokens": 222,
+      "response_token/s": 62.53,
+      "total_duration": 1415526700,
+      "total_tokens": 309
+    }
+  },
+  "response_text": "It seems there might be some confusion because the initial turns did not specify a particular project name, incident code, or recovery region. These details would typically be provided in the context of a specific incident or project scenario. Without these specifics, I can provide generic information about logging and deployment checks if that would be helpful. If you could provide more context or the specific details you're referring to, I'd be glad to help further.",
+  "retrieved_document_ids": null
+}

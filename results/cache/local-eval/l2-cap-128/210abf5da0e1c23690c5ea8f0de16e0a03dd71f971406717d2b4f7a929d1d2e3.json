@@ -1,0 +1,50 @@
+{
+  "cache_key": "210abf5da0e1c23690c5ea8f0de16e0a03dd71f971406717d2b4f7a929d1d2e3",
+  "call_type": "title",
+  "case_id": "title-02",
+  "completion_ms": 298.966,
+  "condition": "l2-cap-128",
+  "endpoint": "/api/v1/tasks/title/completions",
+  "objective_score": 1.0,
+  "payload_sha256": "da0776ffc8c2ccf0820992d1120d666d128a71a2d24bad88b1ea6d5b3674f736",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{ \"title\": \"WebUI Upgrades\" }",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789437418,
+    "id": "qwen2.5:14b-instruct-81a2cd3e-1589-4269-b3bd-c7a70b3c9578",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 12,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 12,
+      "eval_duration": 184654000,
+      "input_tokens": 378,
+      "load_duration": 2671700,
+      "output_tokens": 12,
+      "prompt_eval_count": 378,
+      "prompt_eval_duration": 62409000,
+      "prompt_token/s": 6056.82,
+      "prompt_tokens": 378,
+      "response_token/s": 64.99,
+      "total_duration": 255017700,
+      "total_tokens": 390
+    }
+  },
+  "response_text": "{ \"title\": \"WebUI Upgrades\" }",
+  "retrieved_document_ids": null
+}

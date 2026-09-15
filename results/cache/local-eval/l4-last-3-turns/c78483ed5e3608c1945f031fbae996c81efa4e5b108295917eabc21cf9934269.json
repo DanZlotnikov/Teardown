@@ -1,0 +1,50 @@
+{
+  "cache_key": "c78483ed5e3608c1945f031fbae996c81efa4e5b108295917eabc21cf9934269",
+  "call_type": "main_chat_context",
+  "case_id": "context-18",
+  "completion_ms": 1104.377,
+  "condition": "l4-last-3-turns",
+  "endpoint": "/api/chat/completions",
+  "objective_score": 0.0,
+  "payload_sha256": "fb280f971d4482f34a1272146c6634faa044b5915706d76b10d5cad069e2d6bd",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "It appears that you are referring to a previous conversation or context that wasn't provided in your current message. Without the details of the first turn, I don't have the specific information about the project name, incident code, and recovery region. Could you please provide more context or the necessary details so I can assist you accurately?",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789441827,
+    "id": "qwen2.5:14b-instruct-54dba1fe-1e1b-46ce-af35-e995624d9f2a",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m1s",
+      "completion_tokens": 66,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 66,
+      "eval_duration": 1034242000,
+      "input_tokens": 117,
+      "load_duration": 2594700,
+      "output_tokens": 66,
+      "prompt_eval_count": 117,
+      "prompt_eval_duration": 14920000,
+      "prompt_token/s": 7841.82,
+      "prompt_tokens": 117,
+      "response_token/s": 63.81,
+      "total_duration": 1054431100,
+      "total_tokens": 183
+    }
+  },
+  "response_text": "It appears that you are referring to a previous conversation or context that wasn't provided in your current message. Without the details of the first turn, I don't have the specific information about the project name, incident code, and recovery region. Could you please provide more context or the necessary details so I can assist you accurately?",
+  "retrieved_document_ids": null
+}

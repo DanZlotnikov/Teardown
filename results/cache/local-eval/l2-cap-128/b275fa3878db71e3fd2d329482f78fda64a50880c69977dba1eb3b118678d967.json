@@ -1,0 +1,50 @@
+{
+  "cache_key": "b275fa3878db71e3fd2d329482f78fda64a50880c69977dba1eb3b118678d967",
+  "call_type": "autocomplete",
+  "case_id": "autocomplete-01",
+  "completion_ms": 418.148,
+  "condition": "l2-cap-128",
+  "endpoint": "/api/v1/tasks/auto/completions",
+  "objective_score": 1.0,
+  "payload_sha256": "a9d53773e2480984668c4214aa4a0b1e67d182b693b5250cd1bb04d5ebb9bb1e",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{ \"text\": \"the settings to minimize resource usage or disable unnecessary tasks.\" }",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789437462,
+    "id": "qwen2.5:14b-instruct-596989fc-b7c0-47ad-8a07-7c288b5cf04a",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 18,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 18,
+      "eval_duration": 279740000,
+      "input_tokens": 375,
+      "load_duration": 1686500,
+      "output_tokens": 18,
+      "prompt_eval_count": 375,
+      "prompt_eval_duration": 34486000,
+      "prompt_token/s": 10873.98,
+      "prompt_tokens": 375,
+      "response_token/s": 64.35,
+      "total_duration": 373340200,
+      "total_tokens": 393
+    }
+  },
+  "response_text": "{ \"text\": \"the settings to minimize resource usage or disable unnecessary tasks.\" }",
+  "retrieved_document_ids": null
+}

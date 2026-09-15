@@ -1,0 +1,50 @@
+{
+  "cache_key": "04438fb1d65cb791c0d47822de69e65c5d18db4a04515c2fa04af94bcc5cead7",
+  "call_type": "main_chat_context",
+  "case_id": "context-16",
+  "completion_ms": 1095.0,
+  "condition": "l4-last-3-turns",
+  "endpoint": "/api/chat/completions",
+  "objective_score": 0.0,
+  "payload_sha256": "7233f0c372b70cbb19976f25df29c314a9fc7410e1870109dd8b5cc76ed706b7",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "It seems there might be a misunderstanding; you've asked about specific details from the \"first turn\" related to a project name, incident code, and recovery region, but these specifics haven't been mentioned in our conversation. Could you please provide more context or clarify your request? That way, I can assist you more accurately.",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789441824,
+    "id": "qwen2.5:14b-instruct-63677665-cbb0-4476-be80-7749116d6dd0",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m1s",
+      "completion_tokens": 66,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 66,
+      "eval_duration": 1034952000,
+      "input_tokens": 117,
+      "load_duration": 1557500,
+      "output_tokens": 66,
+      "prompt_eval_count": 117,
+      "prompt_eval_duration": 15830000,
+      "prompt_token/s": 7391.03,
+      "prompt_tokens": 117,
+      "response_token/s": 63.77,
+      "total_duration": 1054817600,
+      "total_tokens": 183
+    }
+  },
+  "response_text": "It seems there might be a misunderstanding; you've asked about specific details from the \"first turn\" related to a project name, incident code, and recovery region, but these specifics haven't been mentioned in our conversation. Could you please provide more context or clarify your request? That way, I can assist you more accurately.",
+  "retrieved_document_ids": null
+}

@@ -1,0 +1,50 @@
+{
+  "cache_key": "2393a8675242e8b1378b4f453d4a21ad5d06a1addfaff3193f9ce5a421508873",
+  "call_type": "main_chat_context",
+  "case_id": "context-07",
+  "completion_ms": 1160.588,
+  "condition": "l4-last-3-turns",
+  "endpoint": "/api/chat/completions",
+  "objective_score": 0.0,
+  "payload_sha256": "f5e473e9b1a26bb6de648f30965317c25901fc5923ca16ed66f4d4e67532c1c9",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "It seems there was a misunderstanding as the initial turns did not include specific details about a project name, incident code, or recovery region. Since you're asking for information from the first turn, could you please provide more context or details about the project and incident you're referring to? This will help me give you a more accurate and relevant response.",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789441816,
+    "id": "qwen2.5:14b-instruct-5849d365-0349-46d5-808e-b27daa97a4d3",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m1s",
+      "completion_tokens": 70,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 70,
+      "eval_duration": 1104065000,
+      "input_tokens": 117,
+      "load_duration": 1815100,
+      "output_tokens": 70,
+      "prompt_eval_count": 117,
+      "prompt_eval_duration": 14601000,
+      "prompt_token/s": 8013.15,
+      "prompt_tokens": 117,
+      "response_token/s": 63.4,
+      "total_duration": 1123205000,
+      "total_tokens": 187
+    }
+  },
+  "response_text": "It seems there was a misunderstanding as the initial turns did not include specific details about a project name, incident code, or recovery region. Since you're asking for information from the first turn, could you please provide more context or details about the project and incident you're referring to? This will help me give you a more accurate and relevant response.",
+  "retrieved_document_ids": null
+}

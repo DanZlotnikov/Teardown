@@ -1,0 +1,50 @@
+{
+  "cache_key": "33e99a42fba7935f1990062ccee1fdd5d78f11432f8420a345b672fb230065d8",
+  "call_type": "title",
+  "case_id": "title-07",
+  "completion_ms": 273.901,
+  "condition": "l2-cap-128",
+  "endpoint": "/api/v1/tasks/title/completions",
+  "objective_score": 1.0,
+  "payload_sha256": "d519e26b97655a9353da6c0d0e1d2257a86fdaa3649dee1766d07eda604223b3",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{ \"title\": \"File Preview Issue\" }",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789437419,
+    "id": "qwen2.5:14b-instruct-c87a5b82-a27a-4a41-9975-882dc9e50dd6",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 11,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 11,
+      "eval_duration": 164540000,
+      "input_tokens": 338,
+      "load_duration": 1799900,
+      "output_tokens": 11,
+      "prompt_eval_count": 338,
+      "prompt_eval_duration": 44645000,
+      "prompt_token/s": 7570.84,
+      "prompt_tokens": 338,
+      "response_token/s": 66.85,
+      "total_duration": 215277700,
+      "total_tokens": 349
+    }
+  },
+  "response_text": "{ \"title\": \"File Preview Issue\" }",
+  "retrieved_document_ids": null
+}

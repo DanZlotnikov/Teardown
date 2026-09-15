@@ -1,0 +1,50 @@
+{
+  "cache_key": "f155b8a1f48128c41ced5432d6767105c204eb1d864b9e55939c0c01c3bd6df4",
+  "call_type": "retrieval_query",
+  "case_id": "query-07",
+  "completion_ms": 613.754,
+  "condition": "baseline",
+  "endpoint": "/api/v1/tasks/queries/completions",
+  "objective_score": 0.0,
+  "payload_sha256": "0bda4f8ef374fed8d92a5753a0378ebd94fdaee4ea35237ced0722486091eb04",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"queries\": [\"how to verify fix for rejected askuser calls in Open WebUI\", \"Open WebUI troubleshooting for rejected askuser calls\"]\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789436508,
+    "id": "qwen2.5:14b-instruct-d1bde582-603d-4198-8753-fa92f049f15c",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 33,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 33,
+      "eval_duration": 517135000,
+      "input_tokens": 417,
+      "load_duration": 1186700,
+      "output_tokens": 33,
+      "prompt_eval_count": 417,
+      "prompt_eval_duration": 50101000,
+      "prompt_token/s": 8323.19,
+      "prompt_tokens": 417,
+      "response_token/s": 63.81,
+      "total_duration": 573282800,
+      "total_tokens": 450
+    }
+  },
+  "response_text": "{\n  \"queries\": [\"how to verify fix for rejected askuser calls in Open WebUI\", \"Open WebUI troubleshooting for rejected askuser calls\"]\n}",
+  "retrieved_document_ids": null
+}

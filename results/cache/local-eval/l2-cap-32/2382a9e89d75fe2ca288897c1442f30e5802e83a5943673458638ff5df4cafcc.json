@@ -1,0 +1,50 @@
+{
+  "cache_key": "2382a9e89d75fe2ca288897c1442f30e5802e83a5943673458638ff5df4cafcc",
+  "call_type": "tags",
+  "case_id": "tags-01",
+  "completion_ms": 497.456,
+  "condition": "l2-cap-32",
+  "endpoint": "/api/v1/tasks/tags/completions",
+  "objective_score": 1.0,
+  "payload_sha256": "a0f126270471e6e4662e01aa29676f4ae3bd28d3ed4da50abb2d1d4fdbaaed09",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "```json\n{ \"tags\": [\"Technology\", \"Web Development\", \"Software Optimization\"] }\n```",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789437622,
+    "id": "qwen2.5:14b-instruct-1b5aec58-5b98-4f9e-88b0-958c2ac49da3",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 21,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 21,
+      "eval_duration": 335626000,
+      "input_tokens": 304,
+      "load_duration": 1837200,
+      "output_tokens": 21,
+      "prompt_eval_count": 304,
+      "prompt_eval_duration": 57022000,
+      "prompt_token/s": 5331.28,
+      "prompt_tokens": 304,
+      "response_token/s": 62.57,
+      "total_duration": 427732600,
+      "total_tokens": 325
+    }
+  },
+  "response_text": "```json\n{ \"tags\": [\"Technology\", \"Web Development\", \"Software Optimization\"] }\n```",
+  "retrieved_document_ids": null
+}

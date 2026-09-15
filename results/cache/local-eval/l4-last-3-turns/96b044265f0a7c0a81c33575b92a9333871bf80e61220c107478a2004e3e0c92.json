@@ -1,0 +1,50 @@
+{
+  "cache_key": "96b044265f0a7c0a81c33575b92a9333871bf80e61220c107478a2004e3e0c92",
+  "call_type": "main_chat_context",
+  "case_id": "context-11",
+  "completion_ms": 1073.261,
+  "condition": "l4-last-3-turns",
+  "endpoint": "/api/chat/completions",
+  "objective_score": 0.0,
+  "payload_sha256": "4c21a94209aa03beaebd0c3905c74ad944d2c0a211a53e56d3f30053c0d46351",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "It appears that you're referring back to a previous interaction, but I don't have the context of the \"first turn\" or specific details about a project name, incident code, and recovery region unless you provide that information. Could you please share these details or provide more context so I can assist you better?",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789441819,
+    "id": "qwen2.5:14b-instruct-679adab9-e2a2-4087-8faa-c000fa648c07",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m1s",
+      "completion_tokens": 63,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 63,
+      "eval_duration": 980459000,
+      "input_tokens": 117,
+      "load_duration": 1673300,
+      "output_tokens": 63,
+      "prompt_eval_count": 117,
+      "prompt_eval_duration": 15327000,
+      "prompt_token/s": 7633.59,
+      "prompt_tokens": 117,
+      "response_token/s": 64.26,
+      "total_duration": 1000437000,
+      "total_tokens": 180
+    }
+  },
+  "response_text": "It appears that you're referring back to a previous interaction, but I don't have the context of the \"first turn\" or specific details about a project name, incident code, and recovery region unless you provide that information. Could you please share these details or provide more context so I can assist you better?",
+  "retrieved_document_ids": null
+}

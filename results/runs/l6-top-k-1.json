@@ -1,0 +1,370 @@
+{
+  "actions": "results/actions/mock/l6-top-k-1.jsonl",
+  "actual_api_cost_usd": "0",
+  "by_call_type": {
+    "autocomplete": {
+      "cached_input_tokens": 0,
+      "calls": 2,
+      "derived_cost_usd": "0.0063160",
+      "input_tokens": 974,
+      "output_tokens": 121,
+      "provider_completion_ms_p50": 1050.202,
+      "provider_completion_ms_p95": 1288.028,
+      "ttft_ms_p50": null,
+      "ttft_ms_p95": null
+    },
+    "follow_up": {
+      "cached_input_tokens": 0,
+      "calls": 129,
+      "derived_cost_usd": "0.5193240",
+      "input_tokens": 80571,
+      "output_tokens": 9852,
+      "provider_completion_ms_p50": 1288.302,
+      "provider_completion_ms_p95": 1999.096,
+      "ttft_ms_p50": null,
+      "ttft_ms_p95": null
+    },
+    "main": {
+      "cached_input_tokens": 0,
+      "calls": 129,
+      "derived_cost_usd": "1.4863960",
+      "input_tokens": 77389,
+      "output_tokens": 58842,
+      "provider_completion_ms_p50": 7364.944,
+      "provider_completion_ms_p95": 10577.975,
+      "ttft_ms_p50": null,
+      "ttft_ms_p95": null
+    },
+    "retrieval": {
+      "cached_input_tokens": 0,
+      "calls": 20,
+      "derived_cost_usd": "0.0000000",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "provider_completion_ms_p50": null,
+      "provider_completion_ms_p95": null,
+      "ttft_ms_p50": null,
+      "ttft_ms_p95": null
+    },
+    "retrieval_query": {
+      "cached_input_tokens": 0,
+      "calls": 4,
+      "derived_cost_usd": "0.0091920",
+      "input_tokens": 1553,
+      "output_tokens": 149,
+      "provider_completion_ms_p50": 651.394,
+      "provider_completion_ms_p95": 737.341,
+      "ttft_ms_p50": null,
+      "ttft_ms_p95": null
+    },
+    "tags": {
+      "cached_input_tokens": 0,
+      "calls": 30,
+      "derived_cost_usd": "0.0896000",
+      "input_tokens": 19260,
+      "output_tokens": 628,
+      "provider_completion_ms_p50": 390.057,
+      "provider_completion_ms_p95": 657.677,
+      "ttft_ms_p50": null,
+      "ttft_ms_p95": null
+    },
+    "title": {
+      "cached_input_tokens": 0,
+      "calls": 30,
+      "derived_cost_usd": "0.0918600",
+      "input_tokens": 21210,
+      "output_tokens": 351,
+      "provider_completion_ms_p50": 269.78,
+      "provider_completion_ms_p95": 294.258,
+      "ttft_ms_p50": null,
+      "ttft_ms_p95": null
+    },
+    "web_query": {
+      "cached_input_tokens": 0,
+      "calls": 5,
+      "derived_cost_usd": "0.0116320",
+      "input_tokens": 1923,
+      "output_tokens": 197,
+      "provider_completion_ms_p50": 673.524,
+      "provider_completion_ms_p95": 705.559,
+      "ttft_ms_p50": null,
+      "ttft_ms_p95": null
+    }
+  },
+  "condition": "l6-top-k-1",
+  "configuration_diff": {
+    "rag_top_k": 1
+  },
+  "counts": {
+    "cached_input_tokens": 0,
+    "calls": 349,
+    "input_tokens": 202880,
+    "output_tokens": 70140
+  },
+  "derived_cost_per_conversation_usd": "0.07381066666666666666666666667",
+  "derived_cost_usd": "2.2143200",
+  "derived_price_model": "gpt-5.6-sol",
+  "latency": {
+    "provider_completion_ms_p50": 1550.464,
+    "provider_completion_ms_p95": 9280.653,
+    "ttft_ms_p50": null,
+    "ttft_ms_p95": null
+  },
+  "latency_note": "Provider completion is Ollama total_duration. TTFT is unavailable because all controlled calls are nonstreaming.",
+  "lever": "L6_retrieved_chunk_count",
+  "locks": {
+    "actions_sha256": "8adf49ac1cae7da4eaf9f4ab0bcbba65928933b626b17b6017296a10a13604c3",
+    "capture_sha256": "a5d074899b2005e81b032baeb52064071f7e753219ebec6587116084f4b1d35a",
+    "eval_sha256": "4f71a9d609398d9b0794943a4669947ceb38339e9edb4f6a02dd6971d4c0cff6",
+    "open_webui_commit": "0a7c15832fb30b1903753e83f81dc7d27e5b0944",
+    "open_webui_version": "0.11.3",
+    "pricing_snapshot_sha256": "6603440ced269ce2638c0ecf1657be2521974b2c6ce782c6a8435481dd91417e",
+    "scenario_sha256": "d0394ca6d75a788261b1659ae0ce61b3133efcd96f4ac202efc78b36c83608be"
+  },
+  "main_chat_path_risk": true,
+  "measurement": "Local Ollama wire-observed tokens; frozen-price costs are derived counterfactuals, not observed provider billing.",
+  "measurement_scope": {
+    "composed_unchanged_baseline_actions": 329,
+    "dropped_call_types": [],
+    "measured_condition_actions": 20,
+    "total_scenario_actions": 349
+  },
+  "quality": {
+    "lexical_agreement_vs_baseline_by_call_type": {
+      "autocomplete": 1.0,
+      "follow_up": 1.0,
+      "main": 1.0,
+      "retrieval_query": 1.0,
+      "tags": 1.0,
+      "title": 1.0,
+      "web_query": 1.0
+    },
+    "lexical_agreement_warning": "Diagnostic only; not a semantic quality score and not used for final grading.",
+    "objective_mean_by_call_type": {
+      "autocomplete": 1.0,
+      "main_chat_context": 1.0,
+      "retrieval": 0.816667,
+      "retrieval_query": 0.0,
+      "tags": 1.0,
+      "title": 1.0,
+      "web_query": 0.0
+    },
+    "retrieval": {
+      "cases": [
+        {
+          "case_id": "retrieval-r01",
+          "recall": 1.0,
+          "relevant_document_ids": [
+            "task-model"
+          ],
+          "retrieved_document_ids": [
+            "task-model"
+          ]
+        },
+        {
+          "case_id": "retrieval-r02",
+          "recall": 1.0,
+          "relevant_document_ids": [
+            "task-cap"
+          ],
+          "retrieved_document_ids": [
+            "task-cap"
+          ]
+        },
+        {
+          "case_id": "retrieval-r03",
+          "recall": 1.0,
+          "relevant_document_ids": [
+            "title-template"
+          ],
+          "retrieved_document_ids": [
+            "title-template"
+          ]
+        },
+        {
+          "case_id": "retrieval-r04",
+          "recall": 1.0,
+          "relevant_document_ids": [
+            "context-compaction"
+          ],
+          "retrieved_document_ids": [
+            "context-compaction"
+          ]
+        },
+        {
+          "case_id": "retrieval-r05",
+          "recall": 1.0,
+          "relevant_document_ids": [
+            "query-cache"
+          ],
+          "retrieved_document_ids": [
+            "query-cache"
+          ]
+        },
+        {
+          "case_id": "retrieval-r06",
+          "recall": 1.0,
+          "relevant_document_ids": [
+            "rag-top-k"
+          ],
+          "retrieved_document_ids": [
+            "rag-top-k"
+          ]
+        },
+        {
+          "case_id": "retrieval-r07",
+          "recall": 1.0,
+          "relevant_document_ids": [
+            "autocomplete"
+          ],
+          "retrieved_document_ids": [
+            "autocomplete"
+          ]
+        },
+        {
+          "case_id": "retrieval-r08",
+          "recall": 1.0,
+          "relevant_document_ids": [
+            "budget"
+          ],
+          "retrieved_document_ids": [
+            "budget"
+          ]
+        },
+        {
+          "case_id": "retrieval-r09",
+          "recall": 1.0,
+          "relevant_document_ids": [
+            "resume-cache"
+          ],
+          "retrieved_document_ids": [
+            "resume-cache"
+          ]
+        },
+        {
+          "case_id": "retrieval-r10",
+          "recall": 1.0,
+          "relevant_document_ids": [
+            "wire-capture"
+          ],
+          "retrieved_document_ids": [
+            "wire-capture"
+          ]
+        },
+        {
+          "case_id": "retrieval-r11",
+          "recall": 1.0,
+          "relevant_document_ids": [
+            "local-ollama"
+          ],
+          "retrieved_document_ids": [
+            "local-ollama"
+          ]
+        },
+        {
+          "case_id": "retrieval-r12",
+          "recall": 1.0,
+          "relevant_document_ids": [
+            "quality"
+          ],
+          "retrieved_document_ids": [
+            "quality"
+          ]
+        },
+        {
+          "case_id": "retrieval-r13",
+          "recall": 0.5,
+          "relevant_document_ids": [
+            "task-model",
+            "task-cap"
+          ],
+          "retrieved_document_ids": [
+            "task-cap"
+          ]
+        },
+        {
+          "case_id": "retrieval-r14",
+          "recall": 0.5,
+          "relevant_document_ids": [
+            "title-template",
+            "context-compaction"
+          ],
+          "retrieved_document_ids": [
+            "context-compaction"
+          ]
+        },
+        {
+          "case_id": "retrieval-r15",
+          "recall": 0.5,
+          "relevant_document_ids": [
+            "query-cache",
+            "rag-top-k"
+          ],
+          "retrieved_document_ids": [
+            "query-cache"
+          ]
+        },
+        {
+          "case_id": "retrieval-r16",
+          "recall": 1.0,
+          "relevant_document_ids": [
+            "autocomplete"
+          ],
+          "retrieved_document_ids": [
+            "autocomplete"
+          ]
+        },
+        {
+          "case_id": "retrieval-r17",
+          "recall": 0.5,
+          "relevant_document_ids": [
+            "resume-cache",
+            "budget"
+          ],
+          "retrieved_document_ids": [
+            "resume-cache"
+          ]
+        },
+        {
+          "case_id": "retrieval-r18",
+          "recall": 0.5,
+          "relevant_document_ids": [
+            "wire-capture",
+            "budget"
+          ],
+          "retrieved_document_ids": [
+            "wire-capture"
+          ]
+        },
+        {
+          "case_id": "retrieval-r19",
+          "recall": 0.5,
+          "relevant_document_ids": [
+            "local-ollama",
+            "quality"
+          ],
+          "retrieved_document_ids": [
+            "local-ollama"
+          ]
+        },
+        {
+          "case_id": "retrieval-r20",
+          "recall": 0.3333333333333333,
+          "relevant_document_ids": [
+            "rag-top-k",
+            "quality",
+            "wire-capture"
+          ],
+          "retrieved_document_ids": [
+            "quality"
+          ]
+        }
+      ],
+      "mean_recall": 0.816667,
+      "source": "targeted_eval_rows"
+    }
+  },
+  "raw_capture": "results/raw-proxy-logs/l6-top-k-1.jsonl",
+  "run_count": 1,
+  "schema_version": 1
+}

@@ -1,0 +1,50 @@
+{
+  "cache_key": "89f11399634a6e069264c224eebcdf1c7983f722809dae7b1f2b7bf96f4b8f55",
+  "call_type": "tags",
+  "case_id": "tags-12",
+  "completion_ms": 816.801,
+  "condition": "l2-cap-128",
+  "endpoint": "/api/v1/tasks/tags/completions",
+  "objective_score": 1.0,
+  "payload_sha256": "da7ca6c1b0ab508f1b662fff58ee71d180ace2ef80986617fdff395faf7e528f",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "Based on the chat history, the main theme is related to technology, specifically the usage and troubleshooting of software interfaces.\n\n### Tags:\n```json\n{ \"tags\": [\"Technology\", \"Software\", \"User Interface\"] }\n```",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789437433,
+    "id": "qwen2.5:14b-instruct-577b32ee-93c1-4d74-9491-5e15bf582d4e",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 46,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 46,
+      "eval_duration": 745780000,
+      "input_tokens": 284,
+      "load_duration": 1263900,
+      "output_tokens": 46,
+      "prompt_eval_count": 284,
+      "prompt_eval_duration": 51520000,
+      "prompt_token/s": 5512.42,
+      "prompt_tokens": 284,
+      "response_token/s": 61.68,
+      "total_duration": 801781100,
+      "total_tokens": 330
+    }
+  },
+  "response_text": "Based on the chat history, the main theme is related to technology, specifically the usage and troubleshooting of software interfaces.\n\n### Tags:\n```json\n{ \"tags\": [\"Technology\", \"Software\", \"User Interface\"] }\n```",
+  "retrieved_document_ids": null
+}

@@ -1,0 +1,50 @@
+{
+  "cache_key": "6f7b0ebe771b71b2e916e765899721f3b4fccd75b3aef4de9bf78198af8631a2",
+  "call_type": "title",
+  "case_id": "title-05",
+  "completion_ms": 246.093,
+  "condition": "l2-cap-512",
+  "endpoint": "/api/v1/tasks/title/completions",
+  "objective_score": 1.0,
+  "payload_sha256": "a4335622a50d2091454ecdea797035df21b59316242666d7895482aaa739c687",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{ \"title\": \"Model List Refresh\" }",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789437146,
+    "id": "qwen2.5:14b-instruct-41169581-8933-4f56-9e5f-f262cf6a9828",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 11,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 11,
+      "eval_duration": 146560000,
+      "input_tokens": 346,
+      "load_duration": 2139600,
+      "output_tokens": 11,
+      "prompt_eval_count": 346,
+      "prompt_eval_duration": 44658000,
+      "prompt_token/s": 7747.77,
+      "prompt_tokens": 346,
+      "response_token/s": 75.05,
+      "total_duration": 197660200,
+      "total_tokens": 357
+    }
+  },
+  "response_text": "{ \"title\": \"Model List Refresh\" }",
+  "retrieved_document_ids": null
+}

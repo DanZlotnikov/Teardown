@@ -1,0 +1,50 @@
+{
+  "cache_key": "727d508beba3354ce7f90e62860c6cd99bd9cd658765472fe2c3e5b35bf63e1d",
+  "call_type": "tags",
+  "case_id": "tags-19",
+  "completion_ms": 402.388,
+  "condition": "baseline",
+  "endpoint": "/api/v1/tasks/tags/completions",
+  "objective_score": 1.0,
+  "payload_sha256": "90b837552dd491bc2fdfe2f5442d598c2208659d34681447b0306a32ec493529",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "```json\n{ \"tags\": [\"Technology\", \"Software\", \"Web Development\"] }\n```",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789436503,
+    "id": "qwen2.5:14b-instruct-96464212-cdc1-474f-a303-2dfe4b6a71c2",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 20,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 20,
+      "eval_duration": 306820000,
+      "input_tokens": 268,
+      "load_duration": 1708700,
+      "output_tokens": 20,
+      "prompt_eval_count": 268,
+      "prompt_eval_duration": 44781000,
+      "prompt_token/s": 5984.68,
+      "prompt_tokens": 268,
+      "response_token/s": 65.18,
+      "total_duration": 357613600,
+      "total_tokens": 288
+    }
+  },
+  "response_text": "```json\n{ \"tags\": [\"Technology\", \"Software\", \"Web Development\"] }\n```",
+  "retrieved_document_ids": null
+}

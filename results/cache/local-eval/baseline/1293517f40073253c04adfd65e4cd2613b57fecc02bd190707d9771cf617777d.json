@@ -1,0 +1,50 @@
+{
+  "cache_key": "1293517f40073253c04adfd65e4cd2613b57fecc02bd190707d9771cf617777d",
+  "call_type": "autocomplete",
+  "case_id": "autocomplete-10",
+  "completion_ms": 359.834,
+  "condition": "baseline",
+  "endpoint": "/api/v1/tasks/auto/completions",
+  "objective_score": 1.0,
+  "payload_sha256": "6e231fd38bc202f0ef1c2986261e07933096c322582ff657c6d0822e0fcde79d",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{ \"text\": \"are important for optimizing readability and space in document titles.\" }",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789436545,
+    "id": "qwen2.5:14b-instruct-f152838d-71ec-473d-8523-ad8de54260cd",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 18,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 18,
+      "eval_duration": 279267000,
+      "input_tokens": 371,
+      "load_duration": 1804200,
+      "output_tokens": 18,
+      "prompt_eval_count": 371,
+      "prompt_eval_duration": 33756000,
+      "prompt_token/s": 10990.64,
+      "prompt_tokens": 371,
+      "response_token/s": 64.45,
+      "total_duration": 318609700,
+      "total_tokens": 389
+    }
+  },
+  "response_text": "{ \"text\": \"are important for optimizing readability and space in document titles.\" }",
+  "retrieved_document_ids": null
+}

@@ -1,0 +1,50 @@
+{
+  "cache_key": "01ab2ae5edcef120f5197b740662de445126c1201ca304d8ce7093bc058bd398",
+  "call_type": "main_chat_context",
+  "case_id": "context-17",
+  "completion_ms": 956.455,
+  "condition": "l4-last-6-turns",
+  "endpoint": "/api/chat/completions",
+  "objective_score": 0.0,
+  "payload_sha256": "3ef3b52894627aebc9e1f3bbd5378e479d2f77a2645626beb30408bf53ea392e",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "It seems there was a misunderstanding; I didn't specify any particular project name, incident code, or recovery region in the previous turns as they were intended to be generic discussions about logging and deployment checks. Could you please provide more context or details so I can assist you better?",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789440790,
+    "id": "qwen2.5:14b-instruct-406d03f2-c783-41c0-b92b-31bda20ebf82",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 56,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 56,
+      "eval_duration": 882686000,
+      "input_tokens": 222,
+      "load_duration": 2134900,
+      "output_tokens": 56,
+      "prompt_eval_count": 222,
+      "prompt_eval_duration": 19741000,
+      "prompt_token/s": 11245.63,
+      "prompt_tokens": 222,
+      "response_token/s": 63.44,
+      "total_duration": 907983400,
+      "total_tokens": 278
+    }
+  },
+  "response_text": "It seems there was a misunderstanding; I didn't specify any particular project name, incident code, or recovery region in the previous turns as they were intended to be generic discussions about logging and deployment checks. Could you please provide more context or details so I can assist you better?",
+  "retrieved_document_ids": null
+}

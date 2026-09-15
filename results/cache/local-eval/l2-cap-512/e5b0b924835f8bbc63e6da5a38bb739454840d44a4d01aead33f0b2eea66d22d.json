@@ -1,0 +1,50 @@
+{
+  "cache_key": "e5b0b924835f8bbc63e6da5a38bb739454840d44a4d01aead33f0b2eea66d22d",
+  "call_type": "tags",
+  "case_id": "tags-08",
+  "completion_ms": 350.448,
+  "condition": "l2-cap-512",
+  "endpoint": "/api/v1/tasks/tags/completions",
+  "objective_score": 1.0,
+  "payload_sha256": "b257f3bcfa9c88702db86b0634cb27f7413902e6887ee8b475446f0f755a766a",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "```json\n{ \"tags\": [\"Technology\", \"Software\", \"UserInterface\"] }\n```",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789437157,
+    "id": "qwen2.5:14b-instruct-e2159a62-2d41-4065-9161-b6160fcd8f2a",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 20,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 20,
+      "eval_duration": 274711000,
+      "input_tokens": 287,
+      "load_duration": 1235200,
+      "output_tokens": 20,
+      "prompt_eval_count": 287,
+      "prompt_eval_duration": 48057000,
+      "prompt_token/s": 5972.07,
+      "prompt_tokens": 287,
+      "response_token/s": 72.8,
+      "total_duration": 329565100,
+      "total_tokens": 307
+    }
+  },
+  "response_text": "```json\n{ \"tags\": [\"Technology\", \"Software\", \"UserInterface\"] }\n```",
+  "retrieved_document_ids": null
+}

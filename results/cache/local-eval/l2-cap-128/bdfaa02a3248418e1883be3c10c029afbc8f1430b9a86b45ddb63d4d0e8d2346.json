@@ -1,0 +1,50 @@
+{
+  "cache_key": "bdfaa02a3248418e1883be3c10c029afbc8f1430b9a86b45ddb63d4d0e8d2346",
+  "call_type": "retrieval_query",
+  "case_id": "query-19",
+  "completion_ms": 649.846,
+  "condition": "l2-cap-128",
+  "endpoint": "/api/v1/tasks/queries/completions",
+  "objective_score": 0.0,
+  "payload_sha256": "d2452fd7a20fa5f73fc9ac8a00f8e7e0678aeb37204f23afae05e97541c895e4",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"queries\": [\"open webui dropdown behavior fix\", \"dropdowns shift inward on narrow screen fix\", \"open webui screen edge dropdown adjustment\"]\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789437461,
+    "id": "qwen2.5:14b-instruct-e26e0cb7-38e4-4a67-b77f-75ca0062b9bd",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 34,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 34,
+      "eval_duration": 546576000,
+      "input_tokens": 404,
+      "load_duration": 1820400,
+      "output_tokens": 34,
+      "prompt_eval_count": 404,
+      "prompt_eval_duration": 45330000,
+      "prompt_token/s": 8912.42,
+      "prompt_tokens": 404,
+      "response_token/s": 62.21,
+      "total_duration": 598208700,
+      "total_tokens": 438
+    }
+  },
+  "response_text": "{\n  \"queries\": [\"open webui dropdown behavior fix\", \"dropdowns shift inward on narrow screen fix\", \"open webui screen edge dropdown adjustment\"]\n}",
+  "retrieved_document_ids": null
+}

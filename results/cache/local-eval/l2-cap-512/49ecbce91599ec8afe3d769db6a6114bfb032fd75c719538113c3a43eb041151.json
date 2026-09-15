@@ -1,0 +1,50 @@
+{
+  "cache_key": "49ecbce91599ec8afe3d769db6a6114bfb032fd75c719538113c3a43eb041151",
+  "call_type": "web_query",
+  "case_id": "query-16",
+  "completion_ms": 694.023,
+  "condition": "l2-cap-512",
+  "endpoint": "/api/v1/tasks/queries/completions",
+  "objective_score": 0.0,
+  "payload_sha256": "9c7ddf1b8030f1b1b8b7ede731ed14cee627f78c50535bde3f9b78e9ba2b87a8",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"queries\": [\"Open WebUI small screen model list fix\", \"Check Open WebUI model list behavior on narrow displays\", \"Verify Open WebUI workspace model list display on small screens\"]\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789437181,
+    "id": "qwen2.5:14b-instruct-71c1afd3-293d-4c37-875f-4f24be9eac1d",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 42,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 42,
+      "eval_duration": 589921000,
+      "input_tokens": 397,
+      "load_duration": 1612200,
+      "output_tokens": 42,
+      "prompt_eval_count": 397,
+      "prompt_eval_duration": 41486000,
+      "prompt_token/s": 9569.49,
+      "prompt_tokens": 397,
+      "response_token/s": 71.2,
+      "total_duration": 637110000,
+      "total_tokens": 439
+    }
+  },
+  "response_text": "{\n  \"queries\": [\"Open WebUI small screen model list fix\", \"Check Open WebUI model list behavior on narrow displays\", \"Verify Open WebUI workspace model list display on small screens\"]\n}",
+  "retrieved_document_ids": null
+}

@@ -1,0 +1,50 @@
+{
+  "cache_key": "3d9978fddcb2fb6ac94ab1ecc326e8abd93f13acbea03059e15c933b9dda2299",
+  "call_type": "retrieval_query",
+  "case_id": "query-11",
+  "completion_ms": 564.683,
+  "condition": "l2-cap-512",
+  "endpoint": "/api/v1/tasks/queries/completions",
+  "objective_score": 0.0,
+  "payload_sha256": "2a7c93b78a9807ce43690d4c361077b21b8b053107b1ff947fa0f6ed47c0697e",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"queries\": [\"Open WebUI automation behavior fix\", \"Open WebUI repeating automation issue solution\", \"Open WebUI save automation fix\"]\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789437177,
+    "id": "qwen2.5:14b-instruct-79beb726-5354-4954-a973-8387f87d4e11",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 32,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 32,
+      "eval_duration": 481808000,
+      "input_tokens": 409,
+      "load_duration": 2802200,
+      "output_tokens": 32,
+      "prompt_eval_count": 409,
+      "prompt_eval_duration": 47706000,
+      "prompt_token/s": 8573.35,
+      "prompt_tokens": 409,
+      "response_token/s": 66.42,
+      "total_duration": 537146600,
+      "total_tokens": 441
+    }
+  },
+  "response_text": "{\n  \"queries\": [\"Open WebUI automation behavior fix\", \"Open WebUI repeating automation issue solution\", \"Open WebUI save automation fix\"]\n}",
+  "retrieved_document_ids": null
+}

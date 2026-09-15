@@ -1,0 +1,50 @@
+{
+  "cache_key": "6b8c2d437a2545ac85907552c40247b87c4bcdd69927b3afa49ce708a589540b",
+  "call_type": "main_chat_context",
+  "case_id": "context-19",
+  "completion_ms": 1009.128,
+  "condition": "l4-last-6-turns",
+  "endpoint": "/api/chat/completions",
+  "objective_score": 0.0,
+  "payload_sha256": "eb4ad8201854a3667bdda6c7724079a114764c6a02561d7d15cdb8bf189af4b5",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "It seems there was a misunderstanding; the initial turns of our conversation did not include specific details about a project name, incident code, or recovery region. Could you please provide more context or clarify the details you're looking for? This will help me give you a more accurate and helpful response.",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789440791,
+    "id": "qwen2.5:14b-instruct-4d6ce172-f523-4a13-8f4a-6f4810ea8919",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 59,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 59,
+      "eval_duration": 927877000,
+      "input_tokens": 222,
+      "load_duration": 1135400,
+      "output_tokens": 59,
+      "prompt_eval_count": 222,
+      "prompt_eval_duration": 19277000,
+      "prompt_token/s": 11516.31,
+      "prompt_tokens": 222,
+      "response_token/s": 63.59,
+      "total_duration": 951900200,
+      "total_tokens": 281
+    }
+  },
+  "response_text": "It seems there was a misunderstanding; the initial turns of our conversation did not include specific details about a project name, incident code, or recovery region. Could you please provide more context or clarify the details you're looking for? This will help me give you a more accurate and helpful response.",
+  "retrieved_document_ids": null
+}

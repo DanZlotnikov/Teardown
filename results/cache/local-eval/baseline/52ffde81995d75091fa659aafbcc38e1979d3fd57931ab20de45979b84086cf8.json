@@ -1,0 +1,50 @@
+{
+  "cache_key": "52ffde81995d75091fa659aafbcc38e1979d3fd57931ab20de45979b84086cf8",
+  "call_type": "title",
+  "case_id": "title-14",
+  "completion_ms": 284.922,
+  "condition": "baseline",
+  "endpoint": "/api/v1/tasks/title/completions",
+  "objective_score": 1.0,
+  "payload_sha256": "249474cd867b76086c78c5e8e70ce0f3a0edb27b43d34858d202e498de94312f",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{ \"title\": \"Open WebUI Behavior\" }",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789436479,
+    "id": "qwen2.5:14b-instruct-69bd2df2-c0c5-47c9-a1fd-1a9f9ea732c4",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 12,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 12,
+      "eval_duration": 177781000,
+      "input_tokens": 337,
+      "load_duration": 1239500,
+      "output_tokens": 12,
+      "prompt_eval_count": 337,
+      "prompt_eval_duration": 43403000,
+      "prompt_token/s": 7764.44,
+      "prompt_tokens": 337,
+      "response_token/s": 67.5,
+      "total_duration": 226030800,
+      "total_tokens": 349
+    }
+  },
+  "response_text": "{ \"title\": \"Open WebUI Behavior\" }",
+  "retrieved_document_ids": null
+}

@@ -1,0 +1,50 @@
+{
+  "cache_key": "cda6ee49d786ae8b8df10ef383d001e43849a54e4549c5bdc1122eb2c6f36df3",
+  "call_type": "tags",
+  "case_id": "tags-03",
+  "completion_ms": 364.276,
+  "condition": "l2-cap-512",
+  "endpoint": "/api/v1/tasks/tags/completions",
+  "objective_score": 1.0,
+  "payload_sha256": "f0942bd2b62e54668c7c71e721a3e11167bc66204bae543a8bde0896297850c1",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "```json\n{ \"tags\": [\"Technology\", \"Accessibility\", \"Software\"] }\n```",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789437154,
+    "id": "qwen2.5:14b-instruct-7296e34c-cf2e-4912-8e18-a9a81feadc40",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 19,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 19,
+      "eval_duration": 260430000,
+      "input_tokens": 336,
+      "load_duration": 2305700,
+      "output_tokens": 19,
+      "prompt_eval_count": 336,
+      "prompt_eval_duration": 64870999,
+      "prompt_token/s": 5179.51,
+      "prompt_tokens": 336,
+      "response_token/s": 72.96,
+      "total_duration": 332163700,
+      "total_tokens": 355
+    }
+  },
+  "response_text": "```json\n{ \"tags\": [\"Technology\", \"Accessibility\", \"Software\"] }\n```",
+  "retrieved_document_ids": null
+}

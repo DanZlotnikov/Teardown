@@ -1,0 +1,50 @@
+{
+  "cache_key": "a807627a8d01b5c6ff4915641134074ea03ac012e4383d7f1a399694d33d54ee",
+  "call_type": "retrieval_query",
+  "case_id": "query-03",
+  "completion_ms": 757.547,
+  "condition": "baseline",
+  "endpoint": "/api/v1/tasks/queries/completions",
+  "objective_score": 0.0,
+  "payload_sha256": "52800943c45458b52568de20b10316aa1087365e9e3f3568bc25257a0232e214",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"queries\": [\"Open WebUI large tool call streaming fix\", \"how to verify Open WebUI large tool call streaming optimization\", \"anthropic compatible clients optimization for large tool calls\"]\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789436505,
+    "id": "qwen2.5:14b-instruct-c3401d9a-8459-4c40-bde2-87ec80929474",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 41,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 41,
+      "eval_duration": 642264000,
+      "input_tokens": 420,
+      "load_duration": 1830900,
+      "output_tokens": 41,
+      "prompt_eval_count": 420,
+      "prompt_eval_duration": 49899000,
+      "prompt_token/s": 8417.0,
+      "prompt_tokens": 420,
+      "response_token/s": 63.84,
+      "total_duration": 699247400,
+      "total_tokens": 461
+    }
+  },
+  "response_text": "{\n  \"queries\": [\"Open WebUI large tool call streaming fix\", \"how to verify Open WebUI large tool call streaming optimization\", \"anthropic compatible clients optimization for large tool calls\"]\n}",
+  "retrieved_document_ids": null
+}

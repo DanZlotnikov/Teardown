@@ -1,0 +1,50 @@
+{
+  "cache_key": "54abe33f54e531e92bb33c81d35224f5c1e4ad3de7c703c68472aa72e6f3b6c5",
+  "call_type": "retrieval_query",
+  "case_id": "query-09",
+  "completion_ms": 6064.54,
+  "condition": "l2-cap-32",
+  "endpoint": "/api/v1/tasks/queries/completions",
+  "objective_score": 0.0,
+  "payload_sha256": "54262bc01d09bb9389fcff8835cbd4d9675798fc01a827a6c6efa89756527273",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"queries\": [\n    \"Open WebUI latest update features\",\n    \"Open WebUI administrator operational changes\",\n    \"Open WebUI enterprise documentation\"\n",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789437643,
+    "id": "qwen2.5:14b-instruct-59f3c0b7-c3f7-42bb-a121-e824c1573a96",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m6s",
+      "completion_tokens": 32,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 32,
+      "eval_duration": 670574000,
+      "input_tokens": 11292,
+      "load_duration": 2102400,
+      "output_tokens": 32,
+      "prompt_eval_count": 11292,
+      "prompt_eval_duration": 5251676000,
+      "prompt_token/s": 2150.17,
+      "prompt_tokens": 11292,
+      "response_token/s": 47.72,
+      "total_duration": 6007704900,
+      "total_tokens": 11324
+    }
+  },
+  "response_text": "{\n  \"queries\": [\n    \"Open WebUI latest update features\",\n    \"Open WebUI administrator operational changes\",\n    \"Open WebUI enterprise documentation\"\n",
+  "retrieved_document_ids": null
+}

@@ -1,0 +1,51 @@
+{
+  "cache_key": "6dac18c9215a9829e9be6d1357856aaf8c33f8d18d6bf43e35d38bc9bcdd3475",
+  "call_type": "main_chat_context",
+  "case_id": "context-14",
+  "chat_id": "1ce9e1e6-82f1-445d-837e-1b810bc8b0e8",
+  "compaction_triggered": true,
+  "completion_ms": 2347.13,
+  "condition": "l4-native-compaction",
+  "objective_score": 0.6666666666666666,
+  "persisted_summary_chars": 381,
+  "persisted_summary_sha256": "c9cbb2a5fd2cb02fd59768455312e26b111cfd2760c3c0f85e8b12fa31b34a6e",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "From the first turn, the project name is **Kestrel-14**, the incident code is **OWUI-7314**, and the recovery region is **Osaka**.",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789442141,
+    "id": "qwen2.5:14b-instruct-8c0e4919-5b45-405d-8f95-f6e08e688a84",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 41,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 41,
+      "eval_duration": 626298000,
+      "input_tokens": 223,
+      "load_duration": 2644900,
+      "output_tokens": 41,
+      "prompt_eval_count": 223,
+      "prompt_eval_duration": 87177000,
+      "prompt_token/s": 2558.01,
+      "prompt_tokens": 223,
+      "response_token/s": 65.46,
+      "total_duration": 767653400,
+      "total_tokens": 264
+    }
+  },
+  "response_text": "From the first turn, the project name is **Kestrel-14**, the incident code is **OWUI-7314**, and the recovery region is **Osaka**."
+}

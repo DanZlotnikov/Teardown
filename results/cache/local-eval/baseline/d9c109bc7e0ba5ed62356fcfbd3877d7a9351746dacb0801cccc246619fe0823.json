@@ -1,0 +1,50 @@
+{
+  "cache_key": "d9c109bc7e0ba5ed62356fcfbd3877d7a9351746dacb0801cccc246619fe0823",
+  "call_type": "main_chat_context",
+  "case_id": "context-07",
+  "completion_ms": 796.373,
+  "condition": "baseline",
+  "endpoint": "/api/chat/completions",
+  "objective_score": 1.0,
+  "payload_sha256": "f5e473e9b1a26bb6de648f30965317c25901fc5923ca16ed66f4d4e67532c1c9",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "The project name mentioned in the first turn is Project Kestrel-07, its incident code is OWUI-7307, and the recovery region is Nairobi.",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789436528,
+    "id": "qwen2.5:14b-instruct-b136c981-5d1f-426a-beac-32b4441ba189",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 37,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 37,
+      "eval_duration": 585801000,
+      "input_tokens": 333,
+      "load_duration": 2146200,
+      "output_tokens": 37,
+      "prompt_eval_count": 333,
+      "prompt_eval_duration": 128654000,
+      "prompt_token/s": 2588.34,
+      "prompt_tokens": 333,
+      "response_token/s": 63.16,
+      "total_duration": 743034500,
+      "total_tokens": 370
+    }
+  },
+  "response_text": "The project name mentioned in the first turn is Project Kestrel-07, its incident code is OWUI-7307, and the recovery region is Nairobi.",
+  "retrieved_document_ids": null
+}

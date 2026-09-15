@@ -1,0 +1,50 @@
+{
+  "cache_key": "2969dd1811cfd74b969cfd18aa61e300582a4d6612089a065b036f6e96aa5695",
+  "call_type": "tags",
+  "case_id": "tags-13",
+  "completion_ms": 1075.989,
+  "condition": "l2-cap-512",
+  "endpoint": "/api/v1/tasks/tags/completions",
+  "objective_score": 1.0,
+  "payload_sha256": "0d2c40ab952d4a5654526ddc3aca7f847348219f0a7f4906bacb4c1c80eb48a1",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "Based on the provided chat history, the main theme revolves around the usage and troubleshooting of a specific software interface (Open WebUI). This falls under the broader category of technology and a more specific subfield of software applications or user interface issues.\n\n```json\n{ \"tags\": [\"Technology\", \"Software\", \"User Interface\"] }\n```",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789437160,
+    "id": "qwen2.5:14b-instruct-c2d7caf8-748f-461c-b8b0-da3dd85d6ea8",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m1s",
+      "completion_tokens": 68,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 68,
+      "eval_duration": 982373000,
+      "input_tokens": 275,
+      "load_duration": 2158700,
+      "output_tokens": 68,
+      "prompt_eval_count": 275,
+      "prompt_eval_duration": 40329000,
+      "prompt_token/s": 6818.91,
+      "prompt_tokens": 275,
+      "response_token/s": 69.22,
+      "total_duration": 1029234600,
+      "total_tokens": 343
+    }
+  },
+  "response_text": "Based on the provided chat history, the main theme revolves around the usage and troubleshooting of a specific software interface (Open WebUI). This falls under the broader category of technology and a more specific subfield of software applications or user interface issues.\n\n```json\n{ \"tags\": [\"Technology\", \"Software\", \"User Interface\"] }\n```",
+  "retrieved_document_ids": null
+}

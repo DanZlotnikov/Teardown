@@ -1,0 +1,50 @@
+{
+  "cache_key": "77b012a9004676c84a18409a3eb3eb266a931176a72301ed5df5a27fe3bd37d0",
+  "call_type": "title",
+  "case_id": "title-06",
+  "completion_ms": 279.922,
+  "condition": "baseline",
+  "endpoint": "/api/v1/tasks/title/completions",
+  "objective_score": 1.0,
+  "payload_sha256": "a0f126270471e6e4662e01aa29676f4ae3bd28d3ed4da50abb2d1d4fdbaaed09",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{ \"title\": \"Websocket Performance\" }",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789436476,
+    "id": "qwen2.5:14b-instruct-62f020ee-d9b7-47a9-a83e-82d17b589b9a",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 11,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 11,
+      "eval_duration": 161280000,
+      "input_tokens": 369,
+      "load_duration": 1825300,
+      "output_tokens": 11,
+      "prompt_eval_count": 369,
+      "prompt_eval_duration": 56096000,
+      "prompt_token/s": 6578.01,
+      "prompt_tokens": 369,
+      "response_token/s": 68.2,
+      "total_duration": 223673400,
+      "total_tokens": 380
+    }
+  },
+  "response_text": "{ \"title\": \"Websocket Performance\" }",
+  "retrieved_document_ids": null
+}

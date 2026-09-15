@@ -1,0 +1,43 @@
+{
+  "cache_key": "5aa06c2c4ca87178b391aa9e9081aed49fc74e21d866830593bc51d9fd2d6579",
+  "call_type": "retrieval",
+  "case_id": "retrieval-r02",
+  "completion_ms": 38.646,
+  "condition": "l6-top-k-1",
+  "endpoint": "/api/v1/retrieval/query/collection",
+  "objective_score": 1.0,
+  "payload_sha256": "5d0af9771c5dec11e3975bd93d4e9a0edbf09c4a35a94ecf9857923101bfc082",
+  "response": {
+    "distances": [
+      [
+        0.8761854767799377
+      ]
+    ],
+    "documents": [
+      [
+        "[DOC_ID:task-cap] Task output limits  \nThe task.model.params dictionary applies generation parameters across task endpoints. A max_tokens cap therefore reaches titles and autocomplete as well as tags, follow-ups, and queries; it is not a narrow tag-only control."
+      ]
+    ],
+    "metadatas": [
+      [
+        {
+          "content_type": "text/plain; charset=utf-8",
+          "created_by": "b997c815-91d7-4e7f-b9bb-f554a9245ad7",
+          "data": "{}",
+          "embedding_config": "{'engine': 'ollama', 'model': 'nomic-embed-text'}",
+          "file_hash": "601aa6f4f02b7e861bda7ec714141fe211c2fc4bfa33bca3bb82d3b92a0a9536",
+          "file_id": "4ab3479f-0f5f-4f6b-b410-bc6cb0307b19",
+          "hash": "601aa6f4f02b7e861bda7ec714141fe211c2fc4bfa33bca3bb82d3b92a0a9536",
+          "name": "teardown-task-cap.txt",
+          "size": 261,
+          "source": "teardown-task-cap.txt",
+          "start_index": 0
+        }
+      ]
+    ]
+  },
+  "response_text": "",
+  "retrieved_document_ids": [
+    "task-cap"
+  ]
+}

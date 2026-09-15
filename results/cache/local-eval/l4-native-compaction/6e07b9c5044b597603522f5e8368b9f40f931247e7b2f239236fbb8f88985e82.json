@@ -1,0 +1,51 @@
+{
+  "cache_key": "6e07b9c5044b597603522f5e8368b9f40f931247e7b2f239236fbb8f88985e82",
+  "call_type": "main_chat_context",
+  "case_id": "context-09",
+  "chat_id": "89c518db-bcd0-4e7e-b364-906002805ab9",
+  "compaction_triggered": true,
+  "completion_ms": 2073.66,
+  "condition": "l4-native-compaction",
+  "objective_score": 0.6666666666666666,
+  "persisted_summary_chars": 368,
+  "persisted_summary_sha256": "50d52358e23921718e25eea0a36057fefe9088331f4b1d27b995c9a0061838dd",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "The exact project name is Kestrel-09, the incident code is OWUI-7309, and the recovery region is Helsinki.",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789442129,
+    "id": "qwen2.5:14b-instruct-ba01a7c5-d555-4ceb-b086-e4246840a155",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 32,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 32,
+      "eval_duration": 483087000,
+      "input_tokens": 216,
+      "load_duration": 1796300,
+      "output_tokens": 32,
+      "prompt_eval_count": 216,
+      "prompt_eval_duration": 86010000,
+      "prompt_token/s": 2511.34,
+      "prompt_tokens": 216,
+      "response_token/s": 66.24,
+      "total_duration": 613414400,
+      "total_tokens": 248
+    }
+  },
+  "response_text": "The exact project name is Kestrel-09, the incident code is OWUI-7309, and the recovery region is Helsinki."
+}

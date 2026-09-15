@@ -1,0 +1,50 @@
+{
+  "cache_key": "61dcd78ed523e8d5c056de35a63bc61f6f95e64ee45714a34b54c47803abda27",
+  "call_type": "tags",
+  "case_id": "tags-06",
+  "completion_ms": 612.55,
+  "condition": "l2-cap-32",
+  "endpoint": "/api/v1/tasks/tags/completions",
+  "objective_score": 0.0,
+  "payload_sha256": "5b51c79d19caa2321bc0aeb75491cc6ad2d9a299f1c7b95e9c8d9d7faa8e28e8",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "Based on the provided chat history, the conversation revolves around technical issues related to software and user experience in a specific tool (Open WebUI). The primary theme is",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789437624,
+    "id": "qwen2.5:14b-instruct-e981c3bc-4eae-4c85-bde8-2e015f729b38",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 32,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 32,
+      "eval_duration": 510845000,
+      "input_tokens": 270,
+      "load_duration": 1223600,
+      "output_tokens": 32,
+      "prompt_eval_count": 270,
+      "prompt_eval_duration": 44768000,
+      "prompt_token/s": 6031.09,
+      "prompt_tokens": 270,
+      "response_token/s": 62.64,
+      "total_duration": 560886000,
+      "total_tokens": 302
+    }
+  },
+  "response_text": "Based on the provided chat history, the conversation revolves around technical issues related to software and user experience in a specific tool (Open WebUI). The primary theme is",
+  "retrieved_document_ids": null
+}

@@ -1,0 +1,50 @@
+{
+  "cache_key": "8b59f3b2c7f737b74f009bf60d06c3e0aab22ef8fcb1d5b3d5c73f3374caaf5c",
+  "call_type": "title",
+  "case_id": "title-10",
+  "completion_ms": 265.636,
+  "condition": "l2-cap-128",
+  "endpoint": "/api/v1/tasks/title/completions",
+  "objective_score": 1.0,
+  "payload_sha256": "570fd827f4d0c61ad826cc2e439624ab432d758dd85f5eee11e96e4b9be3f182",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{ \"title\": \"WebUI Bug Fix\" }",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789437420,
+    "id": "qwen2.5:14b-instruct-e87cb5ce-12b5-42da-93d4-f49a3516f59b",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 12,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 12,
+      "eval_duration": 182873000,
+      "input_tokens": 338,
+      "load_duration": 1581900,
+      "output_tokens": 12,
+      "prompt_eval_count": 338,
+      "prompt_eval_duration": 44536000,
+      "prompt_token/s": 7589.37,
+      "prompt_tokens": 338,
+      "response_token/s": 65.62,
+      "total_duration": 233753100,
+      "total_tokens": 350
+    }
+  },
+  "response_text": "{ \"title\": \"WebUI Bug Fix\" }",
+  "retrieved_document_ids": null
+}

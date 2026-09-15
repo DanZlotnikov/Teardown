@@ -1,0 +1,50 @@
+{
+  "cache_key": "cc3278a1c7f94c0f5744e2951ee0de6b2a73af8f1ffcb1d3900a0dd0fff009f5",
+  "call_type": "title",
+  "case_id": "title-25",
+  "completion_ms": 257.563,
+  "condition": "baseline",
+  "endpoint": "/api/v1/tasks/title/completions",
+  "objective_score": 1.0,
+  "payload_sha256": "6ff2eb0d775684701ae8110cbdf4ae01a45909926632b70b488dcfd5092c1132",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{ \"title\": \"Sidebar Behavior\" }",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789436487,
+    "id": "qwen2.5:14b-instruct-f10d8b8e-96c5-4d74-a821-21b49b2d20e7",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 10,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 10,
+      "eval_duration": 146989000,
+      "input_tokens": 341,
+      "load_duration": 1682900,
+      "output_tokens": 10,
+      "prompt_eval_count": 341,
+      "prompt_eval_duration": 49275000,
+      "prompt_token/s": 6920.35,
+      "prompt_tokens": 341,
+      "response_token/s": 68.03,
+      "total_duration": 201583600,
+      "total_tokens": 351
+    }
+  },
+  "response_text": "{ \"title\": \"Sidebar Behavior\" }",
+  "retrieved_document_ids": null
+}

@@ -1,0 +1,50 @@
+{
+  "cache_key": "5f871dfac5815756e3fa98233bf75da9c57823c9489ed7745d2a39d8775d7311",
+  "call_type": "main_chat_context",
+  "case_id": "context-01",
+  "completion_ms": 1217.977,
+  "condition": "l4-last-3-turns",
+  "endpoint": "/api/chat/completions",
+  "objective_score": 0.0,
+  "payload_sha256": "cc375f8207a96884aa39156d04f92c7802c651d1c39b35b331e8e53e53e09ddf",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "It seems there was a misunderstanding; you didn't provide specific details about the project name, incident code, or recovery region in the previous turns. Could you please provide those details so I can assist you accurately? If it's part of a larger context, feel free to share more information, and I'll be happy to help!",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789441809,
+    "id": "qwen2.5:14b-instruct-fb614f97-34b8-411a-8a36-db2da0b1fef0",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m1s",
+      "completion_tokens": 67,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 67,
+      "eval_duration": 1057021999,
+      "input_tokens": 117,
+      "load_duration": 1094200,
+      "output_tokens": 67,
+      "prompt_eval_count": 117,
+      "prompt_eval_duration": 47173000,
+      "prompt_token/s": 2480.23,
+      "prompt_tokens": 117,
+      "response_token/s": 63.39,
+      "total_duration": 1159629500,
+      "total_tokens": 184
+    }
+  },
+  "response_text": "It seems there was a misunderstanding; you didn't provide specific details about the project name, incident code, or recovery region in the previous turns. Could you please provide those details so I can assist you accurately? If it's part of a larger context, feel free to share more information, and I'll be happy to help!",
+  "retrieved_document_ids": null
+}

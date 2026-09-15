@@ -1,0 +1,14 @@
+{
+  "actual_api_cost_usd": "0",
+  "cached_cases": 0,
+  "compaction_triggered_cases": 20,
+  "completed_cases": 20,
+  "condition": "l4-native-compaction",
+  "eval_sha256": "4f71a9d609398d9b0794943a4669947ceb38339e9edb4f6a02dd6971d4c0cff6",
+  "objective_mean_by_call_type": {
+    "main_chat_context": 0.8
+  },
+  "provider": "local_ollama_via_saved_open_webui_chat",
+  "rows": "results/eval/l4-native-compaction.rows.json",
+  "schema_version": 1
+}

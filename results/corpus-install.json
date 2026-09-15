@@ -1,0 +1,382 @@
+{
+  "base_url": "http://127.0.0.1:8088",
+  "collection_id": "abc5e0a6-6b7d-4e76-ac98-821d1cc593bc",
+  "completed_document_ids": [
+    "task-model",
+    "task-cap",
+    "title-template",
+    "context-compaction",
+    "query-cache",
+    "rag-top-k",
+    "autocomplete",
+    "budget",
+    "resume-cache",
+    "wire-capture",
+    "local-ollama",
+    "quality"
+  ],
+  "corpus_sha256": "f4e57fec49ee92a076f9626f3a247fb0af7f7b0c70cd9f412709e0341a083982",
+  "created_at": "2026-09-15T01:48:09.908485+00:00",
+  "file_ids": {
+    "autocomplete": "4998c46d-3e3e-4277-bcfe-faf0bcba7013",
+    "budget": "1fd95377-8c3d-4777-b9b8-8d3193f99045",
+    "context-compaction": "b7efbaad-d68a-4052-a4e7-31e24ae6e708",
+    "local-ollama": "1f26667b-098c-4e5d-8892-79e8f6557466",
+    "quality": "0b43f959-edd6-4cba-8c80-c42d76fbdeaa",
+    "query-cache": "371aa7e1-73b6-43be-9adb-0b829bdd47f4",
+    "rag-top-k": "94914ac4-5fd6-446a-9e51-60b8ac41c2dc",
+    "resume-cache": "b5195914-9264-45ac-bb91-dfbc880f422a",
+    "task-cap": "4ab3479f-0f5f-4f6b-b410-bc6cb0307b19",
+    "task-model": "bb4a58a1-5afd-4be3-94a1-393cedf36faf",
+    "title-template": "82395368-bbd1-493d-8ca9-79da82bcd982",
+    "wire-capture": "2396eed1-0d57-456d-8b9f-89b3a78b5a9d"
+  },
+  "inflight_document_id": null,
+  "ingestion_method": "file",
+  "schema_version": 2,
+  "verification": {
+    "cases": [
+      {
+        "case_id": "r01",
+        "relevant_document_ids": [
+          "task-model"
+        ],
+        "retrieved_document_ids": [
+          "task-model",
+          "task-cap",
+          "autocomplete"
+        ]
+      },
+      {
+        "case_id": "r02",
+        "relevant_document_ids": [
+          "task-cap"
+        ],
+        "retrieved_document_ids": [
+          "task-cap",
+          "autocomplete",
+          "title-template"
+        ]
+      },
+      {
+        "case_id": "r03",
+        "relevant_document_ids": [
+          "title-template"
+        ],
+        "retrieved_document_ids": [
+          "title-template",
+          "task-cap",
+          "context-compaction"
+        ]
+      },
+      {
+        "case_id": "r04",
+        "relevant_document_ids": [
+          "context-compaction"
+        ],
+        "retrieved_document_ids": [
+          "context-compaction",
+          "autocomplete",
+          "task-cap"
+        ]
+      },
+      {
+        "case_id": "r05",
+        "relevant_document_ids": [
+          "query-cache"
+        ],
+        "retrieved_document_ids": [
+          "query-cache",
+          "resume-cache",
+          "wire-capture"
+        ]
+      },
+      {
+        "case_id": "r06",
+        "relevant_document_ids": [
+          "rag-top-k"
+        ],
+        "retrieved_document_ids": [
+          "rag-top-k",
+          "quality",
+          "context-compaction"
+        ]
+      },
+      {
+        "case_id": "r07",
+        "relevant_document_ids": [
+          "autocomplete"
+        ],
+        "retrieved_document_ids": [
+          "autocomplete",
+          "resume-cache",
+          "task-cap"
+        ]
+      },
+      {
+        "case_id": "r08",
+        "relevant_document_ids": [
+          "budget"
+        ],
+        "retrieved_document_ids": [
+          "budget",
+          "wire-capture",
+          "resume-cache"
+        ]
+      },
+      {
+        "case_id": "r09",
+        "relevant_document_ids": [
+          "resume-cache"
+        ],
+        "retrieved_document_ids": [
+          "resume-cache",
+          "query-cache",
+          "autocomplete"
+        ]
+      },
+      {
+        "case_id": "r10",
+        "relevant_document_ids": [
+          "wire-capture"
+        ],
+        "retrieved_document_ids": [
+          "wire-capture",
+          "quality",
+          "autocomplete"
+        ]
+      },
+      {
+        "case_id": "r11",
+        "relevant_document_ids": [
+          "local-ollama"
+        ],
+        "retrieved_document_ids": [
+          "local-ollama",
+          "wire-capture",
+          "context-compaction"
+        ]
+      },
+      {
+        "case_id": "r12",
+        "relevant_document_ids": [
+          "quality"
+        ],
+        "retrieved_document_ids": [
+          "quality",
+          "title-template",
+          "local-ollama"
+        ]
+      },
+      {
+        "case_id": "r13",
+        "relevant_document_ids": [
+          "task-model",
+          "task-cap"
+        ],
+        "retrieved_document_ids": [
+          "task-cap",
+          "task-model",
+          "context-compaction"
+        ]
+      },
+      {
+        "case_id": "r14",
+        "relevant_document_ids": [
+          "title-template",
+          "context-compaction"
+        ],
+        "retrieved_document_ids": [
+          "context-compaction",
+          "title-template",
+          "task-cap"
+        ]
+      },
+      {
+        "case_id": "r15",
+        "relevant_document_ids": [
+          "query-cache",
+          "rag-top-k"
+        ],
+        "retrieved_document_ids": [
+          "query-cache",
+          "resume-cache",
+          "task-model"
+        ]
+      },
+      {
+        "case_id": "r16",
+        "relevant_document_ids": [
+          "autocomplete"
+        ],
+        "retrieved_document_ids": [
+          "autocomplete",
+          "budget",
+          "wire-capture"
+        ]
+      },
+      {
+        "case_id": "r17",
+        "relevant_document_ids": [
+          "resume-cache",
+          "budget"
+        ],
+        "retrieved_document_ids": [
+          "resume-cache",
+          "budget",
+          "query-cache"
+        ]
+      },
+      {
+        "case_id": "r18",
+        "relevant_document_ids": [
+          "wire-capture",
+          "budget"
+        ],
+        "retrieved_document_ids": [
+          "wire-capture",
+          "budget",
+          "autocomplete"
+        ]
+      },
+      {
+        "case_id": "r19",
+        "relevant_document_ids": [
+          "local-ollama",
+          "quality"
+        ],
+        "retrieved_document_ids": [
+          "local-ollama",
+          "quality",
+          "wire-capture"
+        ]
+      },
+      {
+        "case_id": "r20",
+        "relevant_document_ids": [
+          "rag-top-k",
+          "quality",
+          "wire-capture"
+        ],
+        "retrieved_document_ids": [
+          "quality",
+          "wire-capture",
+          "local-ollama"
+        ]
+      }
+    ],
+    "corpus_documents": [
+      {
+        "document_id": "task-model",
+        "present_at_3": true,
+        "retrieved_document_ids": [
+          "task-model",
+          "task-cap",
+          "local-ollama"
+        ]
+      },
+      {
+        "document_id": "task-cap",
+        "present_at_3": true,
+        "retrieved_document_ids": [
+          "task-cap",
+          "autocomplete",
+          "task-model"
+        ]
+      },
+      {
+        "document_id": "title-template",
+        "present_at_3": true,
+        "retrieved_document_ids": [
+          "title-template",
+          "task-cap",
+          "task-model"
+        ]
+      },
+      {
+        "document_id": "context-compaction",
+        "present_at_3": true,
+        "retrieved_document_ids": [
+          "context-compaction",
+          "title-template",
+          "task-cap"
+        ]
+      },
+      {
+        "document_id": "query-cache",
+        "present_at_3": true,
+        "retrieved_document_ids": [
+          "query-cache",
+          "wire-capture",
+          "resume-cache"
+        ]
+      },
+      {
+        "document_id": "rag-top-k",
+        "present_at_3": true,
+        "retrieved_document_ids": [
+          "rag-top-k",
+          "wire-capture",
+          "context-compaction"
+        ]
+      },
+      {
+        "document_id": "autocomplete",
+        "present_at_3": true,
+        "retrieved_document_ids": [
+          "autocomplete",
+          "task-cap",
+          "task-model"
+        ]
+      },
+      {
+        "document_id": "budget",
+        "present_at_3": true,
+        "retrieved_document_ids": [
+          "budget",
+          "wire-capture",
+          "resume-cache"
+        ]
+      },
+      {
+        "document_id": "resume-cache",
+        "present_at_3": true,
+        "retrieved_document_ids": [
+          "resume-cache",
+          "wire-capture",
+          "task-cap"
+        ]
+      },
+      {
+        "document_id": "wire-capture",
+        "present_at_3": true,
+        "retrieved_document_ids": [
+          "wire-capture",
+          "local-ollama",
+          "resume-cache"
+        ]
+      },
+      {
+        "document_id": "local-ollama",
+        "present_at_3": true,
+        "retrieved_document_ids": [
+          "local-ollama",
+          "budget",
+          "quality"
+        ]
+      },
+      {
+        "document_id": "quality",
+        "present_at_3": true,
+        "retrieved_document_ids": [
+          "quality",
+          "wire-capture",
+          "local-ollama"
+        ]
+      }
+    ],
+    "missing_document_ids_at_3": [],
+    "run_at": "2026-09-15T01:48:23.243485+00:00",
+    "top_k": 3
+  }
+}

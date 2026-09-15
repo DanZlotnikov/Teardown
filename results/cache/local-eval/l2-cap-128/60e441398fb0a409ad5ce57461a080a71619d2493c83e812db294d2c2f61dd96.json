@@ -1,0 +1,50 @@
+{
+  "cache_key": "60e441398fb0a409ad5ce57461a080a71619d2493c83e812db294d2c2f61dd96",
+  "call_type": "tags",
+  "case_id": "tags-14",
+  "completion_ms": 3108.8,
+  "condition": "l2-cap-128",
+  "endpoint": "/api/v1/tasks/tags/completions",
+  "objective_score": 0.0,
+  "payload_sha256": "0eb9f606a9cadd6a40afde9ae7d53bd17d5abd28c5adae804e400961eaf1d15a",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "Based on the provided chat history, the main theme revolves around an overview and analysis of the Open WebUI project documentation. The content is highly technical and involves a deep dive into project features, installation methods, and system administration aspects.\n\nGiven these elements, the appropriate tags are:\n\n- **Technology**: This captures the overall technical nature of the project and its documentation.\n- **Software Development**: This is specific to the context of developing and deploying software, which is a core part of the Open WebUI project.\n- **System Administration**: Given the emphasis on operational changes relevant to administrators and the detailed documentation on deployment methods, this tag is fitting.\n\n",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789437437,
+    "id": "qwen2.5:14b-instruct-f465474a-060d-486d-b6c0-baca553ed97e",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m3s",
+      "completion_tokens": 128,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 128,
+      "eval_duration": 2493859000,
+      "input_tokens": 11159,
+      "load_duration": 2077600,
+      "output_tokens": 128,
+      "prompt_eval_count": 11159,
+      "prompt_eval_duration": 36643000,
+      "prompt_token/s": 304532.93,
+      "prompt_tokens": 11159,
+      "response_token/s": 51.33,
+      "total_duration": 3064984200,
+      "total_tokens": 11287
+    }
+  },
+  "response_text": "Based on the provided chat history, the main theme revolves around an overview and analysis of the Open WebUI project documentation. The content is highly technical and involves a deep dive into project features, installation methods, and system administration aspects.\n\nGiven these elements, the appropriate tags are:\n\n- **Technology**: This captures the overall technical nature of the project and its documentation.\n- **Software Development**: This is specific to the context of developing and deploying software, which is a core part of the Open WebUI project.\n- **System Administration**: Given the emphasis on operational changes relevant to administrators and the detailed documentation on deployment methods, this tag is fitting.\n\n",
+  "retrieved_document_ids": null
+}

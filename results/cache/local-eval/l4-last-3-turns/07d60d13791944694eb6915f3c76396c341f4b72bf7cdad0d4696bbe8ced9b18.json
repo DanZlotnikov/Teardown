@@ -1,0 +1,50 @@
+{
+  "cache_key": "07d60d13791944694eb6915f3c76396c341f4b72bf7cdad0d4696bbe8ced9b18",
+  "call_type": "main_chat_context",
+  "case_id": "context-09",
+  "completion_ms": 722.921,
+  "condition": "l4-last-3-turns",
+  "endpoint": "/api/chat/completions",
+  "objective_score": 0.0,
+  "payload_sha256": "1299e699aeba5b0857ed62565fa855a4f5d75b434c4b70eac7174d1547e769b6",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "It seems there was a misunderstanding; you haven't provided the details of the first turn regarding the project name, incident code, and recovery region. Could you please provide those details so I can assist you accurately?",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789441817,
+    "id": "qwen2.5:14b-instruct-990bc044-b075-47fe-ad26-79fd6638d2e2",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 43,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 43,
+      "eval_duration": 659455000,
+      "input_tokens": 117,
+      "load_duration": 1629400,
+      "output_tokens": 43,
+      "prompt_eval_count": 117,
+      "prompt_eval_duration": 14789000,
+      "prompt_token/s": 7911.29,
+      "prompt_tokens": 117,
+      "response_token/s": 65.21,
+      "total_duration": 678384900,
+      "total_tokens": 160
+    }
+  },
+  "response_text": "It seems there was a misunderstanding; you haven't provided the details of the first turn regarding the project name, incident code, and recovery region. Could you please provide those details so I can assist you accurately?",
+  "retrieved_document_ids": null
+}

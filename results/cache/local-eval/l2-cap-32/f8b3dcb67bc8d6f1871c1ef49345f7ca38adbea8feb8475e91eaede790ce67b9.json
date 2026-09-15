@@ -1,0 +1,50 @@
+{
+  "cache_key": "f8b3dcb67bc8d6f1871c1ef49345f7ca38adbea8feb8475e91eaede790ce67b9",
+  "call_type": "retrieval_query",
+  "case_id": "query-19",
+  "completion_ms": 602.765,
+  "condition": "l2-cap-32",
+  "endpoint": "/api/v1/tasks/queries/completions",
+  "objective_score": 0.0,
+  "payload_sha256": "d2452fd7a20fa5f73fc9ac8a00f8e7e0678aeb37204f23afae05e97541c895e4",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"queries\": [\"Open WebUI dropdown behavior fix\", \"How to check and fix Open WebUI dropdown visibility on narrow screens\", \"Open WebUI",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789437650,
+    "id": "qwen2.5:14b-instruct-b380b111-8274-4df3-83f8-20ffd918e167",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 32,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 32,
+      "eval_duration": 514504000,
+      "input_tokens": 404,
+      "load_duration": 1799600,
+      "output_tokens": 32,
+      "prompt_eval_count": 404,
+      "prompt_eval_duration": 46649000,
+      "prompt_token/s": 8660.42,
+      "prompt_tokens": 404,
+      "response_token/s": 62.2,
+      "total_duration": 568141900,
+      "total_tokens": 436
+    }
+  },
+  "response_text": "{\n  \"queries\": [\"Open WebUI dropdown behavior fix\", \"How to check and fix Open WebUI dropdown visibility on narrow screens\", \"Open WebUI",
+  "retrieved_document_ids": null
+}

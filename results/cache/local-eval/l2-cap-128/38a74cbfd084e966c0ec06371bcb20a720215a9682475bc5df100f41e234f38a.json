@@ -1,0 +1,50 @@
+{
+  "cache_key": "38a74cbfd084e966c0ec06371bcb20a720215a9682475bc5df100f41e234f38a",
+  "call_type": "autocomplete",
+  "case_id": "autocomplete-10",
+  "completion_ms": 410.845,
+  "condition": "l2-cap-128",
+  "endpoint": "/api/v1/tasks/auto/completions",
+  "objective_score": 1.0,
+  "payload_sha256": "6e231fd38bc202f0ef1c2986261e07933096c322582ff657c6d0822e0fcde79d",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{ \"text\": \"are important for ensuring titles are concise and attention-grabbing.\" }",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789437466,
+    "id": "qwen2.5:14b-instruct-5ec34da9-0f73-4bc3-94e3-2387273d4d39",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 20,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 20,
+      "eval_duration": 310243000,
+      "input_tokens": 371,
+      "load_duration": 2234400,
+      "output_tokens": 20,
+      "prompt_eval_count": 371,
+      "prompt_eval_duration": 34767000,
+      "prompt_token/s": 10671.04,
+      "prompt_tokens": 371,
+      "response_token/s": 64.47,
+      "total_duration": 351714400,
+      "total_tokens": 391
+    }
+  },
+  "response_text": "{ \"text\": \"are important for ensuring titles are concise and attention-grabbing.\" }",
+  "retrieved_document_ids": null
+}

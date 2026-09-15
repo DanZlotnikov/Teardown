@@ -1,0 +1,50 @@
+{
+  "cache_key": "dabf051046cde9c748e8fd188e3c368fa8aae75a6865baf6848a918597ceb5e3",
+  "call_type": "retrieval_query",
+  "case_id": "query-11",
+  "completion_ms": 669.723,
+  "condition": "l2-cap-128",
+  "endpoint": "/api/v1/tasks/queries/completions",
+  "objective_score": 0.0,
+  "payload_sha256": "2a7c93b78a9807ce43690d4c361077b21b8b053107b1ff947fa0f6ed47c0697e",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"queries\": [\"Open WebUI automation repeating behavior fix\", \"How to verify Open WebUI automation runs correctly\", \"Open WebUI automation count issue troubleshooting\"]\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789437456,
+    "id": "qwen2.5:14b-instruct-9efbc355-b328-432f-8597-98a71d4d1ef7",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 36,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 36,
+      "eval_duration": 572996000,
+      "input_tokens": 409,
+      "load_duration": 1484700,
+      "output_tokens": 36,
+      "prompt_eval_count": 409,
+      "prompt_eval_duration": 51869000,
+      "prompt_token/s": 7885.25,
+      "prompt_tokens": 409,
+      "response_token/s": 62.83,
+      "total_duration": 630843400,
+      "total_tokens": 445
+    }
+  },
+  "response_text": "{\n  \"queries\": [\"Open WebUI automation repeating behavior fix\", \"How to verify Open WebUI automation runs correctly\", \"Open WebUI automation count issue troubleshooting\"]\n}",
+  "retrieved_document_ids": null
+}

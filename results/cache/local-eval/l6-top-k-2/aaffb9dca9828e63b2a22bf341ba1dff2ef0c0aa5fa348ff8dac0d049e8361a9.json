@@ -1,0 +1,59 @@
+{
+  "cache_key": "aaffb9dca9828e63b2a22bf341ba1dff2ef0c0aa5fa348ff8dac0d049e8361a9",
+  "call_type": "retrieval",
+  "case_id": "retrieval-r11",
+  "completion_ms": 38.113,
+  "condition": "l6-top-k-2",
+  "endpoint": "/api/v1/retrieval/query/collection",
+  "objective_score": 1.0,
+  "payload_sha256": "9e7d06c81d64cc01c9e843ae76ee45ad26ab2cb04a27db990315e09a7c94afc4",
+  "response": {
+    "distances": [
+      [
+        0.8846473097801208,
+        0.8109672963619232
+      ]
+    ],
+    "documents": [
+      [
+        "[DOC_ID:local-ollama] Local Ollama condition  \nA local model condition needs an exact installed model name, digest, quantization, Ollama version, and hardware record. A deployment smoke proves availability only; it does not establish equivalence to a hosted quality test.",
+        "[DOC_ID:wire-capture] Proxy evidence  \nCapture redacted provider request and response bodies, actual reported input, output, and cached tokens, completion latency, and all budget mutations. For nonstreaming task calls, mark time to first token unavailable rather than relabeling response time."
+      ]
+    ],
+    "metadatas": [
+      [
+        {
+          "content_type": "text/plain; charset=utf-8",
+          "created_by": "b997c815-91d7-4e7f-b9bb-f554a9245ad7",
+          "data": "{}",
+          "embedding_config": "{'engine': 'ollama', 'model': 'nomic-embed-text'}",
+          "file_hash": "5a9e3bfbdd258c5e878b8b4aa7a3b737f1e34ba5015b079a90a23179045e11dd",
+          "file_id": "1f26667b-098c-4e5d-8892-79e8f6557466",
+          "hash": "5a9e3bfbdd258c5e878b8b4aa7a3b737f1e34ba5015b079a90a23179045e11dd",
+          "name": "teardown-local-ollama.txt",
+          "size": 270,
+          "source": "teardown-local-ollama.txt",
+          "start_index": 0
+        },
+        {
+          "content_type": "text/plain; charset=utf-8",
+          "created_by": "b997c815-91d7-4e7f-b9bb-f554a9245ad7",
+          "data": "{}",
+          "embedding_config": "{'engine': 'ollama', 'model': 'nomic-embed-text'}",
+          "file_hash": "aaf20fd879c7af5885c665badc36284ae8dc24ae9c8201859ccf75561b94c42a",
+          "file_id": "2396eed1-0d57-456d-8b9f-89b3a78b5a9d",
+          "hash": "aaf20fd879c7af5885c665badc36284ae8dc24ae9c8201859ccf75561b94c42a",
+          "name": "teardown-wire-capture.txt",
+          "size": 292,
+          "source": "teardown-wire-capture.txt",
+          "start_index": 0
+        }
+      ]
+    ]
+  },
+  "response_text": "",
+  "retrieved_document_ids": [
+    "local-ollama",
+    "wire-capture"
+  ]
+}

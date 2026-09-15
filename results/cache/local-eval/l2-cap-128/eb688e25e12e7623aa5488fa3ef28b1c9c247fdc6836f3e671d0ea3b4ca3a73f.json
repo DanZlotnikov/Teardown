@@ -1,0 +1,50 @@
+{
+  "cache_key": "eb688e25e12e7623aa5488fa3ef28b1c9c247fdc6836f3e671d0ea3b4ca3a73f",
+  "call_type": "tags",
+  "case_id": "tags-04",
+  "completion_ms": 1112.995,
+  "condition": "l2-cap-128",
+  "endpoint": "/api/v1/tasks/tags/completions",
+  "objective_score": 1.0,
+  "payload_sha256": "8823e84e4de0b668d1fc2a064c0aee072d0b85c2130958fb3e72147af65bfdc1",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "Based on the chat history provided, the main theme revolves around software localization and user interface updates in a software application. This can be categorized under Technology and specifically Software Development and Internationalization.\n\n### Output:\n```json\n{ \"tags\": [\"Technology\", \"Software Development\", \"Internationalization\"] }\n```",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789437428,
+    "id": "qwen2.5:14b-instruct-2f391210-cad8-4d62-8c65-03900c094ecd",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m1s",
+      "completion_tokens": 61,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 61,
+      "eval_duration": 997183000,
+      "input_tokens": 278,
+      "load_duration": 1506100,
+      "output_tokens": 61,
+      "prompt_eval_count": 278,
+      "prompt_eval_duration": 50498000,
+      "prompt_token/s": 5505.17,
+      "prompt_tokens": 278,
+      "response_token/s": 61.17,
+      "total_duration": 1053277800,
+      "total_tokens": 339
+    }
+  },
+  "response_text": "Based on the chat history provided, the main theme revolves around software localization and user interface updates in a software application. This can be categorized under Technology and specifically Software Development and Internationalization.\n\n### Output:\n```json\n{ \"tags\": [\"Technology\", \"Software Development\", \"Internationalization\"] }\n```",
+  "retrieved_document_ids": null
+}

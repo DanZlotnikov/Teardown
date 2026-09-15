@@ -9,6 +9,7 @@ import re
 import urllib.error
 import urllib.parse
 import urllib.request
+import uuid
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
@@ -29,6 +30,23 @@ def request_json(method: str, url: str, token: str | None = None, payload: dict 
     with urllib.request.urlopen(request, timeout=timeout) as response:
         raw = response.read()
         return json.loads(raw) if raw else None
+
+
+def upload_text_file(base: str, token: str, name: str, content: str, timeout: int) -> dict:
+    boundary = "----teardown-" + uuid.uuid4().hex
+    body = (
+        f"--{boundary}\r\n"
+        f'Content-Disposition: form-data; name="file"; filename="{name}"\r\n'
+        "Content-Type: text/plain; charset=utf-8\r\n\r\n"
+    ).encode() + content.encode("utf-8") + f"\r\n--{boundary}--\r\n".encode()
+    request = urllib.request.Request(
+        base + "/api/v1/files/?process=false&process_in_background=false",
+        data=body,
+        headers={"Authorization": f"Bearer {token}", "Content-Type": f"multipart/form-data; boundary={boundary}"},
+        method="POST",
+    )
+    with urllib.request.urlopen(request, timeout=timeout) as response:
+        return json.loads(response.read())
 
 
 def atomic_json(path: Path, value: dict) -> None:
@@ -93,12 +111,14 @@ def main() -> None:
         if existing is None:
             raise SystemExit("Recorded controlled collection no longer exists; preserve the state and investigate before rebuilding")
     else:
-        name = f"Teardown Fixed Corpus v1 {corpus_sha[:8]}"
+        # v2 uses the file ingestion route, whose collection append semantics are
+        # different from the process/text route used by the invalid v1 install.
+        name = f"Teardown Fixed Corpus v2 {corpus_sha[:8]}"
         matches = [item for item in list_knowledge(base, token, args.timeout) if item.get("name") == name]
         if matches:
             raise SystemExit("Matching controlled collection exists without a local state file; refusing possible duplicate indexing")
         existing = request_json("POST", base + "/api/v1/knowledge/create", token, {"name": name, "description": f"Controlled teardown retrieval corpus sha256={corpus_sha}", "access_grants": []}, args.timeout)
-        state = {"schema_version": 1, "base_url": base, "corpus_sha256": corpus_sha, "collection_id": existing["id"], "completed_document_ids": [], "inflight_document_id": None, "created_at": datetime.now(timezone.utc).isoformat(), "verification": None}
+        state = {"schema_version": 2, "ingestion_method": "file", "base_url": base, "corpus_sha256": corpus_sha, "collection_id": existing["id"], "completed_document_ids": [], "file_ids": {}, "inflight_document_id": None, "created_at": datetime.now(timezone.utc).isoformat(), "verification": None}
         atomic_json(args.state, state)
 
     completed = set(state.get("completed_document_ids", []))
@@ -108,18 +128,29 @@ def main() -> None:
         state["inflight_document_id"] = document["id"]
         atomic_json(args.state, state)
         content = f"[DOC_ID:{document['id']}] {document['title']}\n\n{document['text']}"
-        request_json("POST", base + "/api/v1/retrieval/process/text", token, {"name": f"teardown:{document['id']}", "content": content, "collection_name": state["collection_id"]}, args.timeout)
+        uploaded = upload_text_file(base, token, f"teardown-{document['id']}.txt", content, args.timeout)
+        request_json("POST", base + "/api/v1/retrieval/process/file", token, {"file_id": uploaded["id"], "content": content, "collection_name": state["collection_id"]}, args.timeout)
+        state.setdefault("file_ids", {})[document["id"]] = uploaded["id"]
         state["completed_document_ids"].append(document["id"])
         state["inflight_document_id"] = None
         atomic_json(args.state, state)
+
+    corpus_verification = []
+    for document in corpus["documents"]:
+        response = request_json("POST", base + "/api/v1/retrieval/query/collection", token, {"collection_names": [state["collection_id"]], "query": document["title"], "k": 3}, args.timeout)
+        retrieved = extract_doc_ids(response)
+        corpus_verification.append({"document_id": document["id"], "retrieved_document_ids": retrieved[:3], "present_at_3": document["id"] in retrieved[:3]})
 
     verification = []
     for case in cases["queries"]:
         response = request_json("POST", base + "/api/v1/retrieval/query/collection", token, {"collection_names": [state["collection_id"]], "query": case["query"], "k": 3}, args.timeout)
         retrieved = extract_doc_ids(response)
         verification.append({"case_id": case["id"], "retrieved_document_ids": retrieved[:3], "relevant_document_ids": case["relevant_document_ids"]})
-    state["verification"] = {"run_at": datetime.now(timezone.utc).isoformat(), "top_k": 3, "cases": verification}
+    missing = [row["document_id"] for row in corpus_verification if not row["present_at_3"]]
+    state["verification"] = {"run_at": datetime.now(timezone.utc).isoformat(), "top_k": 3, "corpus_documents": corpus_verification, "cases": verification, "missing_document_ids_at_3": missing}
     atomic_json(args.state, state)
+    if missing:
+        raise SystemExit(f"Controlled corpus verification failed; documents absent at top-3 for their exact titles: {missing}")
     print(json.dumps({"status": "passed", "collection_id": state["collection_id"], "documents": len(state["completed_document_ids"]), "verification_cases": len(verification), "state": str(args.state)}, sort_keys=True))
 
 

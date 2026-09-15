@@ -1,0 +1,50 @@
+{
+  "cache_key": "3519882bd738789e469061a872c5446f6a7a18bb90fcaea24862f77707e12143",
+  "call_type": "main_chat_context",
+  "case_id": "context-13",
+  "completion_ms": 953.034,
+  "condition": "l4-last-3-turns",
+  "endpoint": "/api/chat/completions",
+  "objective_score": 0.0,
+  "payload_sha256": "734651fd0a3071b25c6b43a93cf3a5e6909265acc3fa73b38e6d714b1e28013c",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "It appears there was a misunderstanding; you asked for details from the first turn related to a project name, incident code, and recovery region, but these specifics weren't provided in your previous messages. Could you please provide more context or details so I can better assist you with your request?",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789441821,
+    "id": "qwen2.5:14b-instruct-5e77c2f8-8a6e-4ce5-a499-f80ed8df9881",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 58,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 58,
+      "eval_duration": 906921000,
+      "input_tokens": 117,
+      "load_duration": 1553300,
+      "output_tokens": 58,
+      "prompt_eval_count": 117,
+      "prompt_eval_duration": 15512000,
+      "prompt_token/s": 7542.55,
+      "prompt_tokens": 117,
+      "response_token/s": 63.95,
+      "total_duration": 926996000,
+      "total_tokens": 175
+    }
+  },
+  "response_text": "It appears there was a misunderstanding; you asked for details from the first turn related to a project name, incident code, and recovery region, but these specifics weren't provided in your previous messages. Could you please provide more context or details so I can better assist you with your request?",
+  "retrieved_document_ids": null
+}

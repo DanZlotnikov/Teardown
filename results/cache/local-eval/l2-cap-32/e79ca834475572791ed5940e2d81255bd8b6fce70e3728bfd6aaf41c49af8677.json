@@ -1,0 +1,50 @@
+{
+  "cache_key": "e79ca834475572791ed5940e2d81255bd8b6fce70e3728bfd6aaf41c49af8677",
+  "call_type": "autocomplete",
+  "case_id": "autocomplete-01",
+  "completion_ms": 428.171,
+  "condition": "l2-cap-32",
+  "endpoint": "/api/v1/tasks/auto/completions",
+  "objective_score": 1.0,
+  "payload_sha256": "a9d53773e2480984668c4214aa4a0b1e67d182b693b5250cd1bb04d5ebb9bb1e",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{ \"text\": \"your system to use more efficient algorithms and minimize resource usage.\" }",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789437651,
+    "id": "qwen2.5:14b-instruct-dc30a387-8988-402e-9a38-74036e1e3706",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 19,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 19,
+      "eval_duration": 298988000,
+      "input_tokens": 375,
+      "load_duration": 1056000,
+      "output_tokens": 19,
+      "prompt_eval_count": 375,
+      "prompt_eval_duration": 35705000,
+      "prompt_token/s": 10502.73,
+      "prompt_tokens": 375,
+      "response_token/s": 63.55,
+      "total_duration": 387405500,
+      "total_tokens": 394
+    }
+  },
+  "response_text": "{ \"text\": \"your system to use more efficient algorithms and minimize resource usage.\" }",
+  "retrieved_document_ids": null
+}

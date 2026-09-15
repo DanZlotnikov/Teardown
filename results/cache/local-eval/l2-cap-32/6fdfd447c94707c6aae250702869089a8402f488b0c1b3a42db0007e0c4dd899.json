@@ -1,0 +1,50 @@
+{
+  "cache_key": "6fdfd447c94707c6aae250702869089a8402f488b0c1b3a42db0007e0c4dd899",
+  "call_type": "retrieval_query",
+  "case_id": "query-17",
+  "completion_ms": 613.59,
+  "condition": "l2-cap-32",
+  "endpoint": "/api/v1/tasks/queries/completions",
+  "objective_score": 0.0,
+  "payload_sha256": "30d75c541b5b3edaf6ab36f37e34e53b6401265683dad7c5a6d6f4c7633d091f",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"queries\": [\"Open WebUI long setting values fix\", \"how to verify Open WebUI setting row behavior fix\", \"Open WebUI settings rows",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789437649,
+    "id": "qwen2.5:14b-instruct-953278e6-f74a-4a75-8afc-3ae818fa9002",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 32,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 32,
+      "eval_duration": 513631999,
+      "input_tokens": 394,
+      "load_duration": 2940900,
+      "output_tokens": 32,
+      "prompt_eval_count": 394,
+      "prompt_eval_duration": 45653000,
+      "prompt_token/s": 8630.32,
+      "prompt_tokens": 394,
+      "response_token/s": 62.3,
+      "total_duration": 567989200,
+      "total_tokens": 426
+    }
+  },
+  "response_text": "{\n  \"queries\": [\"Open WebUI long setting values fix\", \"how to verify Open WebUI setting row behavior fix\", \"Open WebUI settings rows",
+  "retrieved_document_ids": null
+}

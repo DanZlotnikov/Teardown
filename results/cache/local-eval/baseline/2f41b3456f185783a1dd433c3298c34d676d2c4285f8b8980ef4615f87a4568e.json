@@ -1,0 +1,75 @@
+{
+  "cache_key": "2f41b3456f185783a1dd433c3298c34d676d2c4285f8b8980ef4615f87a4568e",
+  "call_type": "retrieval",
+  "case_id": "retrieval-r12",
+  "completion_ms": 60.179,
+  "condition": "baseline",
+  "endpoint": "/api/v1/retrieval/query/collection",
+  "objective_score": 1.0,
+  "payload_sha256": "7b2cfef1927986207ffc29ed4b126a2ee4bbd9ce11847532abfa66cf374d238c",
+  "response": {
+    "distances": [
+      [
+        0.8133397996425629,
+        0.7578523755073547,
+        0.7541469931602478
+      ]
+    ],
+    "documents": [
+      [
+        "[DOC_ID:quality] Targeted quality evaluation  \nEvaluate only call types affected by each lever. Use objective format, exact-fact, retrieval-overlap, and grounding metrics first. Use a cached non-reasoning judge only when objective comparisons are insufficient.",
+        "[DOC_ID:title-template] Title history syntax  \nTitle prompt templates select messages with MESSAGES START, END, or MIDDLETRUNCATE counts. Optional start, end, and middletruncate filters limit characters within every selected message. These native limits do not count tokenizer tokens.",
+        "[DOC_ID:local-ollama] Local Ollama condition  \nA local model condition needs an exact installed model name, digest, quantization, Ollama version, and hardware record. A deployment smoke proves availability only; it does not establish equivalence to a hosted quality test."
+      ]
+    ],
+    "metadatas": [
+      [
+        {
+          "content_type": "text/plain; charset=utf-8",
+          "created_by": "b997c815-91d7-4e7f-b9bb-f554a9245ad7",
+          "data": "{}",
+          "embedding_config": "{'engine': 'ollama', 'model': 'nomic-embed-text'}",
+          "file_hash": "01cddb57ba8e51c18e3a7f2a3c46257af80f516da6a1ff1f6306ad80c6c322b9",
+          "file_id": "0b43f959-edd6-4cba-8c80-c42d76fbdeaa",
+          "hash": "01cddb57ba8e51c18e3a7f2a3c46257af80f516da6a1ff1f6306ad80c6c322b9",
+          "name": "teardown-quality.txt",
+          "size": 259,
+          "source": "teardown-quality.txt",
+          "start_index": 0
+        },
+        {
+          "content_type": "text/plain; charset=utf-8",
+          "created_by": "b997c815-91d7-4e7f-b9bb-f554a9245ad7",
+          "data": "{}",
+          "embedding_config": "{'engine': 'ollama', 'model': 'nomic-embed-text'}",
+          "file_hash": "e5c79eebe87c7fbc26ee23c9060b86d7c2e063aec2192dafc247c883db87806c",
+          "file_id": "82395368-bbd1-493d-8ca9-79da82bcd982",
+          "hash": "e5c79eebe87c7fbc26ee23c9060b86d7c2e063aec2192dafc247c883db87806c",
+          "name": "teardown-title-template.txt",
+          "size": 283,
+          "source": "teardown-title-template.txt",
+          "start_index": 0
+        },
+        {
+          "content_type": "text/plain; charset=utf-8",
+          "created_by": "b997c815-91d7-4e7f-b9bb-f554a9245ad7",
+          "data": "{}",
+          "embedding_config": "{'engine': 'ollama', 'model': 'nomic-embed-text'}",
+          "file_hash": "5a9e3bfbdd258c5e878b8b4aa7a3b737f1e34ba5015b079a90a23179045e11dd",
+          "file_id": "1f26667b-098c-4e5d-8892-79e8f6557466",
+          "hash": "5a9e3bfbdd258c5e878b8b4aa7a3b737f1e34ba5015b079a90a23179045e11dd",
+          "name": "teardown-local-ollama.txt",
+          "size": 270,
+          "source": "teardown-local-ollama.txt",
+          "start_index": 0
+        }
+      ]
+    ]
+  },
+  "response_text": "",
+  "retrieved_document_ids": [
+    "quality",
+    "title-template",
+    "local-ollama"
+  ]
+}

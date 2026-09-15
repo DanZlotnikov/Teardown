@@ -1,0 +1,50 @@
+{
+  "cache_key": "7542a2719e6a9d637f140c7f0b19fceba2b6b571a93d1fd89f7b2c99bf753e7c",
+  "call_type": "autocomplete",
+  "case_id": "autocomplete-05",
+  "completion_ms": 358.477,
+  "condition": "l2-cap-128",
+  "endpoint": "/api/v1/tasks/auto/completions",
+  "objective_score": 1.0,
+  "payload_sha256": "58833169b3a6770e9443f496ce4b2d6318c2c107ca66df82418fbd7c2de5def4",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{ \"text\": \"implementing efficient algorithms and reducing unnecessary data retrieval.\" }",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789437464,
+    "id": "qwen2.5:14b-instruct-70778283-b95b-436f-8002-bfc8a2bcb30a",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 17,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 17,
+      "eval_duration": 266221000,
+      "input_tokens": 374,
+      "load_duration": 2694900,
+      "output_tokens": 17,
+      "prompt_eval_count": 374,
+      "prompt_eval_duration": 32955000,
+      "prompt_token/s": 11348.81,
+      "prompt_tokens": 374,
+      "response_token/s": 63.86,
+      "total_duration": 306041200,
+      "total_tokens": 391
+    }
+  },
+  "response_text": "{ \"text\": \"implementing efficient algorithms and reducing unnecessary data retrieval.\" }",
+  "retrieved_document_ids": null
+}

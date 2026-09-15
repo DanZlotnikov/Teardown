@@ -1,0 +1,50 @@
+{
+  "cache_key": "20f303249757e0d3d86d55d8f2e8f0abba7d2c439b42508e5f88faadc139e663",
+  "call_type": "title",
+  "case_id": "title-03",
+  "completion_ms": 263.839,
+  "condition": "l2-cap-128",
+  "endpoint": "/api/v1/tasks/title/completions",
+  "objective_score": 1.0,
+  "payload_sha256": "4c83c2b606fbf0c13d211d17afbd70f2223c8eea3933c99793f84cd1bdc629e7",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{ \"title\": \"OAuth Disconnect Issue\" }",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789437418,
+    "id": "qwen2.5:14b-instruct-a0369725-adf9-4fa6-8e89-d1cac18054e5",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 11,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 11,
+      "eval_duration": 170052000,
+      "input_tokens": 345,
+      "load_duration": 2483900,
+      "output_tokens": 11,
+      "prompt_eval_count": 345,
+      "prompt_eval_duration": 50946000,
+      "prompt_token/s": 6771.88,
+      "prompt_tokens": 345,
+      "response_token/s": 64.69,
+      "total_duration": 229467900,
+      "total_tokens": 356
+    }
+  },
+  "response_text": "{ \"title\": \"OAuth Disconnect Issue\" }",
+  "retrieved_document_ids": null
+}

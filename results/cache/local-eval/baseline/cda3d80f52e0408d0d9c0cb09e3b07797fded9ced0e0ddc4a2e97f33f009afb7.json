@@ -1,0 +1,50 @@
+{
+  "cache_key": "cda3d80f52e0408d0d9c0cb09e3b07797fded9ced0e0ddc4a2e97f33f009afb7",
+  "call_type": "title",
+  "case_id": "title-21",
+  "completion_ms": 259.672,
+  "condition": "baseline",
+  "endpoint": "/api/v1/tasks/title/completions",
+  "objective_score": 1.0,
+  "payload_sha256": "56c7b0ead7786b7418277150f0ba6a44d3cfba2f6e03e57b7483114ee21ecf2a",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{ \"title\": \"Automation Behavior\" }",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789436486,
+    "id": "qwen2.5:14b-instruct-50e21c96-9729-4569-b313-7f7447aaa1d0",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 10,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 10,
+      "eval_duration": 146244000,
+      "input_tokens": 341,
+      "load_duration": 2050400,
+      "output_tokens": 10,
+      "prompt_eval_count": 341,
+      "prompt_eval_duration": 48474000,
+      "prompt_token/s": 7034.7,
+      "prompt_tokens": 341,
+      "response_token/s": 68.38,
+      "total_duration": 201001200,
+      "total_tokens": 351
+    }
+  },
+  "response_text": "{ \"title\": \"Automation Behavior\" }",
+  "retrieved_document_ids": null
+}

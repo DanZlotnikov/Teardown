@@ -1,0 +1,50 @@
+{
+  "cache_key": "f5f647d92b9a7ce66e6a297d6decfb5ea09c7a20488ee54a2ae9f0aec128eab0",
+  "call_type": "title",
+  "case_id": "title-07",
+  "completion_ms": 297.977,
+  "condition": "baseline",
+  "endpoint": "/api/v1/tasks/title/completions",
+  "objective_score": 1.0,
+  "payload_sha256": "d519e26b97655a9353da6c0d0e1d2257a86fdaa3649dee1766d07eda604223b3",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{ \"title\": \"WebUI File Previews\" }",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789436477,
+    "id": "qwen2.5:14b-instruct-16946409-833e-4470-b04e-0411cef86a4d",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 13,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 13,
+      "eval_duration": 194882000,
+      "input_tokens": 338,
+      "load_duration": 1283900,
+      "output_tokens": 13,
+      "prompt_eval_count": 338,
+      "prompt_eval_duration": 43383000,
+      "prompt_token/s": 7791.07,
+      "prompt_tokens": 338,
+      "response_token/s": 66.71,
+      "total_duration": 243663300,
+      "total_tokens": 351
+    }
+  },
+  "response_text": "{ \"title\": \"WebUI File Previews\" }",
+  "retrieved_document_ids": null
+}

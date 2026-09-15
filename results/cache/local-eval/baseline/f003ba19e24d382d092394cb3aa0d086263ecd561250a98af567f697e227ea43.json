@@ -1,0 +1,50 @@
+{
+  "cache_key": "f003ba19e24d382d092394cb3aa0d086263ecd561250a98af567f697e227ea43",
+  "call_type": "autocomplete",
+  "case_id": "autocomplete-05",
+  "completion_ms": 321.807,
+  "condition": "baseline",
+  "endpoint": "/api/v1/tasks/auto/completions",
+  "objective_score": 1.0,
+  "payload_sha256": "58833169b3a6770e9443f496ce4b2d6318c2c107ca66df82418fbd7c2de5def4",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{ \"text\": \"implementing more precise and predictive suggestions.\" }",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789436543,
+    "id": "qwen2.5:14b-instruct-fcfff098-2179-4f55-98c5-a4606826249f",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 15,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 15,
+      "eval_duration": 231783000,
+      "input_tokens": 374,
+      "load_duration": 2191600,
+      "output_tokens": 15,
+      "prompt_eval_count": 374,
+      "prompt_eval_duration": 32717000,
+      "prompt_token/s": 11431.37,
+      "prompt_tokens": 374,
+      "response_token/s": 64.72,
+      "total_duration": 270304800,
+      "total_tokens": 389
+    }
+  },
+  "response_text": "{ \"text\": \"implementing more precise and predictive suggestions.\" }",
+  "retrieved_document_ids": null
+}

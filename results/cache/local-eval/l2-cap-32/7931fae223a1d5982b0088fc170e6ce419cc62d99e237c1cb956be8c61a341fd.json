@@ -1,0 +1,50 @@
+{
+  "cache_key": "7931fae223a1d5982b0088fc170e6ce419cc62d99e237c1cb956be8c61a341fd",
+  "call_type": "autocomplete",
+  "case_id": "autocomplete-06",
+  "completion_ms": 373.691,
+  "condition": "l2-cap-32",
+  "endpoint": "/api/v1/tasks/auto/completions",
+  "objective_score": 1.0,
+  "payload_sha256": "af672ca3ca5e897f4524979dde141a9df37dc35a193a1bb25d625b8eb045939a",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{ \"text\": \"the health and wellness status of individuals in a community.\" }",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789437653,
+    "id": "qwen2.5:14b-instruct-4acb769d-5c84-4024-b5b4-9430e2900ea8",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 18,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 18,
+      "eval_duration": 279500000,
+      "input_tokens": 375,
+      "load_duration": 1821400,
+      "output_tokens": 18,
+      "prompt_eval_count": 375,
+      "prompt_eval_duration": 32957000,
+      "prompt_token/s": 11378.46,
+      "prompt_tokens": 375,
+      "response_token/s": 64.4,
+      "total_duration": 319780000,
+      "total_tokens": 393
+    }
+  },
+  "response_text": "{ \"text\": \"the health and wellness status of individuals in a community.\" }",
+  "retrieved_document_ids": null
+}

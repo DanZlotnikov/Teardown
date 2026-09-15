@@ -1,0 +1,50 @@
+{
+  "cache_key": "9f5f33c8c047892b417253e8e9a778dcdf4424a3f9157b1ee63340fd00f2d630",
+  "call_type": "retrieval_query",
+  "case_id": "query-15",
+  "completion_ms": 794.409,
+  "condition": "l2-cap-128",
+  "endpoint": "/api/v1/tasks/queries/completions",
+  "objective_score": 0.0,
+  "payload_sha256": "ee436b9128033dd6999fe634d89fc1bb31785d01e2c20ac915f1fd34a164cfaf",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"queries\": [\"Open WebUI sidebar folder behavior fix check\", \"How to verify removal of sidebar folders in Open WebUI\", \"Troubleshooting sidebar folder registry in Open WebUI\"]\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789437458,
+    "id": "qwen2.5:14b-instruct-9f6de384-264b-42ef-a2c3-d3929be9e045",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 42,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 42,
+      "eval_duration": 676922000,
+      "input_tokens": 409,
+      "load_duration": 1666800,
+      "output_tokens": 42,
+      "prompt_eval_count": 409,
+      "prompt_eval_duration": 49209000,
+      "prompt_token/s": 8311.49,
+      "prompt_tokens": 409,
+      "response_token/s": 62.05,
+      "total_duration": 732649300,
+      "total_tokens": 451
+    }
+  },
+  "response_text": "{\n  \"queries\": [\"Open WebUI sidebar folder behavior fix check\", \"How to verify removal of sidebar folders in Open WebUI\", \"Troubleshooting sidebar folder registry in Open WebUI\"]\n}",
+  "retrieved_document_ids": null
+}

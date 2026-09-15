@@ -1,0 +1,50 @@
+{
+  "cache_key": "5693cfbc213cc529f244d794fdcf299c717cbdb80f4c76ae0d1071b66562e6f5",
+  "call_type": "autocomplete",
+  "case_id": "autocomplete-05",
+  "completion_ms": 311.445,
+  "condition": "l2-cap-512",
+  "endpoint": "/api/v1/tasks/auto/completions",
+  "objective_score": 1.0,
+  "payload_sha256": "58833169b3a6770e9443f496ce4b2d6318c2c107ca66df82418fbd7c2de5def4",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{ \"text\": \"implementing more precise language models and reducing unnecessary prompts.\" }",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789437185,
+    "id": "qwen2.5:14b-instruct-318c0691-a8fe-43fa-a73c-1cdb47abc896",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 18,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 18,
+      "eval_duration": 246368000,
+      "input_tokens": 374,
+      "load_duration": 1647400,
+      "output_tokens": 18,
+      "prompt_eval_count": 374,
+      "prompt_eval_duration": 31592000,
+      "prompt_token/s": 11838.44,
+      "prompt_tokens": 374,
+      "response_token/s": 73.06,
+      "total_duration": 283813800,
+      "total_tokens": 392
+    }
+  },
+  "response_text": "{ \"text\": \"implementing more precise language models and reducing unnecessary prompts.\" }",
+  "retrieved_document_ids": null
+}

@@ -1,0 +1,59 @@
+{
+  "cache_key": "2df8731cc8b3fac1d4f74e28202aefc9b1bccba2925aba1fddfc41bb24694aef",
+  "call_type": "retrieval",
+  "case_id": "retrieval-r03",
+  "completion_ms": 58.771,
+  "condition": "l6-top-k-2",
+  "endpoint": "/api/v1/retrieval/query/collection",
+  "objective_score": 1.0,
+  "payload_sha256": "026f70426b0587ee19af3860599f2b3f211acc515b42b6c30e0d06ab9b3ddbf0",
+  "response": {
+    "distances": [
+      [
+        0.8337955176830292,
+        0.8137929737567902
+      ]
+    ],
+    "documents": [
+      [
+        "[DOC_ID:title-template] Title history syntax  \nTitle prompt templates select messages with MESSAGES START, END, or MIDDLETRUNCATE counts. Optional start, end, and middletruncate filters limit characters within every selected message. These native limits do not count tokenizer tokens.",
+        "[DOC_ID:task-cap] Task output limits  \nThe task.model.params dictionary applies generation parameters across task endpoints. A max_tokens cap therefore reaches titles and autocomplete as well as tags, follow-ups, and queries; it is not a narrow tag-only control."
+      ]
+    ],
+    "metadatas": [
+      [
+        {
+          "content_type": "text/plain; charset=utf-8",
+          "created_by": "b997c815-91d7-4e7f-b9bb-f554a9245ad7",
+          "data": "{}",
+          "embedding_config": "{'engine': 'ollama', 'model': 'nomic-embed-text'}",
+          "file_hash": "e5c79eebe87c7fbc26ee23c9060b86d7c2e063aec2192dafc247c883db87806c",
+          "file_id": "82395368-bbd1-493d-8ca9-79da82bcd982",
+          "hash": "e5c79eebe87c7fbc26ee23c9060b86d7c2e063aec2192dafc247c883db87806c",
+          "name": "teardown-title-template.txt",
+          "size": 283,
+          "source": "teardown-title-template.txt",
+          "start_index": 0
+        },
+        {
+          "content_type": "text/plain; charset=utf-8",
+          "created_by": "b997c815-91d7-4e7f-b9bb-f554a9245ad7",
+          "data": "{}",
+          "embedding_config": "{'engine': 'ollama', 'model': 'nomic-embed-text'}",
+          "file_hash": "601aa6f4f02b7e861bda7ec714141fe211c2fc4bfa33bca3bb82d3b92a0a9536",
+          "file_id": "4ab3479f-0f5f-4f6b-b410-bc6cb0307b19",
+          "hash": "601aa6f4f02b7e861bda7ec714141fe211c2fc4bfa33bca3bb82d3b92a0a9536",
+          "name": "teardown-task-cap.txt",
+          "size": 261,
+          "source": "teardown-task-cap.txt",
+          "start_index": 0
+        }
+      ]
+    ]
+  },
+  "response_text": "",
+  "retrieved_document_ids": [
+    "title-template",
+    "task-cap"
+  ]
+}

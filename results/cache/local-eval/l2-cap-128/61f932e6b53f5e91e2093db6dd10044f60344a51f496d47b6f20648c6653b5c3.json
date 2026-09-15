@@ -1,0 +1,50 @@
+{
+  "cache_key": "61f932e6b53f5e91e2093db6dd10044f60344a51f496d47b6f20648c6653b5c3",
+  "call_type": "retrieval_query",
+  "case_id": "query-13",
+  "completion_ms": 705.995,
+  "condition": "l2-cap-128",
+  "endpoint": "/api/v1/tasks/queries/completions",
+  "objective_score": 0.0,
+  "payload_sha256": "0197f4f794303cba83a8cd738e3906158131af96872053a286c50da91f7c7220",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"queries\": [\"Open WebUI custom automation schedule behavior\", \"Verify custom automation repeat rule persistence Open WebUI\", \"Troubleshooting custom automation rules in Open WebUI\"]\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789437457,
+    "id": "qwen2.5:14b-instruct-7d912f1b-e32f-4d2c-890a-7ca0c77ae61e",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 39,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 39,
+      "eval_duration": 641034000,
+      "input_tokens": 393,
+      "load_duration": 1032900,
+      "output_tokens": 39,
+      "prompt_eval_count": 393,
+      "prompt_eval_duration": 39643000,
+      "prompt_token/s": 9913.48,
+      "prompt_tokens": 393,
+      "response_token/s": 60.84,
+      "total_duration": 686925100,
+      "total_tokens": 432
+    }
+  },
+  "response_text": "{\n  \"queries\": [\"Open WebUI custom automation schedule behavior\", \"Verify custom automation repeat rule persistence Open WebUI\", \"Troubleshooting custom automation rules in Open WebUI\"]\n}",
+  "retrieved_document_ids": null
+}

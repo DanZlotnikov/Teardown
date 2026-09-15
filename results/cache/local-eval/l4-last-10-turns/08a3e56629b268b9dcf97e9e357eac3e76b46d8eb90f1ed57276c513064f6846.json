@@ -1,0 +1,50 @@
+{
+  "cache_key": "08a3e56629b268b9dcf97e9e357eac3e76b46d8eb90f1ed57276c513064f6846",
+  "call_type": "main_chat_context",
+  "case_id": "context-08",
+  "completion_ms": 757.788,
+  "condition": "l4-last-10-turns",
+  "endpoint": "/api/chat/completions",
+  "objective_score": 1.0,
+  "payload_sha256": "ac7a1b8cdafe19284aa57d06c8cc1aad532d166923321b6800c64387f7a722ad",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "From the first turn, you mentioned Project Kestrel-08, which uses incident code OWUI-7308, and its recovery region is La Paz.",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789439743,
+    "id": "qwen2.5:14b-instruct-b5239809-8685-4ec9-b68f-6d65118ebd6f",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 36,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 36,
+      "eval_duration": 558947000,
+      "input_tokens": 334,
+      "load_duration": 1553900,
+      "output_tokens": 36,
+      "prompt_eval_count": 334,
+      "prompt_eval_duration": 124826000,
+      "prompt_token/s": 2675.72,
+      "prompt_tokens": 334,
+      "response_token/s": 64.41,
+      "total_duration": 719350200,
+      "total_tokens": 370
+    }
+  },
+  "response_text": "From the first turn, you mentioned Project Kestrel-08, which uses incident code OWUI-7308, and its recovery region is La Paz.",
+  "retrieved_document_ids": null
+}

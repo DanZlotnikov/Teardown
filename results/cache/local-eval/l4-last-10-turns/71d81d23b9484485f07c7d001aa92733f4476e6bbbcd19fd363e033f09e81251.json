@@ -1,0 +1,50 @@
+{
+  "cache_key": "71d81d23b9484485f07c7d001aa92733f4476e6bbbcd19fd363e033f09e81251",
+  "call_type": "main_chat_context",
+  "case_id": "context-04",
+  "completion_ms": 1197.402,
+  "condition": "l4-last-10-turns",
+  "endpoint": "/api/chat/completions",
+  "objective_score": 1.0,
+  "payload_sha256": "cab592fcea310d96aa0b2bb27cf6ad7a1a32e3a76823783e5ff5a9881297016e",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "The exact details you provided for Project Kestrel-04 were:\n- Project name: Kestrel-04\n- Incident code: OWUI-7304\n- Recovery region: La Paz\n\nIs there anything specific you would like to know or do with this information?",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789439740,
+    "id": "qwen2.5:14b-instruct-b74b4d70-1e06-411a-9544-6c4240979360",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m1s",
+      "completion_tokens": 61,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 61,
+      "eval_duration": 981301000,
+      "input_tokens": 334,
+      "load_duration": 2178900,
+      "output_tokens": 61,
+      "prompt_eval_count": 334,
+      "prompt_eval_duration": 125377000,
+      "prompt_token/s": 2663.97,
+      "prompt_tokens": 334,
+      "response_token/s": 62.16,
+      "total_duration": 1147141900,
+      "total_tokens": 395
+    }
+  },
+  "response_text": "The exact details you provided for Project Kestrel-04 were:\n- Project name: Kestrel-04\n- Incident code: OWUI-7304\n- Recovery region: La Paz\n\nIs there anything specific you would like to know or do with this information?",
+  "retrieved_document_ids": null
+}

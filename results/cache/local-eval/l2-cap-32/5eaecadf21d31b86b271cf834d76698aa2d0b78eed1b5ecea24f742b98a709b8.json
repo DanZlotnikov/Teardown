@@ -1,0 +1,50 @@
+{
+  "cache_key": "5eaecadf21d31b86b271cf834d76698aa2d0b78eed1b5ecea24f742b98a709b8",
+  "call_type": "tags",
+  "case_id": "tags-18",
+  "completion_ms": 622.758,
+  "condition": "l2-cap-32",
+  "endpoint": "/api/v1/tasks/tags/completions",
+  "objective_score": 0.0,
+  "payload_sha256": "0127e7d3d9c723a963a630fcb229f3a858c6997e48a45b64856bfb3b7680eb6d",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "Based on the provided chat history, the main theme revolves around the use of a specific software tool (Open WebUI) and troubleshooting an issue related to automation schedules",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789437631,
+    "id": "qwen2.5:14b-instruct-8f6e227e-e83c-4ece-bec1-6b500c3e4cc5",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 32,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 32,
+      "eval_duration": 515649000,
+      "input_tokens": 260,
+      "load_duration": 1544900,
+      "output_tokens": 32,
+      "prompt_eval_count": 260,
+      "prompt_eval_duration": 39604000,
+      "prompt_token/s": 6564.99,
+      "prompt_tokens": 260,
+      "response_token/s": 62.06,
+      "total_duration": 560470200,
+      "total_tokens": 292
+    }
+  },
+  "response_text": "Based on the provided chat history, the main theme revolves around the use of a specific software tool (Open WebUI) and troubleshooting an issue related to automation schedules",
+  "retrieved_document_ids": null
+}

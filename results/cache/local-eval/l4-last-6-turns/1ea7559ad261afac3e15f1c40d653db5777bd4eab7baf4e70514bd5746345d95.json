@@ -1,0 +1,50 @@
+{
+  "cache_key": "1ea7559ad261afac3e15f1c40d653db5777bd4eab7baf4e70514bd5746345d95",
+  "call_type": "main_chat_context",
+  "case_id": "context-18",
+  "completion_ms": 861.877,
+  "condition": "l4-last-6-turns",
+  "endpoint": "/api/chat/completions",
+  "objective_score": 0.0,
+  "payload_sha256": "fb280f971d4482f34a1272146c6634faa044b5915706d76b10d5cad069e2d6bd",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "It seems there might be some confusion. In our previous exchanges, we haven't mentioned specific project names, incident codes, or recovery regions. Could you please provide more context or details about what you're looking for so I can assist you better?",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789440790,
+    "id": "qwen2.5:14b-instruct-08a1ea59-0bbb-45a7-b8aa-283a1a339fd0",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 50,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 50,
+      "eval_duration": 775826000,
+      "input_tokens": 222,
+      "load_duration": 1304000,
+      "output_tokens": 50,
+      "prompt_eval_count": 222,
+      "prompt_eval_duration": 18597000,
+      "prompt_token/s": 11937.41,
+      "prompt_tokens": 222,
+      "response_token/s": 64.45,
+      "total_duration": 798830700,
+      "total_tokens": 272
+    }
+  },
+  "response_text": "It seems there might be some confusion. In our previous exchanges, we haven't mentioned specific project names, incident codes, or recovery regions. Could you please provide more context or details about what you're looking for so I can assist you better?",
+  "retrieved_document_ids": null
+}

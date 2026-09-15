@@ -1,0 +1,50 @@
+{
+  "cache_key": "a376a115cccff4842e5f12a92b6441c1b9dec50f3464199ffe09bf00653fa994",
+  "call_type": "web_query",
+  "case_id": "query-12",
+  "completion_ms": 634.706,
+  "condition": "l2-cap-128",
+  "endpoint": "/api/v1/tasks/queries/completions",
+  "objective_score": 0.0,
+  "payload_sha256": "dc141d3073dd967b991923ecf36d52dceb9d12e9c167b1122e29e29cc1f9b3f1",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"queries\": [\"Open WebUI schedule behavior fix\", \"Verify Open WebUI automation schedule settings\", \"Open WebUI save schedule real schedule settings\"]\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789437456,
+    "id": "qwen2.5:14b-instruct-0179a9a7-e4b9-4124-8e0e-96473ed646fc",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 34,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 34,
+      "eval_duration": 538977000,
+      "input_tokens": 411,
+      "load_duration": 2408000,
+      "output_tokens": 34,
+      "prompt_eval_count": 411,
+      "prompt_eval_duration": 49873000,
+      "prompt_token/s": 8240.93,
+      "prompt_tokens": 411,
+      "response_token/s": 63.08,
+      "total_duration": 597954100,
+      "total_tokens": 445
+    }
+  },
+  "response_text": "{\n  \"queries\": [\"Open WebUI schedule behavior fix\", \"Verify Open WebUI automation schedule settings\", \"Open WebUI save schedule real schedule settings\"]\n}",
+  "retrieved_document_ids": null
+}

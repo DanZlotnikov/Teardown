@@ -1,0 +1,358 @@
+{
+  "actions": "results/actions/mock/baseline.jsonl",
+  "actual_api_cost_usd": "0",
+  "by_call_type": {
+    "autocomplete": {
+      "cached_input_tokens": 0,
+      "calls": 2,
+      "derived_cost_usd": "0.0063160",
+      "input_tokens": 974,
+      "output_tokens": 121,
+      "provider_completion_ms_p50": 1050.202,
+      "provider_completion_ms_p95": 1288.028,
+      "ttft_ms_p50": null,
+      "ttft_ms_p95": null
+    },
+    "follow_up": {
+      "cached_input_tokens": 0,
+      "calls": 129,
+      "derived_cost_usd": "0.5193240",
+      "input_tokens": 80571,
+      "output_tokens": 9852,
+      "provider_completion_ms_p50": 1288.302,
+      "provider_completion_ms_p95": 1999.096,
+      "ttft_ms_p50": null,
+      "ttft_ms_p95": null
+    },
+    "main": {
+      "cached_input_tokens": 0,
+      "calls": 129,
+      "derived_cost_usd": "1.4863960",
+      "input_tokens": 77389,
+      "output_tokens": 58842,
+      "provider_completion_ms_p50": 7364.944,
+      "provider_completion_ms_p95": 10577.975,
+      "ttft_ms_p50": null,
+      "ttft_ms_p95": null
+    },
+    "retrieval": {
+      "cached_input_tokens": 0,
+      "calls": 20,
+      "derived_cost_usd": "0.0000000",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "provider_completion_ms_p50": null,
+      "provider_completion_ms_p95": null,
+      "ttft_ms_p50": null,
+      "ttft_ms_p95": null
+    },
+    "retrieval_query": {
+      "cached_input_tokens": 0,
+      "calls": 4,
+      "derived_cost_usd": "0.0091920",
+      "input_tokens": 1553,
+      "output_tokens": 149,
+      "provider_completion_ms_p50": 651.394,
+      "provider_completion_ms_p95": 737.341,
+      "ttft_ms_p50": null,
+      "ttft_ms_p95": null
+    },
+    "tags": {
+      "cached_input_tokens": 0,
+      "calls": 30,
+      "derived_cost_usd": "0.0896000",
+      "input_tokens": 19260,
+      "output_tokens": 628,
+      "provider_completion_ms_p50": 390.057,
+      "provider_completion_ms_p95": 657.677,
+      "ttft_ms_p50": null,
+      "ttft_ms_p95": null
+    },
+    "title": {
+      "cached_input_tokens": 0,
+      "calls": 30,
+      "derived_cost_usd": "0.0918600",
+      "input_tokens": 21210,
+      "output_tokens": 351,
+      "provider_completion_ms_p50": 269.78,
+      "provider_completion_ms_p95": 294.258,
+      "ttft_ms_p50": null,
+      "ttft_ms_p95": null
+    },
+    "web_query": {
+      "cached_input_tokens": 0,
+      "calls": 5,
+      "derived_cost_usd": "0.0116320",
+      "input_tokens": 1923,
+      "output_tokens": 197,
+      "provider_completion_ms_p50": 673.524,
+      "provider_completion_ms_p95": 705.559,
+      "ttft_ms_p50": null,
+      "ttft_ms_p95": null
+    }
+  },
+  "condition": "baseline",
+  "configuration_diff": {},
+  "counts": {
+    "cached_input_tokens": 0,
+    "calls": 349,
+    "input_tokens": 202880,
+    "output_tokens": 70140
+  },
+  "derived_cost_per_conversation_usd": "0.07381066666666666666666666667",
+  "derived_cost_usd": "2.2143200",
+  "derived_price_model": "gpt-5.6-sol",
+  "latency": {
+    "provider_completion_ms_p50": 1550.464,
+    "provider_completion_ms_p95": 9280.653,
+    "ttft_ms_p50": null,
+    "ttft_ms_p95": null
+  },
+  "latency_note": "Provider completion is Ollama total_duration. TTFT is unavailable because all controlled calls are nonstreaming.",
+  "lever": null,
+  "locks": {
+    "actions_sha256": "550fdf70e795bb28d35d3d63efa7e5e16c5e8ff7faefaa8fccbe972dbd7dc110",
+    "capture_sha256": "3629f36126f8ca1b2b8f0cc914859fd872598db5e5e8347dde84e7b3b130fa86",
+    "eval_sha256": "4f71a9d609398d9b0794943a4669947ceb38339e9edb4f6a02dd6971d4c0cff6",
+    "open_webui_commit": "0a7c15832fb30b1903753e83f81dc7d27e5b0944",
+    "open_webui_version": "0.11.3",
+    "pricing_snapshot_sha256": "65a3598e23225d7172062ecd381163070d37ec4f100ad27381efc672e8334498",
+    "scenario_sha256": "d0394ca6d75a788261b1659ae0ce61b3133efcd96f4ac202efc78b36c83608be"
+  },
+  "main_chat_path_risk": false,
+  "measurement": "Local Ollama wire-observed tokens; frozen-price costs are derived counterfactuals, not observed provider billing.",
+  "measurement_scope": {
+    "composed_unchanged_baseline_actions": 0,
+    "dropped_call_types": [],
+    "measured_condition_actions": 349,
+    "total_scenario_actions": 349
+  },
+  "quality": {
+    "lexical_agreement_vs_baseline_by_call_type": {
+      "autocomplete": 1.0,
+      "follow_up": 1.0,
+      "main": 1.0,
+      "retrieval_query": 1.0,
+      "tags": 1.0,
+      "title": 1.0,
+      "web_query": 1.0
+    },
+    "lexical_agreement_warning": "Diagnostic only; not a semantic quality score and not used for final grading.",
+    "retrieval": {
+      "cases": [
+        {
+          "case_id": "r01",
+          "recall": 1.0,
+          "relevant_document_ids": [
+            "task-model"
+          ],
+          "retrieved_document_ids": [
+            "task-model"
+          ]
+        },
+        {
+          "case_id": "r02",
+          "recall": 0.0,
+          "relevant_document_ids": [
+            "task-cap"
+          ],
+          "retrieved_document_ids": [
+            "task-model"
+          ]
+        },
+        {
+          "case_id": "r03",
+          "recall": 0.0,
+          "relevant_document_ids": [
+            "title-template"
+          ],
+          "retrieved_document_ids": [
+            "task-model"
+          ]
+        },
+        {
+          "case_id": "r04",
+          "recall": 0.0,
+          "relevant_document_ids": [
+            "context-compaction"
+          ],
+          "retrieved_document_ids": [
+            "task-model"
+          ]
+        },
+        {
+          "case_id": "r05",
+          "recall": 0.0,
+          "relevant_document_ids": [
+            "query-cache"
+          ],
+          "retrieved_document_ids": [
+            "task-model"
+          ]
+        },
+        {
+          "case_id": "r06",
+          "recall": 0.0,
+          "relevant_document_ids": [
+            "rag-top-k"
+          ],
+          "retrieved_document_ids": [
+            "task-model"
+          ]
+        },
+        {
+          "case_id": "r07",
+          "recall": 0.0,
+          "relevant_document_ids": [
+            "autocomplete"
+          ],
+          "retrieved_document_ids": [
+            "task-model"
+          ]
+        },
+        {
+          "case_id": "r08",
+          "recall": 0.0,
+          "relevant_document_ids": [
+            "budget"
+          ],
+          "retrieved_document_ids": [
+            "task-model"
+          ]
+        },
+        {
+          "case_id": "r09",
+          "recall": 0.0,
+          "relevant_document_ids": [
+            "resume-cache"
+          ],
+          "retrieved_document_ids": [
+            "task-model"
+          ]
+        },
+        {
+          "case_id": "r10",
+          "recall": 0.0,
+          "relevant_document_ids": [
+            "wire-capture"
+          ],
+          "retrieved_document_ids": [
+            "task-model"
+          ]
+        },
+        {
+          "case_id": "r11",
+          "recall": 0.0,
+          "relevant_document_ids": [
+            "local-ollama"
+          ],
+          "retrieved_document_ids": [
+            "task-model"
+          ]
+        },
+        {
+          "case_id": "r12",
+          "recall": 0.0,
+          "relevant_document_ids": [
+            "quality"
+          ],
+          "retrieved_document_ids": [
+            "task-model"
+          ]
+        },
+        {
+          "case_id": "r13",
+          "recall": 0.5,
+          "relevant_document_ids": [
+            "task-model",
+            "task-cap"
+          ],
+          "retrieved_document_ids": [
+            "task-model"
+          ]
+        },
+        {
+          "case_id": "r14",
+          "recall": 0.0,
+          "relevant_document_ids": [
+            "title-template",
+            "context-compaction"
+          ],
+          "retrieved_document_ids": [
+            "task-model"
+          ]
+        },
+        {
+          "case_id": "r15",
+          "recall": 0.0,
+          "relevant_document_ids": [
+            "query-cache",
+            "rag-top-k"
+          ],
+          "retrieved_document_ids": [
+            "task-model"
+          ]
+        },
+        {
+          "case_id": "r16",
+          "recall": 0.0,
+          "relevant_document_ids": [
+            "autocomplete"
+          ],
+          "retrieved_document_ids": [
+            "task-model"
+          ]
+        },
+        {
+          "case_id": "r17",
+          "recall": 0.0,
+          "relevant_document_ids": [
+            "resume-cache",
+            "budget"
+          ],
+          "retrieved_document_ids": [
+            "task-model"
+          ]
+        },
+        {
+          "case_id": "r18",
+          "recall": 0.0,
+          "relevant_document_ids": [
+            "wire-capture",
+            "budget"
+          ],
+          "retrieved_document_ids": [
+            "task-model"
+          ]
+        },
+        {
+          "case_id": "r19",
+          "recall": 0.0,
+          "relevant_document_ids": [
+            "local-ollama",
+            "quality"
+          ],
+          "retrieved_document_ids": [
+            "task-model"
+          ]
+        },
+        {
+          "case_id": "r20",
+          "recall": 0.0,
+          "relevant_document_ids": [
+            "rag-top-k",
+            "quality",
+            "wire-capture"
+          ],
+          "retrieved_document_ids": [
+            "task-model"
+          ]
+        }
+      ],
+      "mean_recall": 0.075
+    }
+  },
+  "raw_capture": "results/raw-proxy-logs/baseline.jsonl",
+  "run_count": 1,
+  "schema_version": 1
+}

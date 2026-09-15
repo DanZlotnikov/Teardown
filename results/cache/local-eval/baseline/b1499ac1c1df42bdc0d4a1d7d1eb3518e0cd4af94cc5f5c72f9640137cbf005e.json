@@ -1,0 +1,50 @@
+{
+  "cache_key": "b1499ac1c1df42bdc0d4a1d7d1eb3518e0cd4af94cc5f5c72f9640137cbf005e",
+  "call_type": "autocomplete",
+  "case_id": "autocomplete-02",
+  "completion_ms": 429.012,
+  "condition": "baseline",
+  "endpoint": "/api/v1/tasks/auto/completions",
+  "objective_score": 1.0,
+  "payload_sha256": "4db7a787b0698250f9def73c0ef093b5e9c296a791585459df9617a1b66895af",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{ \"text\": \"the conversation reaches a natural pause or conclusion, summarizing the key points discussed.\" }",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789436542,
+    "id": "qwen2.5:14b-instruct-c2c4a599-8522-4a0c-b09b-4a81381b10ca",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 23,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 23,
+      "eval_duration": 364246000,
+      "input_tokens": 376,
+      "load_duration": 1614800,
+      "output_tokens": 23,
+      "prompt_eval_count": 376,
+      "prompt_eval_duration": 37415000,
+      "prompt_token/s": 10049.45,
+      "prompt_tokens": 376,
+      "response_token/s": 63.14,
+      "total_duration": 407170900,
+      "total_tokens": 399
+    }
+  },
+  "response_text": "{ \"text\": \"the conversation reaches a natural pause or conclusion, summarizing the key points discussed.\" }",
+  "retrieved_document_ids": null
+}

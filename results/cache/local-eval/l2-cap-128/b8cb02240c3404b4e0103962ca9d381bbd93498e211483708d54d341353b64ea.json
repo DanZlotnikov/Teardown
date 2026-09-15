@@ -1,0 +1,50 @@
+{
+  "cache_key": "b8cb02240c3404b4e0103962ca9d381bbd93498e211483708d54d341353b64ea",
+  "call_type": "web_query",
+  "case_id": "query-06",
+  "completion_ms": 676.199,
+  "condition": "l2-cap-128",
+  "endpoint": "/api/v1/tasks/queries/completions",
+  "objective_score": 0.0,
+  "payload_sha256": "3b6ea37809a9b0151439604d5553e946ab0c2dfd84e3c682f86efd3eadedd8d1",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"queries\": [\"Open WebUI pinned model behavior fix\", \"How to verify Open WebUI model tools change\", \"Open WebUI model tool verification process\"]\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789437446,
+    "id": "qwen2.5:14b-instruct-978567ac-5fb8-492f-b2c1-7c22e73b0322",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 36,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 36,
+      "eval_duration": 574600000,
+      "input_tokens": 409,
+      "load_duration": 1599400,
+      "output_tokens": 36,
+      "prompt_eval_count": 409,
+      "prompt_eval_duration": 42897000,
+      "prompt_token/s": 9534.47,
+      "prompt_tokens": 409,
+      "response_token/s": 62.65,
+      "total_duration": 624140500,
+      "total_tokens": 445
+    }
+  },
+  "response_text": "{\n  \"queries\": [\"Open WebUI pinned model behavior fix\", \"How to verify Open WebUI model tools change\", \"Open WebUI model tool verification process\"]\n}",
+  "retrieved_document_ids": null
+}

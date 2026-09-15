@@ -1,0 +1,50 @@
+{
+  "cache_key": "daa1cda49b6f89458ab3c9c6b7b83404452cbc15b3a839d44252a31aa68e11e3",
+  "call_type": "main_chat_context",
+  "case_id": "context-16",
+  "completion_ms": 1094.213,
+  "condition": "l4-last-6-turns",
+  "endpoint": "/api/chat/completions",
+  "objective_score": 0.0,
+  "payload_sha256": "7233f0c372b70cbb19976f25df29c314a9fc7410e1870109dd8b5cc76ed706b7",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "It seems there might be a misunderstanding. You asked for generic discussions about logging and deployment checks without repeating project facts in previous turns, but you haven't provided specific project details or a first turn context that includes a project name, incident code, and recovery region. Could you please provide more details or clarify your request?",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789440789,
+    "id": "qwen2.5:14b-instruct-c9b3a9e3-3739-457c-9882-513fd5685c9c",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m1s",
+      "completion_tokens": 64,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 64,
+      "eval_duration": 1009204000,
+      "input_tokens": 222,
+      "load_duration": 1222800,
+      "output_tokens": 64,
+      "prompt_eval_count": 222,
+      "prompt_eval_duration": 18897000,
+      "prompt_token/s": 11747.9,
+      "prompt_tokens": 222,
+      "response_token/s": 63.42,
+      "total_duration": 1032662500,
+      "total_tokens": 286
+    }
+  },
+  "response_text": "It seems there might be a misunderstanding. You asked for generic discussions about logging and deployment checks without repeating project facts in previous turns, but you haven't provided specific project details or a first turn context that includes a project name, incident code, and recovery region. Could you please provide more details or clarify your request?",
+  "retrieved_document_ids": null
+}

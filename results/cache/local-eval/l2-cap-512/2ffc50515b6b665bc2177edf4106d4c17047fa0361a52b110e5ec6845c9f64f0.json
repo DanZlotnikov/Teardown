@@ -1,0 +1,50 @@
+{
+  "cache_key": "2ffc50515b6b665bc2177edf4106d4c17047fa0361a52b110e5ec6845c9f64f0",
+  "call_type": "tags",
+  "case_id": "tags-05",
+  "completion_ms": 1237.123,
+  "condition": "l2-cap-512",
+  "endpoint": "/api/v1/tasks/tags/completions",
+  "objective_score": 1.0,
+  "payload_sha256": "570fd827f4d0c61ad826cc2e439624ab432d758dd85f5eee11e96e4b9be3f182",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "Based on the chat history, the primary theme is related to technology, specifically the use and troubleshooting of a web application interface. The conversation revolves around a technical issue with Open WebUI and its behavior when replies stop. \n\nGiven these points, the tags should reflect the technology and web application domains.\n\n```json\n{ \"tags\": [\"Technology\", \"Web Applications\", \"User Interface\"] }\n```",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789437155,
+    "id": "qwen2.5:14b-instruct-1d7a5a02-380c-4b08-b3b9-5ea847cfc350",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m1s",
+      "completion_tokens": 80,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 80,
+      "eval_duration": 1157149000,
+      "input_tokens": 273,
+      "load_duration": 2815100,
+      "output_tokens": 80,
+      "prompt_eval_count": 273,
+      "prompt_eval_duration": 41577000,
+      "prompt_token/s": 6566.13,
+      "prompt_tokens": 273,
+      "response_token/s": 69.14,
+      "total_duration": 1205327300,
+      "total_tokens": 353
+    }
+  },
+  "response_text": "Based on the chat history, the primary theme is related to technology, specifically the use and troubleshooting of a web application interface. The conversation revolves around a technical issue with Open WebUI and its behavior when replies stop. \n\nGiven these points, the tags should reflect the technology and web application domains.\n\n```json\n{ \"tags\": [\"Technology\", \"Web Applications\", \"User Interface\"] }\n```",
+  "retrieved_document_ids": null
+}

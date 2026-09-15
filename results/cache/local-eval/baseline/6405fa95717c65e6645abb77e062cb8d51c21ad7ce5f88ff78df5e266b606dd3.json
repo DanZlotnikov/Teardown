@@ -1,0 +1,50 @@
+{
+  "cache_key": "6405fa95717c65e6645abb77e062cb8d51c21ad7ce5f88ff78df5e266b606dd3",
+  "call_type": "title",
+  "case_id": "title-11",
+  "completion_ms": 256.818,
+  "condition": "baseline",
+  "endpoint": "/api/v1/tasks/title/completions",
+  "objective_score": 1.0,
+  "payload_sha256": "5b51c79d19caa2321bc0aeb75491cc6ad2d9a299f1c7b95e9c8d9d7faa8e28e8",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{ \"title\": \"Open WebUI Streaming\" }",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789436478,
+    "id": "qwen2.5:14b-instruct-3c869c09-6781-40c9-895b-b3044b3b1d60",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 12,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 12,
+      "eval_duration": 181706000,
+      "input_tokens": 335,
+      "load_duration": 1016600,
+      "output_tokens": 12,
+      "prompt_eval_count": 335,
+      "prompt_eval_duration": 43375000,
+      "prompt_token/s": 7723.34,
+      "prompt_tokens": 335,
+      "response_token/s": 66.04,
+      "total_duration": 229054300,
+      "total_tokens": 347
+    }
+  },
+  "response_text": "{ \"title\": \"Open WebUI Streaming\" }",
+  "retrieved_document_ids": null
+}

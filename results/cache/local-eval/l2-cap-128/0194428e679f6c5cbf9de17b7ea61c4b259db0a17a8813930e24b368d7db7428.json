@@ -1,0 +1,50 @@
+{
+  "cache_key": "0194428e679f6c5cbf9de17b7ea61c4b259db0a17a8813930e24b368d7db7428",
+  "call_type": "title",
+  "case_id": "title-11",
+  "completion_ms": 262.068,
+  "condition": "l2-cap-128",
+  "endpoint": "/api/v1/tasks/title/completions",
+  "objective_score": 1.0,
+  "payload_sha256": "5b51c79d19caa2321bc0aeb75491cc6ad2d9a299f1c7b95e9c8d9d7faa8e28e8",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{ \"title\": \"Streaming Behavior\" }",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789437420,
+    "id": "qwen2.5:14b-instruct-5310fcda-c89e-4dca-bcf7-607908f3c178",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 10,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 10,
+      "eval_duration": 149967000,
+      "input_tokens": 335,
+      "load_duration": 2067100,
+      "output_tokens": 10,
+      "prompt_eval_count": 335,
+      "prompt_eval_duration": 45104000,
+      "prompt_token/s": 7427.28,
+      "prompt_tokens": 335,
+      "response_token/s": 66.68,
+      "total_duration": 203225100,
+      "total_tokens": 345
+    }
+  },
+  "response_text": "{ \"title\": \"Streaming Behavior\" }",
+  "retrieved_document_ids": null
+}

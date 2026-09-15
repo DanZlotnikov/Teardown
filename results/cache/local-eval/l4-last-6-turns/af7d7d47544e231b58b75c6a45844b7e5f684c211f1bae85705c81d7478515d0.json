@@ -1,0 +1,50 @@
+{
+  "cache_key": "af7d7d47544e231b58b75c6a45844b7e5f684c211f1bae85705c81d7478515d0",
+  "call_type": "main_chat_context",
+  "case_id": "context-14",
+  "completion_ms": 1025.233,
+  "condition": "l4-last-6-turns",
+  "endpoint": "/api/chat/completions",
+  "objective_score": 0.0,
+  "payload_sha256": "72fb57cf43ed9edc700dd2e8cc80382ba94c0ff2efc595db894335fa0ec23e8e",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "It seems there might be a misunderstanding; I haven't been provided with specific project names, incident codes, or recovery regions in our conversation so far. Could you please provide more details or the context from which you're referring? This will help me give you a more accurate and relevant response.",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789440786,
+    "id": "qwen2.5:14b-instruct-8e6e0b77-db15-49d2-9fbe-f017e37f7843",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 59,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 59,
+      "eval_duration": 930371000,
+      "input_tokens": 222,
+      "load_duration": 1650000,
+      "output_tokens": 59,
+      "prompt_eval_count": 222,
+      "prompt_eval_duration": 19846000,
+      "prompt_token/s": 11186.13,
+      "prompt_tokens": 222,
+      "response_token/s": 63.42,
+      "total_duration": 955586000,
+      "total_tokens": 281
+    }
+  },
+  "response_text": "It seems there might be a misunderstanding; I haven't been provided with specific project names, incident codes, or recovery regions in our conversation so far. Could you please provide more details or the context from which you're referring? This will help me give you a more accurate and relevant response.",
+  "retrieved_document_ids": null
+}

@@ -1,0 +1,50 @@
+{
+  "cache_key": "2339b2b95e0584aa58667b502157edb985782940b37f6e33c225dd61597d6403",
+  "call_type": "retrieval_query",
+  "case_id": "query-01",
+  "completion_ms": 623.622,
+  "condition": "l2-cap-32",
+  "endpoint": "/api/v1/tasks/queries/completions",
+  "objective_score": 0.0,
+  "payload_sha256": "5f5b90586b4bc8a36a8bfa56c2344caf141c68621f3e53a44cd8f2af0bb26feb",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"queries\": [\"Open WebUI streaming behavior fix\", \"verify streaming fix in Open WebUI\", \"reasoning model streaming optimization\"]\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789437632,
+    "id": "qwen2.5:14b-instruct-71516f6a-5f1f-4e35-90bd-87d50133b76f",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 31,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 31,
+      "eval_duration": 492594000,
+      "input_tokens": 403,
+      "load_duration": 1250000,
+      "output_tokens": 31,
+      "prompt_eval_count": 403,
+      "prompt_eval_duration": 44320000,
+      "prompt_token/s": 9092.96,
+      "prompt_tokens": 403,
+      "response_token/s": 62.93,
+      "total_duration": 580779200,
+      "total_tokens": 434
+    }
+  },
+  "response_text": "{\n  \"queries\": [\"Open WebUI streaming behavior fix\", \"verify streaming fix in Open WebUI\", \"reasoning model streaming optimization\"]\n}",
+  "retrieved_document_ids": null
+}

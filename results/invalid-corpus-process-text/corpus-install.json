@@ -1,0 +1,216 @@
+{
+  "base_url": "http://127.0.0.1:8088",
+  "collection_id": "76c911fa-81c9-42f4-93cf-e13e166928f3",
+  "completed_document_ids": [
+    "task-model",
+    "task-cap",
+    "title-template",
+    "context-compaction",
+    "query-cache",
+    "rag-top-k",
+    "autocomplete",
+    "budget",
+    "resume-cache",
+    "wire-capture",
+    "local-ollama",
+    "quality"
+  ],
+  "corpus_sha256": "f4e57fec49ee92a076f9626f3a247fb0af7f7b0c70cd9f412709e0341a083982",
+  "created_at": "2026-09-15T00:07:15.243633+00:00",
+  "inflight_document_id": null,
+  "schema_version": 1,
+  "verification": {
+    "cases": [
+      {
+        "case_id": "r01",
+        "relevant_document_ids": [
+          "task-model"
+        ],
+        "retrieved_document_ids": [
+          "task-model"
+        ]
+      },
+      {
+        "case_id": "r02",
+        "relevant_document_ids": [
+          "task-cap"
+        ],
+        "retrieved_document_ids": [
+          "task-model"
+        ]
+      },
+      {
+        "case_id": "r03",
+        "relevant_document_ids": [
+          "title-template"
+        ],
+        "retrieved_document_ids": [
+          "task-model"
+        ]
+      },
+      {
+        "case_id": "r04",
+        "relevant_document_ids": [
+          "context-compaction"
+        ],
+        "retrieved_document_ids": [
+          "task-model"
+        ]
+      },
+      {
+        "case_id": "r05",
+        "relevant_document_ids": [
+          "query-cache"
+        ],
+        "retrieved_document_ids": [
+          "task-model"
+        ]
+      },
+      {
+        "case_id": "r06",
+        "relevant_document_ids": [
+          "rag-top-k"
+        ],
+        "retrieved_document_ids": [
+          "task-model"
+        ]
+      },
+      {
+        "case_id": "r07",
+        "relevant_document_ids": [
+          "autocomplete"
+        ],
+        "retrieved_document_ids": [
+          "task-model"
+        ]
+      },
+      {
+        "case_id": "r08",
+        "relevant_document_ids": [
+          "budget"
+        ],
+        "retrieved_document_ids": [
+          "task-model"
+        ]
+      },
+      {
+        "case_id": "r09",
+        "relevant_document_ids": [
+          "resume-cache"
+        ],
+        "retrieved_document_ids": [
+          "task-model"
+        ]
+      },
+      {
+        "case_id": "r10",
+        "relevant_document_ids": [
+          "wire-capture"
+        ],
+        "retrieved_document_ids": [
+          "task-model"
+        ]
+      },
+      {
+        "case_id": "r11",
+        "relevant_document_ids": [
+          "local-ollama"
+        ],
+        "retrieved_document_ids": [
+          "task-model"
+        ]
+      },
+      {
+        "case_id": "r12",
+        "relevant_document_ids": [
+          "quality"
+        ],
+        "retrieved_document_ids": [
+          "task-model"
+        ]
+      },
+      {
+        "case_id": "r13",
+        "relevant_document_ids": [
+          "task-model",
+          "task-cap"
+        ],
+        "retrieved_document_ids": [
+          "task-model"
+        ]
+      },
+      {
+        "case_id": "r14",
+        "relevant_document_ids": [
+          "title-template",
+          "context-compaction"
+        ],
+        "retrieved_document_ids": [
+          "task-model"
+        ]
+      },
+      {
+        "case_id": "r15",
+        "relevant_document_ids": [
+          "query-cache",
+          "rag-top-k"
+        ],
+        "retrieved_document_ids": [
+          "task-model"
+        ]
+      },
+      {
+        "case_id": "r16",
+        "relevant_document_ids": [
+          "autocomplete"
+        ],
+        "retrieved_document_ids": [
+          "task-model"
+        ]
+      },
+      {
+        "case_id": "r17",
+        "relevant_document_ids": [
+          "resume-cache",
+          "budget"
+        ],
+        "retrieved_document_ids": [
+          "task-model"
+        ]
+      },
+      {
+        "case_id": "r18",
+        "relevant_document_ids": [
+          "wire-capture",
+          "budget"
+        ],
+        "retrieved_document_ids": [
+          "task-model"
+        ]
+      },
+      {
+        "case_id": "r19",
+        "relevant_document_ids": [
+          "local-ollama",
+          "quality"
+        ],
+        "retrieved_document_ids": [
+          "task-model"
+        ]
+      },
+      {
+        "case_id": "r20",
+        "relevant_document_ids": [
+          "rag-top-k",
+          "quality",
+          "wire-capture"
+        ],
+        "retrieved_document_ids": [
+          "task-model"
+        ]
+      }
+    ],
+    "run_at": "2026-09-15T00:07:16.708722+00:00",
+    "top_k": 3
+  }
+}

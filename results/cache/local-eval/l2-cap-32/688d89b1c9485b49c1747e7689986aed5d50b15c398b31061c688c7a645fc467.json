@@ -1,0 +1,50 @@
+{
+  "cache_key": "688d89b1c9485b49c1747e7689986aed5d50b15c398b31061c688c7a645fc467",
+  "call_type": "title",
+  "case_id": "title-25",
+  "completion_ms": 294.441,
+  "condition": "l2-cap-32",
+  "endpoint": "/api/v1/tasks/title/completions",
+  "objective_score": 1.0,
+  "payload_sha256": "6ff2eb0d775684701ae8110cbdf4ae01a45909926632b70b488dcfd5092c1132",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{ \"title\": \"Sidebar Folder Issue\" }",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789437621,
+    "id": "qwen2.5:14b-instruct-f1e4b138-9fe7-4dc9-a742-e13be76a1043",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 11,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 11,
+      "eval_duration": 168903000,
+      "input_tokens": 341,
+      "load_duration": 1623000,
+      "output_tokens": 11,
+      "prompt_eval_count": 341,
+      "prompt_eval_duration": 48935000,
+      "prompt_token/s": 6968.43,
+      "prompt_tokens": 341,
+      "response_token/s": 65.13,
+      "total_duration": 224182800,
+      "total_tokens": 352
+    }
+  },
+  "response_text": "{ \"title\": \"Sidebar Folder Issue\" }",
+  "retrieved_document_ids": null
+}

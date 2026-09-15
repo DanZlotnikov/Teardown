@@ -1,0 +1,50 @@
+{
+  "cache_key": "06ef213ce9c00ce4245076937c10847800e1a7bdafa80df6c050337847714da6",
+  "call_type": "title",
+  "case_id": "title-17",
+  "completion_ms": 271.499,
+  "condition": "baseline",
+  "endpoint": "/api/v1/tasks/title/completions",
+  "objective_score": 1.0,
+  "payload_sha256": "da7ca6c1b0ab508f1b662fff58ee71d180ace2ef80986617fdff395faf7e528f",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{ \"title\": \"Open WebUI Fix\" }",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789436479,
+    "id": "qwen2.5:14b-instruct-91c019fd-774c-4c7f-bbc1-b0e1c07bcb42",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 12,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 12,
+      "eval_duration": 179874000,
+      "input_tokens": 349,
+      "load_duration": 1772900,
+      "output_tokens": 12,
+      "prompt_eval_count": 349,
+      "prompt_eval_duration": 49039000,
+      "prompt_token/s": 7116.78,
+      "prompt_tokens": 349,
+      "response_token/s": 66.71,
+      "total_duration": 234319200,
+      "total_tokens": 361
+    }
+  },
+  "response_text": "{ \"title\": \"Open WebUI Fix\" }",
+  "retrieved_document_ids": null
+}

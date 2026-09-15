@@ -1,0 +1,50 @@
+{
+  "cache_key": "1fc30984d91cada412416d2563a5dcc0f32272ea3a8fc8d89cce8070cbc44f28",
+  "call_type": "main_chat_context",
+  "case_id": "context-05",
+  "completion_ms": 1289.637,
+  "condition": "l4-last-3-turns",
+  "endpoint": "/api/chat/completions",
+  "objective_score": 0.0,
+  "payload_sha256": "1365cff55257009b7997cdf8e74d08bba0208abb87db8761b6baf42f9a7927e1",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "It seems there might be a mix-up since you asked for specific details from the \"first turn\" regarding a project name, incident code, and recovery region, but no such specifics were provided in our conversation so far. Could you please provide more context or clarify which project or scenario you're referring to? This way, I can assist you more accurately with the information you need.",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789441813,
+    "id": "qwen2.5:14b-instruct-21dc4f38-bf72-4775-8950-1d2a5d29215e",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m1s",
+      "completion_tokens": 77,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 77,
+      "eval_duration": 1214119000,
+      "input_tokens": 117,
+      "load_duration": 1123400,
+      "output_tokens": 77,
+      "prompt_eval_count": 117,
+      "prompt_eval_duration": 14790000,
+      "prompt_token/s": 7910.75,
+      "prompt_tokens": 117,
+      "response_token/s": 63.42,
+      "total_duration": 1233176200,
+      "total_tokens": 194
+    }
+  },
+  "response_text": "It seems there might be a mix-up since you asked for specific details from the \"first turn\" regarding a project name, incident code, and recovery region, but no such specifics were provided in our conversation so far. Could you please provide more context or clarify which project or scenario you're referring to? This way, I can assist you more accurately with the information you need.",
+  "retrieved_document_ids": null
+}

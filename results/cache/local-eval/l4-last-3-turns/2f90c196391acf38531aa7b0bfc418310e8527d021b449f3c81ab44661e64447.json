@@ -1,0 +1,50 @@
+{
+  "cache_key": "2f90c196391acf38531aa7b0bfc418310e8527d021b449f3c81ab44661e64447",
+  "call_type": "main_chat_context",
+  "case_id": "context-06",
+  "completion_ms": 897.388,
+  "condition": "l4-last-3-turns",
+  "endpoint": "/api/chat/completions",
+  "objective_score": 0.0,
+  "payload_sha256": "ad80a91f30311bb91c49af85e232c8460f6b39c5c81ae91b83263fc68780491b",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "It seems there might be a mix-up since you didn't provide specific details about the first turn or the project in question. Could you please clarify or provide the necessary details such as the project name, incident code, and recovery region so I can assist you better?",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789441814,
+    "id": "qwen2.5:14b-instruct-520ee106-387b-4300-9567-00a000a48b28",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 54,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 54,
+      "eval_duration": 831729000,
+      "input_tokens": 117,
+      "load_duration": 1944700,
+      "output_tokens": 54,
+      "prompt_eval_count": 117,
+      "prompt_eval_duration": 15040000,
+      "prompt_token/s": 7779.26,
+      "prompt_tokens": 117,
+      "response_token/s": 64.92,
+      "total_duration": 852401800,
+      "total_tokens": 171
+    }
+  },
+  "response_text": "It seems there might be a mix-up since you didn't provide specific details about the first turn or the project in question. Could you please clarify or provide the necessary details such as the project name, incident code, and recovery region so I can assist you better?",
+  "retrieved_document_ids": null
+}

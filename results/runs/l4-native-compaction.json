@@ -1,0 +1,54 @@
+{
+  "actual_api_cost_usd": "0",
+  "baseline_targeted_cost_usd": "0.0412",
+  "condition": "l4-native-compaction",
+  "configuration_diff": {
+    "context_policy": {
+      "enabled": true,
+      "kind": "native_compaction",
+      "retention_percentage": 40,
+      "token_cap": 256,
+      "token_threshold": 256
+    }
+  },
+  "counts": {
+    "cached_input_tokens": 2780,
+    "calls": 40,
+    "input_tokens": 12863,
+    "output_tokens": 2473
+  },
+  "derived_cost_usd": "0.090904",
+  "derived_price_model": "gpt-5.6-sol",
+  "eval_rows": "results/eval/l4-native-compaction.rows.json",
+  "latency": {
+    "open_webui_completion_ms_p50": 2345.606,
+    "open_webui_completion_ms_p95": 2614.229,
+    "ttft_ms_p50": null,
+    "ttft_ms_p95": null
+  },
+  "latency_note": "Completion includes the native summary call and final answer. TTFT is unavailable because the controlled request is nonstreaming.",
+  "lever": "L4_context_management",
+  "locks": {
+    "capture_sha256": "ef8ec27677a3ad92aa8bdf423672c78c61834f16534f8ba68c22f940e8d7ff60",
+    "eval_sha256": "4f71a9d609398d9b0794943a4669947ceb38339e9edb4f6a02dd6971d4c0cff6",
+    "open_webui_commit": "0a7c15832fb30b1903753e83f81dc7d27e5b0944",
+    "open_webui_version": "0.11.3",
+    "pricing_snapshot_sha256": "6603440ced269ce2638c0ecf1657be2521974b2c6ce782c6a8435481dd91417e"
+  },
+  "main_chat_path_risk": true,
+  "measurement": "Twenty saved-chat context cases; each required persisted evidence that native compaction triggered.",
+  "measurement_scope": {
+    "provider_calls_including_summaries": 40,
+    "targeted_cases": 20
+  },
+  "quality": {
+    "baseline_objective_mean": 1.0,
+    "compaction_triggered_cases": 20,
+    "objective_delta_points": -20.0,
+    "objective_mean": 0.8
+  },
+  "raw_capture": "results/raw-proxy-logs/l4-native-compaction.jsonl",
+  "run_count": 1,
+  "schema_version": 1,
+  "targeted_cost_saving_percent": -120.640777
+}

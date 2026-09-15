@@ -1,0 +1,50 @@
+{
+  "cache_key": "44cb03c4455340ad8c96a2d61b275c6487b8dd1c509f54adef9037ef105e2575",
+  "call_type": "web_query",
+  "case_id": "query-10",
+  "completion_ms": 1394.779,
+  "condition": "baseline",
+  "endpoint": "/api/v1/tasks/queries/completions",
+  "objective_score": 0.0,
+  "payload_sha256": "92862fda20c1e116353162a2273fb55420ed3f0a62a04da74131f24082e4bbc8",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"queries\": [\"Open WebUI calendar event visibility bug fix\", \"Open WebUI calendar event persistence issue\", \"Open WebUI calendar event disappearance workaround\"]\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789436516,
+    "id": "qwen2.5:14b-instruct-e91d4ad7-a075-456f-a8ee-cdff2a45d04f",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m1s",
+      "completion_tokens": 35,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 35,
+      "eval_duration": 549092000,
+      "input_tokens": 400,
+      "load_duration": 1620100,
+      "output_tokens": 35,
+      "prompt_eval_count": 400,
+      "prompt_eval_duration": 44169000,
+      "prompt_token/s": 9056.13,
+      "prompt_tokens": 400,
+      "response_token/s": 63.74,
+      "total_duration": 1342100600,
+      "total_tokens": 435
+    }
+  },
+  "response_text": "{\n  \"queries\": [\"Open WebUI calendar event visibility bug fix\", \"Open WebUI calendar event persistence issue\", \"Open WebUI calendar event disappearance workaround\"]\n}",
+  "retrieved_document_ids": null
+}

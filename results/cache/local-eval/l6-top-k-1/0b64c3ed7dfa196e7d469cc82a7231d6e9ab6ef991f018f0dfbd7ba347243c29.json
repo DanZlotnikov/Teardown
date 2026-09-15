@@ -1,0 +1,43 @@
+{
+  "cache_key": "0b64c3ed7dfa196e7d469cc82a7231d6e9ab6ef991f018f0dfbd7ba347243c29",
+  "call_type": "retrieval",
+  "case_id": "retrieval-r12",
+  "completion_ms": 30.51,
+  "condition": "l6-top-k-1",
+  "endpoint": "/api/v1/retrieval/query/collection",
+  "objective_score": 1.0,
+  "payload_sha256": "1e77d2031dc916bceeac0e663b6a964dbcdad49cf1dbcc9c9bce0e3bab2547f4",
+  "response": {
+    "distances": [
+      [
+        0.8133397996425629
+      ]
+    ],
+    "documents": [
+      [
+        "[DOC_ID:quality] Targeted quality evaluation  \nEvaluate only call types affected by each lever. Use objective format, exact-fact, retrieval-overlap, and grounding metrics first. Use a cached non-reasoning judge only when objective comparisons are insufficient."
+      ]
+    ],
+    "metadatas": [
+      [
+        {
+          "content_type": "text/plain; charset=utf-8",
+          "created_by": "b997c815-91d7-4e7f-b9bb-f554a9245ad7",
+          "data": "{}",
+          "embedding_config": "{'engine': 'ollama', 'model': 'nomic-embed-text'}",
+          "file_hash": "01cddb57ba8e51c18e3a7f2a3c46257af80f516da6a1ff1f6306ad80c6c322b9",
+          "file_id": "0b43f959-edd6-4cba-8c80-c42d76fbdeaa",
+          "hash": "01cddb57ba8e51c18e3a7f2a3c46257af80f516da6a1ff1f6306ad80c6c322b9",
+          "name": "teardown-quality.txt",
+          "size": 259,
+          "source": "teardown-quality.txt",
+          "start_index": 0
+        }
+      ]
+    ]
+  },
+  "response_text": "",
+  "retrieved_document_ids": [
+    "quality"
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "cache_key": "f7a35efc3135f031578095cd6b244f0ba90b30dc6e5827df22b769dfd1435da1",
+  "call_type": "title",
+  "case_id": "title-25",
+  "completion_ms": 248.816,
+  "condition": "l2-cap-128",
+  "endpoint": "/api/v1/tasks/title/completions",
+  "objective_score": 1.0,
+  "payload_sha256": "6ff2eb0d775684701ae8110cbdf4ae01a45909926632b70b488dcfd5092c1132",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{ \"title\": \"Sidebar Folder Behavior\" }",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789437425,
+    "id": "qwen2.5:14b-instruct-2d28892b-f3c9-44e5-893e-4fe96c486494",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 11,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 11,
+      "eval_duration": 165322000,
+      "input_tokens": 341,
+      "load_duration": 1558200,
+      "output_tokens": 11,
+      "prompt_eval_count": 341,
+      "prompt_eval_duration": 49880000,
+      "prompt_token/s": 6836.41,
+      "prompt_tokens": 341,
+      "response_token/s": 66.54,
+      "total_duration": 221479500,
+      "total_tokens": 352
+    }
+  },
+  "response_text": "{ \"title\": \"Sidebar Folder Behavior\" }",
+  "retrieved_document_ids": null
+}

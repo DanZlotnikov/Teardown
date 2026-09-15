@@ -1,0 +1,50 @@
+{
+  "cache_key": "be18039d62d8b21ca9537b3d51d0080a131f0d4d4ca531e5fba8a878f80ba2cb",
+  "call_type": "main_chat_context",
+  "case_id": "context-10",
+  "completion_ms": 880.912,
+  "condition": "l4-last-3-turns",
+  "endpoint": "/api/chat/completions",
+  "objective_score": 0.0,
+  "payload_sha256": "bb6e1fedaaf9fad715bc6f5137f16f3e41a027fb85bd1fd0abf5a518ee600a8b",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "It seems there might be a bit of confusion because you haven't provided specific details about the first turn or the context of the project name, incident code, and recovery region. Could you please provide more information or clarify the context so I can assist you better?",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789441818,
+    "id": "qwen2.5:14b-instruct-234fbe12-cfdf-451a-b968-45f7ff01bb0c",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 53,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 53,
+      "eval_duration": 813221000,
+      "input_tokens": 117,
+      "load_duration": 1696200,
+      "output_tokens": 53,
+      "prompt_eval_count": 117,
+      "prompt_eval_duration": 14498000,
+      "prompt_token/s": 8070.08,
+      "prompt_tokens": 117,
+      "response_token/s": 65.17,
+      "total_duration": 832478400,
+      "total_tokens": 170
+    }
+  },
+  "response_text": "It seems there might be a bit of confusion because you haven't provided specific details about the first turn or the context of the project name, incident code, and recovery region. Could you please provide more information or clarify the context so I can assist you better?",
+  "retrieved_document_ids": null
+}

@@ -1,0 +1,50 @@
+{
+  "cache_key": "36588e5107a9df650193c271b4f89a88ce2d039852e2361be2c121b40ee3ee80",
+  "call_type": "title",
+  "case_id": "title-08",
+  "completion_ms": 259.645,
+  "condition": "baseline",
+  "endpoint": "/api/v1/tasks/title/completions",
+  "objective_score": 1.0,
+  "payload_sha256": "f0942bd2b62e54668c7c71e721a3e11167bc66204bae543a8bde0896297850c1",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{ \"title\": \"Accessibility Mode\" }",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789436477,
+    "id": "qwen2.5:14b-instruct-896a58ab-fc39-4ed0-8773-83fef2e36348",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 10,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 10,
+      "eval_duration": 148550000,
+      "input_tokens": 401,
+      "load_duration": 2388100,
+      "output_tokens": 10,
+      "prompt_eval_count": 401,
+      "prompt_eval_duration": 70797000,
+      "prompt_token/s": 5664.08,
+      "prompt_tokens": 401,
+      "response_token/s": 67.32,
+      "total_duration": 226444000,
+      "total_tokens": 411
+    }
+  },
+  "response_text": "{ \"title\": \"Accessibility Mode\" }",
+  "retrieved_document_ids": null
+}

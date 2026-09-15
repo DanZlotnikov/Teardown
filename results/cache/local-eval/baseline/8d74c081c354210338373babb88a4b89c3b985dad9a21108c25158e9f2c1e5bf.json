@@ -1,0 +1,50 @@
+{
+  "cache_key": "8d74c081c354210338373babb88a4b89c3b985dad9a21108c25158e9f2c1e5bf",
+  "call_type": "main_chat_context",
+  "case_id": "context-17",
+  "completion_ms": 788.252,
+  "condition": "baseline",
+  "endpoint": "/api/chat/completions",
+  "objective_score": 1.0,
+  "payload_sha256": "3ef3b52894627aebc9e1f3bbd5378e479d2f77a2645626beb30408bf53ea392e",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "From the first turn, the project name is Project Kestrel-17, its incident code is OWUI-7317, and its recovery region is Helsinki.",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789436536,
+    "id": "qwen2.5:14b-instruct-f1ec5045-ed7f-4bd6-88e6-6a2f888ee470",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 37,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 37,
+      "eval_duration": 589969000,
+      "input_tokens": 333,
+      "load_duration": 1639000,
+      "output_tokens": 37,
+      "prompt_eval_count": 333,
+      "prompt_eval_duration": 129636000,
+      "prompt_token/s": 2568.73,
+      "prompt_tokens": 333,
+      "response_token/s": 62.72,
+      "total_duration": 753442200,
+      "total_tokens": 370
+    }
+  },
+  "response_text": "From the first turn, the project name is Project Kestrel-17, its incident code is OWUI-7317, and its recovery region is Helsinki.",
+  "retrieved_document_ids": null
+}

@@ -1,0 +1,75 @@
+{
+  "cache_key": "6b5e611f2d21a198b083013057f347fa7436cad99cba668cd9091bfe3aa32219",
+  "call_type": "retrieval",
+  "case_id": "retrieval-r15",
+  "completion_ms": 56.144,
+  "condition": "baseline",
+  "endpoint": "/api/v1/retrieval/query/collection",
+  "objective_score": 0.5,
+  "payload_sha256": "8b7a06069fd9cc9e743fc09169d1532c0df53d1ee0acba1f6a2287d286da99da",
+  "response": {
+    "distances": [
+      [
+        0.8273426592350006,
+        0.8072382807731628,
+        0.7794356942176819
+      ]
+    ],
+    "documents": [
+      [
+        "[DOC_ID:query-cache] Query reuse  \nENABLE_QUERIES_CACHE stores web-search queries on request state so later file retrieval in the same combined chat request can reuse them. Repeating the standalone query endpoint cannot exercise this optimization.",
+        "[DOC_ID:resume-cache] Paid output cache  \nCache every paid response under a stable key that binds condition, dataset hash, endpoint, and payload. Write the cache atomically before the append-only action manifest. On resume, a valid cache alone must prevent a repeated provider call.",
+        "[DOC_ID:task-model] Task model routing  \nOpen WebUI routes titles, tags, follow-up suggestions, retrieval queries, web-search queries, and autocomplete through the configured task model. Administrators can set a local or smaller task model without changing the main chat model."
+      ]
+    ],
+    "metadatas": [
+      [
+        {
+          "content_type": "text/plain; charset=utf-8",
+          "created_by": "b997c815-91d7-4e7f-b9bb-f554a9245ad7",
+          "data": "{}",
+          "embedding_config": "{'engine': 'ollama', 'model': 'nomic-embed-text'}",
+          "file_hash": "82ccc3947e349ada40238a0a113dc89a394122b1592a515ec4af3137bfda00ab",
+          "file_id": "371aa7e1-73b6-43be-9adb-0b829bdd47f4",
+          "hash": "82ccc3947e349ada40238a0a113dc89a394122b1592a515ec4af3137bfda00ab",
+          "name": "teardown-query-cache.txt",
+          "size": 246,
+          "source": "teardown-query-cache.txt",
+          "start_index": 0
+        },
+        {
+          "content_type": "text/plain; charset=utf-8",
+          "created_by": "b997c815-91d7-4e7f-b9bb-f554a9245ad7",
+          "data": "{}",
+          "embedding_config": "{'engine': 'ollama', 'model': 'nomic-embed-text'}",
+          "file_hash": "bd3d69d8e6dfac97f1cde34cb081bcfae0adfbb71c568ada12a835997ff2803e",
+          "file_id": "b5195914-9264-45ac-bb91-dfbc880f422a",
+          "hash": "bd3d69d8e6dfac97f1cde34cb081bcfae0adfbb71c568ada12a835997ff2803e",
+          "name": "teardown-resume-cache.txt",
+          "size": 281,
+          "source": "teardown-resume-cache.txt",
+          "start_index": 0
+        },
+        {
+          "content_type": "text/plain; charset=utf-8",
+          "created_by": "b997c815-91d7-4e7f-b9bb-f554a9245ad7",
+          "data": "{}",
+          "embedding_config": "{'engine': 'ollama', 'model': 'nomic-embed-text'}",
+          "file_hash": "c5fb732c5c6408616507c318bace6c09edb8a2e3103bf9dda97ec2d4693bf068",
+          "file_id": "bb4a58a1-5afd-4be3-94a1-393cedf36faf",
+          "hash": "c5fb732c5c6408616507c318bace6c09edb8a2e3103bf9dda97ec2d4693bf068",
+          "name": "teardown-task-model.txt",
+          "size": 276,
+          "source": "teardown-task-model.txt",
+          "start_index": 0
+        }
+      ]
+    ]
+  },
+  "response_text": "",
+  "retrieved_document_ids": [
+    "query-cache",
+    "resume-cache",
+    "task-model"
+  ]
+}

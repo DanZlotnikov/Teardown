@@ -1,0 +1,50 @@
+{
+  "cache_key": "dc3fccf92c8c8eb811460e62669a50090164c4bc538f81aa09af25c35c3fd754",
+  "call_type": "tags",
+  "case_id": "tags-09",
+  "completion_ms": 961.274,
+  "condition": "baseline",
+  "endpoint": "/api/v1/tasks/tags/completions",
+  "objective_score": 1.0,
+  "payload_sha256": "249474cd867b76086c78c5e8e70ce0f3a0edb27b43d34858d202e498de94312f",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "Based on the chat history provided, the conversation appears to be focused on technical issues related to Open WebUI and its deployment settings involving Redis. Here is the suggested tagging:\n\n```json\n{\n  \"tags\": [\"Technology\", \"Software\", \"Deployment\"]\n}\n```",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789436492,
+    "id": "qwen2.5:14b-instruct-e588478a-ffd8-49b5-9836-f4d2415154b0",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 54,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 54,
+      "eval_duration": 866589000,
+      "input_tokens": 272,
+      "load_duration": 2291500,
+      "output_tokens": 54,
+      "prompt_eval_count": 272,
+      "prompt_eval_duration": 42887000,
+      "prompt_token/s": 6342.25,
+      "prompt_tokens": 272,
+      "response_token/s": 62.31,
+      "total_duration": 915106500,
+      "total_tokens": 326
+    }
+  },
+  "response_text": "Based on the chat history provided, the conversation appears to be focused on technical issues related to Open WebUI and its deployment settings involving Redis. Here is the suggested tagging:\n\n```json\n{\n  \"tags\": [\"Technology\", \"Software\", \"Deployment\"]\n}\n```",
+  "retrieved_document_ids": null
+}

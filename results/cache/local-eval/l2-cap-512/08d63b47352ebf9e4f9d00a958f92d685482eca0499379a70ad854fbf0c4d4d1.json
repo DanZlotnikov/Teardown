@@ -1,0 +1,50 @@
+{
+  "cache_key": "08d63b47352ebf9e4f9d00a958f92d685482eca0499379a70ad854fbf0c4d4d1",
+  "call_type": "title",
+  "case_id": "title-22",
+  "completion_ms": 236.025,
+  "condition": "l2-cap-512",
+  "endpoint": "/api/v1/tasks/title/completions",
+  "objective_score": 1.0,
+  "payload_sha256": "dc46f1c6f8f047e5b828ec502745d24086584a13f39341c813c3d348d2e0ab9f",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{ \"title\": \"WebUI Schedules\" }",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789437151,
+    "id": "qwen2.5:14b-instruct-7fd38b1d-1ef0-4f4a-884d-5c3eb61a1e9c",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 12,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 12,
+      "eval_duration": 161998000,
+      "input_tokens": 343,
+      "load_duration": 2100800,
+      "output_tokens": 12,
+      "prompt_eval_count": 343,
+      "prompt_eval_duration": 47502000,
+      "prompt_token/s": 7220.75,
+      "prompt_tokens": 343,
+      "response_token/s": 74.07,
+      "total_duration": 216674600,
+      "total_tokens": 355
+    }
+  },
+  "response_text": "{ \"title\": \"WebUI Schedules\" }",
+  "retrieved_document_ids": null
+}

@@ -61,4 +61,12 @@ foreach ($condition in $conditions) {
     if ($LASTEXITCODE -ne 0) { throw "Summarization failed: $($condition.Id)" }
 }
 
+& (Join-Path $PSScriptRoot "run_local_condition.ps1") -Condition "l4-native-compaction" `
+    -RetrievalK 3 -CollectionId $CollectionId -BaseUrl $BaseUrl -Model $Model -Resume -SkipScenario -SkipSummary
+if ($LASTEXITCODE -ne 0) { throw "Native compaction condition setup failed." }
+& $python -m eval.run_native_compaction --base-url $BaseUrl --condition l4-native-compaction --model $Model
+if ($LASTEXITCODE -ne 0) { throw "Native compaction eval failed." }
+& $python -m analysis.summarize_native_compaction
+if ($LASTEXITCODE -ne 0) { throw "Native compaction summarization failed." }
+
 Write-Output "Local single-lever matrix completed."

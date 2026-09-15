@@ -1,0 +1,50 @@
+{
+  "cache_key": "5bfceb83595d2cadf32073472378b501ddec58ce235e7e7593792ff71bc6b7c2",
+  "call_type": "title",
+  "case_id": "title-24",
+  "completion_ms": 261.731,
+  "condition": "l2-cap-512",
+  "endpoint": "/api/v1/tasks/title/completions",
+  "objective_score": 1.0,
+  "payload_sha256": "90b837552dd491bc2fdfe2f5442d598c2208659d34681447b0306a32ec493529",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{ \"title\": \"WebUI User Counts\" }",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789437152,
+    "id": "qwen2.5:14b-instruct-0f604530-bb7a-41b6-8ac0-cb25f9a6489d",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 12,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 12,
+      "eval_duration": 160700000,
+      "input_tokens": 333,
+      "load_duration": 2369900,
+      "output_tokens": 12,
+      "prompt_eval_count": 333,
+      "prompt_eval_duration": 41355000,
+      "prompt_token/s": 8052.23,
+      "prompt_tokens": 333,
+      "response_token/s": 74.67,
+      "total_duration": 207780700,
+      "total_tokens": 345
+    }
+  },
+  "response_text": "{ \"title\": \"WebUI User Counts\" }",
+  "retrieved_document_ids": null
+}

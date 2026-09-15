@@ -1,0 +1,50 @@
+{
+  "cache_key": "5452961980d8c2cade1ca24fe5dbc07ed5be79cdbc9fad98fe1ebd59d71ce238",
+  "call_type": "main_chat_context",
+  "case_id": "context-11",
+  "completion_ms": 1241.888,
+  "condition": "l4-last-6-turns",
+  "endpoint": "/api/chat/completions",
+  "objective_score": 0.0,
+  "payload_sha256": "4c21a94209aa03beaebd0c3905c74ad944d2c0a211a53e56d3f30053c0d46351",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "It seems there might be some confusion because the previous responses did not include specific project names, incident codes, or recovery regions since the instructions requested generic discussions about logging and deployment checks without referencing any particular project facts. \n\nIf you could provide more context or specify the details you're looking for, I would be happy to assist you with the exact information you need.",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789440783,
+    "id": "qwen2.5:14b-instruct-915f7db8-db4d-450c-8603-c3d779c05782",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m1s",
+      "completion_tokens": 73,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 73,
+      "eval_duration": 1160489000,
+      "input_tokens": 222,
+      "load_duration": 1784800,
+      "output_tokens": 73,
+      "prompt_eval_count": 222,
+      "prompt_eval_duration": 19225000,
+      "prompt_token/s": 11547.46,
+      "prompt_tokens": 222,
+      "response_token/s": 62.9,
+      "total_duration": 1184876800,
+      "total_tokens": 295
+    }
+  },
+  "response_text": "It seems there might be some confusion because the previous responses did not include specific project names, incident codes, or recovery regions since the instructions requested generic discussions about logging and deployment checks without referencing any particular project facts. \n\nIf you could provide more context or specify the details you're looking for, I would be happy to assist you with the exact information you need.",
+  "retrieved_document_ids": null
+}

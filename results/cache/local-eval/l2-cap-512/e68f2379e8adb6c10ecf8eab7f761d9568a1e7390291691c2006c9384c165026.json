@@ -1,0 +1,50 @@
+{
+  "cache_key": "e68f2379e8adb6c10ecf8eab7f761d9568a1e7390291691c2006c9384c165026",
+  "call_type": "web_query",
+  "case_id": "query-20",
+  "completion_ms": 651.276,
+  "condition": "l2-cap-512",
+  "endpoint": "/api/v1/tasks/queries/completions",
+  "objective_score": 0.0,
+  "payload_sha256": "ac421497f261d0f4ce35b32d6277d0ebb5ebfd0c2d9fb68646abae5ba47cbaf1",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"queries\": [\"Open WebUI valve dialog bounds issue fix\", \"How to check valve dialog input length in Open WebUI\", \"Open WebUI dialog input length stretching fix\"]\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789437183,
+    "id": "qwen2.5:14b-instruct-6076d18c-0344-46ce-a836-f8d66a8d0990",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 40,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 40,
+      "eval_duration": 567709000,
+      "input_tokens": 404,
+      "load_duration": 1547100,
+      "output_tokens": 40,
+      "prompt_eval_count": 404,
+      "prompt_eval_duration": 38962000,
+      "prompt_token/s": 10369.08,
+      "prompt_tokens": 404,
+      "response_token/s": 70.46,
+      "total_duration": 612609600,
+      "total_tokens": 444
+    }
+  },
+  "response_text": "{\n  \"queries\": [\"Open WebUI valve dialog bounds issue fix\", \"How to check valve dialog input length in Open WebUI\", \"Open WebUI dialog input length stretching fix\"]\n}",
+  "retrieved_document_ids": null
+}

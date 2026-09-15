@@ -1,0 +1,50 @@
+{
+  "cache_key": "6fd9ff8d942e0a5ddda1066f64bc56284738d9138371011a32fb42a1763bf3b1",
+  "call_type": "main_chat_context",
+  "case_id": "context-03",
+  "completion_ms": 951.14,
+  "condition": "l4-last-6-turns",
+  "endpoint": "/api/chat/completions",
+  "objective_score": 0.0,
+  "payload_sha256": "9df1f51feb0c792b6c097fb792c85c9c94883d1a015256a8afcc362d5d141d91",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "It appears there was a misunderstanding; I didn't mention a specific project name, incident code, or recovery region in the previous turns since the task was to discuss generic logging and deployment checks without referencing any specific project facts. Could you please provide more context or clarify your request?",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789440772,
+    "id": "qwen2.5:14b-instruct-203fe086-07b6-4e9a-998b-013d0346c940",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 56,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 56,
+      "eval_duration": 875463000,
+      "input_tokens": 222,
+      "load_duration": 1644400,
+      "output_tokens": 56,
+      "prompt_eval_count": 222,
+      "prompt_eval_duration": 19071000,
+      "prompt_token/s": 11640.71,
+      "prompt_tokens": 222,
+      "response_token/s": 63.97,
+      "total_duration": 899264600,
+      "total_tokens": 278
+    }
+  },
+  "response_text": "It appears there was a misunderstanding; I didn't mention a specific project name, incident code, or recovery region in the previous turns since the task was to discuss generic logging and deployment checks without referencing any specific project facts. Could you please provide more context or clarify your request?",
+  "retrieved_document_ids": null
+}

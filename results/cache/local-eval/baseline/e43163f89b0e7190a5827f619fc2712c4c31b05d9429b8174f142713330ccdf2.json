@@ -1,0 +1,50 @@
+{
+  "cache_key": "e43163f89b0e7190a5827f619fc2712c4c31b05d9429b8174f142713330ccdf2",
+  "call_type": "retrieval_query",
+  "case_id": "query-01",
+  "completion_ms": 867.413,
+  "condition": "baseline",
+  "endpoint": "/api/v1/tasks/queries/completions",
+  "objective_score": 0.0,
+  "payload_sha256": "5f5b90586b4bc8a36a8bfa56c2344caf141c68621f3e53a44cd8f2af0bb26feb",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"queries\": [\"Open WebUI streaming behavior fix verification\", \"How to check and verify streaming fix in Open WebUI\", \"Troubleshooting streaming stall issue in Open WebUI\"]\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789436504,
+    "id": "qwen2.5:14b-instruct-85e4effd-3ea8-4e89-abde-40c1a0f39e2d",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 41,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 41,
+      "eval_duration": 649298000,
+      "input_tokens": 403,
+      "load_duration": 1543500,
+      "output_tokens": 41,
+      "prompt_eval_count": 403,
+      "prompt_eval_duration": 142710000,
+      "prompt_token/s": 2823.91,
+      "prompt_tokens": 403,
+      "response_token/s": 63.15,
+      "total_duration": 817475200,
+      "total_tokens": 444
+    }
+  },
+  "response_text": "{\n  \"queries\": [\"Open WebUI streaming behavior fix verification\", \"How to check and verify streaming fix in Open WebUI\", \"Troubleshooting streaming stall issue in Open WebUI\"]\n}",
+  "retrieved_document_ids": null
+}

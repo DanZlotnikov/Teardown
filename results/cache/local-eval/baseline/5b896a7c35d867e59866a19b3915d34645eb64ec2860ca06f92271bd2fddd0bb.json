@@ -1,0 +1,50 @@
+{
+  "cache_key": "5b896a7c35d867e59866a19b3915d34645eb64ec2860ca06f92271bd2fddd0bb",
+  "call_type": "main_chat_context",
+  "case_id": "context-15",
+  "completion_ms": 870.752,
+  "condition": "baseline",
+  "endpoint": "/api/chat/completions",
+  "objective_score": 1.0,
+  "payload_sha256": "d45f517b57b25e47588082dfd631703e7adbfb49965a9651bf304a735503be9a",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "From the initial instruction, the project name is \"Project Kestrel-15,\" its incident code is \"OWUI-7315,\" and the recovery region is \"Nairobi.\"",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789436535,
+    "id": "qwen2.5:14b-instruct-7217dd76-162a-48b3-95ad-cde37a573003",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 41,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 41,
+      "eval_duration": 648856000,
+      "input_tokens": 333,
+      "load_duration": 1561000,
+      "output_tokens": 41,
+      "prompt_eval_count": 333,
+      "prompt_eval_duration": 128074999,
+      "prompt_token/s": 2600.04,
+      "prompt_tokens": 333,
+      "response_token/s": 63.19,
+      "total_duration": 812390700,
+      "total_tokens": 374
+    }
+  },
+  "response_text": "From the initial instruction, the project name is \"Project Kestrel-15,\" its incident code is \"OWUI-7315,\" and the recovery region is \"Nairobi.\"",
+  "retrieved_document_ids": null
+}

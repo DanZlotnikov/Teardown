@@ -1,0 +1,50 @@
+{
+  "cache_key": "3fb93cd53c5e9543cc477a23a2ebbf786af9344ff4d37877d73b1a8ba990301d",
+  "call_type": "tags",
+  "case_id": "tags-18",
+  "completion_ms": 784.352,
+  "condition": "l2-cap-512",
+  "endpoint": "/api/v1/tasks/tags/completions",
+  "objective_score": 1.0,
+  "payload_sha256": "0127e7d3d9c723a963a630fcb229f3a858c6997e48a45b64856bfb3b7680eb6d",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "Based on the chat history, the main theme revolves around a technical issue with software functionality. Given the context, here are the tags:\n\n```json\n{ \"tags\": [\"Technology\", \"Software\", \"Troubleshooting\"] }\n```",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789437164,
+    "id": "qwen2.5:14b-instruct-215dc5dc-da78-43a9-b4e7-abe878e2d2bd",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 48,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 48,
+      "eval_duration": 721919000,
+      "input_tokens": 260,
+      "load_duration": 2082000,
+      "output_tokens": 48,
+      "prompt_eval_count": 260,
+      "prompt_eval_duration": 36397000,
+      "prompt_token/s": 7143.45,
+      "prompt_tokens": 260,
+      "response_token/s": 66.49,
+      "total_duration": 764949300,
+      "total_tokens": 308
+    }
+  },
+  "response_text": "Based on the chat history, the main theme revolves around a technical issue with software functionality. Given the context, here are the tags:\n\n```json\n{ \"tags\": [\"Technology\", \"Software\", \"Troubleshooting\"] }\n```",
+  "retrieved_document_ids": null
+}

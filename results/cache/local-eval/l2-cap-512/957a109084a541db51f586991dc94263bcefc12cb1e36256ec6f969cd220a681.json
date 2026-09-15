@@ -1,0 +1,50 @@
+{
+  "cache_key": "957a109084a541db51f586991dc94263bcefc12cb1e36256ec6f969cd220a681",
+  "call_type": "autocomplete",
+  "case_id": "autocomplete-01",
+  "completion_ms": 420.32,
+  "condition": "l2-cap-512",
+  "endpoint": "/api/v1/tasks/auto/completions",
+  "objective_score": 1.0,
+  "payload_sha256": "a9d53773e2480984668c4214aa4a0b1e67d182b693b5250cd1bb04d5ebb9bb1e",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{ \"text\": \"your task scheduling to run only when necessary and optimize resource usage.\" }",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789437183,
+    "id": "qwen2.5:14b-instruct-6ed0f5b0-dded-4045-bdb7-47f6f3cf320a",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 20,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 20,
+      "eval_duration": 272030000,
+      "input_tokens": 375,
+      "load_duration": 1816200,
+      "output_tokens": 20,
+      "prompt_eval_count": 375,
+      "prompt_eval_duration": 34627000,
+      "prompt_token/s": 10829.7,
+      "prompt_tokens": 375,
+      "response_token/s": 73.52,
+      "total_duration": 367679300,
+      "total_tokens": 395
+    }
+  },
+  "response_text": "{ \"text\": \"your task scheduling to run only when necessary and optimize resource usage.\" }",
+  "retrieved_document_ids": null
+}

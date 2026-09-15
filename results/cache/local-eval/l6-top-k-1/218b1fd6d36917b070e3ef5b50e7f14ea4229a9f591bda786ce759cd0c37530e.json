@@ -1,0 +1,43 @@
+{
+  "cache_key": "218b1fd6d36917b070e3ef5b50e7f14ea4229a9f591bda786ce759cd0c37530e",
+  "call_type": "retrieval",
+  "case_id": "retrieval-r10",
+  "completion_ms": 61.327,
+  "condition": "l6-top-k-1",
+  "endpoint": "/api/v1/retrieval/query/collection",
+  "objective_score": 1.0,
+  "payload_sha256": "a996560fb7e3f172048d240d321e923ad93ae368856cc87714f93c65fee1bcb5",
+  "response": {
+    "distances": [
+      [
+        0.788248747587204
+      ]
+    ],
+    "documents": [
+      [
+        "[DOC_ID:wire-capture] Proxy evidence  \nCapture redacted provider request and response bodies, actual reported input, output, and cached tokens, completion latency, and all budget mutations. For nonstreaming task calls, mark time to first token unavailable rather than relabeling response time."
+      ]
+    ],
+    "metadatas": [
+      [
+        {
+          "content_type": "text/plain; charset=utf-8",
+          "created_by": "b997c815-91d7-4e7f-b9bb-f554a9245ad7",
+          "data": "{}",
+          "embedding_config": "{'engine': 'ollama', 'model': 'nomic-embed-text'}",
+          "file_hash": "aaf20fd879c7af5885c665badc36284ae8dc24ae9c8201859ccf75561b94c42a",
+          "file_id": "2396eed1-0d57-456d-8b9f-89b3a78b5a9d",
+          "hash": "aaf20fd879c7af5885c665badc36284ae8dc24ae9c8201859ccf75561b94c42a",
+          "name": "teardown-wire-capture.txt",
+          "size": 292,
+          "source": "teardown-wire-capture.txt",
+          "start_index": 0
+        }
+      ]
+    ]
+  },
+  "response_text": "",
+  "retrieved_document_ids": [
+    "wire-capture"
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "cache_key": "5895dfb153588129c70a546d484686972f54f914a1e6f8f1c8dd8e9f10016569",
+  "call_type": "web_query",
+  "case_id": "query-10",
+  "completion_ms": 1540.872,
+  "condition": "l2-cap-512",
+  "endpoint": "/api/v1/tasks/queries/completions",
+  "objective_score": 0.0,
+  "payload_sha256": "92862fda20c1e116353162a2273fb55420ed3f0a62a04da74131f24082e4bbc8",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"queries\": [\"Open WebUI calendar event visibility issue fix\", \"How to troubleshoot Open WebUI calendar event disappearance bug\", \"Open WebUI calendar event stuck visible after date change\"]\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789437177,
+    "id": "qwen2.5:14b-instruct-a0bff5ab-870c-47b5-a3c1-029f989a45e7",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m1s",
+      "completion_tokens": 42,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 42,
+      "eval_duration": 642814000,
+      "input_tokens": 400,
+      "load_duration": 1831400,
+      "output_tokens": 42,
+      "prompt_eval_count": 400,
+      "prompt_eval_duration": 42143000,
+      "prompt_token/s": 9491.49,
+      "prompt_tokens": 400,
+      "response_token/s": 65.34,
+      "total_duration": 1491940000,
+      "total_tokens": 442
+    }
+  },
+  "response_text": "{\n  \"queries\": [\"Open WebUI calendar event visibility issue fix\", \"How to troubleshoot Open WebUI calendar event disappearance bug\", \"Open WebUI calendar event stuck visible after date change\"]\n}",
+  "retrieved_document_ids": null
+}

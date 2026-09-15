@@ -1,0 +1,50 @@
+{
+  "cache_key": "05b8c3970fc23c63c5fad33aa54e6edbef44cfcc351d59bd05d6da6b6bb6d5c9",
+  "call_type": "title",
+  "case_id": "title-19",
+  "completion_ms": 5489.503,
+  "condition": "baseline",
+  "endpoint": "/api/v1/tasks/title/completions",
+  "objective_score": 1.0,
+  "payload_sha256": "0eb9f606a9cadd6a40afde9ae7d53bd17d5abd28c5adae804e400961eaf1d15a",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{ \"title\": \"Open WebUI Admin Changes\" }",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789436485,
+    "id": "qwen2.5:14b-instruct-e285a080-9b71-4c88-89ce-023f5e62a46a",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m5s",
+      "completion_tokens": 13,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 13,
+      "eval_duration": 244528000,
+      "input_tokens": 11224,
+      "load_duration": 2096400,
+      "output_tokens": 13,
+      "prompt_eval_count": 11224,
+      "prompt_eval_duration": 5133824000,
+      "prompt_token/s": 2186.28,
+      "prompt_tokens": 11224,
+      "response_token/s": 53.16,
+      "total_duration": 5454745700,
+      "total_tokens": 11237
+    }
+  },
+  "response_text": "{ \"title\": \"Open WebUI Admin Changes\" }",
+  "retrieved_document_ids": null
+}

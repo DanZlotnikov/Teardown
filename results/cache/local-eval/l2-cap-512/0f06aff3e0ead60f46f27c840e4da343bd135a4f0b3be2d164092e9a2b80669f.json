@@ -1,0 +1,50 @@
+{
+  "cache_key": "0f06aff3e0ead60f46f27c840e4da343bd135a4f0b3be2d164092e9a2b80669f",
+  "call_type": "tags",
+  "case_id": "tags-01",
+  "completion_ms": 951.495,
+  "condition": "l2-cap-512",
+  "endpoint": "/api/v1/tasks/tags/completions",
+  "objective_score": 1.0,
+  "payload_sha256": "a0f126270471e6e4662e01aa29676f4ae3bd28d3ed4da50abb2d1d4fdbaaed09",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "Based on the chat history, the main theme is related to technology, specifically the optimization and troubleshooting of web applications and websocket servers. Here is the JSON output with the appropriate tags:\n\n```json\n{ \"tags\": [\"Technology\", \"Web Development\", \"WebSocket\"] }\n```",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789437153,
+    "id": "qwen2.5:14b-instruct-e38a6c69-6ba3-4bbc-90db-916e5bf83a15",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 56,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 56,
+      "eval_duration": 801459000,
+      "input_tokens": 304,
+      "load_duration": 2846100,
+      "output_tokens": 56,
+      "prompt_eval_count": 304,
+      "prompt_eval_duration": 52671000,
+      "prompt_token/s": 5771.68,
+      "prompt_tokens": 304,
+      "response_token/s": 69.87,
+      "total_duration": 902364000,
+      "total_tokens": 360
+    }
+  },
+  "response_text": "Based on the chat history, the main theme is related to technology, specifically the optimization and troubleshooting of web applications and websocket servers. Here is the JSON output with the appropriate tags:\n\n```json\n{ \"tags\": [\"Technology\", \"Web Development\", \"WebSocket\"] }\n```",
+  "retrieved_document_ids": null
+}

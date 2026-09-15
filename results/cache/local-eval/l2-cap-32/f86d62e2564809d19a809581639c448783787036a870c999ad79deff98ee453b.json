@@ -1,0 +1,50 @@
+{
+  "cache_key": "f86d62e2564809d19a809581639c448783787036a870c999ad79deff98ee453b",
+  "call_type": "tags",
+  "case_id": "tags-09",
+  "completion_ms": 620.167,
+  "condition": "l2-cap-32",
+  "endpoint": "/api/v1/tasks/tags/completions",
+  "objective_score": 0.0,
+  "payload_sha256": "249474cd867b76086c78c5e8e70ce0f3a0edb27b43d34858d202e498de94312f",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "Based on the chat history, the main themes and subtopics can be categorized as follows:\n\n```json\n{\n  \"tags\": [\"Technology\", \"Software\",",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789437625,
+    "id": "qwen2.5:14b-instruct-43051f6a-c09e-4dd2-8d1a-7d4800ae1a2b",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 32,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 32,
+      "eval_duration": 514162000,
+      "input_tokens": 272,
+      "load_duration": 1502200,
+      "output_tokens": 32,
+      "prompt_eval_count": 272,
+      "prompt_eval_duration": 44597000,
+      "prompt_token/s": 6099.06,
+      "prompt_tokens": 272,
+      "response_token/s": 62.24,
+      "total_duration": 564452400,
+      "total_tokens": 304
+    }
+  },
+  "response_text": "Based on the chat history, the main themes and subtopics can be categorized as follows:\n\n```json\n{\n  \"tags\": [\"Technology\", \"Software\",",
+  "retrieved_document_ids": null
+}

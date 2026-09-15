@@ -1,0 +1,50 @@
+{
+  "cache_key": "2458861f56160be41392791faf14342b7193b64728d3e4f646063f2bec4935a9",
+  "call_type": "tags",
+  "case_id": "tags-16",
+  "completion_ms": 1229.844,
+  "condition": "l2-cap-128",
+  "endpoint": "/api/v1/tasks/tags/completions",
+  "objective_score": 1.0,
+  "payload_sha256": "56c7b0ead7786b7418277150f0ba6a44d3cfba2f6e03e57b7483114ee21ecf2a",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "Based on the chat history, the main theme revolves around the usage and troubleshooting of a specific software tool (Open WebUI). This falls under the Technology domain, with a specific focus on Software and Troubleshooting.\n\nJSON format output:\n\n```json\n{ \"tags\": [\"Technology\", \"Software\", \"Troubleshooting\"] }\n```",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789437439,
+    "id": "qwen2.5:14b-instruct-4df98ed5-5428-404c-bce9-51136708eef0",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m1s",
+      "completion_tokens": 68,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 68,
+      "eval_duration": 1130814000,
+      "input_tokens": 276,
+      "load_duration": 2573000,
+      "output_tokens": 68,
+      "prompt_eval_count": 276,
+      "prompt_eval_duration": 50932000,
+      "prompt_token/s": 5418.99,
+      "prompt_tokens": 276,
+      "response_token/s": 60.13,
+      "total_duration": 1190355200,
+      "total_tokens": 344
+    }
+  },
+  "response_text": "Based on the chat history, the main theme revolves around the usage and troubleshooting of a specific software tool (Open WebUI). This falls under the Technology domain, with a specific focus on Software and Troubleshooting.\n\nJSON format output:\n\n```json\n{ \"tags\": [\"Technology\", \"Software\", \"Troubleshooting\"] }\n```",
+  "retrieved_document_ids": null
+}

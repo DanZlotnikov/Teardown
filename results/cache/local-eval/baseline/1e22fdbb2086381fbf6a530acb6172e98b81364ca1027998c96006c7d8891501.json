@@ -1,0 +1,50 @@
+{
+  "cache_key": "1e22fdbb2086381fbf6a530acb6172e98b81364ca1027998c96006c7d8891501",
+  "call_type": "retrieval_query",
+  "case_id": "query-05",
+  "completion_ms": 678.576,
+  "condition": "baseline",
+  "endpoint": "/api/v1/tasks/queries/completions",
+  "objective_score": 0.0,
+  "payload_sha256": "713cabd054150ca39b64b5e9a104f2f344e784feea4142c1b89d5bdf6f595e5d",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"queries\": [\"open webui banner underlined text fix\", \"open webui banner rendering issues solutions\", \"open webui banner display underlined text verification\"]\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789436507,
+    "id": "qwen2.5:14b-instruct-e94f7948-00c4-4d0c-a0cc-f59a8b600245",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 37,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 37,
+      "eval_duration": 577514000,
+      "input_tokens": 390,
+      "load_duration": 1054900,
+      "output_tokens": 37,
+      "prompt_eval_count": 390,
+      "prompt_eval_duration": 39398000,
+      "prompt_token/s": 9898.98,
+      "prompt_tokens": 390,
+      "response_token/s": 64.07,
+      "total_duration": 622420600,
+      "total_tokens": 427
+    }
+  },
+  "response_text": "{\n  \"queries\": [\"open webui banner underlined text fix\", \"open webui banner rendering issues solutions\", \"open webui banner display underlined text verification\"]\n}",
+  "retrieved_document_ids": null
+}

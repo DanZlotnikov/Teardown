@@ -1,0 +1,50 @@
+{
+  "cache_key": "8fecbd8d5737c0fa85d9dd467780575263d78aff843715b27b29b118e16cd26d",
+  "call_type": "autocomplete",
+  "case_id": "autocomplete-02",
+  "completion_ms": 430.719,
+  "condition": "l2-cap-512",
+  "endpoint": "/api/v1/tasks/auto/completions",
+  "objective_score": 1.0,
+  "payload_sha256": "4db7a787b0698250f9def73c0ef093b5e9c296a791585459df9617a1b66895af",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{ \"text\": \"the conversation reaches a point where previous messages are no longer relevant or when the topic changes significantly.\" }",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789437184,
+    "id": "qwen2.5:14b-instruct-85169750-aa51-4c00-8706-ab5f2b0c0901",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 26,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 26,
+      "eval_duration": 356677000,
+      "input_tokens": 376,
+      "load_duration": 1585500,
+      "output_tokens": 26,
+      "prompt_eval_count": 376,
+      "prompt_eval_duration": 34682000,
+      "prompt_token/s": 10841.36,
+      "prompt_tokens": 376,
+      "response_token/s": 72.9,
+      "total_duration": 396195800,
+      "total_tokens": 402
+    }
+  },
+  "response_text": "{ \"text\": \"the conversation reaches a point where previous messages are no longer relevant or when the topic changes significantly.\" }",
+  "retrieved_document_ids": null
+}

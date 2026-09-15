@@ -1,0 +1,50 @@
+{
+  "cache_key": "45c305e44489ba6790e20a09889f7d6614ac55934d0b2aadf2539add26ee28f5",
+  "call_type": "web_query",
+  "case_id": "query-04",
+  "completion_ms": 580.314,
+  "condition": "baseline",
+  "endpoint": "/api/v1/tasks/queries/completions",
+  "objective_score": 0.0,
+  "payload_sha256": "98c812cf0e285f2b51d22fcf69e2f484b2fefbb601948a95309fe37884678776",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"queries\": [\"open webui stop behavior fix\", \"redis cluster deployment stop behavior\", \"verifying stop functionality across redis instances\"]\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789436506,
+    "id": "qwen2.5:14b-instruct-a0bd8d2e-0d7b-43e4-a04a-b620f796e007",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 31,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 31,
+      "eval_duration": 481378000,
+      "input_tokens": 405,
+      "load_duration": 1595800,
+      "output_tokens": 31,
+      "prompt_eval_count": 405,
+      "prompt_eval_duration": 44253000,
+      "prompt_token/s": 9151.92,
+      "prompt_tokens": 405,
+      "response_token/s": 64.4,
+      "total_duration": 531722000,
+      "total_tokens": 436
+    }
+  },
+  "response_text": "{\n  \"queries\": [\"open webui stop behavior fix\", \"redis cluster deployment stop behavior\", \"verifying stop functionality across redis instances\"]\n}",
+  "retrieved_document_ids": null
+}

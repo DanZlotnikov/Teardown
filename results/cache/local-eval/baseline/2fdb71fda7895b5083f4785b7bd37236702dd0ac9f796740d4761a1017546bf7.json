@@ -1,0 +1,50 @@
+{
+  "cache_key": "2fdb71fda7895b5083f4785b7bd37236702dd0ac9f796740d4761a1017546bf7",
+  "call_type": "web_query",
+  "case_id": "query-08",
+  "completion_ms": 604.83,
+  "condition": "baseline",
+  "endpoint": "/api/v1/tasks/queries/completions",
+  "objective_score": 0.0,
+  "payload_sha256": "806d3227bd691480ede9dc3c9463a487c12a905a4c37e25fad1f45dfbd044e21",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"queries\": [\"Open WebUI disabled model recovery\", \"Open WebUI model visibility settings\", \"Open WebUI admin models list behavior\"]\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789436508,
+    "id": "qwen2.5:14b-instruct-e0c7244b-eabf-4ef9-bf5a-eb43ff507f9f",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 32,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 32,
+      "eval_duration": 501427000,
+      "input_tokens": 408,
+      "load_duration": 1953100,
+      "output_tokens": 32,
+      "prompt_eval_count": 408,
+      "prompt_eval_duration": 46252000,
+      "prompt_token/s": 8821.24,
+      "prompt_tokens": 408,
+      "response_token/s": 63.82,
+      "total_duration": 553377900,
+      "total_tokens": 440
+    }
+  },
+  "response_text": "{\n  \"queries\": [\"Open WebUI disabled model recovery\", \"Open WebUI model visibility settings\", \"Open WebUI admin models list behavior\"]\n}",
+  "retrieved_document_ids": null
+}

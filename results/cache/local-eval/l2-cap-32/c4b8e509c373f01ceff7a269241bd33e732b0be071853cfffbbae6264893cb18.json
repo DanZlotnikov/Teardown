@@ -1,0 +1,50 @@
+{
+  "cache_key": "c4b8e509c373f01ceff7a269241bd33e732b0be071853cfffbbae6264893cb18",
+  "call_type": "title",
+  "case_id": "title-08",
+  "completion_ms": 284.087,
+  "condition": "l2-cap-32",
+  "endpoint": "/api/v1/tasks/title/completions",
+  "objective_score": 1.0,
+  "payload_sha256": "f0942bd2b62e54668c7c71e721a3e11167bc66204bae543a8bde0896297850c1",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{ \"title\": \"WebUI Accessibility\" }",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789437615,
+    "id": "qwen2.5:14b-instruct-4afe853c-002d-43b0-80b8-473b00ea5577",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 11,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 11,
+      "eval_duration": 164463000,
+      "input_tokens": 401,
+      "load_duration": 1573900,
+      "output_tokens": 11,
+      "prompt_eval_count": 401,
+      "prompt_eval_duration": 71037000,
+      "prompt_token/s": 5644.95,
+      "prompt_tokens": 401,
+      "response_token/s": 66.88,
+      "total_duration": 241503000,
+      "total_tokens": 412
+    }
+  },
+  "response_text": "{ \"title\": \"WebUI Accessibility\" }",
+  "retrieved_document_ids": null
+}

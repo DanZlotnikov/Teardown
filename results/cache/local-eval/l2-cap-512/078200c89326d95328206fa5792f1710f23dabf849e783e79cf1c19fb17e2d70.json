@@ -1,0 +1,50 @@
+{
+  "cache_key": "078200c89326d95328206fa5792f1710f23dabf849e783e79cf1c19fb17e2d70",
+  "call_type": "title",
+  "case_id": "title-23",
+  "completion_ms": 225.489,
+  "condition": "l2-cap-512",
+  "endpoint": "/api/v1/tasks/title/completions",
+  "objective_score": 1.0,
+  "payload_sha256": "0127e7d3d9c723a963a630fcb229f3a858c6997e48a45b64856bfb3b7680eb6d",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{ \"title\": \"Automation Schedules\" }",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789437152,
+    "id": "qwen2.5:14b-instruct-28dcf6fc-98cc-4377-bbea-f8f2df9635aa",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 11,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 11,
+      "eval_duration": 145811000,
+      "input_tokens": 325,
+      "load_duration": 2166000,
+      "output_tokens": 11,
+      "prompt_eval_count": 325,
+      "prompt_eval_duration": 38585000,
+      "prompt_token/s": 8422.96,
+      "prompt_tokens": 325,
+      "response_token/s": 75.44,
+      "total_duration": 191262200,
+      "total_tokens": 336
+    }
+  },
+  "response_text": "{ \"title\": \"Automation Schedules\" }",
+  "retrieved_document_ids": null
+}

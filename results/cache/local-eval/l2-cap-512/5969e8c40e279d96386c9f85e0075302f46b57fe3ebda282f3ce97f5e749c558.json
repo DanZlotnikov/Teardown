@@ -1,0 +1,50 @@
+{
+  "cache_key": "5969e8c40e279d96386c9f85e0075302f46b57fe3ebda282f3ce97f5e749c558",
+  "call_type": "web_query",
+  "case_id": "query-18",
+  "completion_ms": 626.636,
+  "condition": "l2-cap-512",
+  "endpoint": "/api/v1/tasks/queries/completions",
+  "objective_score": 0.0,
+  "payload_sha256": "abdbb25ff75489b1be969c1cd9ecc36045b73279b57818752d13b74efe21d572",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"queries\": [\"open webui model defaults panels scroll fix\", \"open webui admin settings panel scroll behavior\", \"open webui model capabilities scroll issue solution\"]\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789437182,
+    "id": "qwen2.5:14b-instruct-3612fcf2-3296-4249-adfe-8e8dc9472f64",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 37,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 37,
+      "eval_duration": 517070000,
+      "input_tokens": 397,
+      "load_duration": 1677300,
+      "output_tokens": 37,
+      "prompt_eval_count": 397,
+      "prompt_eval_duration": 41298000,
+      "prompt_token/s": 9613.06,
+      "prompt_tokens": 397,
+      "response_token/s": 71.56,
+      "total_duration": 564309300,
+      "total_tokens": 434
+    }
+  },
+  "response_text": "{\n  \"queries\": [\"open webui model defaults panels scroll fix\", \"open webui admin settings panel scroll behavior\", \"open webui model capabilities scroll issue solution\"]\n}",
+  "retrieved_document_ids": null
+}

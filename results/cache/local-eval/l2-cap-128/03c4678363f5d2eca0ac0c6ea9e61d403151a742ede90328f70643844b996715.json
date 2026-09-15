@@ -1,0 +1,50 @@
+{
+  "cache_key": "03c4678363f5d2eca0ac0c6ea9e61d403151a742ede90328f70643844b996715",
+  "call_type": "web_query",
+  "case_id": "query-04",
+  "completion_ms": 747.067,
+  "condition": "l2-cap-128",
+  "endpoint": "/api/v1/tasks/queries/completions",
+  "objective_score": 0.0,
+  "payload_sha256": "98c812cf0e285f2b51d22fcf69e2f484b2fefbb601948a95309fe37884678776",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"queries\": [\"Open WebUI stop behavior fix verification\", \"How to verify stop behavior in Open WebUI with Redis cluster\", \"Open WebUI deployment instances stop command implementation\"]\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789437444,
+    "id": "qwen2.5:14b-instruct-b9ab21b1-df4e-408a-850f-e8825a525488",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 40,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 40,
+      "eval_duration": 637093000,
+      "input_tokens": 405,
+      "load_duration": 1547800,
+      "output_tokens": 40,
+      "prompt_eval_count": 405,
+      "prompt_eval_duration": 46054000,
+      "prompt_token/s": 8794.02,
+      "prompt_tokens": 405,
+      "response_token/s": 62.79,
+      "total_duration": 688861400,
+      "total_tokens": 445
+    }
+  },
+  "response_text": "{\n  \"queries\": [\"Open WebUI stop behavior fix verification\", \"How to verify stop behavior in Open WebUI with Redis cluster\", \"Open WebUI deployment instances stop command implementation\"]\n}",
+  "retrieved_document_ids": null
+}

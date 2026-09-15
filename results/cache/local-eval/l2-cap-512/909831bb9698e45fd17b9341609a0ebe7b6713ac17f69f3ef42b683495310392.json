@@ -1,0 +1,50 @@
+{
+  "cache_key": "909831bb9698e45fd17b9341609a0ebe7b6713ac17f69f3ef42b683495310392",
+  "call_type": "tags",
+  "case_id": "tags-16",
+  "completion_ms": 991.406,
+  "condition": "l2-cap-512",
+  "endpoint": "/api/v1/tasks/tags/completions",
+  "objective_score": 1.0,
+  "payload_sha256": "56c7b0ead7786b7418277150f0ba6a44d3cfba2f6e03e57b7483114ee21ecf2a",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "Based on the given chat history, the primary theme is related to software and automation behavior in a specific UI tool. Given the context, the tags should reflect the domain and specific focus on software and automation issues.\n\n```json\n{ \"tags\": [\"Technology\", \"Software\", \"Automation\"] }\n```",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789437163,
+    "id": "qwen2.5:14b-instruct-36193373-1565-4f82-bac7-eb3e1cad1e69",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 61,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 61,
+      "eval_duration": 907541000,
+      "input_tokens": 276,
+      "load_duration": 2370900,
+      "output_tokens": 61,
+      "prompt_eval_count": 276,
+      "prompt_eval_duration": 47407000,
+      "prompt_token/s": 5821.93,
+      "prompt_tokens": 276,
+      "response_token/s": 67.21,
+      "total_duration": 962395800,
+      "total_tokens": 337
+    }
+  },
+  "response_text": "Based on the given chat history, the primary theme is related to software and automation behavior in a specific UI tool. Given the context, the tags should reflect the domain and specific focus on software and automation issues.\n\n```json\n{ \"tags\": [\"Technology\", \"Software\", \"Automation\"] }\n```",
+  "retrieved_document_ids": null
+}

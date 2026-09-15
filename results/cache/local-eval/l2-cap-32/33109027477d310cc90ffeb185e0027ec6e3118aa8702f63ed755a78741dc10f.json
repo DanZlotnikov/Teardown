@@ -1,0 +1,50 @@
+{
+  "cache_key": "33109027477d310cc90ffeb185e0027ec6e3118aa8702f63ed755a78741dc10f",
+  "call_type": "title",
+  "case_id": "title-11",
+  "completion_ms": 257.129,
+  "condition": "l2-cap-32",
+  "endpoint": "/api/v1/tasks/title/completions",
+  "objective_score": 1.0,
+  "payload_sha256": "5b51c79d19caa2321bc0aeb75491cc6ad2d9a299f1c7b95e9c8d9d7faa8e28e8",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{ \"title\": \"WebUI Streaming\" }",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789437616,
+    "id": "qwen2.5:14b-instruct-7cd2c244-469b-44e8-84d2-552d8833b970",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 11,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 11,
+      "eval_duration": 164299000,
+      "input_tokens": 335,
+      "load_duration": 2306500,
+      "output_tokens": 11,
+      "prompt_eval_count": 335,
+      "prompt_eval_duration": 44802000,
+      "prompt_token/s": 7477.34,
+      "prompt_tokens": 335,
+      "response_token/s": 66.95,
+      "total_duration": 215644600,
+      "total_tokens": 346
+    }
+  },
+  "response_text": "{ \"title\": \"WebUI Streaming\" }",
+  "retrieved_document_ids": null
+}

@@ -1,0 +1,43 @@
+{
+  "cache_key": "75f17d4da7747c5a8865b18692d7c6a784f63b7c8a7a2e8fe7b1c0fcd2749f19",
+  "call_type": "retrieval",
+  "case_id": "retrieval-r06",
+  "completion_ms": 63.575,
+  "condition": "l6-top-k-1",
+  "endpoint": "/api/v1/retrieval/query/collection",
+  "objective_score": 1.0,
+  "payload_sha256": "18eeb6f09cf1bacb95a287470bc518d053c0842915d2b20a506abc1b21b0e4a0",
+  "response": {
+    "distances": [
+      [
+        0.8611751198768616
+      ]
+    ],
+    "documents": [
+      [
+        "[DOC_ID:rag-top-k] Retrieved chunk count  \nThe rag.top_k configuration defaults to three. Document and collection retrieval pass this value to vector or hybrid search unless a request-level k overrides it. Compare k values 3, 2, and 1 on one fixed indexed corpus."
+      ]
+    ],
+    "metadatas": [
+      [
+        {
+          "content_type": "text/plain; charset=utf-8",
+          "created_by": "b997c815-91d7-4e7f-b9bb-f554a9245ad7",
+          "data": "{}",
+          "embedding_config": "{'engine': 'ollama', 'model': 'nomic-embed-text'}",
+          "file_hash": "c2771fa87370efc07419258741deac995d5de0d019e96ab9417ac7084cb78a2d",
+          "file_id": "94914ac4-5fd6-446a-9e51-60b8ac41c2dc",
+          "hash": "c2771fa87370efc07419258741deac995d5de0d019e96ab9417ac7084cb78a2d",
+          "name": "teardown-rag-top-k.txt",
+          "size": 262,
+          "source": "teardown-rag-top-k.txt",
+          "start_index": 0
+        }
+      ]
+    ]
+  },
+  "response_text": "",
+  "retrieved_document_ids": [
+    "rag-top-k"
+  ]
+}

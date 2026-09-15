@@ -24,6 +24,10 @@ def sha256(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
+def rooted(path: Path) -> Path:
+    return path if path.is_absolute() else ROOT / path
+
+
 def percentile(values: list[float], fraction: float) -> float | None:
     if not values:
         return None
@@ -138,6 +142,55 @@ def retrieval_quality(rows: list[dict], k: int) -> dict:
     return {"mean_recall": round(sum(scores) / len(scores), 6) if scores else None, "cases": cases}
 
 
+def eval_quality(condition: str, k: int) -> tuple[dict[str, float], dict]:
+    """Use the corrected targeted eval as the quality source of record.
+
+    Scenario rows can be composed from an older baseline collection.  Eval
+    cache keys include the collection ID, so these rows are the auditable way
+    to avoid carrying stale retrieval results into later summaries.
+    """
+    baseline_summary_path = ROOT / "results" / "eval" / "baseline.summary.json"
+    condition_summary_path = ROOT / "results" / "eval" / f"{condition}.summary.json"
+    objective: dict[str, float] = {}
+    for path in (baseline_summary_path, condition_summary_path):
+        if path.exists():
+            summary = json.loads(path.read_text(encoding="utf-8"))
+            objective.update(summary.get("objective_mean_by_call_type", {}))
+
+    condition_rows_path = ROOT / "results" / "eval" / f"{condition}.rows.json"
+    baseline_rows_path = ROOT / "results" / "eval" / "baseline.rows.json"
+    selected_rows: list[dict] = []
+    for path in (condition_rows_path, baseline_rows_path):
+        if path.exists():
+            selected_rows = [
+                row
+                for row in json.loads(path.read_text(encoding="utf-8"))
+                if row.get("call_type") == "retrieval"
+            ]
+            if selected_rows:
+                break
+    cases_data = json.loads((ROOT / "eval" / "cases.json").read_text(encoding="utf-8"))
+    expected = {
+        case["id"]: case["expected"]["relevant_document_ids"]
+        for case in cases_data["cases"]
+        if case["call_type"] == "retrieval"
+    }
+    cases = []
+    scores = []
+    for row in selected_rows:
+        retrieved = (row.get("retrieved_document_ids") or [])[:k]
+        relevant = expected[row["case_id"]]
+        score = retrieval_recall(retrieved, relevant, k)
+        scores.append(score)
+        cases.append({"case_id": row["case_id"], "retrieved_document_ids": retrieved, "relevant_document_ids": relevant, "recall": score})
+    retrieval = {
+        "mean_recall": round(sum(scores) / len(scores), 6) if scores else objective.get("retrieval"),
+        "cases": cases,
+        "source": "targeted_eval_rows",
+    }
+    return objective, retrieval
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--condition", required=True)
@@ -150,7 +203,8 @@ def main() -> None:
     parser.add_argument("--drop-call-types", default="")
     args = parser.parse_args()
 
-    actions_path = args.actions or ROOT / f"results/actions/mock/{args.condition}.jsonl"
+    capture_path = rooted(args.capture)
+    actions_path = rooted(args.actions) if args.actions else ROOT / f"results/actions/mock/{args.condition}.jsonl"
     measured_rows = load_rows(actions_path)
     baseline_rows = load_rows(args.baseline_actions) if args.baseline_actions.exists() else []
     drop_call_types = {value.strip() for value in args.drop_call_types.split(",") if value.strip()}
@@ -180,6 +234,7 @@ def main() -> None:
             latencies[row["call_type"]].append(latency)
 
     diff, lever = declared_condition(args.condition)
+    objective_quality, evaluated_retrieval = eval_quality(args.condition, args.retrieval_k)
     run = {
         "schema_version": 1,
         "condition": args.condition,
@@ -212,11 +267,18 @@ def main() -> None:
             for kind, values in sorted(by_type.items())
         },
         "quality": {
+            "objective_mean_by_call_type": objective_quality,
             "lexical_agreement_vs_baseline_by_call_type": paired_agreement(rows, baseline_rows) if baseline_rows else {},
             "lexical_agreement_warning": "Diagnostic only; not a semantic quality score and not used for final grading.",
-            "retrieval": retrieval_quality(rows, args.retrieval_k),
+            "retrieval": evaluated_retrieval,
         },
         "main_chat_path_risk": bool(lever in {"L4_context_management", "L6_retrieved_chunk_count"}),
+        "latency": {
+            "provider_completion_ms_p50": percentile([value for values in latencies.values() for value in values], 0.50),
+            "provider_completion_ms_p95": percentile([value for values in latencies.values() for value in values], 0.95),
+            "ttft_ms_p50": None,
+            "ttft_ms_p95": None,
+        },
         "latency_note": "Provider completion is Ollama total_duration. TTFT is unavailable because all controlled calls are nonstreaming.",
         "locks": {
             "open_webui_commit": config["subject"]["commit"],
@@ -224,10 +286,10 @@ def main() -> None:
             "pricing_snapshot_sha256": sha256(ROOT / "config.yaml"),
             "scenario_sha256": rows[0]["scenario_sha256"] if rows else (baseline_rows[0]["scenario_sha256"] if baseline_rows else None),
             "eval_sha256": sha256(ROOT / "eval/cases.json"),
-            "capture_sha256": sha256(args.capture),
+            "capture_sha256": sha256(capture_path),
             "actions_sha256": sha256(actions_path) if actions_path.exists() else None,
         },
-        "raw_capture": str(args.capture.relative_to(ROOT)).replace("\\", "/"),
+        "raw_capture": str(capture_path.relative_to(ROOT)).replace("\\", "/"),
         "actions": str(actions_path.relative_to(ROOT)).replace("\\", "/"),
         "run_count": 1,
     }

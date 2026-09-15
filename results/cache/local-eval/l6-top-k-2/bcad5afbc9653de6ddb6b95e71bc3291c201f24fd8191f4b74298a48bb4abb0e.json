@@ -1,0 +1,59 @@
+{
+  "cache_key": "bcad5afbc9653de6ddb6b95e71bc3291c201f24fd8191f4b74298a48bb4abb0e",
+  "call_type": "retrieval",
+  "case_id": "retrieval-r16",
+  "completion_ms": 59.953,
+  "condition": "l6-top-k-2",
+  "endpoint": "/api/v1/retrieval/query/collection",
+  "objective_score": 1.0,
+  "payload_sha256": "554b901678a8e9d02c4b2d1454357bde6c92d8c0c9ef469c6943778ec9d00073",
+  "response": {
+    "distances": [
+      [
+        0.8676816821098328,
+        0.7884436547756195
+      ]
+    ],
+    "documents": [
+      [
+        "[DOC_ID:autocomplete] Autocomplete workload  \nAutocomplete is disabled by default at the server and user preference levels. When enabled, the editor waits 1000 milliseconds after an input change and checks cursor and loading state, so requests are not sent on every keystroke.",
+        "[DOC_ID:budget] Paid-call budget guard  \nBefore provider dispatch, acquire a cross-process lock and persist a worst-case reservation. Include the historical carry-forward and unresolved failures in exposure. Stop at 23 dollars softly and never reserve beyond 30 dollars."
+      ]
+    ],
+    "metadatas": [
+      [
+        {
+          "content_type": "text/plain; charset=utf-8",
+          "created_by": "b997c815-91d7-4e7f-b9bb-f554a9245ad7",
+          "data": "{}",
+          "embedding_config": "{'engine': 'ollama', 'model': 'nomic-embed-text'}",
+          "file_hash": "480288cc40cabdd34db5ee0b5e2398bf1cd6049b2bda2d0a675b4a8e880f2aad",
+          "file_id": "4998c46d-3e3e-4277-bcfe-faf0bcba7013",
+          "hash": "480288cc40cabdd34db5ee0b5e2398bf1cd6049b2bda2d0a675b4a8e880f2aad",
+          "name": "teardown-autocomplete.txt",
+          "size": 275,
+          "source": "teardown-autocomplete.txt",
+          "start_index": 0
+        },
+        {
+          "content_type": "text/plain; charset=utf-8",
+          "created_by": "b997c815-91d7-4e7f-b9bb-f554a9245ad7",
+          "data": "{}",
+          "embedding_config": "{'engine': 'ollama', 'model': 'nomic-embed-text'}",
+          "file_hash": "476413f47cd8df021664df0eb60a66309bf8c049b99905d5e01e8215f703fb98",
+          "file_id": "1fd95377-8c3d-4777-b9b8-8d3193f99045",
+          "hash": "476413f47cd8df021664df0eb60a66309bf8c049b99905d5e01e8215f703fb98",
+          "name": "teardown-budget.txt",
+          "size": 269,
+          "source": "teardown-budget.txt",
+          "start_index": 0
+        }
+      ]
+    ]
+  },
+  "response_text": "",
+  "retrieved_document_ids": [
+    "autocomplete",
+    "budget"
+  ]
+}

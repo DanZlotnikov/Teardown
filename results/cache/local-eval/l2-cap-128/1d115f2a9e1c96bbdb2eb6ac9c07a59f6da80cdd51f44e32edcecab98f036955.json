@@ -1,0 +1,50 @@
+{
+  "cache_key": "1d115f2a9e1c96bbdb2eb6ac9c07a59f6da80cdd51f44e32edcecab98f036955",
+  "call_type": "autocomplete",
+  "case_id": "autocomplete-06",
+  "completion_ms": 318.773,
+  "condition": "l2-cap-128",
+  "endpoint": "/api/v1/tasks/auto/completions",
+  "objective_score": 1.0,
+  "payload_sha256": "af672ca3ca5e897f4524979dde141a9df37dc35a193a1bb25d625b8eb045939a",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{ \"text\": \"the weather and environmental data for analysis.\" }",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789437464,
+    "id": "qwen2.5:14b-instruct-0617a463-26fb-4fd4-9ba8-63d5e88830e6",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 15,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 15,
+      "eval_duration": 232403000,
+      "input_tokens": 375,
+      "load_duration": 1608600,
+      "output_tokens": 15,
+      "prompt_eval_count": 375,
+      "prompt_eval_duration": 33904000,
+      "prompt_token/s": 11060.64,
+      "prompt_tokens": 375,
+      "response_token/s": 64.54,
+      "total_duration": 271936500,
+      "total_tokens": 390
+    }
+  },
+  "response_text": "{ \"text\": \"the weather and environmental data for analysis.\" }",
+  "retrieved_document_ids": null
+}

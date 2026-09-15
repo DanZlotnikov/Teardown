@@ -1,0 +1,59 @@
+{
+  "cache_key": "759ad48078f17ef34cdd24732cfc73448f4cd7d3bd0a45c85a22137806c554a8",
+  "call_type": "retrieval",
+  "case_id": "retrieval-r13",
+  "completion_ms": 39.07,
+  "condition": "l6-top-k-2",
+  "endpoint": "/api/v1/retrieval/query/collection",
+  "objective_score": 1.0,
+  "payload_sha256": "eb883c9ffe9c0a4ac3644a04afde9f6844cc32e0c2ba896b867577b7159b844e",
+  "response": {
+    "distances": [
+      [
+        0.8417921364307404,
+        0.8036946952342987
+      ]
+    ],
+    "documents": [
+      [
+        "[DOC_ID:task-cap] Task output limits  \nThe task.model.params dictionary applies generation parameters across task endpoints. A max_tokens cap therefore reaches titles and autocomplete as well as tags, follow-ups, and queries; it is not a narrow tag-only control.",
+        "[DOC_ID:task-model] Task model routing  \nOpen WebUI routes titles, tags, follow-up suggestions, retrieval queries, web-search queries, and autocomplete through the configured task model. Administrators can set a local or smaller task model without changing the main chat model."
+      ]
+    ],
+    "metadatas": [
+      [
+        {
+          "content_type": "text/plain; charset=utf-8",
+          "created_by": "b997c815-91d7-4e7f-b9bb-f554a9245ad7",
+          "data": "{}",
+          "embedding_config": "{'engine': 'ollama', 'model': 'nomic-embed-text'}",
+          "file_hash": "601aa6f4f02b7e861bda7ec714141fe211c2fc4bfa33bca3bb82d3b92a0a9536",
+          "file_id": "4ab3479f-0f5f-4f6b-b410-bc6cb0307b19",
+          "hash": "601aa6f4f02b7e861bda7ec714141fe211c2fc4bfa33bca3bb82d3b92a0a9536",
+          "name": "teardown-task-cap.txt",
+          "size": 261,
+          "source": "teardown-task-cap.txt",
+          "start_index": 0
+        },
+        {
+          "content_type": "text/plain; charset=utf-8",
+          "created_by": "b997c815-91d7-4e7f-b9bb-f554a9245ad7",
+          "data": "{}",
+          "embedding_config": "{'engine': 'ollama', 'model': 'nomic-embed-text'}",
+          "file_hash": "c5fb732c5c6408616507c318bace6c09edb8a2e3103bf9dda97ec2d4693bf068",
+          "file_id": "bb4a58a1-5afd-4be3-94a1-393cedf36faf",
+          "hash": "c5fb732c5c6408616507c318bace6c09edb8a2e3103bf9dda97ec2d4693bf068",
+          "name": "teardown-task-model.txt",
+          "size": 276,
+          "source": "teardown-task-model.txt",
+          "start_index": 0
+        }
+      ]
+    ]
+  },
+  "response_text": "",
+  "retrieved_document_ids": [
+    "task-cap",
+    "task-model"
+  ]
+}

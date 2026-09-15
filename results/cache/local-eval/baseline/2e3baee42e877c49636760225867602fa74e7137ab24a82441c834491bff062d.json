@@ -1,0 +1,50 @@
+{
+  "cache_key": "2e3baee42e877c49636760225867602fa74e7137ab24a82441c834491bff062d",
+  "call_type": "main_chat_context",
+  "case_id": "context-08",
+  "completion_ms": 816.362,
+  "condition": "baseline",
+  "endpoint": "/api/chat/completions",
+  "objective_score": 1.0,
+  "payload_sha256": "ac7a1b8cdafe19284aa57d06c8cc1aad532d166923321b6800c64387f7a722ad",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "From the first turn, the project name mentioned was Project Kestrel-08, its incident code was OWUI-7308, and its recovery region was La Paz.",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789436529,
+    "id": "qwen2.5:14b-instruct-d280ff3c-0519-46f1-b42d-72f8d65bce95",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 39,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 39,
+      "eval_duration": 630026000,
+      "input_tokens": 334,
+      "load_duration": 1800600,
+      "output_tokens": 39,
+      "prompt_eval_count": 334,
+      "prompt_eval_duration": 128247000,
+      "prompt_token/s": 2604.35,
+      "prompt_tokens": 334,
+      "response_token/s": 61.9,
+      "total_duration": 785406000,
+      "total_tokens": 373
+    }
+  },
+  "response_text": "From the first turn, the project name mentioned was Project Kestrel-08, its incident code was OWUI-7308, and its recovery region was La Paz.",
+  "retrieved_document_ids": null
+}

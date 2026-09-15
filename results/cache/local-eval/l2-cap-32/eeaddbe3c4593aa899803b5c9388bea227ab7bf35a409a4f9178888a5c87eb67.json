@@ -1,0 +1,50 @@
+{
+  "cache_key": "eeaddbe3c4593aa899803b5c9388bea227ab7bf35a409a4f9178888a5c87eb67",
+  "call_type": "autocomplete",
+  "case_id": "autocomplete-02",
+  "completion_ms": 561.784,
+  "condition": "l2-cap-32",
+  "endpoint": "/api/v1/tasks/auto/completions",
+  "objective_score": 1.0,
+  "payload_sha256": "4db7a787b0698250f9def73c0ef093b5e9c296a791585459df9617a1b66895af",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{ \"text\": \"the amount of context exceeds a certain threshold or when specific keywords are detected that indicate a need for summarization.\" }",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789437651,
+    "id": "qwen2.5:14b-instruct-88c9e457-9151-4211-b926-d8163f7e9a0c",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 29,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 29,
+      "eval_duration": 469073000,
+      "input_tokens": 376,
+      "load_duration": 2741600,
+      "output_tokens": 29,
+      "prompt_eval_count": 376,
+      "prompt_eval_duration": 37971000,
+      "prompt_token/s": 9902.29,
+      "prompt_tokens": 376,
+      "response_token/s": 61.82,
+      "total_duration": 514681500,
+      "total_tokens": 405
+    }
+  },
+  "response_text": "{ \"text\": \"the amount of context exceeds a certain threshold or when specific keywords are detected that indicate a need for summarization.\" }",
+  "retrieved_document_ids": null
+}

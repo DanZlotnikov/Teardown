@@ -1,0 +1,50 @@
+{
+  "cache_key": "5a05b1bfd786cc50587348332a034700d2b58801a6af0ee1a89fbbe5b2f28a5c",
+  "call_type": "autocomplete",
+  "case_id": "autocomplete-08",
+  "completion_ms": 450.111,
+  "condition": "l2-cap-128",
+  "endpoint": "/api/v1/tasks/auto/completions",
+  "objective_score": 1.0,
+  "payload_sha256": "3b9798343c6ca3341c5ce8b2c026629d9d9a591c612289290a22199cb1eec9dc",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{ \"text\": \"a unique identifier for each user or request, ensuring data consistency and reducing redundancy.\" }",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789437465,
+    "id": "qwen2.5:14b-instruct-8450d4ac-c26c-4824-8990-2c09fe2c3a93",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 23,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 23,
+      "eval_duration": 362335000,
+      "input_tokens": 375,
+      "load_duration": 2077100,
+      "output_tokens": 23,
+      "prompt_eval_count": 375,
+      "prompt_eval_duration": 36157000,
+      "prompt_token/s": 10371.44,
+      "prompt_tokens": 375,
+      "response_token/s": 63.48,
+      "total_duration": 404928400,
+      "total_tokens": 398
+    }
+  },
+  "response_text": "{ \"text\": \"a unique identifier for each user or request, ensuring data consistency and reducing redundancy.\" }",
+  "retrieved_document_ids": null
+}

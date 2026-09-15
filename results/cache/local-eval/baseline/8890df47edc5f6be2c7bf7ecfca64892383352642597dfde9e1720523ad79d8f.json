@@ -1,0 +1,75 @@
+{
+  "cache_key": "8890df47edc5f6be2c7bf7ecfca64892383352642597dfde9e1720523ad79d8f",
+  "call_type": "retrieval",
+  "case_id": "retrieval-r09",
+  "completion_ms": 68.335,
+  "condition": "baseline",
+  "endpoint": "/api/v1/retrieval/query/collection",
+  "objective_score": 1.0,
+  "payload_sha256": "2372c817bcc8d5d549e01a2a2574c2792ca30fc4e7108149a591954e2cea685e",
+  "response": {
+    "distances": [
+      [
+        0.8835751414299011,
+        0.7956119179725647,
+        0.792338639497757
+      ]
+    ],
+    "documents": [
+      [
+        "[DOC_ID:resume-cache] Paid output cache  \nCache every paid response under a stable key that binds condition, dataset hash, endpoint, and payload. Write the cache atomically before the append-only action manifest. On resume, a valid cache alone must prevent a repeated provider call.",
+        "[DOC_ID:query-cache] Query reuse  \nENABLE_QUERIES_CACHE stores web-search queries on request state so later file retrieval in the same combined chat request can reuse them. Repeating the standalone query endpoint cannot exercise this optimization.",
+        "[DOC_ID:autocomplete] Autocomplete workload  \nAutocomplete is disabled by default at the server and user preference levels. When enabled, the editor waits 1000 milliseconds after an input change and checks cursor and loading state, so requests are not sent on every keystroke."
+      ]
+    ],
+    "metadatas": [
+      [
+        {
+          "content_type": "text/plain; charset=utf-8",
+          "created_by": "b997c815-91d7-4e7f-b9bb-f554a9245ad7",
+          "data": "{}",
+          "embedding_config": "{'engine': 'ollama', 'model': 'nomic-embed-text'}",
+          "file_hash": "bd3d69d8e6dfac97f1cde34cb081bcfae0adfbb71c568ada12a835997ff2803e",
+          "file_id": "b5195914-9264-45ac-bb91-dfbc880f422a",
+          "hash": "bd3d69d8e6dfac97f1cde34cb081bcfae0adfbb71c568ada12a835997ff2803e",
+          "name": "teardown-resume-cache.txt",
+          "size": 281,
+          "source": "teardown-resume-cache.txt",
+          "start_index": 0
+        },
+        {
+          "content_type": "text/plain; charset=utf-8",
+          "created_by": "b997c815-91d7-4e7f-b9bb-f554a9245ad7",
+          "data": "{}",
+          "embedding_config": "{'engine': 'ollama', 'model': 'nomic-embed-text'}",
+          "file_hash": "82ccc3947e349ada40238a0a113dc89a394122b1592a515ec4af3137bfda00ab",
+          "file_id": "371aa7e1-73b6-43be-9adb-0b829bdd47f4",
+          "hash": "82ccc3947e349ada40238a0a113dc89a394122b1592a515ec4af3137bfda00ab",
+          "name": "teardown-query-cache.txt",
+          "size": 246,
+          "source": "teardown-query-cache.txt",
+          "start_index": 0
+        },
+        {
+          "content_type": "text/plain; charset=utf-8",
+          "created_by": "b997c815-91d7-4e7f-b9bb-f554a9245ad7",
+          "data": "{}",
+          "embedding_config": "{'engine': 'ollama', 'model': 'nomic-embed-text'}",
+          "file_hash": "480288cc40cabdd34db5ee0b5e2398bf1cd6049b2bda2d0a675b4a8e880f2aad",
+          "file_id": "4998c46d-3e3e-4277-bcfe-faf0bcba7013",
+          "hash": "480288cc40cabdd34db5ee0b5e2398bf1cd6049b2bda2d0a675b4a8e880f2aad",
+          "name": "teardown-autocomplete.txt",
+          "size": 275,
+          "source": "teardown-autocomplete.txt",
+          "start_index": 0
+        }
+      ]
+    ]
+  },
+  "response_text": "",
+  "retrieved_document_ids": [
+    "resume-cache",
+    "query-cache",
+    "autocomplete"
+  ]
+}

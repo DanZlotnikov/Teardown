@@ -1,0 +1,51 @@
+{
+  "cache_key": "c60a7db04f704af95b4bdab18b2111ea0b539c2ef09ee55f721bdf9495da29ac",
+  "call_type": "main_chat_context",
+  "case_id": "context-17",
+  "chat_id": "d9ce73a5-dd7f-447f-8b7c-66de57f3def4",
+  "compaction_triggered": true,
+  "completion_ms": 2691.115,
+  "condition": "l4-native-compaction",
+  "objective_score": 0.6666666666666666,
+  "persisted_summary_chars": 528,
+  "persisted_summary_sha256": "50b2ff6c867250f2ad2139ab1cc92eee375ff0f315d3584b67d29e7e4fbffaa0",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "The exact details from the first turn are as follows:\n- **Project Name**: Kestrel-17\n- **Incident Code**: OWUI-7317\n- **Recovery Region**: Helsinki",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789442148,
+    "id": "qwen2.5:14b-instruct-f52f6813-ea8b-42ae-8dae-1781316c6dd9",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 45,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 45,
+      "eval_duration": 693976000,
+      "input_tokens": 241,
+      "load_duration": 1786800,
+      "output_tokens": 45,
+      "prompt_eval_count": 241,
+      "prompt_eval_duration": 93589000,
+      "prompt_token/s": 2575.09,
+      "prompt_tokens": 241,
+      "response_token/s": 64.84,
+      "total_duration": 836718100,
+      "total_tokens": 286
+    }
+  },
+  "response_text": "The exact details from the first turn are as follows:\n- **Project Name**: Kestrel-17\n- **Incident Code**: OWUI-7317\n- **Recovery Region**: Helsinki"
+}

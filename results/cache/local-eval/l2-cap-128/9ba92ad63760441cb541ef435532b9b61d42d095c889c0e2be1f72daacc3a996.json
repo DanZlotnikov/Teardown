@@ -1,0 +1,50 @@
+{
+  "cache_key": "9ba92ad63760441cb541ef435532b9b61d42d095c889c0e2be1f72daacc3a996",
+  "call_type": "tags",
+  "case_id": "tags-09",
+  "completion_ms": 1355.957,
+  "condition": "l2-cap-128",
+  "endpoint": "/api/v1/tasks/tags/completions",
+  "objective_score": 1.0,
+  "payload_sha256": "249474cd867b76086c78c5e8e70ce0f3a0edb27b43d34858d202e498de94312f",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "It seems the chat history is incomplete and lacks context, making it challenging to categorize accurately. However, based on the limited information provided, it appears to be related to a technical issue with software or web development. Given the nature of the conversation, here is a suggested categorization:\n\n```json\n{ \"tags\": [\"Technology\", \"Software\", \"Web Development\"] }\n```",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789437431,
+    "id": "qwen2.5:14b-instruct-ec90a679-817a-4caa-9dd4-c47496198fb3",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m1s",
+      "completion_tokens": 77,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 77,
+      "eval_duration": 1265666000,
+      "input_tokens": 272,
+      "load_duration": 2381300,
+      "output_tokens": 77,
+      "prompt_eval_count": 272,
+      "prompt_eval_duration": 44080000,
+      "prompt_token/s": 6170.6,
+      "prompt_tokens": 272,
+      "response_token/s": 60.84,
+      "total_duration": 1316817900,
+      "total_tokens": 349
+    }
+  },
+  "response_text": "It seems the chat history is incomplete and lacks context, making it challenging to categorize accurately. However, based on the limited information provided, it appears to be related to a technical issue with software or web development. Given the nature of the conversation, here is a suggested categorization:\n\n```json\n{ \"tags\": [\"Technology\", \"Software\", \"Web Development\"] }\n```",
+  "retrieved_document_ids": null
+}

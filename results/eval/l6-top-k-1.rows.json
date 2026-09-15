@@ -1,0 +1,862 @@
+[
+  {
+    "cache_key": "2e724fdc0b3ca357f9bf24a758029d021cbfbe4f7f0082aeb3c5a6604f1c62c8",
+    "call_type": "retrieval",
+    "case_id": "retrieval-r01",
+    "completion_ms": 43.851,
+    "condition": "l6-top-k-1",
+    "endpoint": "/api/v1/retrieval/query/collection",
+    "objective_score": 1.0,
+    "payload_sha256": "27f0c4fecc023a9d760f252cca3f27f94fd104f7c5cc85e0241de0f434e07cb5",
+    "response": {
+      "distances": [
+        [
+          0.8354540467262268
+        ]
+      ],
+      "documents": [
+        [
+          "[DOC_ID:task-model] Task model routing  \nOpen WebUI routes titles, tags, follow-up suggestions, retrieval queries, web-search queries, and autocomplete through the configured task model. Administrators can set a local or smaller task model without changing the main chat model."
+        ]
+      ],
+      "metadatas": [
+        [
+          {
+            "content_type": "text/plain; charset=utf-8",
+            "created_by": "b997c815-91d7-4e7f-b9bb-f554a9245ad7",
+            "data": "{}",
+            "embedding_config": "{'engine': 'ollama', 'model': 'nomic-embed-text'}",
+            "file_hash": "c5fb732c5c6408616507c318bace6c09edb8a2e3103bf9dda97ec2d4693bf068",
+            "file_id": "bb4a58a1-5afd-4be3-94a1-393cedf36faf",
+            "hash": "c5fb732c5c6408616507c318bace6c09edb8a2e3103bf9dda97ec2d4693bf068",
+            "name": "teardown-task-model.txt",
+            "size": 276,
+            "source": "teardown-task-model.txt",
+            "start_index": 0
+          }
+        ]
+      ]
+    },
+    "response_text": "",
+    "retrieved_document_ids": [
+      "task-model"
+    ]
+  },
+  {
+    "cache_key": "5aa06c2c4ca87178b391aa9e9081aed49fc74e21d866830593bc51d9fd2d6579",
+    "call_type": "retrieval",
+    "case_id": "retrieval-r02",
+    "completion_ms": 38.646,
+    "condition": "l6-top-k-1",
+    "endpoint": "/api/v1/retrieval/query/collection",
+    "objective_score": 1.0,
+    "payload_sha256": "5d0af9771c5dec11e3975bd93d4e9a0edbf09c4a35a94ecf9857923101bfc082",
+    "response": {
+      "distances": [
+        [
+          0.8761854767799377
+        ]
+      ],
+      "documents": [
+        [
+          "[DOC_ID:task-cap] Task output limits  \nThe task.model.params dictionary applies generation parameters across task endpoints. A max_tokens cap therefore reaches titles and autocomplete as well as tags, follow-ups, and queries; it is not a narrow tag-only control."
+        ]
+      ],
+      "metadatas": [
+        [
+          {
+            "content_type": "text/plain; charset=utf-8",
+            "created_by": "b997c815-91d7-4e7f-b9bb-f554a9245ad7",
+            "data": "{}",
+            "embedding_config": "{'engine': 'ollama', 'model': 'nomic-embed-text'}",
+            "file_hash": "601aa6f4f02b7e861bda7ec714141fe211c2fc4bfa33bca3bb82d3b92a0a9536",
+            "file_id": "4ab3479f-0f5f-4f6b-b410-bc6cb0307b19",
+            "hash": "601aa6f4f02b7e861bda7ec714141fe211c2fc4bfa33bca3bb82d3b92a0a9536",
+            "name": "teardown-task-cap.txt",
+            "size": 261,
+            "source": "teardown-task-cap.txt",
+            "start_index": 0
+          }
+        ]
+      ]
+    },
+    "response_text": "",
+    "retrieved_document_ids": [
+      "task-cap"
+    ]
+  },
+  {
+    "cache_key": "fbf21a6627140135feea494c244ffca2dee1a4b64e3473f66801f200378308bb",
+    "call_type": "retrieval",
+    "case_id": "retrieval-r03",
+    "completion_ms": 30.34,
+    "condition": "l6-top-k-1",
+    "endpoint": "/api/v1/retrieval/query/collection",
+    "objective_score": 1.0,
+    "payload_sha256": "dccdac12dcf579725f5dd9760672b2a9b745350645fc8b542a3861b261951b9e",
+    "response": {
+      "distances": [
+        [
+          0.8337955176830292
+        ]
+      ],
+      "documents": [
+        [
+          "[DOC_ID:title-template] Title history syntax  \nTitle prompt templates select messages with MESSAGES START, END, or MIDDLETRUNCATE counts. Optional start, end, and middletruncate filters limit characters within every selected message. These native limits do not count tokenizer tokens."
+        ]
+      ],
+      "metadatas": [
+        [
+          {
+            "content_type": "text/plain; charset=utf-8",
+            "created_by": "b997c815-91d7-4e7f-b9bb-f554a9245ad7",
+            "data": "{}",
+            "embedding_config": "{'engine': 'ollama', 'model': 'nomic-embed-text'}",
+            "file_hash": "e5c79eebe87c7fbc26ee23c9060b86d7c2e063aec2192dafc247c883db87806c",
+            "file_id": "82395368-bbd1-493d-8ca9-79da82bcd982",
+            "hash": "e5c79eebe87c7fbc26ee23c9060b86d7c2e063aec2192dafc247c883db87806c",
+            "name": "teardown-title-template.txt",
+            "size": 283,
+            "source": "teardown-title-template.txt",
+            "start_index": 0
+          }
+        ]
+      ]
+    },
+    "response_text": "",
+    "retrieved_document_ids": [
+      "title-template"
+    ]
+  },
+  {
+    "cache_key": "b53df37ac71983623ef6b8a169f81b3b43b8fa8b241166178c5feaf7c188a100",
+    "call_type": "retrieval",
+    "case_id": "retrieval-r04",
+    "completion_ms": 75.629,
+    "condition": "l6-top-k-1",
+    "endpoint": "/api/v1/retrieval/query/collection",
+    "objective_score": 1.0,
+    "payload_sha256": "24a02087ef8810f77d29d4ff03bb98d8114f87170fe49226fcbc084fdea190f8",
+    "response": {
+      "distances": [
+        [
+          0.8870327174663544
+        ]
+      ],
+      "documents": [
+        [
+          "[DOC_ID:context-compaction] Native context compaction  \nNative context compaction defaults to disabled. Its default threshold is 80000 tokens and retention defaults to 40 percent. Tests must enable it on a saved chat and lower the threshold enough to prove a summary was generated."
+        ]
+      ],
+      "metadatas": [
+        [
+          {
+            "content_type": "text/plain; charset=utf-8",
+            "created_by": "b997c815-91d7-4e7f-b9bb-f554a9245ad7",
+            "data": "{}",
+            "embedding_config": "{'engine': 'ollama', 'model': 'nomic-embed-text'}",
+            "file_hash": "18c84b774e162dc059b9c2aa7794dee47d28f4005237211916e5549b5ff3bea5",
+            "file_id": "b7efbaad-d68a-4052-a4e7-31e24ae6e708",
+            "hash": "18c84b774e162dc059b9c2aa7794dee47d28f4005237211916e5549b5ff3bea5",
+            "name": "teardown-context-compaction.txt",
+            "size": 280,
+            "source": "teardown-context-compaction.txt",
+            "start_index": 0
+          }
+        ]
+      ]
+    },
+    "response_text": "",
+    "retrieved_document_ids": [
+      "context-compaction"
+    ]
+  },
+  {
+    "cache_key": "73b63bc19f19f3021979e4a1a64da3023395270ad39aad0a22d4bd56d02f36a0",
+    "call_type": "retrieval",
+    "case_id": "retrieval-r05",
+    "completion_ms": 41.977,
+    "condition": "l6-top-k-1",
+    "endpoint": "/api/v1/retrieval/query/collection",
+    "objective_score": 1.0,
+    "payload_sha256": "2ac824fd32a74305fc3b0258cd361a7a74fb8361020eebf3354b133b179d072c",
+    "response": {
+      "distances": [
+        [
+          0.8330086767673492
+        ]
+      ],
+      "documents": [
+        [
+          "[DOC_ID:query-cache] Query reuse  \nENABLE_QUERIES_CACHE stores web-search queries on request state so later file retrieval in the same combined chat request can reuse them. Repeating the standalone query endpoint cannot exercise this optimization."
+        ]
+      ],
+      "metadatas": [
+        [
+          {
+            "content_type": "text/plain; charset=utf-8",
+            "created_by": "b997c815-91d7-4e7f-b9bb-f554a9245ad7",
+            "data": "{}",
+            "embedding_config": "{'engine': 'ollama', 'model': 'nomic-embed-text'}",
+            "file_hash": "82ccc3947e349ada40238a0a113dc89a394122b1592a515ec4af3137bfda00ab",
+            "file_id": "371aa7e1-73b6-43be-9adb-0b829bdd47f4",
+            "hash": "82ccc3947e349ada40238a0a113dc89a394122b1592a515ec4af3137bfda00ab",
+            "name": "teardown-query-cache.txt",
+            "size": 246,
+            "source": "teardown-query-cache.txt",
+            "start_index": 0
+          }
+        ]
+      ]
+    },
+    "response_text": "",
+    "retrieved_document_ids": [
+      "query-cache"
+    ]
+  },
+  {
+    "cache_key": "75f17d4da7747c5a8865b18692d7c6a784f63b7c8a7a2e8fe7b1c0fcd2749f19",
+    "call_type": "retrieval",
+    "case_id": "retrieval-r06",
+    "completion_ms": 63.575,
+    "condition": "l6-top-k-1",
+    "endpoint": "/api/v1/retrieval/query/collection",
+    "objective_score": 1.0,
+    "payload_sha256": "18eeb6f09cf1bacb95a287470bc518d053c0842915d2b20a506abc1b21b0e4a0",
+    "response": {
+      "distances": [
+        [
+          0.8611751198768616
+        ]
+      ],
+      "documents": [
+        [
+          "[DOC_ID:rag-top-k] Retrieved chunk count  \nThe rag.top_k configuration defaults to three. Document and collection retrieval pass this value to vector or hybrid search unless a request-level k overrides it. Compare k values 3, 2, and 1 on one fixed indexed corpus."
+        ]
+      ],
+      "metadatas": [
+        [
+          {
+            "content_type": "text/plain; charset=utf-8",
+            "created_by": "b997c815-91d7-4e7f-b9bb-f554a9245ad7",
+            "data": "{}",
+            "embedding_config": "{'engine': 'ollama', 'model': 'nomic-embed-text'}",
+            "file_hash": "c2771fa87370efc07419258741deac995d5de0d019e96ab9417ac7084cb78a2d",
+            "file_id": "94914ac4-5fd6-446a-9e51-60b8ac41c2dc",
+            "hash": "c2771fa87370efc07419258741deac995d5de0d019e96ab9417ac7084cb78a2d",
+            "name": "teardown-rag-top-k.txt",
+            "size": 262,
+            "source": "teardown-rag-top-k.txt",
+            "start_index": 0
+          }
+        ]
+      ]
+    },
+    "response_text": "",
+    "retrieved_document_ids": [
+      "rag-top-k"
+    ]
+  },
+  {
+    "cache_key": "3fbe7316ceafbe937293659077e067e35eaf08d4e3c2c844ec62b9675b0efdae",
+    "call_type": "retrieval",
+    "case_id": "retrieval-r07",
+    "completion_ms": 79.486,
+    "condition": "l6-top-k-1",
+    "endpoint": "/api/v1/retrieval/query/collection",
+    "objective_score": 1.0,
+    "payload_sha256": "e0986e319ef6ed06a54eca0ed1889173437ea32650f47008dc7ffd3182722951",
+    "response": {
+      "distances": [
+        [
+          0.8999734818935394
+        ]
+      ],
+      "documents": [
+        [
+          "[DOC_ID:autocomplete] Autocomplete workload  \nAutocomplete is disabled by default at the server and user preference levels. When enabled, the editor waits 1000 milliseconds after an input change and checks cursor and loading state, so requests are not sent on every keystroke."
+        ]
+      ],
+      "metadatas": [
+        [
+          {
+            "content_type": "text/plain; charset=utf-8",
+            "created_by": "b997c815-91d7-4e7f-b9bb-f554a9245ad7",
+            "data": "{}",
+            "embedding_config": "{'engine': 'ollama', 'model': 'nomic-embed-text'}",
+            "file_hash": "480288cc40cabdd34db5ee0b5e2398bf1cd6049b2bda2d0a675b4a8e880f2aad",
+            "file_id": "4998c46d-3e3e-4277-bcfe-faf0bcba7013",
+            "hash": "480288cc40cabdd34db5ee0b5e2398bf1cd6049b2bda2d0a675b4a8e880f2aad",
+            "name": "teardown-autocomplete.txt",
+            "size": 275,
+            "source": "teardown-autocomplete.txt",
+            "start_index": 0
+          }
+        ]
+      ]
+    },
+    "response_text": "",
+    "retrieved_document_ids": [
+      "autocomplete"
+    ]
+  },
+  {
+    "cache_key": "6b9e6d8a2b263d56a6b5ba964a8618259d1e191d36bc4845d2c2ba9fe54cc9eb",
+    "call_type": "retrieval",
+    "case_id": "retrieval-r08",
+    "completion_ms": 38.736,
+    "condition": "l6-top-k-1",
+    "endpoint": "/api/v1/retrieval/query/collection",
+    "objective_score": 1.0,
+    "payload_sha256": "bbbcd85bce33d446b9b4241f5b754a8d2326093e996b324a2ed74e98539c0835",
+    "response": {
+      "distances": [
+        [
+          0.812988817691803
+        ]
+      ],
+      "documents": [
+        [
+          "[DOC_ID:budget] Paid-call budget guard  \nBefore provider dispatch, acquire a cross-process lock and persist a worst-case reservation. Include the historical carry-forward and unresolved failures in exposure. Stop at 23 dollars softly and never reserve beyond 30 dollars."
+        ]
+      ],
+      "metadatas": [
+        [
+          {
+            "content_type": "text/plain; charset=utf-8",
+            "created_by": "b997c815-91d7-4e7f-b9bb-f554a9245ad7",
+            "data": "{}",
+            "embedding_config": "{'engine': 'ollama', 'model': 'nomic-embed-text'}",
+            "file_hash": "476413f47cd8df021664df0eb60a66309bf8c049b99905d5e01e8215f703fb98",
+            "file_id": "1fd95377-8c3d-4777-b9b8-8d3193f99045",
+            "hash": "476413f47cd8df021664df0eb60a66309bf8c049b99905d5e01e8215f703fb98",
+            "name": "teardown-budget.txt",
+            "size": 269,
+            "source": "teardown-budget.txt",
+            "start_index": 0
+          }
+        ]
+      ]
+    },
+    "response_text": "",
+    "retrieved_document_ids": [
+      "budget"
+    ]
+  },
+  {
+    "cache_key": "f6b13e405b182c4d49cff843209b6074a6824cf2359eff8c6fd57f0d0f0d3e6a",
+    "call_type": "retrieval",
+    "case_id": "retrieval-r09",
+    "completion_ms": 59.51,
+    "condition": "l6-top-k-1",
+    "endpoint": "/api/v1/retrieval/query/collection",
+    "objective_score": 1.0,
+    "payload_sha256": "51fcbbc7913421e24ce4e2ccc9ce0a856a22fb9496fd295e01306dfd17888cad",
+    "response": {
+      "distances": [
+        [
+          0.8835751414299011
+        ]
+      ],
+      "documents": [
+        [
+          "[DOC_ID:resume-cache] Paid output cache  \nCache every paid response under a stable key that binds condition, dataset hash, endpoint, and payload. Write the cache atomically before the append-only action manifest. On resume, a valid cache alone must prevent a repeated provider call."
+        ]
+      ],
+      "metadatas": [
+        [
+          {
+            "content_type": "text/plain; charset=utf-8",
+            "created_by": "b997c815-91d7-4e7f-b9bb-f554a9245ad7",
+            "data": "{}",
+            "embedding_config": "{'engine': 'ollama', 'model': 'nomic-embed-text'}",
+            "file_hash": "bd3d69d8e6dfac97f1cde34cb081bcfae0adfbb71c568ada12a835997ff2803e",
+            "file_id": "b5195914-9264-45ac-bb91-dfbc880f422a",
+            "hash": "bd3d69d8e6dfac97f1cde34cb081bcfae0adfbb71c568ada12a835997ff2803e",
+            "name": "teardown-resume-cache.txt",
+            "size": 281,
+            "source": "teardown-resume-cache.txt",
+            "start_index": 0
+          }
+        ]
+      ]
+    },
+    "response_text": "",
+    "retrieved_document_ids": [
+      "resume-cache"
+    ]
+  },
+  {
+    "cache_key": "218b1fd6d36917b070e3ef5b50e7f14ea4229a9f591bda786ce759cd0c37530e",
+    "call_type": "retrieval",
+    "case_id": "retrieval-r10",
+    "completion_ms": 61.327,
+    "condition": "l6-top-k-1",
+    "endpoint": "/api/v1/retrieval/query/collection",
+    "objective_score": 1.0,
+    "payload_sha256": "a996560fb7e3f172048d240d321e923ad93ae368856cc87714f93c65fee1bcb5",
+    "response": {
+      "distances": [
+        [
+          0.788248747587204
+        ]
+      ],
+      "documents": [
+        [
+          "[DOC_ID:wire-capture] Proxy evidence  \nCapture redacted provider request and response bodies, actual reported input, output, and cached tokens, completion latency, and all budget mutations. For nonstreaming task calls, mark time to first token unavailable rather than relabeling response time."
+        ]
+      ],
+      "metadatas": [
+        [
+          {
+            "content_type": "text/plain; charset=utf-8",
+            "created_by": "b997c815-91d7-4e7f-b9bb-f554a9245ad7",
+            "data": "{}",
+            "embedding_config": "{'engine': 'ollama', 'model': 'nomic-embed-text'}",
+            "file_hash": "aaf20fd879c7af5885c665badc36284ae8dc24ae9c8201859ccf75561b94c42a",
+            "file_id": "2396eed1-0d57-456d-8b9f-89b3a78b5a9d",
+            "hash": "aaf20fd879c7af5885c665badc36284ae8dc24ae9c8201859ccf75561b94c42a",
+            "name": "teardown-wire-capture.txt",
+            "size": 292,
+            "source": "teardown-wire-capture.txt",
+            "start_index": 0
+          }
+        ]
+      ]
+    },
+    "response_text": "",
+    "retrieved_document_ids": [
+      "wire-capture"
+    ]
+  },
+  {
+    "cache_key": "0f720adfc27d7889ee08fa2cdd9026035b81d8c8b1c20950a0423f3d40a42100",
+    "call_type": "retrieval",
+    "case_id": "retrieval-r11",
+    "completion_ms": 60.918,
+    "condition": "l6-top-k-1",
+    "endpoint": "/api/v1/retrieval/query/collection",
+    "objective_score": 1.0,
+    "payload_sha256": "df1b0297dfc45fce39232622434214b189d3393c20160568f028f58e39571a63",
+    "response": {
+      "distances": [
+        [
+          0.8846473097801208
+        ]
+      ],
+      "documents": [
+        [
+          "[DOC_ID:local-ollama] Local Ollama condition  \nA local model condition needs an exact installed model name, digest, quantization, Ollama version, and hardware record. A deployment smoke proves availability only; it does not establish equivalence to a hosted quality test."
+        ]
+      ],
+      "metadatas": [
+        [
+          {
+            "content_type": "text/plain; charset=utf-8",
+            "created_by": "b997c815-91d7-4e7f-b9bb-f554a9245ad7",
+            "data": "{}",
+            "embedding_config": "{'engine': 'ollama', 'model': 'nomic-embed-text'}",
+            "file_hash": "5a9e3bfbdd258c5e878b8b4aa7a3b737f1e34ba5015b079a90a23179045e11dd",
+            "file_id": "1f26667b-098c-4e5d-8892-79e8f6557466",
+            "hash": "5a9e3bfbdd258c5e878b8b4aa7a3b737f1e34ba5015b079a90a23179045e11dd",
+            "name": "teardown-local-ollama.txt",
+            "size": 270,
+            "source": "teardown-local-ollama.txt",
+            "start_index": 0
+          }
+        ]
+      ]
+    },
+    "response_text": "",
+    "retrieved_document_ids": [
+      "local-ollama"
+    ]
+  },
+  {
+    "cache_key": "0b64c3ed7dfa196e7d469cc82a7231d6e9ab6ef991f018f0dfbd7ba347243c29",
+    "call_type": "retrieval",
+    "case_id": "retrieval-r12",
+    "completion_ms": 30.51,
+    "condition": "l6-top-k-1",
+    "endpoint": "/api/v1/retrieval/query/collection",
+    "objective_score": 1.0,
+    "payload_sha256": "1e77d2031dc916bceeac0e663b6a964dbcdad49cf1dbcc9c9bce0e3bab2547f4",
+    "response": {
+      "distances": [
+        [
+          0.8133397996425629
+        ]
+      ],
+      "documents": [
+        [
+          "[DOC_ID:quality] Targeted quality evaluation  \nEvaluate only call types affected by each lever. Use objective format, exact-fact, retrieval-overlap, and grounding metrics first. Use a cached non-reasoning judge only when objective comparisons are insufficient."
+        ]
+      ],
+      "metadatas": [
+        [
+          {
+            "content_type": "text/plain; charset=utf-8",
+            "created_by": "b997c815-91d7-4e7f-b9bb-f554a9245ad7",
+            "data": "{}",
+            "embedding_config": "{'engine': 'ollama', 'model': 'nomic-embed-text'}",
+            "file_hash": "01cddb57ba8e51c18e3a7f2a3c46257af80f516da6a1ff1f6306ad80c6c322b9",
+            "file_id": "0b43f959-edd6-4cba-8c80-c42d76fbdeaa",
+            "hash": "01cddb57ba8e51c18e3a7f2a3c46257af80f516da6a1ff1f6306ad80c6c322b9",
+            "name": "teardown-quality.txt",
+            "size": 259,
+            "source": "teardown-quality.txt",
+            "start_index": 0
+          }
+        ]
+      ]
+    },
+    "response_text": "",
+    "retrieved_document_ids": [
+      "quality"
+    ]
+  },
+  {
+    "cache_key": "4432857bf122f9140eb0f9407c2caca9c262ae3b0d21befa8f93c15d388cfabe",
+    "call_type": "retrieval",
+    "case_id": "retrieval-r13",
+    "completion_ms": 72.022,
+    "condition": "l6-top-k-1",
+    "endpoint": "/api/v1/retrieval/query/collection",
+    "objective_score": 0.5,
+    "payload_sha256": "3bfd8e9ea0f1e33d5ef15614eac942758a505bff77a4fb9d56cd80e7dc1a424a",
+    "response": {
+      "distances": [
+        [
+          0.8417921364307404
+        ]
+      ],
+      "documents": [
+        [
+          "[DOC_ID:task-cap] Task output limits  \nThe task.model.params dictionary applies generation parameters across task endpoints. A max_tokens cap therefore reaches titles and autocomplete as well as tags, follow-ups, and queries; it is not a narrow tag-only control."
+        ]
+      ],
+      "metadatas": [
+        [
+          {
+            "content_type": "text/plain; charset=utf-8",
+            "created_by": "b997c815-91d7-4e7f-b9bb-f554a9245ad7",
+            "data": "{}",
+            "embedding_config": "{'engine': 'ollama', 'model': 'nomic-embed-text'}",
+            "file_hash": "601aa6f4f02b7e861bda7ec714141fe211c2fc4bfa33bca3bb82d3b92a0a9536",
+            "file_id": "4ab3479f-0f5f-4f6b-b410-bc6cb0307b19",
+            "hash": "601aa6f4f02b7e861bda7ec714141fe211c2fc4bfa33bca3bb82d3b92a0a9536",
+            "name": "teardown-task-cap.txt",
+            "size": 261,
+            "source": "teardown-task-cap.txt",
+            "start_index": 0
+          }
+        ]
+      ]
+    },
+    "response_text": "",
+    "retrieved_document_ids": [
+      "task-cap"
+    ]
+  },
+  {
+    "cache_key": "51078056ab0f3b606a9be3e4d0ba242fb7c6936f0565d83be351edcc60fe44a6",
+    "call_type": "retrieval",
+    "case_id": "retrieval-r14",
+    "completion_ms": 77.416,
+    "condition": "l6-top-k-1",
+    "endpoint": "/api/v1/retrieval/query/collection",
+    "objective_score": 0.5,
+    "payload_sha256": "4eb5f7266c6cd09779d3f9aa38e7d5ba58b6fdd9464a2f09c6f4ac144222973c",
+    "response": {
+      "distances": [
+        [
+          0.8476518094539642
+        ]
+      ],
+      "documents": [
+        [
+          "[DOC_ID:context-compaction] Native context compaction  \nNative context compaction defaults to disabled. Its default threshold is 80000 tokens and retention defaults to 40 percent. Tests must enable it on a saved chat and lower the threshold enough to prove a summary was generated."
+        ]
+      ],
+      "metadatas": [
+        [
+          {
+            "content_type": "text/plain; charset=utf-8",
+            "created_by": "b997c815-91d7-4e7f-b9bb-f554a9245ad7",
+            "data": "{}",
+            "embedding_config": "{'engine': 'ollama', 'model': 'nomic-embed-text'}",
+            "file_hash": "18c84b774e162dc059b9c2aa7794dee47d28f4005237211916e5549b5ff3bea5",
+            "file_id": "b7efbaad-d68a-4052-a4e7-31e24ae6e708",
+            "hash": "18c84b774e162dc059b9c2aa7794dee47d28f4005237211916e5549b5ff3bea5",
+            "name": "teardown-context-compaction.txt",
+            "size": 280,
+            "source": "teardown-context-compaction.txt",
+            "start_index": 0
+          }
+        ]
+      ]
+    },
+    "response_text": "",
+    "retrieved_document_ids": [
+      "context-compaction"
+    ]
+  },
+  {
+    "cache_key": "5da1845329ec3535a8672ec1b6abb65df60a087ea50b5aea9d51295a91f7a312",
+    "call_type": "retrieval",
+    "case_id": "retrieval-r15",
+    "completion_ms": 70.858,
+    "condition": "l6-top-k-1",
+    "endpoint": "/api/v1/retrieval/query/collection",
+    "objective_score": 0.5,
+    "payload_sha256": "ab7ff9a2cdb7eb4f4689e68dd3c881fadce34ee88df1dc4a9b3353036f9ade1b",
+    "response": {
+      "distances": [
+        [
+          0.8273426592350006
+        ]
+      ],
+      "documents": [
+        [
+          "[DOC_ID:query-cache] Query reuse  \nENABLE_QUERIES_CACHE stores web-search queries on request state so later file retrieval in the same combined chat request can reuse them. Repeating the standalone query endpoint cannot exercise this optimization."
+        ]
+      ],
+      "metadatas": [
+        [
+          {
+            "content_type": "text/plain; charset=utf-8",
+            "created_by": "b997c815-91d7-4e7f-b9bb-f554a9245ad7",
+            "data": "{}",
+            "embedding_config": "{'engine': 'ollama', 'model': 'nomic-embed-text'}",
+            "file_hash": "82ccc3947e349ada40238a0a113dc89a394122b1592a515ec4af3137bfda00ab",
+            "file_id": "371aa7e1-73b6-43be-9adb-0b829bdd47f4",
+            "hash": "82ccc3947e349ada40238a0a113dc89a394122b1592a515ec4af3137bfda00ab",
+            "name": "teardown-query-cache.txt",
+            "size": 246,
+            "source": "teardown-query-cache.txt",
+            "start_index": 0
+          }
+        ]
+      ]
+    },
+    "response_text": "",
+    "retrieved_document_ids": [
+      "query-cache"
+    ]
+  },
+  {
+    "cache_key": "62113e34263a490c9633468d3c2ecff0dfbfc74c839cff972cf38e2616f1a2da",
+    "call_type": "retrieval",
+    "case_id": "retrieval-r16",
+    "completion_ms": 60.791,
+    "condition": "l6-top-k-1",
+    "endpoint": "/api/v1/retrieval/query/collection",
+    "objective_score": 1.0,
+    "payload_sha256": "cdb5f1ed9aa41c3479465944f5cf5e76b0a862a8bec7f14c8e38938a59019c75",
+    "response": {
+      "distances": [
+        [
+          0.8676816821098328
+        ]
+      ],
+      "documents": [
+        [
+          "[DOC_ID:autocomplete] Autocomplete workload  \nAutocomplete is disabled by default at the server and user preference levels. When enabled, the editor waits 1000 milliseconds after an input change and checks cursor and loading state, so requests are not sent on every keystroke."
+        ]
+      ],
+      "metadatas": [
+        [
+          {
+            "content_type": "text/plain; charset=utf-8",
+            "created_by": "b997c815-91d7-4e7f-b9bb-f554a9245ad7",
+            "data": "{}",
+            "embedding_config": "{'engine': 'ollama', 'model': 'nomic-embed-text'}",
+            "file_hash": "480288cc40cabdd34db5ee0b5e2398bf1cd6049b2bda2d0a675b4a8e880f2aad",
+            "file_id": "4998c46d-3e3e-4277-bcfe-faf0bcba7013",
+            "hash": "480288cc40cabdd34db5ee0b5e2398bf1cd6049b2bda2d0a675b4a8e880f2aad",
+            "name": "teardown-autocomplete.txt",
+            "size": 275,
+            "source": "teardown-autocomplete.txt",
+            "start_index": 0
+          }
+        ]
+      ]
+    },
+    "response_text": "",
+    "retrieved_document_ids": [
+      "autocomplete"
+    ]
+  },
+  {
+    "cache_key": "e9379d12c6cea00ec0d1c89de1a1414f2093e0ee6fc4ef7d659c280fd2fc4fd6",
+    "call_type": "retrieval",
+    "case_id": "retrieval-r17",
+    "completion_ms": 74.096,
+    "condition": "l6-top-k-1",
+    "endpoint": "/api/v1/retrieval/query/collection",
+    "objective_score": 0.5,
+    "payload_sha256": "060efd727889f6c991dad43681796f1f354e5b19f4dea52d38d2986d96987235",
+    "response": {
+      "distances": [
+        [
+          0.8062240779399872
+        ]
+      ],
+      "documents": [
+        [
+          "[DOC_ID:resume-cache] Paid output cache  \nCache every paid response under a stable key that binds condition, dataset hash, endpoint, and payload. Write the cache atomically before the append-only action manifest. On resume, a valid cache alone must prevent a repeated provider call."
+        ]
+      ],
+      "metadatas": [
+        [
+          {
+            "content_type": "text/plain; charset=utf-8",
+            "created_by": "b997c815-91d7-4e7f-b9bb-f554a9245ad7",
+            "data": "{}",
+            "embedding_config": "{'engine': 'ollama', 'model': 'nomic-embed-text'}",
+            "file_hash": "bd3d69d8e6dfac97f1cde34cb081bcfae0adfbb71c568ada12a835997ff2803e",
+            "file_id": "b5195914-9264-45ac-bb91-dfbc880f422a",
+            "hash": "bd3d69d8e6dfac97f1cde34cb081bcfae0adfbb71c568ada12a835997ff2803e",
+            "name": "teardown-resume-cache.txt",
+            "size": 281,
+            "source": "teardown-resume-cache.txt",
+            "start_index": 0
+          }
+        ]
+      ]
+    },
+    "response_text": "",
+    "retrieved_document_ids": [
+      "resume-cache"
+    ]
+  },
+  {
+    "cache_key": "9686f1df741711b8d59f94efb5b3ae4d31823ca6b3434afece0577dabd150d2a",
+    "call_type": "retrieval",
+    "case_id": "retrieval-r18",
+    "completion_ms": 45.729,
+    "condition": "l6-top-k-1",
+    "endpoint": "/api/v1/retrieval/query/collection",
+    "objective_score": 0.5,
+    "payload_sha256": "71b3965ae42f6c610992e6e04fd864dc7a9427e8a0268abb8a1aa7c6055420e4",
+    "response": {
+      "distances": [
+        [
+          0.8265331089496613
+        ]
+      ],
+      "documents": [
+        [
+          "[DOC_ID:wire-capture] Proxy evidence  \nCapture redacted provider request and response bodies, actual reported input, output, and cached tokens, completion latency, and all budget mutations. For nonstreaming task calls, mark time to first token unavailable rather than relabeling response time."
+        ]
+      ],
+      "metadatas": [
+        [
+          {
+            "content_type": "text/plain; charset=utf-8",
+            "created_by": "b997c815-91d7-4e7f-b9bb-f554a9245ad7",
+            "data": "{}",
+            "embedding_config": "{'engine': 'ollama', 'model': 'nomic-embed-text'}",
+            "file_hash": "aaf20fd879c7af5885c665badc36284ae8dc24ae9c8201859ccf75561b94c42a",
+            "file_id": "2396eed1-0d57-456d-8b9f-89b3a78b5a9d",
+            "hash": "aaf20fd879c7af5885c665badc36284ae8dc24ae9c8201859ccf75561b94c42a",
+            "name": "teardown-wire-capture.txt",
+            "size": 292,
+            "source": "teardown-wire-capture.txt",
+            "start_index": 0
+          }
+        ]
+      ]
+    },
+    "response_text": "",
+    "retrieved_document_ids": [
+      "wire-capture"
+    ]
+  },
+  {
+    "cache_key": "5baeeb7d12759a4c6f10df2720c6cf0106ddf5efeb9f991e1c278153971d21a9",
+    "call_type": "retrieval",
+    "case_id": "retrieval-r19",
+    "completion_ms": 24.426,
+    "condition": "l6-top-k-1",
+    "endpoint": "/api/v1/retrieval/query/collection",
+    "objective_score": 0.5,
+    "payload_sha256": "fc66e20013743f787f609526cc062686ff58c5b65baf4dd0084b2e0556e812d9",
+    "response": {
+      "distances": [
+        [
+          0.8397201299667358
+        ]
+      ],
+      "documents": [
+        [
+          "[DOC_ID:local-ollama] Local Ollama condition  \nA local model condition needs an exact installed model name, digest, quantization, Ollama version, and hardware record. A deployment smoke proves availability only; it does not establish equivalence to a hosted quality test."
+        ]
+      ],
+      "metadatas": [
+        [
+          {
+            "content_type": "text/plain; charset=utf-8",
+            "created_by": "b997c815-91d7-4e7f-b9bb-f554a9245ad7",
+            "data": "{}",
+            "embedding_config": "{'engine': 'ollama', 'model': 'nomic-embed-text'}",
+            "file_hash": "5a9e3bfbdd258c5e878b8b4aa7a3b737f1e34ba5015b079a90a23179045e11dd",
+            "file_id": "1f26667b-098c-4e5d-8892-79e8f6557466",
+            "hash": "5a9e3bfbdd258c5e878b8b4aa7a3b737f1e34ba5015b079a90a23179045e11dd",
+            "name": "teardown-local-ollama.txt",
+            "size": 270,
+            "source": "teardown-local-ollama.txt",
+            "start_index": 0
+          }
+        ]
+      ]
+    },
+    "response_text": "",
+    "retrieved_document_ids": [
+      "local-ollama"
+    ]
+  },
+  {
+    "cache_key": "89004f3e3509e03f185bb2831e903f1aad49eff8407ec88bda97ec18f482ca1e",
+    "call_type": "retrieval",
+    "case_id": "retrieval-r20",
+    "completion_ms": 29.657,
+    "condition": "l6-top-k-1",
+    "endpoint": "/api/v1/retrieval/query/collection",
+    "objective_score": 0.3333333333333333,
+    "payload_sha256": "fcbe749f6e5172c610627903c09119299b70b2fe25c090d8bc13c7c68724487b",
+    "response": {
+      "distances": [
+        [
+          0.7977739870548248
+        ]
+      ],
+      "documents": [
+        [
+          "[DOC_ID:quality] Targeted quality evaluation  \nEvaluate only call types affected by each lever. Use objective format, exact-fact, retrieval-overlap, and grounding metrics first. Use a cached non-reasoning judge only when objective comparisons are insufficient."
+        ]
+      ],
+      "metadatas": [
+        [
+          {
+            "content_type": "text/plain; charset=utf-8",
+            "created_by": "b997c815-91d7-4e7f-b9bb-f554a9245ad7",
+            "data": "{}",
+            "embedding_config": "{'engine': 'ollama', 'model': 'nomic-embed-text'}",
+            "file_hash": "01cddb57ba8e51c18e3a7f2a3c46257af80f516da6a1ff1f6306ad80c6c322b9",
+            "file_id": "0b43f959-edd6-4cba-8c80-c42d76fbdeaa",
+            "hash": "01cddb57ba8e51c18e3a7f2a3c46257af80f516da6a1ff1f6306ad80c6c322b9",
+            "name": "teardown-quality.txt",
+            "size": 259,
+            "source": "teardown-quality.txt",
+            "start_index": 0
+          }
+        ]
+      ]
+    },
+    "response_text": "",
+    "retrieved_document_ids": [
+      "quality"
+    ]
+  }
+]

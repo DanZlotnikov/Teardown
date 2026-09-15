@@ -1,0 +1,50 @@
+{
+  "cache_key": "12c84b3b64b8c63381579cf5f87d237f0d04221da53447ff0c42cfe09aa778b0",
+  "call_type": "main_chat_context",
+  "case_id": "context-17",
+  "completion_ms": 1179.738,
+  "condition": "l4-last-3-turns",
+  "endpoint": "/api/chat/completions",
+  "objective_score": 0.0,
+  "payload_sha256": "3ef3b52894627aebc9e1f3bbd5378e479d2f77a2645626beb30408bf53ea392e",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "It seems there might be some confusion; you didn't specify the details of the project name, incident code, and recovery region in your previous messages, so I don't have that information from the first turn. Could you provide these details or give me more context about what you're looking for? That way, I can help you better.",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789441826,
+    "id": "qwen2.5:14b-instruct-4e8228c2-cb5f-4d97-a05f-4ace37086a4b",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m1s",
+      "completion_tokens": 69,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 69,
+      "eval_duration": 1086916000,
+      "input_tokens": 117,
+      "load_duration": 2100100,
+      "output_tokens": 69,
+      "prompt_eval_count": 117,
+      "prompt_eval_duration": 15052000,
+      "prompt_token/s": 7773.05,
+      "prompt_tokens": 117,
+      "response_token/s": 63.48,
+      "total_duration": 1107575000,
+      "total_tokens": 186
+    }
+  },
+  "response_text": "It seems there might be some confusion; you didn't specify the details of the project name, incident code, and recovery region in your previous messages, so I don't have that information from the first turn. Could you provide these details or give me more context about what you're looking for? That way, I can help you better.",
+  "retrieved_document_ids": null
+}

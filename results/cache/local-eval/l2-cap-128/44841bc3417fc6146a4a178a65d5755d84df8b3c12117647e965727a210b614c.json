@@ -1,0 +1,50 @@
+{
+  "cache_key": "44841bc3417fc6146a4a178a65d5755d84df8b3c12117647e965727a210b614c",
+  "call_type": "web_query",
+  "case_id": "query-08",
+  "completion_ms": 706.467,
+  "condition": "l2-cap-128",
+  "endpoint": "/api/v1/tasks/queries/completions",
+  "objective_score": 0.0,
+  "payload_sha256": "806d3227bd691480ede9dc3c9463a487c12a905a4c37e25fad1f45dfbd044e21",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"queries\": [\"Open WebUI disabled models visibility issue fix\", \"How to recover disabled models in Open WebUI admin\", \"Open WebUI model management visibility changes\"]\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789437447,
+    "id": "qwen2.5:14b-instruct-1063d01b-2770-4ef4-885c-7a1d6e5b034a",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 38,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 38,
+      "eval_duration": 606368000,
+      "input_tokens": 408,
+      "load_duration": 1834900,
+      "output_tokens": 38,
+      "prompt_eval_count": 408,
+      "prompt_eval_duration": 43934000,
+      "prompt_token/s": 9286.66,
+      "prompt_tokens": 408,
+      "response_token/s": 62.67,
+      "total_duration": 655996800,
+      "total_tokens": 446
+    }
+  },
+  "response_text": "{\n  \"queries\": [\"Open WebUI disabled models visibility issue fix\", \"How to recover disabled models in Open WebUI admin\", \"Open WebUI model management visibility changes\"]\n}",
+  "retrieved_document_ids": null
+}

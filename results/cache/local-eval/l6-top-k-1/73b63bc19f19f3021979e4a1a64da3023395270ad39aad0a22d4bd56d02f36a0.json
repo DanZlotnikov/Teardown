@@ -1,0 +1,43 @@
+{
+  "cache_key": "73b63bc19f19f3021979e4a1a64da3023395270ad39aad0a22d4bd56d02f36a0",
+  "call_type": "retrieval",
+  "case_id": "retrieval-r05",
+  "completion_ms": 41.977,
+  "condition": "l6-top-k-1",
+  "endpoint": "/api/v1/retrieval/query/collection",
+  "objective_score": 1.0,
+  "payload_sha256": "2ac824fd32a74305fc3b0258cd361a7a74fb8361020eebf3354b133b179d072c",
+  "response": {
+    "distances": [
+      [
+        0.8330086767673492
+      ]
+    ],
+    "documents": [
+      [
+        "[DOC_ID:query-cache] Query reuse  \nENABLE_QUERIES_CACHE stores web-search queries on request state so later file retrieval in the same combined chat request can reuse them. Repeating the standalone query endpoint cannot exercise this optimization."
+      ]
+    ],
+    "metadatas": [
+      [
+        {
+          "content_type": "text/plain; charset=utf-8",
+          "created_by": "b997c815-91d7-4e7f-b9bb-f554a9245ad7",
+          "data": "{}",
+          "embedding_config": "{'engine': 'ollama', 'model': 'nomic-embed-text'}",
+          "file_hash": "82ccc3947e349ada40238a0a113dc89a394122b1592a515ec4af3137bfda00ab",
+          "file_id": "371aa7e1-73b6-43be-9adb-0b829bdd47f4",
+          "hash": "82ccc3947e349ada40238a0a113dc89a394122b1592a515ec4af3137bfda00ab",
+          "name": "teardown-query-cache.txt",
+          "size": 246,
+          "source": "teardown-query-cache.txt",
+          "start_index": 0
+        }
+      ]
+    ]
+  },
+  "response_text": "",
+  "retrieved_document_ids": [
+    "query-cache"
+  ]
+}

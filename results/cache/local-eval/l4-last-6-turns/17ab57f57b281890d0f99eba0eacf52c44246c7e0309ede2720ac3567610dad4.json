@@ -1,0 +1,50 @@
+{
+  "cache_key": "17ab57f57b281890d0f99eba0eacf52c44246c7e0309ede2720ac3567610dad4",
+  "call_type": "main_chat_context",
+  "case_id": "context-04",
+  "completion_ms": 1258.179,
+  "condition": "l4-last-6-turns",
+  "endpoint": "/api/chat/completions",
+  "objective_score": 0.0,
+  "payload_sha256": "cab592fcea310d96aa0b2bb27cf6ad7a1a32e3a76823783e5ff5a9881297016e",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "It seems there might be a misunderstanding; the initial turns of our conversation did not include specific details about a project name, incident code, or recovery region. Could you please provide more context or clarify your request? If you're looking to establish these details for a hypothetical scenario or a specific project, let me know the necessary context, and I'll be happy to assist.",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789440773,
+    "id": "qwen2.5:14b-instruct-b39aeabe-c0d5-4be0-a09c-886958f39ad0",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m1s",
+      "completion_tokens": 75,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 75,
+      "eval_duration": 1196394000,
+      "input_tokens": 222,
+      "load_duration": 1638000,
+      "output_tokens": 75,
+      "prompt_eval_count": 222,
+      "prompt_eval_duration": 20033000,
+      "prompt_token/s": 11081.72,
+      "prompt_tokens": 222,
+      "response_token/s": 62.69,
+      "total_duration": 1221719200,
+      "total_tokens": 297
+    }
+  },
+  "response_text": "It seems there might be a misunderstanding; the initial turns of our conversation did not include specific details about a project name, incident code, or recovery region. Could you please provide more context or clarify your request? If you're looking to establish these details for a hypothetical scenario or a specific project, let me know the necessary context, and I'll be happy to assist.",
+  "retrieved_document_ids": null
+}

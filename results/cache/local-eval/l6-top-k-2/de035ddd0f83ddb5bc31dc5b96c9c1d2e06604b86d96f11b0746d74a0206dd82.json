@@ -1,0 +1,59 @@
+{
+  "cache_key": "de035ddd0f83ddb5bc31dc5b96c9c1d2e06604b86d96f11b0746d74a0206dd82",
+  "call_type": "retrieval",
+  "case_id": "retrieval-r12",
+  "completion_ms": 24.664,
+  "condition": "l6-top-k-2",
+  "endpoint": "/api/v1/retrieval/query/collection",
+  "objective_score": 1.0,
+  "payload_sha256": "e9a7f1d4bb648390c15781513c2a3c342d14123e389ad073b89f329d33212c1a",
+  "response": {
+    "distances": [
+      [
+        0.8133397996425629,
+        0.7578523755073547
+      ]
+    ],
+    "documents": [
+      [
+        "[DOC_ID:quality] Targeted quality evaluation  \nEvaluate only call types affected by each lever. Use objective format, exact-fact, retrieval-overlap, and grounding metrics first. Use a cached non-reasoning judge only when objective comparisons are insufficient.",
+        "[DOC_ID:title-template] Title history syntax  \nTitle prompt templates select messages with MESSAGES START, END, or MIDDLETRUNCATE counts. Optional start, end, and middletruncate filters limit characters within every selected message. These native limits do not count tokenizer tokens."
+      ]
+    ],
+    "metadatas": [
+      [
+        {
+          "content_type": "text/plain; charset=utf-8",
+          "created_by": "b997c815-91d7-4e7f-b9bb-f554a9245ad7",
+          "data": "{}",
+          "embedding_config": "{'engine': 'ollama', 'model': 'nomic-embed-text'}",
+          "file_hash": "01cddb57ba8e51c18e3a7f2a3c46257af80f516da6a1ff1f6306ad80c6c322b9",
+          "file_id": "0b43f959-edd6-4cba-8c80-c42d76fbdeaa",
+          "hash": "01cddb57ba8e51c18e3a7f2a3c46257af80f516da6a1ff1f6306ad80c6c322b9",
+          "name": "teardown-quality.txt",
+          "size": 259,
+          "source": "teardown-quality.txt",
+          "start_index": 0
+        },
+        {
+          "content_type": "text/plain; charset=utf-8",
+          "created_by": "b997c815-91d7-4e7f-b9bb-f554a9245ad7",
+          "data": "{}",
+          "embedding_config": "{'engine': 'ollama', 'model': 'nomic-embed-text'}",
+          "file_hash": "e5c79eebe87c7fbc26ee23c9060b86d7c2e063aec2192dafc247c883db87806c",
+          "file_id": "82395368-bbd1-493d-8ca9-79da82bcd982",
+          "hash": "e5c79eebe87c7fbc26ee23c9060b86d7c2e063aec2192dafc247c883db87806c",
+          "name": "teardown-title-template.txt",
+          "size": 283,
+          "source": "teardown-title-template.txt",
+          "start_index": 0
+        }
+      ]
+    ]
+  },
+  "response_text": "",
+  "retrieved_document_ids": [
+    "quality",
+    "title-template"
+  ]
+}

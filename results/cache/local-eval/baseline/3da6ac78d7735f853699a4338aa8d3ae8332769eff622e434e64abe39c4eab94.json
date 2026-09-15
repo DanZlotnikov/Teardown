@@ -1,0 +1,50 @@
+{
+  "cache_key": "3da6ac78d7735f853699a4338aa8d3ae8332769eff622e434e64abe39c4eab94",
+  "call_type": "autocomplete",
+  "case_id": "autocomplete-03",
+  "completion_ms": 513.439,
+  "condition": "baseline",
+  "endpoint": "/api/v1/tasks/auto/completions",
+  "objective_score": 1.0,
+  "payload_sha256": "86622dfb374fb748db4a48452e4d70d7e3572aaf1af19ab67c52f061d8269874",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{ \"text\": \"ensure all transactions are recorded accurately and securely, providing a clear audit trail for financial and operational purposes.\" }",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789436542,
+    "id": "qwen2.5:14b-instruct-62107ae9-1ade-4d4d-b106-6a45de9f267b",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 27,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 27,
+      "eval_duration": 426610000,
+      "input_tokens": 373,
+      "load_duration": 1565100,
+      "output_tokens": 27,
+      "prompt_eval_count": 373,
+      "prompt_eval_duration": 33070000,
+      "prompt_token/s": 11279.1,
+      "prompt_tokens": 373,
+      "response_token/s": 63.29,
+      "total_duration": 464033600,
+      "total_tokens": 400
+    }
+  },
+  "response_text": "{ \"text\": \"ensure all transactions are recorded accurately and securely, providing a clear audit trail for financial and operational purposes.\" }",
+  "retrieved_document_ids": null
+}

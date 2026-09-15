@@ -1,0 +1,50 @@
+{
+  "cache_key": "bb4fd5e85a3d1b66f6a6278a505abd9a8761da2e5a4057696ff0c1822071df1b",
+  "call_type": "main_chat_context",
+  "case_id": "context-06",
+  "completion_ms": 753.419,
+  "condition": "l4-last-10-turns",
+  "endpoint": "/api/chat/completions",
+  "objective_score": 1.0,
+  "payload_sha256": "ad80a91f30311bb91c49af85e232c8460f6b39c5c81ae91b83263fc68780491b",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "From the first turn, you mentioned Project Kestrel-06, which uses incident code OWUI-7306, and its recovery region is Osaka.",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789439741,
+    "id": "qwen2.5:14b-instruct-269c5451-efd2-4152-83d2-4d015a77fb1b",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 35,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 35,
+      "eval_duration": 541074000,
+      "input_tokens": 333,
+      "load_duration": 1850200,
+      "output_tokens": 35,
+      "prompt_eval_count": 333,
+      "prompt_eval_duration": 124262000,
+      "prompt_token/s": 2679.82,
+      "prompt_tokens": 333,
+      "response_token/s": 64.69,
+      "total_duration": 702423800,
+      "total_tokens": 368
+    }
+  },
+  "response_text": "From the first turn, you mentioned Project Kestrel-06, which uses incident code OWUI-7306, and its recovery region is Osaka.",
+  "retrieved_document_ids": null
+}

@@ -1,0 +1,3752 @@
+[
+  {
+    "cache_key": "17feaf075823df0d027c87d65ca23ebb3f22a7ead964c3222b8cf63ed5e744d7",
+    "call_type": "title",
+    "case_id": "title-01",
+    "completion_ms": 333.181,
+    "condition": "l2-cap-32",
+    "endpoint": "/api/v1/tasks/title/completions",
+    "objective_score": 1.0,
+    "payload_sha256": "2585e2971151dc6e1d2ae733bc3d9895f71a308e2dc7c9258183ecf965192476",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "logprobs": null,
+          "message": {
+            "content": "{ \"title\": \"WebUI Chat Behavior\" }",
+            "role": "assistant"
+          }
+        }
+      ],
+      "created": 1789437614,
+      "id": "qwen2.5:14b-instruct-923c98c5-14c7-492d-8647-4a8e4540ddc4",
+      "model": "qwen2.5:14b-instruct",
+      "object": "chat.completion",
+      "usage": {
+        "approximate_total": "0h0m0s",
+        "completion_tokens": 12,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        "eval_count": 12,
+        "eval_duration": 185567000,
+        "input_tokens": 353,
+        "load_duration": 2309400,
+        "output_tokens": 12,
+        "prompt_eval_count": 353,
+        "prompt_eval_duration": 48652000,
+        "prompt_token/s": 7255.61,
+        "prompt_tokens": 353,
+        "response_token/s": 64.67,
+        "total_duration": 272846500,
+        "total_tokens": 365
+      }
+    },
+    "response_text": "{ \"title\": \"WebUI Chat Behavior\" }",
+    "retrieved_document_ids": null
+  },
+  {
+    "cache_key": "9149212cbc25ea247c8d770275c1fe37adff7a27234269ac1e886808fb3cfb08",
+    "call_type": "title",
+    "case_id": "title-02",
+    "completion_ms": 281.72,
+    "condition": "l2-cap-32",
+    "endpoint": "/api/v1/tasks/title/completions",
+    "objective_score": 1.0,
+    "payload_sha256": "da0776ffc8c2ccf0820992d1120d666d128a71a2d24bad88b1ea6d5b3674f736",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "logprobs": null,
+          "message": {
+            "content": "{ \"title\": \"WebUI Upgrade Issues\" }",
+            "role": "assistant"
+          }
+        }
+      ],
+      "created": 1789437614,
+      "id": "qwen2.5:14b-instruct-eacf22d8-daac-4de7-b602-41b511959280",
+      "model": "qwen2.5:14b-instruct",
+      "object": "chat.completion",
+      "usage": {
+        "approximate_total": "0h0m0s",
+        "completion_tokens": 12,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        "eval_count": 12,
+        "eval_duration": 179024000,
+        "input_tokens": 378,
+        "load_duration": 1576800,
+        "output_tokens": 12,
+        "prompt_eval_count": 378,
+        "prompt_eval_duration": 60584000,
+        "prompt_token/s": 6239.27,
+        "prompt_tokens": 378,
+        "response_token/s": 67.03,
+        "total_duration": 245984800,
+        "total_tokens": 390
+      }
+    },
+    "response_text": "{ \"title\": \"WebUI Upgrade Issues\" }",
+    "retrieved_document_ids": null
+  },
+  {
+    "cache_key": "ebdbeba773f950eea46f9813b991c4af34c094367e7356d96c4c62cd072f4f09",
+    "call_type": "title",
+    "case_id": "title-03",
+    "completion_ms": 258.864,
+    "condition": "l2-cap-32",
+    "endpoint": "/api/v1/tasks/title/completions",
+    "objective_score": 1.0,
+    "payload_sha256": "4c83c2b606fbf0c13d211d17afbd70f2223c8eea3933c99793f84cd1bdc629e7",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "logprobs": null,
+          "message": {
+            "content": "{ \"title\": \"OAuth Disconnect Issue\" }",
+            "role": "assistant"
+          }
+        }
+      ],
+      "created": 1789437614,
+      "id": "qwen2.5:14b-instruct-0d7917be-d8d0-48c5-8e4b-67121f837083",
+      "model": "qwen2.5:14b-instruct",
+      "object": "chat.completion",
+      "usage": {
+        "approximate_total": "0h0m0s",
+        "completion_tokens": 11,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        "eval_count": 11,
+        "eval_duration": 164304000,
+        "input_tokens": 345,
+        "load_duration": 1608500,
+        "output_tokens": 11,
+        "prompt_eval_count": 345,
+        "prompt_eval_duration": 49026000,
+        "prompt_token/s": 7037.08,
+        "prompt_tokens": 345,
+        "response_token/s": 66.95,
+        "total_duration": 219586200,
+        "total_tokens": 356
+      }
+    },
+    "response_text": "{ \"title\": \"OAuth Disconnect Issue\" }",
+    "retrieved_document_ids": null
+  },
+  {
+    "cache_key": "50d6c5cf928316872edf6040cdf0f7f9e46ef6ea392c85c0c2334a8e56445a11",
+    "call_type": "title",
+    "case_id": "title-04",
+    "completion_ms": 265.069,
+    "condition": "l2-cap-32",
+    "endpoint": "/api/v1/tasks/title/completions",
+    "objective_score": 1.0,
+    "payload_sha256": "1e777c597db9e97959f221c9eead991b8d0e008b3a365897c12e0f58251b89df",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "logprobs": null,
+          "message": {
+            "content": "{ \"title\": \"Open WebUI Behavior\" }",
+            "role": "assistant"
+          }
+        }
+      ],
+      "created": 1789437614,
+      "id": "qwen2.5:14b-instruct-bdb7dbed-6cd1-4cc7-a2dd-cfe12cccc16f",
+      "model": "qwen2.5:14b-instruct",
+      "object": "chat.completion",
+      "usage": {
+        "approximate_total": "0h0m0s",
+        "completion_tokens": 12,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        "eval_count": 12,
+        "eval_duration": 182387000,
+        "input_tokens": 332,
+        "load_duration": 1054000,
+        "output_tokens": 12,
+        "prompt_eval_count": 332,
+        "prompt_eval_duration": 45060000,
+        "prompt_token/s": 7367.95,
+        "prompt_tokens": 332,
+        "response_token/s": 65.79,
+        "total_duration": 231670800,
+        "total_tokens": 344
+      }
+    },
+    "response_text": "{ \"title\": \"Open WebUI Behavior\" }",
+    "retrieved_document_ids": null
+  },
+  {
+    "cache_key": "081c81bbea32c345c6bfa45cce961733d2cd3ad6220dc3c908b0831f6f2e1e88",
+    "call_type": "title",
+    "case_id": "title-05",
+    "completion_ms": 251.583,
+    "condition": "l2-cap-32",
+    "endpoint": "/api/v1/tasks/title/completions",
+    "objective_score": 1.0,
+    "payload_sha256": "a4335622a50d2091454ecdea797035df21b59316242666d7895482aaa739c687",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "logprobs": null,
+          "message": {
+            "content": "{ \"title\": \"Model List Refresh\" }",
+            "role": "assistant"
+          }
+        }
+      ],
+      "created": 1789437615,
+      "id": "qwen2.5:14b-instruct-d778545b-47d7-48ea-a3f9-1a51bf77a37f",
+      "model": "qwen2.5:14b-instruct",
+      "object": "chat.completion",
+      "usage": {
+        "approximate_total": "0h0m0s",
+        "completion_tokens": 11,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        "eval_count": 11,
+        "eval_duration": 173326000,
+        "input_tokens": 346,
+        "load_duration": 2573600,
+        "output_tokens": 11,
+        "prompt_eval_count": 346,
+        "prompt_eval_duration": 52649000,
+        "prompt_token/s": 6571.82,
+        "prompt_tokens": 346,
+        "response_token/s": 63.46,
+        "total_duration": 233502200,
+        "total_tokens": 357
+      }
+    },
+    "response_text": "{ \"title\": \"Model List Refresh\" }",
+    "retrieved_document_ids": null
+  },
+  {
+    "cache_key": "68e1ac0f14b53deac62c12edb06c371b230dc640a46aaff139a51b3861014506",
+    "call_type": "title",
+    "case_id": "title-06",
+    "completion_ms": 264.833,
+    "condition": "l2-cap-32",
+    "endpoint": "/api/v1/tasks/title/completions",
+    "objective_score": 1.0,
+    "payload_sha256": "a0f126270471e6e4662e01aa29676f4ae3bd28d3ed4da50abb2d1d4fdbaaed09",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "logprobs": null,
+          "message": {
+            "content": "{ \"title\": \"Open WebUI Behavior\" }",
+            "role": "assistant"
+          }
+        }
+      ],
+      "created": 1789437615,
+      "id": "qwen2.5:14b-instruct-8fdd4edb-f1e3-4704-8ab4-1c35bc2a7f86",
+      "model": "qwen2.5:14b-instruct",
+      "object": "chat.completion",
+      "usage": {
+        "approximate_total": "0h0m0s",
+        "completion_tokens": 12,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        "eval_count": 12,
+        "eval_duration": 183546000,
+        "input_tokens": 369,
+        "load_duration": 1047000,
+        "output_tokens": 12,
+        "prompt_eval_count": 369,
+        "prompt_eval_duration": 56842000,
+        "prompt_token/s": 6491.68,
+        "prompt_tokens": 369,
+        "response_token/s": 65.38,
+        "total_duration": 247098400,
+        "total_tokens": 381
+      }
+    },
+    "response_text": "{ \"title\": \"Open WebUI Behavior\" }",
+    "retrieved_document_ids": null
+  },
+  {
+    "cache_key": "0efa5f825307c4f89b746520c36258db9f277e2cabcfa951aefbdc6f2c37b0c4",
+    "call_type": "title",
+    "case_id": "title-07",
+    "completion_ms": 271.192,
+    "condition": "l2-cap-32",
+    "endpoint": "/api/v1/tasks/title/completions",
+    "objective_score": 1.0,
+    "payload_sha256": "d519e26b97655a9353da6c0d0e1d2257a86fdaa3649dee1766d07eda604223b3",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "logprobs": null,
+          "message": {
+            "content": "{ \"title\": \"File Preview Issue\" }",
+            "role": "assistant"
+          }
+        }
+      ],
+      "created": 1789437615,
+      "id": "qwen2.5:14b-instruct-bd4c8cb7-15e4-4e2f-8664-54efacc0b06a",
+      "model": "qwen2.5:14b-instruct",
+      "object": "chat.completion",
+      "usage": {
+        "approximate_total": "0h0m0s",
+        "completion_tokens": 11,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        "eval_count": 11,
+        "eval_duration": 165245000,
+        "input_tokens": 338,
+        "load_duration": 1711700,
+        "output_tokens": 11,
+        "prompt_eval_count": 338,
+        "prompt_eval_duration": 45881000,
+        "prompt_token/s": 7366.88,
+        "prompt_tokens": 338,
+        "response_token/s": 66.57,
+        "total_duration": 217445100,
+        "total_tokens": 349
+      }
+    },
+    "response_text": "{ \"title\": \"File Preview Issue\" }",
+    "retrieved_document_ids": null
+  },
+  {
+    "cache_key": "c4b8e509c373f01ceff7a269241bd33e732b0be071853cfffbbae6264893cb18",
+    "call_type": "title",
+    "case_id": "title-08",
+    "completion_ms": 284.087,
+    "condition": "l2-cap-32",
+    "endpoint": "/api/v1/tasks/title/completions",
+    "objective_score": 1.0,
+    "payload_sha256": "f0942bd2b62e54668c7c71e721a3e11167bc66204bae543a8bde0896297850c1",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "logprobs": null,
+          "message": {
+            "content": "{ \"title\": \"WebUI Accessibility\" }",
+            "role": "assistant"
+          }
+        }
+      ],
+      "created": 1789437615,
+      "id": "qwen2.5:14b-instruct-4afe853c-002d-43b0-80b8-473b00ea5577",
+      "model": "qwen2.5:14b-instruct",
+      "object": "chat.completion",
+      "usage": {
+        "approximate_total": "0h0m0s",
+        "completion_tokens": 11,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        "eval_count": 11,
+        "eval_duration": 164463000,
+        "input_tokens": 401,
+        "load_duration": 1573900,
+        "output_tokens": 11,
+        "prompt_eval_count": 401,
+        "prompt_eval_duration": 71037000,
+        "prompt_token/s": 5644.95,
+        "prompt_tokens": 401,
+        "response_token/s": 66.88,
+        "total_duration": 241503000,
+        "total_tokens": 412
+      }
+    },
+    "response_text": "{ \"title\": \"WebUI Accessibility\" }",
+    "retrieved_document_ids": null
+  },
+  {
+    "cache_key": "40d713d4c990af44243a4b2939eb71901551a25986dda94c3909c700214c2682",
+    "call_type": "title",
+    "case_id": "title-09",
+    "completion_ms": 256.272,
+    "condition": "l2-cap-32",
+    "endpoint": "/api/v1/tasks/title/completions",
+    "objective_score": 1.0,
+    "payload_sha256": "8823e84e4de0b668d1fc2a064c0aee072d0b85c2130958fb3e72147af65bfdc1",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "logprobs": null,
+          "message": {
+            "content": "{ \"title\": \"Translation Updates\" }",
+            "role": "assistant"
+          }
+        }
+      ],
+      "created": 1789437616,
+      "id": "qwen2.5:14b-instruct-e0924553-8791-4c31-a3aa-aafaf87bf397",
+      "model": "qwen2.5:14b-instruct",
+      "object": "chat.completion",
+      "usage": {
+        "approximate_total": "0h0m0s",
+        "completion_tokens": 10,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        "eval_count": 10,
+        "eval_duration": 149438000,
+        "input_tokens": 343,
+        "load_duration": 1528800,
+        "output_tokens": 10,
+        "prompt_eval_count": 343,
+        "prompt_eval_duration": 49698000,
+        "prompt_token/s": 6901.69,
+        "prompt_tokens": 343,
+        "response_token/s": 66.92,
+        "total_duration": 204272300,
+        "total_tokens": 353
+      }
+    },
+    "response_text": "{ \"title\": \"Translation Updates\" }",
+    "retrieved_document_ids": null
+  },
+  {
+    "cache_key": "2feff4b571a1da6758d5c0b9e6b978d62d62425a4aa16a924845856c9d26d658",
+    "call_type": "title",
+    "case_id": "title-10",
+    "completion_ms": 290.924,
+    "condition": "l2-cap-32",
+    "endpoint": "/api/v1/tasks/title/completions",
+    "objective_score": 1.0,
+    "payload_sha256": "570fd827f4d0c61ad826cc2e439624ab432d758dd85f5eee11e96e4b9be3f182",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "logprobs": null,
+          "message": {
+            "content": "{ \"title\": \"Open WebUI Issues\" }",
+            "role": "assistant"
+          }
+        }
+      ],
+      "created": 1789437616,
+      "id": "qwen2.5:14b-instruct-3eacc1b8-bb35-4e46-91bb-1a72ba7eed10",
+      "model": "qwen2.5:14b-instruct",
+      "object": "chat.completion",
+      "usage": {
+        "approximate_total": "0h0m0s",
+        "completion_tokens": 12,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        "eval_count": 12,
+        "eval_duration": 183548000,
+        "input_tokens": 338,
+        "load_duration": 2235400,
+        "output_tokens": 12,
+        "prompt_eval_count": 338,
+        "prompt_eval_duration": 46277000,
+        "prompt_token/s": 7303.84,
+        "prompt_tokens": 338,
+        "response_token/s": 65.38,
+        "total_duration": 236121600,
+        "total_tokens": 350
+      }
+    },
+    "response_text": "{ \"title\": \"Open WebUI Issues\" }",
+    "retrieved_document_ids": null
+  },
+  {
+    "cache_key": "33109027477d310cc90ffeb185e0027ec6e3118aa8702f63ed755a78741dc10f",
+    "call_type": "title",
+    "case_id": "title-11",
+    "completion_ms": 257.129,
+    "condition": "l2-cap-32",
+    "endpoint": "/api/v1/tasks/title/completions",
+    "objective_score": 1.0,
+    "payload_sha256": "5b51c79d19caa2321bc0aeb75491cc6ad2d9a299f1c7b95e9c8d9d7faa8e28e8",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "logprobs": null,
+          "message": {
+            "content": "{ \"title\": \"WebUI Streaming\" }",
+            "role": "assistant"
+          }
+        }
+      ],
+      "created": 1789437616,
+      "id": "qwen2.5:14b-instruct-7cd2c244-469b-44e8-84d2-552d8833b970",
+      "model": "qwen2.5:14b-instruct",
+      "object": "chat.completion",
+      "usage": {
+        "approximate_total": "0h0m0s",
+        "completion_tokens": 11,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        "eval_count": 11,
+        "eval_duration": 164299000,
+        "input_tokens": 335,
+        "load_duration": 2306500,
+        "output_tokens": 11,
+        "prompt_eval_count": 335,
+        "prompt_eval_duration": 44802000,
+        "prompt_token/s": 7477.34,
+        "prompt_tokens": 335,
+        "response_token/s": 66.95,
+        "total_duration": 215644600,
+        "total_tokens": 346
+      }
+    },
+    "response_text": "{ \"title\": \"WebUI Streaming\" }",
+    "retrieved_document_ids": null
+  },
+  {
+    "cache_key": "8c2006479de3459d0320e5a7523600c993d38a487255c572ac5e0ce9e15c049d",
+    "call_type": "title",
+    "case_id": "title-12",
+    "completion_ms": 261.099,
+    "condition": "l2-cap-32",
+    "endpoint": "/api/v1/tasks/title/completions",
+    "objective_score": 1.0,
+    "payload_sha256": "64d580881b50e924f8c77380f21fba0e05c42eb77d039ede69e02934ca331060",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "logprobs": null,
+          "message": {
+            "content": "{ \"title\": \"Open WebUI Behavior\" }",
+            "role": "assistant"
+          }
+        }
+      ],
+      "created": 1789437617,
+      "id": "qwen2.5:14b-instruct-73f59970-b660-407a-8986-3e3b537fa861",
+      "model": "qwen2.5:14b-instruct",
+      "object": "chat.completion",
+      "usage": {
+        "approximate_total": "0h0m0s",
+        "completion_tokens": 12,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        "eval_count": 12,
+        "eval_duration": 180412000,
+        "input_tokens": 336,
+        "load_duration": 1779600,
+        "output_tokens": 12,
+        "prompt_eval_count": 336,
+        "prompt_eval_duration": 44099000,
+        "prompt_token/s": 7619.22,
+        "prompt_tokens": 336,
+        "response_token/s": 66.51,
+        "total_duration": 230309300,
+        "total_tokens": 348
+      }
+    },
+    "response_text": "{ \"title\": \"Open WebUI Behavior\" }",
+    "retrieved_document_ids": null
+  },
+  {
+    "cache_key": "a5e4e2c39ba77fd6cc82b24d7c7a8c3c8a973427d1173ab8181f97fb3b46404f",
+    "call_type": "title",
+    "case_id": "title-13",
+    "completion_ms": 257.95,
+    "condition": "l2-cap-32",
+    "endpoint": "/api/v1/tasks/title/completions",
+    "objective_score": 1.0,
+    "payload_sha256": "b257f3bcfa9c88702db86b0634cb27f7413902e6887ee8b475446f0f755a766a",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "logprobs": null,
+          "message": {
+            "content": "{ \"title\": \"Open WebUI Behavior\" }",
+            "role": "assistant"
+          }
+        }
+      ],
+      "created": 1789437617,
+      "id": "qwen2.5:14b-instruct-05d70c43-b39d-4d6d-8912-fe4a90c0c667",
+      "model": "qwen2.5:14b-instruct",
+      "object": "chat.completion",
+      "usage": {
+        "approximate_total": "0h0m0s",
+        "completion_tokens": 12,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        "eval_count": 12,
+        "eval_duration": 183324000,
+        "input_tokens": 352,
+        "load_duration": 1253300,
+        "output_tokens": 12,
+        "prompt_eval_count": 352,
+        "prompt_eval_duration": 53315000,
+        "prompt_token/s": 6602.27,
+        "prompt_tokens": 352,
+        "response_token/s": 65.46,
+        "total_duration": 242083000,
+        "total_tokens": 364
+      }
+    },
+    "response_text": "{ \"title\": \"Open WebUI Behavior\" }",
+    "retrieved_document_ids": null
+  },
+  {
+    "cache_key": "bea80ee1c64af315b052a8c50ee15b608d68ed3015a0ee276dcaff77b4c34ebc",
+    "call_type": "title",
+    "case_id": "title-14",
+    "completion_ms": 261.784,
+    "condition": "l2-cap-32",
+    "endpoint": "/api/v1/tasks/title/completions",
+    "objective_score": 1.0,
+    "payload_sha256": "249474cd867b76086c78c5e8e70ce0f3a0edb27b43d34858d202e498de94312f",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "logprobs": null,
+          "message": {
+            "content": "{ \"title\": \"Open WebUI Issue\" }",
+            "role": "assistant"
+          }
+        }
+      ],
+      "created": 1789437617,
+      "id": "qwen2.5:14b-instruct-bf3822d3-d0ef-4cff-8095-8ea356f2159b",
+      "model": "qwen2.5:14b-instruct",
+      "object": "chat.completion",
+      "usage": {
+        "approximate_total": "0h0m0s",
+        "completion_tokens": 12,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        "eval_count": 12,
+        "eval_duration": 179531000,
+        "input_tokens": 337,
+        "load_duration": 1794000,
+        "output_tokens": 12,
+        "prompt_eval_count": 337,
+        "prompt_eval_duration": 46663000,
+        "prompt_token/s": 7222.0,
+        "prompt_tokens": 337,
+        "response_token/s": 66.84,
+        "total_duration": 232940000,
+        "total_tokens": 349
+      }
+    },
+    "response_text": "{ \"title\": \"Open WebUI Issue\" }",
+    "retrieved_document_ids": null
+  },
+  {
+    "cache_key": "a1d5a3f42a296808f1bb6df175e10fa7e4b520d7bfc9ee4cd81045d496678ea4",
+    "call_type": "title",
+    "case_id": "title-15",
+    "completion_ms": 289.168,
+    "condition": "l2-cap-32",
+    "endpoint": "/api/v1/tasks/title/completions",
+    "objective_score": 1.0,
+    "payload_sha256": "c823f5b696420ddcee8c6bd5b3bcc9c8bae93ce1022f3d38082c82c24390ff99",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "logprobs": null,
+          "message": {
+            "content": "{ \"title\": \"WebUI Banners\" }",
+            "role": "assistant"
+          }
+        }
+      ],
+      "created": 1789437617,
+      "id": "qwen2.5:14b-instruct-43cca3c1-740b-42a9-aa71-b2db7a52eeff",
+      "model": "qwen2.5:14b-instruct",
+      "object": "chat.completion",
+      "usage": {
+        "approximate_total": "0h0m0s",
+        "completion_tokens": 12,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        "eval_count": 12,
+        "eval_duration": 181867000,
+        "input_tokens": 322,
+        "load_duration": 1753400,
+        "output_tokens": 12,
+        "prompt_eval_count": 322,
+        "prompt_eval_duration": 41284000,
+        "prompt_token/s": 7799.63,
+        "prompt_tokens": 322,
+        "response_token/s": 65.98,
+        "total_duration": 228894900,
+        "total_tokens": 334
+      }
+    },
+    "response_text": "{ \"title\": \"WebUI Banners\" }",
+    "retrieved_document_ids": null
+  },
+  {
+    "cache_key": "aa3f92999dfef992920d56860d4a5990d64df5b8847e0da5dfd7e2e2f0b56077",
+    "call_type": "title",
+    "case_id": "title-16",
+    "completion_ms": 262.556,
+    "condition": "l2-cap-32",
+    "endpoint": "/api/v1/tasks/title/completions",
+    "objective_score": 1.0,
+    "payload_sha256": "47a170d67397992545acc682a87ec9004fabce46082550ea9f748f76f36b0bb1",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "logprobs": null,
+          "message": {
+            "content": "{ \"title\": \"Open WebUI Issue\" }",
+            "role": "assistant"
+          }
+        }
+      ],
+      "created": 1789437618,
+      "id": "qwen2.5:14b-instruct-84ad013c-071f-4ec8-9298-720a1769b886",
+      "model": "qwen2.5:14b-instruct",
+      "object": "chat.completion",
+      "usage": {
+        "approximate_total": "0h0m0s",
+        "completion_tokens": 12,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        "eval_count": 12,
+        "eval_duration": 180415000,
+        "input_tokens": 341,
+        "load_duration": 1664700,
+        "output_tokens": 12,
+        "prompt_eval_count": 341,
+        "prompt_eval_duration": 45652000,
+        "prompt_token/s": 7469.55,
+        "prompt_tokens": 341,
+        "response_token/s": 66.51,
+        "total_duration": 232219900,
+        "total_tokens": 353
+      }
+    },
+    "response_text": "{ \"title\": \"Open WebUI Issue\" }",
+    "retrieved_document_ids": null
+  },
+  {
+    "cache_key": "5f829d518548e881c400ac6cef73947ff9da74eb886ee86cff4f04d58b9a9ab0",
+    "call_type": "title",
+    "case_id": "title-17",
+    "completion_ms": 267.576,
+    "condition": "l2-cap-32",
+    "endpoint": "/api/v1/tasks/title/completions",
+    "objective_score": 1.0,
+    "payload_sha256": "da7ca6c1b0ab508f1b662fff58ee71d180ace2ef80986617fdff395faf7e528f",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "logprobs": null,
+          "message": {
+            "content": "{ \"title\": \"WebUI Behavior\" }",
+            "role": "assistant"
+          }
+        }
+      ],
+      "created": 1789437618,
+      "id": "qwen2.5:14b-instruct-26d67a27-82c1-437e-acd6-500e06a5954a",
+      "model": "qwen2.5:14b-instruct",
+      "object": "chat.completion",
+      "usage": {
+        "approximate_total": "0h0m0s",
+        "completion_tokens": 11,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        "eval_count": 11,
+        "eval_duration": 163568000,
+        "input_tokens": 349,
+        "load_duration": 2084500,
+        "output_tokens": 11,
+        "prompt_eval_count": 349,
+        "prompt_eval_duration": 49850000,
+        "prompt_token/s": 7001.0,
+        "prompt_tokens": 349,
+        "response_token/s": 67.25,
+        "total_duration": 219903900,
+        "total_tokens": 360
+      }
+    },
+    "response_text": "{ \"title\": \"WebUI Behavior\" }",
+    "retrieved_document_ids": null
+  },
+  {
+    "cache_key": "daed1c8b88a92d4c07c8b979ba207485437dc83a21396c57bfb9893de5629520",
+    "call_type": "title",
+    "case_id": "title-18",
+    "completion_ms": 291.231,
+    "condition": "l2-cap-32",
+    "endpoint": "/api/v1/tasks/title/completions",
+    "objective_score": 1.0,
+    "payload_sha256": "0d2c40ab952d4a5654526ddc3aca7f847348219f0a7f4906bacb4c1c80eb48a1",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "logprobs": null,
+          "message": {
+            "content": "{ \"title\": \"WebUI Model Behavior\" }",
+            "role": "assistant"
+          }
+        }
+      ],
+      "created": 1789437618,
+      "id": "qwen2.5:14b-instruct-7eaf02bd-d119-4a00-a283-757b405c90d5",
+      "model": "qwen2.5:14b-instruct",
+      "object": "chat.completion",
+      "usage": {
+        "approximate_total": "0h0m0s",
+        "completion_tokens": 12,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        "eval_count": 12,
+        "eval_duration": 184251000,
+        "input_tokens": 340,
+        "load_duration": 1662800,
+        "output_tokens": 12,
+        "prompt_eval_count": 340,
+        "prompt_eval_duration": 45091000,
+        "prompt_token/s": 7540.31,
+        "prompt_tokens": 340,
+        "response_token/s": 65.13,
+        "total_duration": 234736800,
+        "total_tokens": 352
+      }
+    },
+    "response_text": "{ \"title\": \"WebUI Model Behavior\" }",
+    "retrieved_document_ids": null
+  },
+  {
+    "cache_key": "92f55dd21bb8688c802dbee8a952df466e29380d1ef0006bc232cfd06ff224cc",
+    "call_type": "title",
+    "case_id": "title-19",
+    "completion_ms": 702.486,
+    "condition": "l2-cap-32",
+    "endpoint": "/api/v1/tasks/title/completions",
+    "objective_score": 1.0,
+    "payload_sha256": "0eb9f606a9cadd6a40afde9ae7d53bd17d5abd28c5adae804e400961eaf1d15a",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "logprobs": null,
+          "message": {
+            "content": "{ \"title\": \"Open WebUI Admin Changes\" }",
+            "role": "assistant"
+          }
+        }
+      ],
+      "created": 1789437619,
+      "id": "qwen2.5:14b-instruct-7a97dbe9-bcd2-428e-8f0e-872d3826dc82",
+      "model": "qwen2.5:14b-instruct",
+      "object": "chat.completion",
+      "usage": {
+        "approximate_total": "0h0m0s",
+        "completion_tokens": 13,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        "eval_count": 13,
+        "eval_duration": 230640000,
+        "input_tokens": 11224,
+        "load_duration": 2164100,
+        "output_tokens": 13,
+        "prompt_eval_count": 11224,
+        "prompt_eval_duration": 36506000,
+        "prompt_token/s": 307456.31,
+        "prompt_tokens": 11224,
+        "response_token/s": 56.36,
+        "total_duration": 645342600,
+        "total_tokens": 11237
+      }
+    },
+    "response_text": "{ \"title\": \"Open WebUI Admin Changes\" }",
+    "retrieved_document_ids": null
+  },
+  {
+    "cache_key": "b52b22e66828f9c8c9de4057c59e69b939a11af073b81321fe59df259ff5b27b",
+    "call_type": "title",
+    "case_id": "title-20",
+    "completion_ms": 776.554,
+    "condition": "l2-cap-32",
+    "endpoint": "/api/v1/tasks/title/completions",
+    "objective_score": 1.0,
+    "payload_sha256": "b3648593999a306bc4176760aef4a5839dd55cb031984fbe0e51de13399d0ff2",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "logprobs": null,
+          "message": {
+            "content": "{ \"title\": \"Calendar Bug\" }",
+            "role": "assistant"
+          }
+        }
+      ],
+      "created": 1789437620,
+      "id": "qwen2.5:14b-instruct-0e72c419-c934-4ed4-906d-0950081696ca",
+      "model": "qwen2.5:14b-instruct",
+      "object": "chat.completion",
+      "usage": {
+        "approximate_total": "0h0m0s",
+        "completion_tokens": 10,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        "eval_count": 10,
+        "eval_duration": 155241000,
+        "input_tokens": 332,
+        "load_duration": 1610600,
+        "output_tokens": 10,
+        "prompt_eval_count": 332,
+        "prompt_eval_duration": 44559000,
+        "prompt_token/s": 7450.8,
+        "prompt_tokens": 332,
+        "response_token/s": 64.42,
+        "total_duration": 748225000,
+        "total_tokens": 342
+      }
+    },
+    "response_text": "{ \"title\": \"Calendar Bug\" }",
+    "retrieved_document_ids": null
+  },
+  {
+    "cache_key": "e0a4ebe706cdfbe9a937a1355120f6e27b35f345bfda5961fbe3e0fa2d1e55de",
+    "call_type": "title",
+    "case_id": "title-21",
+    "completion_ms": 256.525,
+    "condition": "l2-cap-32",
+    "endpoint": "/api/v1/tasks/title/completions",
+    "objective_score": 1.0,
+    "payload_sha256": "56c7b0ead7786b7418277150f0ba6a44d3cfba2f6e03e57b7483114ee21ecf2a",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "logprobs": null,
+          "message": {
+            "content": "{ \"title\": \"Automation Behavior\" }",
+            "role": "assistant"
+          }
+        }
+      ],
+      "created": 1789437620,
+      "id": "qwen2.5:14b-instruct-c8116d5b-bc99-4786-ad3f-c1fe2c796539",
+      "model": "qwen2.5:14b-instruct",
+      "object": "chat.completion",
+      "usage": {
+        "approximate_total": "0h0m0s",
+        "completion_tokens": 10,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        "eval_count": 10,
+        "eval_duration": 152909000,
+        "input_tokens": 341,
+        "load_duration": 1590400,
+        "output_tokens": 10,
+        "prompt_eval_count": 341,
+        "prompt_eval_duration": 54213000,
+        "prompt_token/s": 6290.0,
+        "prompt_tokens": 341,
+        "response_token/s": 65.4,
+        "total_duration": 213589100,
+        "total_tokens": 351
+      }
+    },
+    "response_text": "{ \"title\": \"Automation Behavior\" }",
+    "retrieved_document_ids": null
+  },
+  {
+    "cache_key": "0fcb2cb76220df88d292fbae43e388b8827199d282d5427491d54961a7a799dc",
+    "call_type": "title",
+    "case_id": "title-22",
+    "completion_ms": 285.552,
+    "condition": "l2-cap-32",
+    "endpoint": "/api/v1/tasks/title/completions",
+    "objective_score": 1.0,
+    "payload_sha256": "dc46f1c6f8f047e5b828ec502745d24086584a13f39341c813c3d348d2e0ab9f",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "logprobs": null,
+          "message": {
+            "content": "{ \"title\": \"WebUI Schedules\" }",
+            "role": "assistant"
+          }
+        }
+      ],
+      "created": 1789437620,
+      "id": "qwen2.5:14b-instruct-aa38e3b4-62c0-4c0d-be21-709c168425b7",
+      "model": "qwen2.5:14b-instruct",
+      "object": "chat.completion",
+      "usage": {
+        "approximate_total": "0h0m0s",
+        "completion_tokens": 12,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        "eval_count": 12,
+        "eval_duration": 180615000,
+        "input_tokens": 343,
+        "load_duration": 1692400,
+        "output_tokens": 12,
+        "prompt_eval_count": 343,
+        "prompt_eval_duration": 51745000,
+        "prompt_token/s": 6628.66,
+        "prompt_tokens": 343,
+        "response_token/s": 66.44,
+        "total_duration": 238100700,
+        "total_tokens": 355
+      }
+    },
+    "response_text": "{ \"title\": \"WebUI Schedules\" }",
+    "retrieved_document_ids": null
+  },
+  {
+    "cache_key": "8c12ba68f1980f3fd59f79ae88c281743a5c1100b7b2b007cd14dec0eb2e26ee",
+    "call_type": "title",
+    "case_id": "title-23",
+    "completion_ms": 267.765,
+    "condition": "l2-cap-32",
+    "endpoint": "/api/v1/tasks/title/completions",
+    "objective_score": 1.0,
+    "payload_sha256": "0127e7d3d9c723a963a630fcb229f3a858c6997e48a45b64856bfb3b7680eb6d",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "logprobs": null,
+          "message": {
+            "content": "{ \"title\": \"Automation Schedules\" }",
+            "role": "assistant"
+          }
+        }
+      ],
+      "created": 1789437621,
+      "id": "qwen2.5:14b-instruct-ba5bb687-aadd-4c93-890f-8ed4da294576",
+      "model": "qwen2.5:14b-instruct",
+      "object": "chat.completion",
+      "usage": {
+        "approximate_total": "0h0m0s",
+        "completion_tokens": 11,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        "eval_count": 11,
+        "eval_duration": 165751000,
+        "input_tokens": 325,
+        "load_duration": 1630300,
+        "output_tokens": 11,
+        "prompt_eval_count": 325,
+        "prompt_eval_duration": 40394000,
+        "prompt_token/s": 8045.75,
+        "prompt_tokens": 325,
+        "response_token/s": 66.36,
+        "total_duration": 211740600,
+        "total_tokens": 336
+      }
+    },
+    "response_text": "{ \"title\": \"Automation Schedules\" }",
+    "retrieved_document_ids": null
+  },
+  {
+    "cache_key": "ba7b71c3b6e71ea758d34ee1a082f672d61855d51c8c8d3c99b252b97c0d19ea",
+    "call_type": "title",
+    "case_id": "title-24",
+    "completion_ms": 288.275,
+    "condition": "l2-cap-32",
+    "endpoint": "/api/v1/tasks/title/completions",
+    "objective_score": 1.0,
+    "payload_sha256": "90b837552dd491bc2fdfe2f5442d598c2208659d34681447b0306a32ec493529",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "logprobs": null,
+          "message": {
+            "content": "{ \"title\": \"WebUI User Counts\" }",
+            "role": "assistant"
+          }
+        }
+      ],
+      "created": 1789437621,
+      "id": "qwen2.5:14b-instruct-59bbeea5-84c4-42ee-880a-914a9e249d5d",
+      "model": "qwen2.5:14b-instruct",
+      "object": "chat.completion",
+      "usage": {
+        "approximate_total": "0h0m0s",
+        "completion_tokens": 12,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        "eval_count": 12,
+        "eval_duration": 184474000,
+        "input_tokens": 333,
+        "load_duration": 1739200,
+        "output_tokens": 12,
+        "prompt_eval_count": 333,
+        "prompt_eval_duration": 43090000,
+        "prompt_token/s": 7728.01,
+        "prompt_tokens": 333,
+        "response_token/s": 65.05,
+        "total_duration": 233599300,
+        "total_tokens": 345
+      }
+    },
+    "response_text": "{ \"title\": \"WebUI User Counts\" }",
+    "retrieved_document_ids": null
+  },
+  {
+    "cache_key": "688d89b1c9485b49c1747e7689986aed5d50b15c398b31061c688c7a645fc467",
+    "call_type": "title",
+    "case_id": "title-25",
+    "completion_ms": 294.441,
+    "condition": "l2-cap-32",
+    "endpoint": "/api/v1/tasks/title/completions",
+    "objective_score": 1.0,
+    "payload_sha256": "6ff2eb0d775684701ae8110cbdf4ae01a45909926632b70b488dcfd5092c1132",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "logprobs": null,
+          "message": {
+            "content": "{ \"title\": \"Sidebar Folder Issue\" }",
+            "role": "assistant"
+          }
+        }
+      ],
+      "created": 1789437621,
+      "id": "qwen2.5:14b-instruct-f1e4b138-9fe7-4dc9-a742-e13be76a1043",
+      "model": "qwen2.5:14b-instruct",
+      "object": "chat.completion",
+      "usage": {
+        "approximate_total": "0h0m0s",
+        "completion_tokens": 11,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        "eval_count": 11,
+        "eval_duration": 168903000,
+        "input_tokens": 341,
+        "load_duration": 1623000,
+        "output_tokens": 11,
+        "prompt_eval_count": 341,
+        "prompt_eval_duration": 48935000,
+        "prompt_token/s": 6968.43,
+        "prompt_tokens": 341,
+        "response_token/s": 65.13,
+        "total_duration": 224182800,
+        "total_tokens": 352
+      }
+    },
+    "response_text": "{ \"title\": \"Sidebar Folder Issue\" }",
+    "retrieved_document_ids": null
+  },
+  {
+    "cache_key": "2382a9e89d75fe2ca288897c1442f30e5802e83a5943673458638ff5df4cafcc",
+    "call_type": "tags",
+    "case_id": "tags-01",
+    "completion_ms": 497.456,
+    "condition": "l2-cap-32",
+    "endpoint": "/api/v1/tasks/tags/completions",
+    "objective_score": 1.0,
+    "payload_sha256": "a0f126270471e6e4662e01aa29676f4ae3bd28d3ed4da50abb2d1d4fdbaaed09",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "logprobs": null,
+          "message": {
+            "content": "```json\n{ \"tags\": [\"Technology\", \"Web Development\", \"Software Optimization\"] }\n```",
+            "role": "assistant"
+          }
+        }
+      ],
+      "created": 1789437622,
+      "id": "qwen2.5:14b-instruct-1b5aec58-5b98-4f9e-88b0-958c2ac49da3",
+      "model": "qwen2.5:14b-instruct",
+      "object": "chat.completion",
+      "usage": {
+        "approximate_total": "0h0m0s",
+        "completion_tokens": 21,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        "eval_count": 21,
+        "eval_duration": 335626000,
+        "input_tokens": 304,
+        "load_duration": 1837200,
+        "output_tokens": 21,
+        "prompt_eval_count": 304,
+        "prompt_eval_duration": 57022000,
+        "prompt_token/s": 5331.28,
+        "prompt_tokens": 304,
+        "response_token/s": 62.57,
+        "total_duration": 427732600,
+        "total_tokens": 325
+      }
+    },
+    "response_text": "```json\n{ \"tags\": [\"Technology\", \"Web Development\", \"Software Optimization\"] }\n```",
+    "retrieved_document_ids": null
+  },
+  {
+    "cache_key": "9facdf254c4e0e47aabe584167c37327a66d9443ae04ae2ec236f7ea86e5e434",
+    "call_type": "tags",
+    "case_id": "tags-02",
+    "completion_ms": 434.743,
+    "condition": "l2-cap-32",
+    "endpoint": "/api/v1/tasks/tags/completions",
+    "objective_score": 1.0,
+    "payload_sha256": "d519e26b97655a9353da6c0d0e1d2257a86fdaa3649dee1766d07eda604223b3",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "logprobs": null,
+          "message": {
+            "content": "```json\n{ \"tags\": [\"Technology\", \"Software\", \"User Interface\"] }\n```",
+            "role": "assistant"
+          }
+        }
+      ],
+      "created": 1789437622,
+      "id": "qwen2.5:14b-instruct-8fbb5679-d971-4e60-b1e0-b39c9c41417f",
+      "model": "qwen2.5:14b-instruct",
+      "object": "chat.completion",
+      "usage": {
+        "approximate_total": "0h0m0s",
+        "completion_tokens": 20,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        "eval_count": 20,
+        "eval_duration": 317678000,
+        "input_tokens": 273,
+        "load_duration": 1030900,
+        "output_tokens": 20,
+        "prompt_eval_count": 273,
+        "prompt_eval_duration": 45822000,
+        "prompt_token/s": 5957.84,
+        "prompt_tokens": 273,
+        "response_token/s": 62.96,
+        "total_duration": 367822800,
+        "total_tokens": 293
+      }
+    },
+    "response_text": "```json\n{ \"tags\": [\"Technology\", \"Software\", \"User Interface\"] }\n```",
+    "retrieved_document_ids": null
+  },
+  {
+    "cache_key": "ddfcd5e7c2c1e0d3adccc5e79b7f6059fa9e815db81f7c157a2396d83b03515d",
+    "call_type": "tags",
+    "case_id": "tags-03",
+    "completion_ms": 442.764,
+    "condition": "l2-cap-32",
+    "endpoint": "/api/v1/tasks/tags/completions",
+    "objective_score": 1.0,
+    "payload_sha256": "f0942bd2b62e54668c7c71e721a3e11167bc66204bae543a8bde0896297850c1",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "logprobs": null,
+          "message": {
+            "content": "```json\n{ \"tags\": [\"Technology\", \"Accessibility\", \"Software\"] }\n```",
+            "role": "assistant"
+          }
+        }
+      ],
+      "created": 1789437622,
+      "id": "qwen2.5:14b-instruct-e5ae0d88-f95b-4281-9ea9-c33e672b2400",
+      "model": "qwen2.5:14b-instruct",
+      "object": "chat.completion",
+      "usage": {
+        "approximate_total": "0h0m0s",
+        "completion_tokens": 19,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        "eval_count": 19,
+        "eval_duration": 299649000,
+        "input_tokens": 336,
+        "load_duration": 2065800,
+        "output_tokens": 19,
+        "prompt_eval_count": 336,
+        "prompt_eval_duration": 72610000,
+        "prompt_token/s": 4627.46,
+        "prompt_tokens": 336,
+        "response_token/s": 63.41,
+        "total_duration": 378729000,
+        "total_tokens": 355
+      }
+    },
+    "response_text": "```json\n{ \"tags\": [\"Technology\", \"Accessibility\", \"Software\"] }\n```",
+    "retrieved_document_ids": null
+  },
+  {
+    "cache_key": "ae2cae8a3d3b9d4c76cccf5be4e0ec9429c3d01de7a9ef650bfcaafe493f0d77",
+    "call_type": "tags",
+    "case_id": "tags-04",
+    "completion_ms": 427.522,
+    "condition": "l2-cap-32",
+    "endpoint": "/api/v1/tasks/tags/completions",
+    "objective_score": 1.0,
+    "payload_sha256": "8823e84e4de0b668d1fc2a064c0aee072d0b85c2130958fb3e72147af65bfdc1",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "logprobs": null,
+          "message": {
+            "content": "```json\n{ \"tags\": [\"Technology\", \"Software\", \"Localization\"] }\n```",
+            "role": "assistant"
+          }
+        }
+      ],
+      "created": 1789437623,
+      "id": "qwen2.5:14b-instruct-9d6d644d-6ca5-476d-a50c-a4639bd682a1",
+      "model": "qwen2.5:14b-instruct",
+      "object": "chat.completion",
+      "usage": {
+        "approximate_total": "0h0m0s",
+        "completion_tokens": 19,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        "eval_count": 19,
+        "eval_duration": 300915000,
+        "input_tokens": 278,
+        "load_duration": 2298400,
+        "output_tokens": 19,
+        "prompt_eval_count": 278,
+        "prompt_eval_duration": 50648000,
+        "prompt_token/s": 5488.86,
+        "prompt_tokens": 278,
+        "response_token/s": 63.14,
+        "total_duration": 358174500,
+        "total_tokens": 297
+      }
+    },
+    "response_text": "```json\n{ \"tags\": [\"Technology\", \"Software\", \"Localization\"] }\n```",
+    "retrieved_document_ids": null
+  },
+  {
+    "cache_key": "3d6cb28e213f078b21a2e7fb400e92c45914056fdb47023a652a1be88ab86aad",
+    "call_type": "tags",
+    "case_id": "tags-05",
+    "completion_ms": 495.119,
+    "condition": "l2-cap-32",
+    "endpoint": "/api/v1/tasks/tags/completions",
+    "objective_score": 1.0,
+    "payload_sha256": "570fd827f4d0c61ad826cc2e439624ab432d758dd85f5eee11e96e4b9be3f182",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "logprobs": null,
+          "message": {
+            "content": "JSON format: \n```json\n{ \"tags\": [\"Technology\", \"Software\", \"User Interface\"] }\n```",
+            "role": "assistant"
+          }
+        }
+      ],
+      "created": 1789437623,
+      "id": "qwen2.5:14b-instruct-310a52c1-896b-4448-9c5b-c943d907f117",
+      "model": "qwen2.5:14b-instruct",
+      "object": "chat.completion",
+      "usage": {
+        "approximate_total": "0h0m0s",
+        "completion_tokens": 24,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        "eval_count": 24,
+        "eval_duration": 384922000,
+        "input_tokens": 273,
+        "load_duration": 1696100,
+        "output_tokens": 24,
+        "prompt_eval_count": 273,
+        "prompt_eval_duration": 44084000,
+        "prompt_token/s": 6192.72,
+        "prompt_tokens": 273,
+        "response_token/s": 62.35,
+        "total_duration": 434848300,
+        "total_tokens": 297
+      }
+    },
+    "response_text": "JSON format: \n```json\n{ \"tags\": [\"Technology\", \"Software\", \"User Interface\"] }\n```",
+    "retrieved_document_ids": null
+  },
+  {
+    "cache_key": "61dcd78ed523e8d5c056de35a63bc61f6f95e64ee45714a34b54c47803abda27",
+    "call_type": "tags",
+    "case_id": "tags-06",
+    "completion_ms": 612.55,
+    "condition": "l2-cap-32",
+    "endpoint": "/api/v1/tasks/tags/completions",
+    "objective_score": 0.0,
+    "payload_sha256": "5b51c79d19caa2321bc0aeb75491cc6ad2d9a299f1c7b95e9c8d9d7faa8e28e8",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "logprobs": null,
+          "message": {
+            "content": "Based on the provided chat history, the conversation revolves around technical issues related to software and user experience in a specific tool (Open WebUI). The primary theme is",
+            "role": "assistant"
+          }
+        }
+      ],
+      "created": 1789437624,
+      "id": "qwen2.5:14b-instruct-e981c3bc-4eae-4c85-bde8-2e015f729b38",
+      "model": "qwen2.5:14b-instruct",
+      "object": "chat.completion",
+      "usage": {
+        "approximate_total": "0h0m0s",
+        "completion_tokens": 32,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        "eval_count": 32,
+        "eval_duration": 510845000,
+        "input_tokens": 270,
+        "load_duration": 1223600,
+        "output_tokens": 32,
+        "prompt_eval_count": 270,
+        "prompt_eval_duration": 44768000,
+        "prompt_token/s": 6031.09,
+        "prompt_tokens": 270,
+        "response_token/s": 62.64,
+        "total_duration": 560886000,
+        "total_tokens": 302
+      }
+    },
+    "response_text": "Based on the provided chat history, the conversation revolves around technical issues related to software and user experience in a specific tool (Open WebUI). The primary theme is",
+    "retrieved_document_ids": null
+  },
+  {
+    "cache_key": "46cada6e75761f1e4de0f3dd7be817b6d20bbdaa3f812ff70e431618670e2e58",
+    "call_type": "tags",
+    "case_id": "tags-07",
+    "completion_ms": 381.149,
+    "condition": "l2-cap-32",
+    "endpoint": "/api/v1/tasks/tags/completions",
+    "objective_score": 1.0,
+    "payload_sha256": "64d580881b50e924f8c77380f21fba0e05c42eb77d039ede69e02934ca331060",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "logprobs": null,
+          "message": {
+            "content": "{\n  \"tags\": [\"Technology\", \"Software\", \"User Interface\"]\n}",
+            "role": "assistant"
+          }
+        }
+      ],
+      "created": 1789437624,
+      "id": "qwen2.5:14b-instruct-3437d28d-a86e-4664-b708-c5041508229d",
+      "model": "qwen2.5:14b-instruct",
+      "object": "chat.completion",
+      "usage": {
+        "approximate_total": "0h0m0s",
+        "completion_tokens": 17,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        "eval_count": 17,
+        "eval_duration": 268432000,
+        "input_tokens": 271,
+        "load_duration": 1879400,
+        "output_tokens": 17,
+        "prompt_eval_count": 271,
+        "prompt_eval_duration": 45977000,
+        "prompt_token/s": 5894.25,
+        "prompt_tokens": 271,
+        "response_token/s": 63.33,
+        "total_duration": 320096700,
+        "total_tokens": 288
+      }
+    },
+    "response_text": "{\n  \"tags\": [\"Technology\", \"Software\", \"User Interface\"]\n}",
+    "retrieved_document_ids": null
+  },
+  {
+    "cache_key": "03615737656b9c0f1a5968b8036e30ccc18a68b30737856d38ede2cc134d32b1",
+    "call_type": "tags",
+    "case_id": "tags-08",
+    "completion_ms": 423.01,
+    "condition": "l2-cap-32",
+    "endpoint": "/api/v1/tasks/tags/completions",
+    "objective_score": 1.0,
+    "payload_sha256": "b257f3bcfa9c88702db86b0634cb27f7413902e6887ee8b475446f0f755a766a",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "logprobs": null,
+          "message": {
+            "content": "```json\n{ \"tags\": [\"Technology\", \"Software\", \"Web Development\"] }\n```",
+            "role": "assistant"
+          }
+        }
+      ],
+      "created": 1789437625,
+      "id": "qwen2.5:14b-instruct-86287c53-6bc1-4341-bbfa-5d28fa045754",
+      "model": "qwen2.5:14b-instruct",
+      "object": "chat.completion",
+      "usage": {
+        "approximate_total": "0h0m0s",
+        "completion_tokens": 20,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        "eval_count": 20,
+        "eval_duration": 314980000,
+        "input_tokens": 287,
+        "load_duration": 2125900,
+        "output_tokens": 20,
+        "prompt_eval_count": 287,
+        "prompt_eval_duration": 50236000,
+        "prompt_token/s": 5713.03,
+        "prompt_tokens": 287,
+        "response_token/s": 63.5,
+        "total_duration": 372088900,
+        "total_tokens": 307
+      }
+    },
+    "response_text": "```json\n{ \"tags\": [\"Technology\", \"Software\", \"Web Development\"] }\n```",
+    "retrieved_document_ids": null
+  },
+  {
+    "cache_key": "f86d62e2564809d19a809581639c448783787036a870c999ad79deff98ee453b",
+    "call_type": "tags",
+    "case_id": "tags-09",
+    "completion_ms": 620.167,
+    "condition": "l2-cap-32",
+    "endpoint": "/api/v1/tasks/tags/completions",
+    "objective_score": 0.0,
+    "payload_sha256": "249474cd867b76086c78c5e8e70ce0f3a0edb27b43d34858d202e498de94312f",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "logprobs": null,
+          "message": {
+            "content": "Based on the chat history, the main themes and subtopics can be categorized as follows:\n\n```json\n{\n  \"tags\": [\"Technology\", \"Software\",",
+            "role": "assistant"
+          }
+        }
+      ],
+      "created": 1789437625,
+      "id": "qwen2.5:14b-instruct-43051f6a-c09e-4dd2-8d1a-7d4800ae1a2b",
+      "model": "qwen2.5:14b-instruct",
+      "object": "chat.completion",
+      "usage": {
+        "approximate_total": "0h0m0s",
+        "completion_tokens": 32,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        "eval_count": 32,
+        "eval_duration": 514162000,
+        "input_tokens": 272,
+        "load_duration": 1502200,
+        "output_tokens": 32,
+        "prompt_eval_count": 272,
+        "prompt_eval_duration": 44597000,
+        "prompt_token/s": 6099.06,
+        "prompt_tokens": 272,
+        "response_token/s": 62.24,
+        "total_duration": 564452400,
+        "total_tokens": 304
+      }
+    },
+    "response_text": "Based on the chat history, the main themes and subtopics can be categorized as follows:\n\n```json\n{\n  \"tags\": [\"Technology\", \"Software\",",
+    "retrieved_document_ids": null
+  },
+  {
+    "cache_key": "ca814dbb255c89a4e9bb92fdd0d7c8fa000db1f0465e61e387a745a08d8c6b3c",
+    "call_type": "tags",
+    "case_id": "tags-10",
+    "completion_ms": 423.296,
+    "condition": "l2-cap-32",
+    "endpoint": "/api/v1/tasks/tags/completions",
+    "objective_score": 1.0,
+    "payload_sha256": "c823f5b696420ddcee8c6bd5b3bcc9c8bae93ce1022f3d38082c82c24390ff99",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "logprobs": null,
+          "message": {
+            "content": "```json\n{ \"tags\": [\"Technology\", \"Software\", \"UserInterface\"] }\n```",
+            "role": "assistant"
+          }
+        }
+      ],
+      "created": 1789437626,
+      "id": "qwen2.5:14b-instruct-bc20a7ea-9deb-47ba-a58b-5df50c4c05a5",
+      "model": "qwen2.5:14b-instruct",
+      "object": "chat.completion",
+      "usage": {
+        "approximate_total": "0h0m0s",
+        "completion_tokens": 20,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        "eval_count": 20,
+        "eval_duration": 317444000,
+        "input_tokens": 257,
+        "load_duration": 1597300,
+        "output_tokens": 20,
+        "prompt_eval_count": 257,
+        "prompt_eval_duration": 39528000,
+        "prompt_token/s": 6501.72,
+        "prompt_tokens": 257,
+        "response_token/s": 63.0,
+        "total_duration": 362631200,
+        "total_tokens": 277
+      }
+    },
+    "response_text": "```json\n{ \"tags\": [\"Technology\", \"Software\", \"UserInterface\"] }\n```",
+    "retrieved_document_ids": null
+  },
+  {
+    "cache_key": "a8fc0e6654493820f8483035a08a66920e693fc805d3c53a4c301762ab1075af",
+    "call_type": "tags",
+    "case_id": "tags-11",
+    "completion_ms": 425.171,
+    "condition": "l2-cap-32",
+    "endpoint": "/api/v1/tasks/tags/completions",
+    "objective_score": 1.0,
+    "payload_sha256": "47a170d67397992545acc682a87ec9004fabce46082550ea9f748f76f36b0bb1",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "logprobs": null,
+          "message": {
+            "content": "```json\n{ \"tags\": [\"Technology\", \"Software\", \"User Interface\"] }\n```",
+            "role": "assistant"
+          }
+        }
+      ],
+      "created": 1789437626,
+      "id": "qwen2.5:14b-instruct-e424d759-1149-4cd4-b56f-6ae1a797453d",
+      "model": "qwen2.5:14b-instruct",
+      "object": "chat.completion",
+      "usage": {
+        "approximate_total": "0h0m0s",
+        "completion_tokens": 20,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        "eval_count": 20,
+        "eval_duration": 316519000,
+        "input_tokens": 276,
+        "load_duration": 3333900,
+        "output_tokens": 20,
+        "prompt_eval_count": 276,
+        "prompt_eval_duration": 46145000,
+        "prompt_token/s": 5981.15,
+        "prompt_tokens": 276,
+        "response_token/s": 63.19,
+        "total_duration": 370642500,
+        "total_tokens": 296
+      }
+    },
+    "response_text": "```json\n{ \"tags\": [\"Technology\", \"Software\", \"User Interface\"] }\n```",
+    "retrieved_document_ids": null
+  },
+  {
+    "cache_key": "f4df60d446fd1d7a13057872a51845d0b8419eaf2c42203ccc175af3d89d3a32",
+    "call_type": "tags",
+    "case_id": "tags-12",
+    "completion_ms": 404.194,
+    "condition": "l2-cap-32",
+    "endpoint": "/api/v1/tasks/tags/completions",
+    "objective_score": 1.0,
+    "payload_sha256": "da7ca6c1b0ab508f1b662fff58ee71d180ace2ef80986617fdff395faf7e528f",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "logprobs": null,
+          "message": {
+            "content": "```json\n{ \"tags\": [\"Technology\", \"Software\", \"Programming\"] }\n```",
+            "role": "assistant"
+          }
+        }
+      ],
+      "created": 1789437627,
+      "id": "qwen2.5:14b-instruct-aa027d76-5d80-406b-989c-906301675c16",
+      "model": "qwen2.5:14b-instruct",
+      "object": "chat.completion",
+      "usage": {
+        "approximate_total": "0h0m0s",
+        "completion_tokens": 19,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        "eval_count": 19,
+        "eval_duration": 297976000,
+        "input_tokens": 284,
+        "load_duration": 3460100,
+        "output_tokens": 19,
+        "prompt_eval_count": 284,
+        "prompt_eval_duration": 51306000,
+        "prompt_token/s": 5535.41,
+        "prompt_tokens": 284,
+        "response_token/s": 63.76,
+        "total_duration": 357849300,
+        "total_tokens": 303
+      }
+    },
+    "response_text": "```json\n{ \"tags\": [\"Technology\", \"Software\", \"Programming\"] }\n```",
+    "retrieved_document_ids": null
+  },
+  {
+    "cache_key": "cf722ea26ccc39d38c5c23723533ab3132010df17ad1c2ef6f05c1e43634135c",
+    "call_type": "tags",
+    "case_id": "tags-13",
+    "completion_ms": 639.858,
+    "condition": "l2-cap-32",
+    "endpoint": "/api/v1/tasks/tags/completions",
+    "objective_score": 0.0,
+    "payload_sha256": "0d2c40ab952d4a5654526ddc3aca7f847348219f0a7f4906bacb4c1c80eb48a1",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "logprobs": null,
+          "message": {
+            "content": "Based on the chat history, the main theme revolves around the usage and troubleshooting of a specific software or web application. Given the context, the tags can be:\n\n",
+            "role": "assistant"
+          }
+        }
+      ],
+      "created": 1789437627,
+      "id": "qwen2.5:14b-instruct-d43108a5-b55e-45c0-b331-de80b69313f3",
+      "model": "qwen2.5:14b-instruct",
+      "object": "chat.completion",
+      "usage": {
+        "approximate_total": "0h0m0s",
+        "completion_tokens": 32,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        "eval_count": 32,
+        "eval_duration": 513985000,
+        "input_tokens": 275,
+        "load_duration": 1228500,
+        "output_tokens": 32,
+        "prompt_eval_count": 275,
+        "prompt_eval_duration": 45695000,
+        "prompt_token/s": 6018.16,
+        "prompt_tokens": 275,
+        "response_token/s": 62.26,
+        "total_duration": 565084600,
+        "total_tokens": 307
+      }
+    },
+    "response_text": "Based on the chat history, the main theme revolves around the usage and troubleshooting of a specific software or web application. Given the context, the tags can be:\n\n",
+    "retrieved_document_ids": null
+  },
+  {
+    "cache_key": "f1020b64cf8b65a1a8090103b9172b179fc35bcb94ea6ad8232aaf0fa1fbe25d",
+    "call_type": "tags",
+    "case_id": "tags-14",
+    "completion_ms": 1026.819,
+    "condition": "l2-cap-32",
+    "endpoint": "/api/v1/tasks/tags/completions",
+    "objective_score": 0.0,
+    "payload_sha256": "0eb9f606a9cadd6a40afde9ae7d53bd17d5abd28c5adae804e400961eaf1d15a",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "logprobs": null,
+          "message": {
+            "content": "Based on the provided chat history, which focuses on an overview of the Open WebUI project and its features, the primary themes can be categorized as follows:\n\n1",
+            "role": "assistant"
+          }
+        }
+      ],
+      "created": 1789437628,
+      "id": "qwen2.5:14b-instruct-c9095763-e467-497b-886a-43c910a28b88",
+      "model": "qwen2.5:14b-instruct",
+      "object": "chat.completion",
+      "usage": {
+        "approximate_total": "0h0m0s",
+        "completion_tokens": 32,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        "eval_count": 32,
+        "eval_duration": 585297000,
+        "input_tokens": 11159,
+        "load_duration": 1806100,
+        "output_tokens": 32,
+        "prompt_eval_count": 11159,
+        "prompt_eval_duration": 35794000,
+        "prompt_token/s": 311756.16,
+        "prompt_tokens": 11159,
+        "response_token/s": 54.67,
+        "total_duration": 961811300,
+        "total_tokens": 11191
+      }
+    },
+    "response_text": "Based on the provided chat history, which focuses on an overview of the Open WebUI project and its features, the primary themes can be categorized as follows:\n\n1",
+    "retrieved_document_ids": null
+  },
+  {
+    "cache_key": "984891e3fb1bb5ac432061399e64d4efdadde9a767e54330512d4b6552df31b5",
+    "call_type": "tags",
+    "case_id": "tags-15",
+    "completion_ms": 1012.683,
+    "condition": "l2-cap-32",
+    "endpoint": "/api/v1/tasks/tags/completions",
+    "objective_score": 1.0,
+    "payload_sha256": "b3648593999a306bc4176760aef4a5839dd55cb031984fbe0e51de13399d0ff2",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "logprobs": null,
+          "message": {
+            "content": "```json\n{ \"tags\": [\"Technology\", \"Software\", \"User Interface\"] }\n```",
+            "role": "assistant"
+          }
+        }
+      ],
+      "created": 1789437629,
+      "id": "qwen2.5:14b-instruct-ba18f77e-8a39-4205-8108-e02db2f3a665",
+      "model": "qwen2.5:14b-instruct",
+      "object": "chat.completion",
+      "usage": {
+        "approximate_total": "0h0m0s",
+        "completion_tokens": 20,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        "eval_count": 20,
+        "eval_duration": 310039000,
+        "input_tokens": 267,
+        "load_duration": 2477400,
+        "output_tokens": 20,
+        "prompt_eval_count": 267,
+        "prompt_eval_duration": 44359000,
+        "prompt_token/s": 6019.07,
+        "prompt_tokens": 267,
+        "response_token/s": 64.51,
+        "total_duration": 959570400,
+        "total_tokens": 287
+      }
+    },
+    "response_text": "```json\n{ \"tags\": [\"Technology\", \"Software\", \"User Interface\"] }\n```",
+    "retrieved_document_ids": null
+  },
+  {
+    "cache_key": "3dbbe5ef3251138dbc58fb591a3c11cadfb4595ceb19f3c57b42bee96ee406da",
+    "call_type": "tags",
+    "case_id": "tags-16",
+    "completion_ms": 625.443,
+    "condition": "l2-cap-32",
+    "endpoint": "/api/v1/tasks/tags/completions",
+    "objective_score": 0.0,
+    "payload_sha256": "56c7b0ead7786b7418277150f0ba6a44d3cfba2f6e03e57b7483114ee21ecf2a",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "logprobs": null,
+          "message": {
+            "content": "Based on the given chat history, the conversation revolves around a technical issue related to software or web applications. The primary domain is Technology, with a specific focus on",
+            "role": "assistant"
+          }
+        }
+      ],
+      "created": 1789437630,
+      "id": "qwen2.5:14b-instruct-d37bcb59-fa57-48e1-b932-1782813fc935",
+      "model": "qwen2.5:14b-instruct",
+      "object": "chat.completion",
+      "usage": {
+        "approximate_total": "0h0m0s",
+        "completion_tokens": 32,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        "eval_count": 32,
+        "eval_duration": 508360000,
+        "input_tokens": 276,
+        "load_duration": 2077400,
+        "output_tokens": 32,
+        "prompt_eval_count": 276,
+        "prompt_eval_duration": 49594000,
+        "prompt_token/s": 5565.19,
+        "prompt_tokens": 276,
+        "response_token/s": 62.95,
+        "total_duration": 565961600,
+        "total_tokens": 308
+      }
+    },
+    "response_text": "Based on the given chat history, the conversation revolves around a technical issue related to software or web applications. The primary domain is Technology, with a specific focus on",
+    "retrieved_document_ids": null
+  },
+  {
+    "cache_key": "bbafc9b8efd9755529890f81d0bc68eff32099adb8d5e578d82d0d147318ff3e",
+    "call_type": "tags",
+    "case_id": "tags-17",
+    "completion_ms": 386.799,
+    "condition": "l2-cap-32",
+    "endpoint": "/api/v1/tasks/tags/completions",
+    "objective_score": 1.0,
+    "payload_sha256": "dc46f1c6f8f047e5b828ec502745d24086584a13f39341c813c3d348d2e0ab9f",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "logprobs": null,
+          "message": {
+            "content": "```json\n{ \"tags\": [\"Technology\", \"Software\", \"Automation\"] }\n```",
+            "role": "assistant"
+          }
+        }
+      ],
+      "created": 1789437630,
+      "id": "qwen2.5:14b-instruct-54fc7e22-272d-4c59-b17f-aeb10a189c4b",
+      "model": "qwen2.5:14b-instruct",
+      "object": "chat.completion",
+      "usage": {
+        "approximate_total": "0h0m0s",
+        "completion_tokens": 19,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        "eval_count": 19,
+        "eval_duration": 298662000,
+        "input_tokens": 278,
+        "load_duration": 2168600,
+        "output_tokens": 19,
+        "prompt_eval_count": 278,
+        "prompt_eval_duration": 49292000,
+        "prompt_token/s": 5639.86,
+        "prompt_tokens": 278,
+        "response_token/s": 63.62,
+        "total_duration": 352970800,
+        "total_tokens": 297
+      }
+    },
+    "response_text": "```json\n{ \"tags\": [\"Technology\", \"Software\", \"Automation\"] }\n```",
+    "retrieved_document_ids": null
+  },
+  {
+    "cache_key": "5eaecadf21d31b86b271cf834d76698aa2d0b78eed1b5ecea24f742b98a709b8",
+    "call_type": "tags",
+    "case_id": "tags-18",
+    "completion_ms": 622.758,
+    "condition": "l2-cap-32",
+    "endpoint": "/api/v1/tasks/tags/completions",
+    "objective_score": 0.0,
+    "payload_sha256": "0127e7d3d9c723a963a630fcb229f3a858c6997e48a45b64856bfb3b7680eb6d",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "logprobs": null,
+          "message": {
+            "content": "Based on the provided chat history, the main theme revolves around the use of a specific software tool (Open WebUI) and troubleshooting an issue related to automation schedules",
+            "role": "assistant"
+          }
+        }
+      ],
+      "created": 1789437631,
+      "id": "qwen2.5:14b-instruct-8f6e227e-e83c-4ece-bec1-6b500c3e4cc5",
+      "model": "qwen2.5:14b-instruct",
+      "object": "chat.completion",
+      "usage": {
+        "approximate_total": "0h0m0s",
+        "completion_tokens": 32,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        "eval_count": 32,
+        "eval_duration": 515649000,
+        "input_tokens": 260,
+        "load_duration": 1544900,
+        "output_tokens": 32,
+        "prompt_eval_count": 260,
+        "prompt_eval_duration": 39604000,
+        "prompt_token/s": 6564.99,
+        "prompt_tokens": 260,
+        "response_token/s": 62.06,
+        "total_duration": 560470200,
+        "total_tokens": 292
+      }
+    },
+    "response_text": "Based on the provided chat history, the main theme revolves around the use of a specific software tool (Open WebUI) and troubleshooting an issue related to automation schedules",
+    "retrieved_document_ids": null
+  },
+  {
+    "cache_key": "5b93e9f36f3ed2198c9f59147660d693c498836aeca57feff66b16c391b60e8f",
+    "call_type": "tags",
+    "case_id": "tags-19",
+    "completion_ms": 414.018,
+    "condition": "l2-cap-32",
+    "endpoint": "/api/v1/tasks/tags/completions",
+    "objective_score": 1.0,
+    "payload_sha256": "90b837552dd491bc2fdfe2f5442d598c2208659d34681447b0306a32ec493529",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "logprobs": null,
+          "message": {
+            "content": "```json\n{ \"tags\": [\"Technology\", \"Software\", \"Web Development\"] }\n```",
+            "role": "assistant"
+          }
+        }
+      ],
+      "created": 1789437631,
+      "id": "qwen2.5:14b-instruct-3d837463-e240-4f52-8937-5e2e6710b899",
+      "model": "qwen2.5:14b-instruct",
+      "object": "chat.completion",
+      "usage": {
+        "approximate_total": "0h0m0s",
+        "completion_tokens": 20,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        "eval_count": 20,
+        "eval_duration": 319556000,
+        "input_tokens": 268,
+        "load_duration": 1562800,
+        "output_tokens": 20,
+        "prompt_eval_count": 268,
+        "prompt_eval_duration": 44779000,
+        "prompt_token/s": 5984.95,
+        "prompt_tokens": 268,
+        "response_token/s": 62.59,
+        "total_duration": 370288300,
+        "total_tokens": 288
+      }
+    },
+    "response_text": "```json\n{ \"tags\": [\"Technology\", \"Software\", \"Web Development\"] }\n```",
+    "retrieved_document_ids": null
+  },
+  {
+    "cache_key": "4087ff50f58ffd3725d15d270dd00740612567b94dff36bb1b86be5afc38d62c",
+    "call_type": "tags",
+    "case_id": "tags-20",
+    "completion_ms": 383.37,
+    "condition": "l2-cap-32",
+    "endpoint": "/api/v1/tasks/tags/completions",
+    "objective_score": 1.0,
+    "payload_sha256": "6ff2eb0d775684701ae8110cbdf4ae01a45909926632b70b488dcfd5092c1132",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "logprobs": null,
+          "message": {
+            "content": "```json\n{ \"tags\": [\"Technology\", \"Software\", \"Programming\"] }\n```",
+            "role": "assistant"
+          }
+        }
+      ],
+      "created": 1789437632,
+      "id": "qwen2.5:14b-instruct-339b1b4a-9695-4102-bf37-f7e98d2936b3",
+      "model": "qwen2.5:14b-instruct",
+      "object": "chat.completion",
+      "usage": {
+        "approximate_total": "0h0m0s",
+        "completion_tokens": 19,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        "eval_count": 19,
+        "eval_duration": 298341000,
+        "input_tokens": 276,
+        "load_duration": 1774400,
+        "output_tokens": 19,
+        "prompt_eval_count": 276,
+        "prompt_eval_duration": 51335000,
+        "prompt_token/s": 5376.45,
+        "prompt_tokens": 276,
+        "response_token/s": 63.69,
+        "total_duration": 354819300,
+        "total_tokens": 295
+      }
+    },
+    "response_text": "```json\n{ \"tags\": [\"Technology\", \"Software\", \"Programming\"] }\n```",
+    "retrieved_document_ids": null
+  },
+  {
+    "cache_key": "2339b2b95e0584aa58667b502157edb985782940b37f6e33c225dd61597d6403",
+    "call_type": "retrieval_query",
+    "case_id": "query-01",
+    "completion_ms": 623.622,
+    "condition": "l2-cap-32",
+    "endpoint": "/api/v1/tasks/queries/completions",
+    "objective_score": 0.0,
+    "payload_sha256": "5f5b90586b4bc8a36a8bfa56c2344caf141c68621f3e53a44cd8f2af0bb26feb",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "logprobs": null,
+          "message": {
+            "content": "{\n  \"queries\": [\"Open WebUI streaming behavior fix\", \"verify streaming fix in Open WebUI\", \"reasoning model streaming optimization\"]\n}",
+            "role": "assistant"
+          }
+        }
+      ],
+      "created": 1789437632,
+      "id": "qwen2.5:14b-instruct-71516f6a-5f1f-4e35-90bd-87d50133b76f",
+      "model": "qwen2.5:14b-instruct",
+      "object": "chat.completion",
+      "usage": {
+        "approximate_total": "0h0m0s",
+        "completion_tokens": 31,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        "eval_count": 31,
+        "eval_duration": 492594000,
+        "input_tokens": 403,
+        "load_duration": 1250000,
+        "output_tokens": 31,
+        "prompt_eval_count": 403,
+        "prompt_eval_duration": 44320000,
+        "prompt_token/s": 9092.96,
+        "prompt_tokens": 403,
+        "response_token/s": 62.93,
+        "total_duration": 580779200,
+        "total_tokens": 434
+      }
+    },
+    "response_text": "{\n  \"queries\": [\"Open WebUI streaming behavior fix\", \"verify streaming fix in Open WebUI\", \"reasoning model streaming optimization\"]\n}",
+    "retrieved_document_ids": null
+  },
+  {
+    "cache_key": "de9de084cb6fb8acf1c9d83462b74d7edad1e8205c1b2832e8da0428abd03efb",
+    "call_type": "web_query",
+    "case_id": "query-02",
+    "completion_ms": 614.656,
+    "condition": "l2-cap-32",
+    "endpoint": "/api/v1/tasks/queries/completions",
+    "objective_score": 0.0,
+    "payload_sha256": "1d894d433473bb476d827dcf5195defddf26accdda5440b675e2c7b06faeb8ca",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "logprobs": null,
+          "message": {
+            "content": "{\n  \"queries\": [\"Open WebUI Thinking behavior fix\", \"how to check and verify Open WebUI Thoughts section\", \"Open WebUI model tool usage",
+            "role": "assistant"
+          }
+        }
+      ],
+      "created": 1789437633,
+      "id": "qwen2.5:14b-instruct-cbf8c7e1-51f1-4a9b-8024-95a0b66f7bdb",
+      "model": "qwen2.5:14b-instruct",
+      "object": "chat.completion",
+      "usage": {
+        "approximate_total": "0h0m0s",
+        "completion_tokens": 32,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        "eval_count": 32,
+        "eval_duration": 509566000,
+        "input_tokens": 404,
+        "load_duration": 1260400,
+        "output_tokens": 32,
+        "prompt_eval_count": 404,
+        "prompt_eval_duration": 45100000,
+        "prompt_token/s": 8957.87,
+        "prompt_tokens": 404,
+        "response_token/s": 62.8,
+        "total_duration": 560047800,
+        "total_tokens": 436
+      }
+    },
+    "response_text": "{\n  \"queries\": [\"Open WebUI Thinking behavior fix\", \"how to check and verify Open WebUI Thoughts section\", \"Open WebUI model tool usage",
+    "retrieved_document_ids": null
+  },
+  {
+    "cache_key": "0b2388fe5f6e3a78b583f43ae464ca96361a0af4743d9d7c65d70ee6780f66b2",
+    "call_type": "retrieval_query",
+    "case_id": "query-03",
+    "completion_ms": 624.722,
+    "condition": "l2-cap-32",
+    "endpoint": "/api/v1/tasks/queries/completions",
+    "objective_score": 0.0,
+    "payload_sha256": "52800943c45458b52568de20b10316aa1087365e9e3f3568bc25257a0232e214",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "logprobs": null,
+          "message": {
+            "content": "{\n  \"queries\": [\"Open WebUI large tool calls optimization\", \"Anthropic-compatible clients streaming large arguments\", \"Open WebUI performance improvement for large tool",
+            "role": "assistant"
+          }
+        }
+      ],
+      "created": 1789437634,
+      "id": "qwen2.5:14b-instruct-6889af23-00ac-49d2-a0fa-07be1a01c79f",
+      "model": "qwen2.5:14b-instruct",
+      "object": "chat.completion",
+      "usage": {
+        "approximate_total": "0h0m0s",
+        "completion_tokens": 32,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        "eval_count": 32,
+        "eval_duration": 508746000,
+        "input_tokens": 420,
+        "load_duration": 1702600,
+        "output_tokens": 32,
+        "prompt_eval_count": 420,
+        "prompt_eval_duration": 49315000,
+        "prompt_token/s": 8516.68,
+        "prompt_tokens": 420,
+        "response_token/s": 62.9,
+        "total_duration": 564417600,
+        "total_tokens": 452
+      }
+    },
+    "response_text": "{\n  \"queries\": [\"Open WebUI large tool calls optimization\", \"Anthropic-compatible clients streaming large arguments\", \"Open WebUI performance improvement for large tool",
+    "retrieved_document_ids": null
+  },
+  {
+    "cache_key": "4aa6860cd816cc1febdc9130b17c8f3a5e6044f3cf87eb6809c5554bc2cc748d",
+    "call_type": "web_query",
+    "case_id": "query-04",
+    "completion_ms": 621.543,
+    "condition": "l2-cap-32",
+    "endpoint": "/api/v1/tasks/queries/completions",
+    "objective_score": 0.0,
+    "payload_sha256": "98c812cf0e285f2b51d22fcf69e2f484b2fefbb601948a95309fe37884678776",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "logprobs": null,
+          "message": {
+            "content": "{\n  \"queries\": [\"open webui stop behavior across instances redis cluster\", \"how to verify stop behavior in open webui redis cluster\", \"open web",
+            "role": "assistant"
+          }
+        }
+      ],
+      "created": 1789437634,
+      "id": "qwen2.5:14b-instruct-8dfe051b-d73f-4fe2-a157-de7a1c1725fd",
+      "model": "qwen2.5:14b-instruct",
+      "object": "chat.completion",
+      "usage": {
+        "approximate_total": "0h0m0s",
+        "completion_tokens": 32,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        "eval_count": 32,
+        "eval_duration": 515049999,
+        "input_tokens": 405,
+        "load_duration": 2087200,
+        "output_tokens": 32,
+        "prompt_eval_count": 405,
+        "prompt_eval_duration": 44741000,
+        "prompt_token/s": 9052.1,
+        "prompt_tokens": 405,
+        "response_token/s": 62.13,
+        "total_duration": 566341100,
+        "total_tokens": 437
+      }
+    },
+    "response_text": "{\n  \"queries\": [\"open webui stop behavior across instances redis cluster\", \"how to verify stop behavior in open webui redis cluster\", \"open web",
+    "retrieved_document_ids": null
+  },
+  {
+    "cache_key": "f6370e5884441cba5a929a6cf30a11932978b30ebb24e091606bb9c402419be3",
+    "call_type": "retrieval_query",
+    "case_id": "query-05",
+    "completion_ms": 601.075,
+    "condition": "l2-cap-32",
+    "endpoint": "/api/v1/tasks/queries/completions",
+    "objective_score": 0.0,
+    "payload_sha256": "713cabd054150ca39b64b5e9a104f2f344e784feea4142c1b89d5bdf6f595e5d",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "logprobs": null,
+          "message": {
+            "content": "{\n  \"queries\": [\"Open WebUI banner underlined text issue\", \"Troubleshooting Open WebUI banner display\", \"Open WebUI banner rendering fix",
+            "role": "assistant"
+          }
+        }
+      ],
+      "created": 1789437635,
+      "id": "qwen2.5:14b-instruct-724e1237-d81b-4f8e-900e-aad603328ecb",
+      "model": "qwen2.5:14b-instruct",
+      "object": "chat.completion",
+      "usage": {
+        "approximate_total": "0h0m0s",
+        "completion_tokens": 32,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        "eval_count": 32,
+        "eval_duration": 509387000,
+        "input_tokens": 390,
+        "load_duration": 1664600,
+        "output_tokens": 32,
+        "prompt_eval_count": 390,
+        "prompt_eval_duration": 38946000,
+        "prompt_token/s": 10013.87,
+        "prompt_tokens": 390,
+        "response_token/s": 62.82,
+        "total_duration": 554683000,
+        "total_tokens": 422
+      }
+    },
+    "response_text": "{\n  \"queries\": [\"Open WebUI banner underlined text issue\", \"Troubleshooting Open WebUI banner display\", \"Open WebUI banner rendering fix",
+    "retrieved_document_ids": null
+  },
+  {
+    "cache_key": "6fce40e5d131118ea1355be2e73583a8c1f3cef0f5ae9d0b2061c7f4046c8caf",
+    "call_type": "web_query",
+    "case_id": "query-06",
+    "completion_ms": 615.418,
+    "condition": "l2-cap-32",
+    "endpoint": "/api/v1/tasks/queries/completions",
+    "objective_score": 0.0,
+    "payload_sha256": "3b6ea37809a9b0151439604d5553e946ab0c2dfd84e3c682f86efd3eadedd8d1",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "logprobs": null,
+          "message": {
+            "content": "{\n  \"queries\": [\"Open WebUI pinned model behavior fix\", \"How to verify changes in Open WebUI pinned models\", \"Open WebUI chat model",
+            "role": "assistant"
+          }
+        }
+      ],
+      "created": 1789437636,
+      "id": "qwen2.5:14b-instruct-862f08ec-6495-4d1e-849a-1966b9785ec0",
+      "model": "qwen2.5:14b-instruct",
+      "object": "chat.completion",
+      "usage": {
+        "approximate_total": "0h0m0s",
+        "completion_tokens": 32,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        "eval_count": 32,
+        "eval_duration": 514515999,
+        "input_tokens": 409,
+        "load_duration": 2150600,
+        "output_tokens": 32,
+        "prompt_eval_count": 409,
+        "prompt_eval_duration": 45253000,
+        "prompt_token/s": 9038.07,
+        "prompt_tokens": 409,
+        "response_token/s": 62.19,
+        "total_duration": 566510700,
+        "total_tokens": 441
+      }
+    },
+    "response_text": "{\n  \"queries\": [\"Open WebUI pinned model behavior fix\", \"How to verify changes in Open WebUI pinned models\", \"Open WebUI chat model",
+    "retrieved_document_ids": null
+  },
+  {
+    "cache_key": "06a1993d2b96bf49fcb9c10ab8b0f4dc61e3ad7ec8092ba236ec5dc61c8bd23f",
+    "call_type": "retrieval_query",
+    "case_id": "query-07",
+    "completion_ms": 602.207,
+    "condition": "l2-cap-32",
+    "endpoint": "/api/v1/tasks/queries/completions",
+    "objective_score": 0.0,
+    "payload_sha256": "0bda4f8ef374fed8d92a5753a0378ebd94fdaee4ea35237ced0722486091eb04",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "logprobs": null,
+          "message": {
+            "content": "{\n  \"queries\": [\"Open WebUI rejected askuser calls behavior fix\", \"how to verify Open WebUI model continues after user refusal\"]\n}",
+            "role": "assistant"
+          }
+        }
+      ],
+      "created": 1789437636,
+      "id": "qwen2.5:14b-instruct-1acc49c6-afc1-4c45-bca2-5565ad09654f",
+      "model": "qwen2.5:14b-instruct",
+      "object": "chat.completion",
+      "usage": {
+        "approximate_total": "0h0m0s",
+        "completion_tokens": 31,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        "eval_count": 31,
+        "eval_duration": 494415000,
+        "input_tokens": 417,
+        "load_duration": 1801700,
+        "output_tokens": 31,
+        "prompt_eval_count": 417,
+        "prompt_eval_duration": 49608000,
+        "prompt_token/s": 8405.9,
+        "prompt_tokens": 417,
+        "response_token/s": 62.7,
+        "total_duration": 550090800,
+        "total_tokens": 448
+      }
+    },
+    "response_text": "{\n  \"queries\": [\"Open WebUI rejected askuser calls behavior fix\", \"how to verify Open WebUI model continues after user refusal\"]\n}",
+    "retrieved_document_ids": null
+  },
+  {
+    "cache_key": "9d76a5f5828609dbd2e65b79dc181dda7e993030836aaa0dd272df2213b811cc",
+    "call_type": "web_query",
+    "case_id": "query-08",
+    "completion_ms": 613.523,
+    "condition": "l2-cap-32",
+    "endpoint": "/api/v1/tasks/queries/completions",
+    "objective_score": 0.0,
+    "payload_sha256": "806d3227bd691480ede9dc3c9463a487c12a905a4c37e25fad1f45dfbd044e21",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "logprobs": null,
+          "message": {
+            "content": "{\n  \"queries\": [\"open webui disabled models recovery\", \"how to enable disabled models in open webui\", \"fix for visible disabled models in open",
+            "role": "assistant"
+          }
+        }
+      ],
+      "created": 1789437637,
+      "id": "qwen2.5:14b-instruct-9f84dfef-3c87-4891-998c-08b5df1ad974",
+      "model": "qwen2.5:14b-instruct",
+      "object": "chat.completion",
+      "usage": {
+        "approximate_total": "0h0m0s",
+        "completion_tokens": 32,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        "eval_count": 32,
+        "eval_duration": 509563000,
+        "input_tokens": 408,
+        "load_duration": 1797500,
+        "output_tokens": 32,
+        "prompt_eval_count": 408,
+        "prompt_eval_duration": 47121000,
+        "prompt_token/s": 8658.56,
+        "prompt_tokens": 408,
+        "response_token/s": 62.8,
+        "total_duration": 562769900,
+        "total_tokens": 440
+      }
+    },
+    "response_text": "{\n  \"queries\": [\"open webui disabled models recovery\", \"how to enable disabled models in open webui\", \"fix for visible disabled models in open",
+    "retrieved_document_ids": null
+  },
+  {
+    "cache_key": "54abe33f54e531e92bb33c81d35224f5c1e4ad3de7c703c68472aa72e6f3b6c5",
+    "call_type": "retrieval_query",
+    "case_id": "query-09",
+    "completion_ms": 6064.54,
+    "condition": "l2-cap-32",
+    "endpoint": "/api/v1/tasks/queries/completions",
+    "objective_score": 0.0,
+    "payload_sha256": "54262bc01d09bb9389fcff8835cbd4d9675798fc01a827a6c6efa89756527273",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "logprobs": null,
+          "message": {
+            "content": "{\n  \"queries\": [\n    \"Open WebUI latest update features\",\n    \"Open WebUI administrator operational changes\",\n    \"Open WebUI enterprise documentation\"\n",
+            "role": "assistant"
+          }
+        }
+      ],
+      "created": 1789437643,
+      "id": "qwen2.5:14b-instruct-59f3c0b7-c3f7-42bb-a121-e824c1573a96",
+      "model": "qwen2.5:14b-instruct",
+      "object": "chat.completion",
+      "usage": {
+        "approximate_total": "0h0m6s",
+        "completion_tokens": 32,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        "eval_count": 32,
+        "eval_duration": 670574000,
+        "input_tokens": 11292,
+        "load_duration": 2102400,
+        "output_tokens": 32,
+        "prompt_eval_count": 11292,
+        "prompt_eval_duration": 5251676000,
+        "prompt_token/s": 2150.17,
+        "prompt_tokens": 11292,
+        "response_token/s": 47.72,
+        "total_duration": 6007704900,
+        "total_tokens": 11324
+      }
+    },
+    "response_text": "{\n  \"queries\": [\n    \"Open WebUI latest update features\",\n    \"Open WebUI administrator operational changes\",\n    \"Open WebUI enterprise documentation\"\n",
+    "retrieved_document_ids": null
+  },
+  {
+    "cache_key": "12c6e43dd41a3fc8f9c1d0a66ddf545a0bf5f31ad425a67823e34f3c632ac24c",
+    "call_type": "web_query",
+    "case_id": "query-10",
+    "completion_ms": 1365.393,
+    "condition": "l2-cap-32",
+    "endpoint": "/api/v1/tasks/queries/completions",
+    "objective_score": 0.0,
+    "payload_sha256": "92862fda20c1e116353162a2273fb55420ed3f0a62a04da74131f24082e4bbc8",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "logprobs": null,
+          "message": {
+            "content": "{\n  \"queries\": [\"Open WebUI calendar event visibility issue fix\", \"How to verify Open WebUI calendar event date change behavior\", \"Open WebUI",
+            "role": "assistant"
+          }
+        }
+      ],
+      "created": 1789437644,
+      "id": "qwen2.5:14b-instruct-bf7a5970-a5d3-4a8c-a724-83377753428c",
+      "model": "qwen2.5:14b-instruct",
+      "object": "chat.completion",
+      "usage": {
+        "approximate_total": "0h0m1s",
+        "completion_tokens": 32,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        "eval_count": 32,
+        "eval_duration": 506908000,
+        "input_tokens": 400,
+        "load_duration": 1557100,
+        "output_tokens": 32,
+        "prompt_eval_count": 400,
+        "prompt_eval_duration": 42960000,
+        "prompt_token/s": 9310.99,
+        "prompt_tokens": 400,
+        "response_token/s": 63.13,
+        "total_duration": 1328837800,
+        "total_tokens": 432
+      }
+    },
+    "response_text": "{\n  \"queries\": [\"Open WebUI calendar event visibility issue fix\", \"How to verify Open WebUI calendar event date change behavior\", \"Open WebUI",
+    "retrieved_document_ids": null
+  },
+  {
+    "cache_key": "c6ab45f2afcba9f073a632eb68195234936b6f169b205c6f2510baf1d8543579",
+    "call_type": "retrieval_query",
+    "case_id": "query-11",
+    "completion_ms": 628.377,
+    "condition": "l2-cap-32",
+    "endpoint": "/api/v1/tasks/queries/completions",
+    "objective_score": 0.0,
+    "payload_sha256": "2a7c93b78a9807ce43690d4c361077b21b8b053107b1ff947fa0f6ed47c0697e",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "logprobs": null,
+          "message": {
+            "content": "{\n  \"queries\": [\"Open WebUI automation repeating behavior fix\", \"Open WebUI automation run count issue solution\", \"Open WebUI automation save and run",
+            "role": "assistant"
+          }
+        }
+      ],
+      "created": 1789437645,
+      "id": "qwen2.5:14b-instruct-00414c5e-d9c0-4640-985b-33435525422d",
+      "model": "qwen2.5:14b-instruct",
+      "object": "chat.completion",
+      "usage": {
+        "approximate_total": "0h0m0s",
+        "completion_tokens": 32,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        "eval_count": 32,
+        "eval_duration": 511056000,
+        "input_tokens": 409,
+        "load_duration": 1659700,
+        "output_tokens": 32,
+        "prompt_eval_count": 409,
+        "prompt_eval_duration": 50084000,
+        "prompt_token/s": 8166.28,
+        "prompt_tokens": 409,
+        "response_token/s": 62.62,
+        "total_duration": 567721500,
+        "total_tokens": 441
+      }
+    },
+    "response_text": "{\n  \"queries\": [\"Open WebUI automation repeating behavior fix\", \"Open WebUI automation run count issue solution\", \"Open WebUI automation save and run",
+    "retrieved_document_ids": null
+  },
+  {
+    "cache_key": "c548e0ea5f3af42052a1718cd6e0f50bcc4c88223352375fbc3c6e7a46bdaf7b",
+    "call_type": "web_query",
+    "case_id": "query-12",
+    "completion_ms": 601.817,
+    "condition": "l2-cap-32",
+    "endpoint": "/api/v1/tasks/queries/completions",
+    "objective_score": 0.0,
+    "payload_sha256": "dc141d3073dd967b991923ecf36d52dceb9d12e9c167b1122e29e29cc1f9b3f1",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "logprobs": null,
+          "message": {
+            "content": "{\n  \"queries\": [\"Open WebUI schedule behavior fix\", \"How to verify automation schedule settings in Open WebUI\", \"Open WebUI save feature schedule",
+            "role": "assistant"
+          }
+        }
+      ],
+      "created": 1789437645,
+      "id": "qwen2.5:14b-instruct-66b3a13f-5452-4cfc-8d37-e1673121b9f4",
+      "model": "qwen2.5:14b-instruct",
+      "object": "chat.completion",
+      "usage": {
+        "approximate_total": "0h0m0s",
+        "completion_tokens": 32,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        "eval_count": 32,
+        "eval_duration": 497609000,
+        "input_tokens": 411,
+        "load_duration": 2477800,
+        "output_tokens": 32,
+        "prompt_eval_count": 411,
+        "prompt_eval_duration": 49088000,
+        "prompt_token/s": 8372.72,
+        "prompt_tokens": 411,
+        "response_token/s": 64.31,
+        "total_duration": 554149800,
+        "total_tokens": 443
+      }
+    },
+    "response_text": "{\n  \"queries\": [\"Open WebUI schedule behavior fix\", \"How to verify automation schedule settings in Open WebUI\", \"Open WebUI save feature schedule",
+    "retrieved_document_ids": null
+  },
+  {
+    "cache_key": "c925032e601e89f148f5ece580d53e839efb8bb20ac4c4d8f436512b4bd2998f",
+    "call_type": "retrieval_query",
+    "case_id": "query-13",
+    "completion_ms": 603.249,
+    "condition": "l2-cap-32",
+    "endpoint": "/api/v1/tasks/queries/completions",
+    "objective_score": 0.0,
+    "payload_sha256": "0197f4f794303cba83a8cd738e3906158131af96872053a286c50da91f7c7220",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "logprobs": null,
+          "message": {
+            "content": "{\n  \"queries\": [\"Open WebUI custom automation schedule behavior fix\", \"How to verify custom repeat rule retention in Open WebUI\", \"Open WebUI",
+            "role": "assistant"
+          }
+        }
+      ],
+      "created": 1789437646,
+      "id": "qwen2.5:14b-instruct-49ebc01f-1bc3-46cc-9ec7-792ae794fb66",
+      "model": "qwen2.5:14b-instruct",
+      "object": "chat.completion",
+      "usage": {
+        "approximate_total": "0h0m0s",
+        "completion_tokens": 32,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        "eval_count": 32,
+        "eval_duration": 519397000,
+        "input_tokens": 393,
+        "load_duration": 1754700,
+        "output_tokens": 32,
+        "prompt_eval_count": 393,
+        "prompt_eval_duration": 41847000,
+        "prompt_token/s": 9391.35,
+        "prompt_tokens": 393,
+        "response_token/s": 61.61,
+        "total_duration": 567777500,
+        "total_tokens": 425
+      }
+    },
+    "response_text": "{\n  \"queries\": [\"Open WebUI custom automation schedule behavior fix\", \"How to verify custom repeat rule retention in Open WebUI\", \"Open WebUI",
+    "retrieved_document_ids": null
+  },
+  {
+    "cache_key": "2f020db607caeab8bf3aa03f78b2433f96fe78e654f64898916182a4533beed6",
+    "call_type": "web_query",
+    "case_id": "query-14",
+    "completion_ms": 613.896,
+    "condition": "l2-cap-32",
+    "endpoint": "/api/v1/tasks/queries/completions",
+    "objective_score": 0.0,
+    "payload_sha256": "2ddf2e9b293cc64bf4166b7b2e252cf2b5059ac9a30757b08220bb9879e46599",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "logprobs": null,
+          "message": {
+            "content": "{\n  \"queries\": [\"Open WebUI admin user count behavior fix\", \"How to verify accurate admin user counts in Open WebUI\", \"Open WebUI",
+            "role": "assistant"
+          }
+        }
+      ],
+      "created": 1789437647,
+      "id": "qwen2.5:14b-instruct-95db2375-37a8-4268-81aa-def5fe32932c",
+      "model": "qwen2.5:14b-instruct",
+      "object": "chat.completion",
+      "usage": {
+        "approximate_total": "0h0m0s",
+        "completion_tokens": 32,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        "eval_count": 32,
+        "eval_duration": 510519000,
+        "input_tokens": 401,
+        "load_duration": 2103100,
+        "output_tokens": 32,
+        "prompt_eval_count": 401,
+        "prompt_eval_duration": 45585000,
+        "prompt_token/s": 8796.75,
+        "prompt_tokens": 401,
+        "response_token/s": 62.68,
+        "total_duration": 563454900,
+        "total_tokens": 433
+      }
+    },
+    "response_text": "{\n  \"queries\": [\"Open WebUI admin user count behavior fix\", \"How to verify accurate admin user counts in Open WebUI\", \"Open WebUI",
+    "retrieved_document_ids": null
+  },
+  {
+    "cache_key": "141d3b1095d13e4494f031fe723bdd2a5e14b905d427e30242273bd0e83c15ad",
+    "call_type": "retrieval_query",
+    "case_id": "query-15",
+    "completion_ms": 610.89,
+    "condition": "l2-cap-32",
+    "endpoint": "/api/v1/tasks/queries/completions",
+    "objective_score": 0.0,
+    "payload_sha256": "ee436b9128033dd6999fe634d89fc1bb31785d01e2c20ac915f1fd34a164cfaf",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "logprobs": null,
+          "message": {
+            "content": "{\n  \"queries\": [\"Open WebUI sidebar folder removal fix\", \"Verify Open WebUI sidebar folder stale behavior\", \"Open WebUI sidebar folder registry update",
+            "role": "assistant"
+          }
+        }
+      ],
+      "created": 1789437647,
+      "id": "qwen2.5:14b-instruct-d7123df0-013e-4f32-8e5b-7ce01d205254",
+      "model": "qwen2.5:14b-instruct",
+      "object": "chat.completion",
+      "usage": {
+        "approximate_total": "0h0m0s",
+        "completion_tokens": 32,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        "eval_count": 32,
+        "eval_duration": 518058999,
+        "input_tokens": 409,
+        "load_duration": 1809500,
+        "output_tokens": 32,
+        "prompt_eval_count": 409,
+        "prompt_eval_duration": 50336000,
+        "prompt_token/s": 8125.4,
+        "prompt_tokens": 409,
+        "response_token/s": 61.77,
+        "total_duration": 573702800,
+        "total_tokens": 441
+      }
+    },
+    "response_text": "{\n  \"queries\": [\"Open WebUI sidebar folder removal fix\", \"Verify Open WebUI sidebar folder stale behavior\", \"Open WebUI sidebar folder registry update",
+    "retrieved_document_ids": null
+  },
+  {
+    "cache_key": "07446de9610e2bab010ab12e644d2b2bed51f1e01280d3065efbcaf6cda5ed5d",
+    "call_type": "web_query",
+    "case_id": "query-16",
+    "completion_ms": 619.809,
+    "condition": "l2-cap-32",
+    "endpoint": "/api/v1/tasks/queries/completions",
+    "objective_score": 0.0,
+    "payload_sha256": "9c7ddf1b8030f1b1b8b7ede731ed14cee627f78c50535bde3f9b78e9ba2b87a8",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "logprobs": null,
+          "message": {
+            "content": "{\n  \"queries\": [\"Open WebUI small screen model list fix\", \"Open WebUI model identifier timestamp fix\", \"Open WebUI responsive design updates\"]\n",
+            "role": "assistant"
+          }
+        }
+      ],
+      "created": 1789437648,
+      "id": "qwen2.5:14b-instruct-6f74805f-68fa-4a1d-8790-491f84c8965a",
+      "model": "qwen2.5:14b-instruct",
+      "object": "chat.completion",
+      "usage": {
+        "approximate_total": "0h0m0s",
+        "completion_tokens": 32,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        "eval_count": 32,
+        "eval_duration": 518871000,
+        "input_tokens": 397,
+        "load_duration": 2088600,
+        "output_tokens": 32,
+        "prompt_eval_count": 397,
+        "prompt_eval_duration": 44798000,
+        "prompt_token/s": 8862.0,
+        "prompt_tokens": 397,
+        "response_token/s": 61.67,
+        "total_duration": 570680800,
+        "total_tokens": 429
+      }
+    },
+    "response_text": "{\n  \"queries\": [\"Open WebUI small screen model list fix\", \"Open WebUI model identifier timestamp fix\", \"Open WebUI responsive design updates\"]\n",
+    "retrieved_document_ids": null
+  },
+  {
+    "cache_key": "6fdfd447c94707c6aae250702869089a8402f488b0c1b3a42db0007e0c4dd899",
+    "call_type": "retrieval_query",
+    "case_id": "query-17",
+    "completion_ms": 613.59,
+    "condition": "l2-cap-32",
+    "endpoint": "/api/v1/tasks/queries/completions",
+    "objective_score": 0.0,
+    "payload_sha256": "30d75c541b5b3edaf6ab36f37e34e53b6401265683dad7c5a6d6f4c7633d091f",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "logprobs": null,
+          "message": {
+            "content": "{\n  \"queries\": [\"Open WebUI long setting values fix\", \"how to verify Open WebUI setting row behavior fix\", \"Open WebUI settings rows",
+            "role": "assistant"
+          }
+        }
+      ],
+      "created": 1789437649,
+      "id": "qwen2.5:14b-instruct-953278e6-f74a-4a75-8afc-3ae818fa9002",
+      "model": "qwen2.5:14b-instruct",
+      "object": "chat.completion",
+      "usage": {
+        "approximate_total": "0h0m0s",
+        "completion_tokens": 32,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        "eval_count": 32,
+        "eval_duration": 513631999,
+        "input_tokens": 394,
+        "load_duration": 2940900,
+        "output_tokens": 32,
+        "prompt_eval_count": 394,
+        "prompt_eval_duration": 45653000,
+        "prompt_token/s": 8630.32,
+        "prompt_tokens": 394,
+        "response_token/s": 62.3,
+        "total_duration": 567989200,
+        "total_tokens": 426
+      }
+    },
+    "response_text": "{\n  \"queries\": [\"Open WebUI long setting values fix\", \"how to verify Open WebUI setting row behavior fix\", \"Open WebUI settings rows",
+    "retrieved_document_ids": null
+  },
+  {
+    "cache_key": "044f977dc1aa900516c3f410d28fa08084a199fe03de49da9e74c90ae6993801",
+    "call_type": "web_query",
+    "case_id": "query-18",
+    "completion_ms": 603.448,
+    "condition": "l2-cap-32",
+    "endpoint": "/api/v1/tasks/queries/completions",
+    "objective_score": 0.0,
+    "payload_sha256": "abdbb25ff75489b1be969c1cd9ecc36045b73279b57818752d13b74efe21d572",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "logprobs": null,
+          "message": {
+            "content": "{\n  \"queries\": [\"open webui model defaults panel behavior fix\", \"how to verify open webui admin settings scroll functionality\", \"open webui model",
+            "role": "assistant"
+          }
+        }
+      ],
+      "created": 1789437649,
+      "id": "qwen2.5:14b-instruct-fcb44b59-3d47-4a7a-a071-1f2f17ce6001",
+      "model": "qwen2.5:14b-instruct",
+      "object": "chat.completion",
+      "usage": {
+        "approximate_total": "0h0m0s",
+        "completion_tokens": 32,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        "eval_count": 32,
+        "eval_duration": 518951000,
+        "input_tokens": 397,
+        "load_duration": 1859400,
+        "output_tokens": 32,
+        "prompt_eval_count": 397,
+        "prompt_eval_duration": 44275000,
+        "prompt_token/s": 8966.69,
+        "prompt_tokens": 397,
+        "response_token/s": 61.66,
+        "total_duration": 570309100,
+        "total_tokens": 429
+      }
+    },
+    "response_text": "{\n  \"queries\": [\"open webui model defaults panel behavior fix\", \"how to verify open webui admin settings scroll functionality\", \"open webui model",
+    "retrieved_document_ids": null
+  },
+  {
+    "cache_key": "f8b3dcb67bc8d6f1871c1ef49345f7ca38adbea8feb8475e91eaede790ce67b9",
+    "call_type": "retrieval_query",
+    "case_id": "query-19",
+    "completion_ms": 602.765,
+    "condition": "l2-cap-32",
+    "endpoint": "/api/v1/tasks/queries/completions",
+    "objective_score": 0.0,
+    "payload_sha256": "d2452fd7a20fa5f73fc9ac8a00f8e7e0678aeb37204f23afae05e97541c895e4",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "logprobs": null,
+          "message": {
+            "content": "{\n  \"queries\": [\"Open WebUI dropdown behavior fix\", \"How to check and fix Open WebUI dropdown visibility on narrow screens\", \"Open WebUI",
+            "role": "assistant"
+          }
+        }
+      ],
+      "created": 1789437650,
+      "id": "qwen2.5:14b-instruct-b380b111-8274-4df3-83f8-20ffd918e167",
+      "model": "qwen2.5:14b-instruct",
+      "object": "chat.completion",
+      "usage": {
+        "approximate_total": "0h0m0s",
+        "completion_tokens": 32,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        "eval_count": 32,
+        "eval_duration": 514504000,
+        "input_tokens": 404,
+        "load_duration": 1799600,
+        "output_tokens": 32,
+        "prompt_eval_count": 404,
+        "prompt_eval_duration": 46649000,
+        "prompt_token/s": 8660.42,
+        "prompt_tokens": 404,
+        "response_token/s": 62.2,
+        "total_duration": 568141900,
+        "total_tokens": 436
+      }
+    },
+    "response_text": "{\n  \"queries\": [\"Open WebUI dropdown behavior fix\", \"How to check and fix Open WebUI dropdown visibility on narrow screens\", \"Open WebUI",
+    "retrieved_document_ids": null
+  },
+  {
+    "cache_key": "b8b631d3c7e97ca0221000275e747f54b204b7b23c3f41e4bcd979239e3690a6",
+    "call_type": "web_query",
+    "case_id": "query-20",
+    "completion_ms": 609.066,
+    "condition": "l2-cap-32",
+    "endpoint": "/api/v1/tasks/queries/completions",
+    "objective_score": 0.0,
+    "payload_sha256": "ac421497f261d0f4ce35b32d6277d0ebb5ebfd0c2d9fb68646abae5ba47cbaf1",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "logprobs": null,
+          "message": {
+            "content": "{\n  \"queries\": [\"Open WebUI valve dialog fix\", \"how to prevent long input from stretching dialog in Open WebUI\", \"Open WebUI dialog",
+            "role": "assistant"
+          }
+        }
+      ],
+      "created": 1789437650,
+      "id": "qwen2.5:14b-instruct-0242fe83-3cd8-4960-95fc-d060e30a4811",
+      "model": "qwen2.5:14b-instruct",
+      "object": "chat.completion",
+      "usage": {
+        "approximate_total": "0h0m0s",
+        "completion_tokens": 32,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        "eval_count": 32,
+        "eval_duration": 508438000,
+        "input_tokens": 404,
+        "load_duration": 2159800,
+        "output_tokens": 32,
+        "prompt_eval_count": 404,
+        "prompt_eval_duration": 43624000,
+        "prompt_token/s": 9260.96,
+        "prompt_tokens": 404,
+        "response_token/s": 62.94,
+        "total_duration": 559963000,
+        "total_tokens": 436
+      }
+    },
+    "response_text": "{\n  \"queries\": [\"Open WebUI valve dialog fix\", \"how to prevent long input from stretching dialog in Open WebUI\", \"Open WebUI dialog",
+    "retrieved_document_ids": null
+  },
+  {
+    "cache_key": "e79ca834475572791ed5940e2d81255bd8b6fce70e3728bfd6aaf41c49af8677",
+    "call_type": "autocomplete",
+    "case_id": "autocomplete-01",
+    "completion_ms": 428.171,
+    "condition": "l2-cap-32",
+    "endpoint": "/api/v1/tasks/auto/completions",
+    "objective_score": 1.0,
+    "payload_sha256": "a9d53773e2480984668c4214aa4a0b1e67d182b693b5250cd1bb04d5ebb9bb1e",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "logprobs": null,
+          "message": {
+            "content": "{ \"text\": \"your system to use more efficient algorithms and minimize resource usage.\" }",
+            "role": "assistant"
+          }
+        }
+      ],
+      "created": 1789437651,
+      "id": "qwen2.5:14b-instruct-dc30a387-8988-402e-9a38-74036e1e3706",
+      "model": "qwen2.5:14b-instruct",
+      "object": "chat.completion",
+      "usage": {
+        "approximate_total": "0h0m0s",
+        "completion_tokens": 19,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        "eval_count": 19,
+        "eval_duration": 298988000,
+        "input_tokens": 375,
+        "load_duration": 1056000,
+        "output_tokens": 19,
+        "prompt_eval_count": 375,
+        "prompt_eval_duration": 35705000,
+        "prompt_token/s": 10502.73,
+        "prompt_tokens": 375,
+        "response_token/s": 63.55,
+        "total_duration": 387405500,
+        "total_tokens": 394
+      }
+    },
+    "response_text": "{ \"text\": \"your system to use more efficient algorithms and minimize resource usage.\" }",
+    "retrieved_document_ids": null
+  },
+  {
+    "cache_key": "eeaddbe3c4593aa899803b5c9388bea227ab7bf35a409a4f9178888a5c87eb67",
+    "call_type": "autocomplete",
+    "case_id": "autocomplete-02",
+    "completion_ms": 561.784,
+    "condition": "l2-cap-32",
+    "endpoint": "/api/v1/tasks/auto/completions",
+    "objective_score": 1.0,
+    "payload_sha256": "4db7a787b0698250f9def73c0ef093b5e9c296a791585459df9617a1b66895af",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "logprobs": null,
+          "message": {
+            "content": "{ \"text\": \"the amount of context exceeds a certain threshold or when specific keywords are detected that indicate a need for summarization.\" }",
+            "role": "assistant"
+          }
+        }
+      ],
+      "created": 1789437651,
+      "id": "qwen2.5:14b-instruct-88c9e457-9151-4211-b926-d8163f7e9a0c",
+      "model": "qwen2.5:14b-instruct",
+      "object": "chat.completion",
+      "usage": {
+        "approximate_total": "0h0m0s",
+        "completion_tokens": 29,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        "eval_count": 29,
+        "eval_duration": 469073000,
+        "input_tokens": 376,
+        "load_duration": 2741600,
+        "output_tokens": 29,
+        "prompt_eval_count": 376,
+        "prompt_eval_duration": 37971000,
+        "prompt_token/s": 9902.29,
+        "prompt_tokens": 376,
+        "response_token/s": 61.82,
+        "total_duration": 514681500,
+        "total_tokens": 405
+      }
+    },
+    "response_text": "{ \"text\": \"the amount of context exceeds a certain threshold or when specific keywords are detected that indicate a need for summarization.\" }",
+    "retrieved_document_ids": null
+  },
+  {
+    "cache_key": "ad9dc3fe7968c7ded2ec580bf41affc3d5dbbce6405c5cc401c5d365e847d0f1",
+    "call_type": "autocomplete",
+    "case_id": "autocomplete-03",
+    "completion_ms": 528.678,
+    "condition": "l2-cap-32",
+    "endpoint": "/api/v1/tasks/auto/completions",
+    "objective_score": 1.0,
+    "payload_sha256": "86622dfb374fb748db4a48452e4d70d7e3572aaf1af19ab67c52f061d8269874",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "logprobs": null,
+          "message": {
+            "content": "{ \"text\": \"ensure all transactions are recorded accurately and securely, providing a clear audit trail for financial and compliance purposes.\" }",
+            "role": "assistant"
+          }
+        }
+      ],
+      "created": 1789437652,
+      "id": "qwen2.5:14b-instruct-0f1b6b82-ec3e-4ca0-aec3-7c1d5d6ea38e",
+      "model": "qwen2.5:14b-instruct",
+      "object": "chat.completion",
+      "usage": {
+        "approximate_total": "0h0m0s",
+        "completion_tokens": 27,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        "eval_count": 27,
+        "eval_duration": 452125000,
+        "input_tokens": 373,
+        "load_duration": 2858600,
+        "output_tokens": 27,
+        "prompt_eval_count": 373,
+        "prompt_eval_duration": 33610000,
+        "prompt_token/s": 11097.89,
+        "prompt_tokens": 373,
+        "response_token/s": 59.72,
+        "total_duration": 492542800,
+        "total_tokens": 400
+      }
+    },
+    "response_text": "{ \"text\": \"ensure all transactions are recorded accurately and securely, providing a clear audit trail for financial and compliance purposes.\" }",
+    "retrieved_document_ids": null
+  },
+  {
+    "cache_key": "905b735928e6f321ff4b3af6918e2b37ee9f8c1682c19a23781bd977c14dbe46",
+    "call_type": "autocomplete",
+    "case_id": "autocomplete-04",
+    "completion_ms": 284.65,
+    "condition": "l2-cap-32",
+    "endpoint": "/api/v1/tasks/auto/completions",
+    "objective_score": 1.0,
+    "payload_sha256": "08095e7d052b422295b00b8fcb840313db65f028f957f2ff22ecf44e0ba27f3d",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "logprobs": null,
+          "message": {
+            "content": "{ \"text\": \"track of precision and recall metrics.\" }",
+            "role": "assistant"
+          }
+        }
+      ],
+      "created": 1789437652,
+      "id": "qwen2.5:14b-instruct-51f13e2e-3dd5-4800-a1f9-bb1d248b2702",
+      "model": "qwen2.5:14b-instruct",
+      "object": "chat.completion",
+      "usage": {
+        "approximate_total": "0h0m0s",
+        "completion_tokens": 14,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        "eval_count": 14,
+        "eval_duration": 222219000,
+        "input_tokens": 376,
+        "load_duration": 1687400,
+        "output_tokens": 14,
+        "prompt_eval_count": 376,
+        "prompt_eval_duration": 36907000,
+        "prompt_token/s": 10187.77,
+        "prompt_tokens": 376,
+        "response_token/s": 63.0,
+        "total_duration": 265535600,
+        "total_tokens": 390
+      }
+    },
+    "response_text": "{ \"text\": \"track of precision and recall metrics.\" }",
+    "retrieved_document_ids": null
+  },
+  {
+    "cache_key": "f12dff0ed7da3be984723d9dfb1dce2b0c2cd55a0e85610dcdbcd072ea49ff2b",
+    "call_type": "autocomplete",
+    "case_id": "autocomplete-05",
+    "completion_ms": 345.947,
+    "condition": "l2-cap-32",
+    "endpoint": "/api/v1/tasks/auto/completions",
+    "objective_score": 1.0,
+    "payload_sha256": "58833169b3a6770e9443f496ce4b2d6318c2c107ca66df82418fbd7c2de5def4",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "logprobs": null,
+          "message": {
+            "content": "{ \"text\": \"implementing more accurate predictive text algorithms.\" }",
+            "role": "assistant"
+          }
+        }
+      ],
+      "created": 1789437652,
+      "id": "qwen2.5:14b-instruct-a9d14251-8722-47fd-a4c4-16ae30161e0b",
+      "model": "qwen2.5:14b-instruct",
+      "object": "chat.completion",
+      "usage": {
+        "approximate_total": "0h0m0s",
+        "completion_tokens": 15,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        "eval_count": 15,
+        "eval_duration": 226889000,
+        "input_tokens": 374,
+        "load_duration": 2307400,
+        "output_tokens": 15,
+        "prompt_eval_count": 374,
+        "prompt_eval_duration": 35631000,
+        "prompt_token/s": 10496.48,
+        "prompt_tokens": 374,
+        "response_token/s": 66.11,
+        "total_duration": 270547500,
+        "total_tokens": 389
+      }
+    },
+    "response_text": "{ \"text\": \"implementing more accurate predictive text algorithms.\" }",
+    "retrieved_document_ids": null
+  },
+  {
+    "cache_key": "7931fae223a1d5982b0088fc170e6ce419cc62d99e237c1cb956be8c61a341fd",
+    "call_type": "autocomplete",
+    "case_id": "autocomplete-06",
+    "completion_ms": 373.691,
+    "condition": "l2-cap-32",
+    "endpoint": "/api/v1/tasks/auto/completions",
+    "objective_score": 1.0,
+    "payload_sha256": "af672ca3ca5e897f4524979dde141a9df37dc35a193a1bb25d625b8eb045939a",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "logprobs": null,
+          "message": {
+            "content": "{ \"text\": \"the health and wellness status of individuals in a community.\" }",
+            "role": "assistant"
+          }
+        }
+      ],
+      "created": 1789437653,
+      "id": "qwen2.5:14b-instruct-4acb769d-5c84-4024-b5b4-9430e2900ea8",
+      "model": "qwen2.5:14b-instruct",
+      "object": "chat.completion",
+      "usage": {
+        "approximate_total": "0h0m0s",
+        "completion_tokens": 18,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        "eval_count": 18,
+        "eval_duration": 279500000,
+        "input_tokens": 375,
+        "load_duration": 1821400,
+        "output_tokens": 18,
+        "prompt_eval_count": 375,
+        "prompt_eval_duration": 32957000,
+        "prompt_token/s": 11378.46,
+        "prompt_tokens": 375,
+        "response_token/s": 64.4,
+        "total_duration": 319780000,
+        "total_tokens": 393
+      }
+    },
+    "response_text": "{ \"text\": \"the health and wellness status of individuals in a community.\" }",
+    "retrieved_document_ids": null
+  },
+  {
+    "cache_key": "6e5ca538f654d14364b4a6ad09656d24a7b12e4eab66aff9522ddfb696781601",
+    "call_type": "autocomplete",
+    "case_id": "autocomplete-07",
+    "completion_ms": 419.597,
+    "condition": "l2-cap-32",
+    "endpoint": "/api/v1/tasks/auto/completions",
+    "objective_score": 1.0,
+    "payload_sha256": "270b605df653f7f72eb7b70e83957dbb3ce8c2a542d664be3cf54999424db929",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "logprobs": null,
+          "message": {
+            "content": "{ \"text\": \"the time taken for tasks to complete from submission to receipt of results.\" }",
+            "role": "assistant"
+          }
+        }
+      ],
+      "created": 1789437653,
+      "id": "qwen2.5:14b-instruct-9e9f5c94-dac8-48d8-aa1c-1fd76441ebf2",
+      "model": "qwen2.5:14b-instruct",
+      "object": "chat.completion",
+      "usage": {
+        "approximate_total": "0h0m0s",
+        "completion_tokens": 21,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        "eval_count": 21,
+        "eval_duration": 328779000,
+        "input_tokens": 376,
+        "load_duration": 1541100,
+        "output_tokens": 21,
+        "prompt_eval_count": 376,
+        "prompt_eval_duration": 33916000,
+        "prompt_token/s": 11086.21,
+        "prompt_tokens": 376,
+        "response_token/s": 63.87,
+        "total_duration": 369270100,
+        "total_tokens": 397
+      }
+    },
+    "response_text": "{ \"text\": \"the time taken for tasks to complete from submission to receipt of results.\" }",
+    "retrieved_document_ids": null
+  },
+  {
+    "cache_key": "20bdc22c9e6617bcf76b5ea27236847d8ddce7198be8a9d741555231fb76f1e2",
+    "call_type": "autocomplete",
+    "case_id": "autocomplete-08",
+    "completion_ms": 659.05,
+    "condition": "l2-cap-32",
+    "endpoint": "/api/v1/tasks/auto/completions",
+    "objective_score": 1.0,
+    "payload_sha256": "3b9798343c6ca3341c5ce8b2c026629d9d9a591c612289290a22199cb1eec9dc",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "logprobs": null,
+          "message": {
+            "content": "{ \"text\": \"a unique identifier for the user, the type of output requested, and the specific parameters of the query to ensure consistency and avoid redundancy.\"",
+            "role": "assistant"
+          }
+        }
+      ],
+      "created": 1789437654,
+      "id": "qwen2.5:14b-instruct-4a8eacb8-3baf-4a52-ab42-86f929132951",
+      "model": "qwen2.5:14b-instruct",
+      "object": "chat.completion",
+      "usage": {
+        "approximate_total": "0h0m0s",
+        "completion_tokens": 32,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        "eval_count": 32,
+        "eval_duration": 548443000,
+        "input_tokens": 375,
+        "load_duration": 3649300,
+        "output_tokens": 32,
+        "prompt_eval_count": 375,
+        "prompt_eval_duration": 39424000,
+        "prompt_token/s": 9511.97,
+        "prompt_tokens": 375,
+        "response_token/s": 58.35,
+        "total_duration": 597293600,
+        "total_tokens": 407
+      }
+    },
+    "response_text": "{ \"text\": \"a unique identifier for the user, the type of output requested, and the specific parameters of the query to ensure consistency and avoid redundancy.\"",
+    "retrieved_document_ids": null
+  },
+  {
+    "cache_key": "43398b3593f94e02a0bbebf2269d7a8e6ad8f951fef9abb09a1beabdc982c199",
+    "call_type": "autocomplete",
+    "case_id": "autocomplete-09",
+    "completion_ms": 466.495,
+    "condition": "l2-cap-32",
+    "endpoint": "/api/v1/tasks/auto/completions",
+    "objective_score": 1.0,
+    "payload_sha256": "411a7fc7012daf8a27149030bc9d4a125fcb7e9329a2e473e05ab870b28b8d54",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "logprobs": null,
+          "message": {
+            "content": "{ \"text\": \"the query is similar to previously stored queries and the context has not significantly changed.\" }",
+            "role": "assistant"
+          }
+        }
+      ],
+      "created": 1789437654,
+      "id": "qwen2.5:14b-instruct-901d5b94-09a9-4ada-a69d-80f31ab4e823",
+      "model": "qwen2.5:14b-instruct",
+      "object": "chat.completion",
+      "usage": {
+        "approximate_total": "0h0m0s",
+        "completion_tokens": 23,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        "eval_count": 23,
+        "eval_duration": 388189000,
+        "input_tokens": 372,
+        "load_duration": 1545300,
+        "output_tokens": 23,
+        "prompt_eval_count": 372,
+        "prompt_eval_duration": 36755000,
+        "prompt_token/s": 10121.07,
+        "prompt_tokens": 372,
+        "response_token/s": 59.25,
+        "total_duration": 430810300,
+        "total_tokens": 395
+      }
+    },
+    "response_text": "{ \"text\": \"the query is similar to previously stored queries and the context has not significantly changed.\" }",
+    "retrieved_document_ids": null
+  },
+  {
+    "cache_key": "4a650c1b59edaa17608c859ceeb1e91a23c3f4de3000f84fe2f4c0df7b1fd827",
+    "call_type": "autocomplete",
+    "case_id": "autocomplete-10",
+    "completion_ms": 368.558,
+    "condition": "l2-cap-32",
+    "endpoint": "/api/v1/tasks/auto/completions",
+    "objective_score": 1.0,
+    "payload_sha256": "6e231fd38bc202f0ef1c2986261e07933096c322582ff657c6d0822e0fcde79d",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "logprobs": null,
+          "message": {
+            "content": "{ \"text\": \"are important for ensuring titles are concise and impactful.\" }",
+            "role": "assistant"
+          }
+        }
+      ],
+      "created": 1789437655,
+      "id": "qwen2.5:14b-instruct-a19bb3f8-f946-4ff5-bb34-0d9dc57fa8ad",
+      "model": "qwen2.5:14b-instruct",
+      "object": "chat.completion",
+      "usage": {
+        "approximate_total": "0h0m0s",
+        "completion_tokens": 17,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        "eval_count": 17,
+        "eval_duration": 280888000,
+        "input_tokens": 371,
+        "load_duration": 2342100,
+        "output_tokens": 17,
+        "prompt_eval_count": 371,
+        "prompt_eval_duration": 36402000,
+        "prompt_token/s": 10191.75,
+        "prompt_tokens": 371,
+        "response_token/s": 60.52,
+        "total_duration": 324113800,
+        "total_tokens": 388
+      }
+    },
+    "response_text": "{ \"text\": \"are important for ensuring titles are concise and impactful.\" }",
+    "retrieved_document_ids": null
+  }
+]

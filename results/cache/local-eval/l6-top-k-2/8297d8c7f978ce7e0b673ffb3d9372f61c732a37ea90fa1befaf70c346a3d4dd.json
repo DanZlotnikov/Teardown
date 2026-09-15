@@ -1,0 +1,59 @@
+{
+  "cache_key": "8297d8c7f978ce7e0b673ffb3d9372f61c732a37ea90fa1befaf70c346a3d4dd",
+  "call_type": "retrieval",
+  "case_id": "retrieval-r17",
+  "completion_ms": 63.52,
+  "condition": "l6-top-k-2",
+  "endpoint": "/api/v1/retrieval/query/collection",
+  "objective_score": 1.0,
+  "payload_sha256": "431f7678fb3b25cf16b5b18689d3c3b77abd575b0e3845d2d6398b3dcb7f15c3",
+  "response": {
+    "distances": [
+      [
+        0.8062240779399872,
+        0.782761424779892
+      ]
+    ],
+    "documents": [
+      [
+        "[DOC_ID:resume-cache] Paid output cache  \nCache every paid response under a stable key that binds condition, dataset hash, endpoint, and payload. Write the cache atomically before the append-only action manifest. On resume, a valid cache alone must prevent a repeated provider call.",
+        "[DOC_ID:budget] Paid-call budget guard  \nBefore provider dispatch, acquire a cross-process lock and persist a worst-case reservation. Include the historical carry-forward and unresolved failures in exposure. Stop at 23 dollars softly and never reserve beyond 30 dollars."
+      ]
+    ],
+    "metadatas": [
+      [
+        {
+          "content_type": "text/plain; charset=utf-8",
+          "created_by": "b997c815-91d7-4e7f-b9bb-f554a9245ad7",
+          "data": "{}",
+          "embedding_config": "{'engine': 'ollama', 'model': 'nomic-embed-text'}",
+          "file_hash": "bd3d69d8e6dfac97f1cde34cb081bcfae0adfbb71c568ada12a835997ff2803e",
+          "file_id": "b5195914-9264-45ac-bb91-dfbc880f422a",
+          "hash": "bd3d69d8e6dfac97f1cde34cb081bcfae0adfbb71c568ada12a835997ff2803e",
+          "name": "teardown-resume-cache.txt",
+          "size": 281,
+          "source": "teardown-resume-cache.txt",
+          "start_index": 0
+        },
+        {
+          "content_type": "text/plain; charset=utf-8",
+          "created_by": "b997c815-91d7-4e7f-b9bb-f554a9245ad7",
+          "data": "{}",
+          "embedding_config": "{'engine': 'ollama', 'model': 'nomic-embed-text'}",
+          "file_hash": "476413f47cd8df021664df0eb60a66309bf8c049b99905d5e01e8215f703fb98",
+          "file_id": "1fd95377-8c3d-4777-b9b8-8d3193f99045",
+          "hash": "476413f47cd8df021664df0eb60a66309bf8c049b99905d5e01e8215f703fb98",
+          "name": "teardown-budget.txt",
+          "size": 269,
+          "source": "teardown-budget.txt",
+          "start_index": 0
+        }
+      ]
+    ]
+  },
+  "response_text": "",
+  "retrieved_document_ids": [
+    "resume-cache",
+    "budget"
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "cache_key": "3754edf06107015d06c558cf805999583c2d1c98a2cfd21c540df589a18a11fb",
+  "call_type": "main_chat_context",
+  "case_id": "context-05",
+  "completion_ms": 950.428,
+  "condition": "l4-last-6-turns",
+  "endpoint": "/api/chat/completions",
+  "objective_score": 0.0,
+  "payload_sha256": "1365cff55257009b7997cdf8e74d08bba0208abb87db8761b6baf42f9a7927e1",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "It seems there might be a misunderstanding. The initial turns of our conversation did not include specific details about a project name, incident code, or recovery region. Could you please provide more context or clarify your request? This will help me give you a more accurate and helpful response.",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789440774,
+    "id": "qwen2.5:14b-instruct-518bf358-4da5-486a-b7ba-28356444a538",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 56,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 56,
+      "eval_duration": 877416000,
+      "input_tokens": 222,
+      "load_duration": 1208500,
+      "output_tokens": 56,
+      "prompt_eval_count": 222,
+      "prompt_eval_duration": 19411000,
+      "prompt_token/s": 11436.81,
+      "prompt_tokens": 222,
+      "response_token/s": 63.82,
+      "total_duration": 901465500,
+      "total_tokens": 278
+    }
+  },
+  "response_text": "It seems there might be a misunderstanding. The initial turns of our conversation did not include specific details about a project name, incident code, or recovery region. Could you please provide more context or clarify your request? This will help me give you a more accurate and helpful response.",
+  "retrieved_document_ids": null
+}

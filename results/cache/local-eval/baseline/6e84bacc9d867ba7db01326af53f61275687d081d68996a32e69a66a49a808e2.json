@@ -1,0 +1,50 @@
+{
+  "cache_key": "6e84bacc9d867ba7db01326af53f61275687d081d68996a32e69a66a49a808e2",
+  "call_type": "title",
+  "case_id": "title-15",
+  "completion_ms": 275.991,
+  "condition": "baseline",
+  "endpoint": "/api/v1/tasks/title/completions",
+  "objective_score": 1.0,
+  "payload_sha256": "c823f5b696420ddcee8c6bd5b3bcc9c8bae93ce1022f3d38082c82c24390ff99",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{ \"title\": \"WebUI Banners\" }",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789436479,
+    "id": "qwen2.5:14b-instruct-79d22081-3cb7-4921-b78c-748a5e14dbf1",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 12,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 12,
+      "eval_duration": 180558000,
+      "input_tokens": 322,
+      "load_duration": 2137000,
+      "output_tokens": 12,
+      "prompt_eval_count": 322,
+      "prompt_eval_duration": 39547000,
+      "prompt_token/s": 8142.21,
+      "prompt_tokens": 322,
+      "response_token/s": 66.46,
+      "total_duration": 225424000,
+      "total_tokens": 334
+    }
+  },
+  "response_text": "{ \"title\": \"WebUI Banners\" }",
+  "retrieved_document_ids": null
+}

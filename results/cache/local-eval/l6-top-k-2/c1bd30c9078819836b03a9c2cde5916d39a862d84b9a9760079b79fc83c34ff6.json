@@ -1,0 +1,59 @@
+{
+  "cache_key": "c1bd30c9078819836b03a9c2cde5916d39a862d84b9a9760079b79fc83c34ff6",
+  "call_type": "retrieval",
+  "case_id": "retrieval-r06",
+  "completion_ms": 59.62,
+  "condition": "l6-top-k-2",
+  "endpoint": "/api/v1/retrieval/query/collection",
+  "objective_score": 1.0,
+  "payload_sha256": "8e506e7e2fa3df82daaa7cdc327804beb5ac4c2b3e908810d6a706d74cf8f1a3",
+  "response": {
+    "distances": [
+      [
+        0.8611751198768616,
+        0.8063629269599915
+      ]
+    ],
+    "documents": [
+      [
+        "[DOC_ID:rag-top-k] Retrieved chunk count  \nThe rag.top_k configuration defaults to three. Document and collection retrieval pass this value to vector or hybrid search unless a request-level k overrides it. Compare k values 3, 2, and 1 on one fixed indexed corpus.",
+        "[DOC_ID:quality] Targeted quality evaluation  \nEvaluate only call types affected by each lever. Use objective format, exact-fact, retrieval-overlap, and grounding metrics first. Use a cached non-reasoning judge only when objective comparisons are insufficient."
+      ]
+    ],
+    "metadatas": [
+      [
+        {
+          "content_type": "text/plain; charset=utf-8",
+          "created_by": "b997c815-91d7-4e7f-b9bb-f554a9245ad7",
+          "data": "{}",
+          "embedding_config": "{'engine': 'ollama', 'model': 'nomic-embed-text'}",
+          "file_hash": "c2771fa87370efc07419258741deac995d5de0d019e96ab9417ac7084cb78a2d",
+          "file_id": "94914ac4-5fd6-446a-9e51-60b8ac41c2dc",
+          "hash": "c2771fa87370efc07419258741deac995d5de0d019e96ab9417ac7084cb78a2d",
+          "name": "teardown-rag-top-k.txt",
+          "size": 262,
+          "source": "teardown-rag-top-k.txt",
+          "start_index": 0
+        },
+        {
+          "content_type": "text/plain; charset=utf-8",
+          "created_by": "b997c815-91d7-4e7f-b9bb-f554a9245ad7",
+          "data": "{}",
+          "embedding_config": "{'engine': 'ollama', 'model': 'nomic-embed-text'}",
+          "file_hash": "01cddb57ba8e51c18e3a7f2a3c46257af80f516da6a1ff1f6306ad80c6c322b9",
+          "file_id": "0b43f959-edd6-4cba-8c80-c42d76fbdeaa",
+          "hash": "01cddb57ba8e51c18e3a7f2a3c46257af80f516da6a1ff1f6306ad80c6c322b9",
+          "name": "teardown-quality.txt",
+          "size": 259,
+          "source": "teardown-quality.txt",
+          "start_index": 0
+        }
+      ]
+    ]
+  },
+  "response_text": "",
+  "retrieved_document_ids": [
+    "rag-top-k",
+    "quality"
+  ]
+}

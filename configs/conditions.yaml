@@ -47,7 +47,7 @@ single_lever_conditions:
       - {id: l4-last-6-turns, change: {context_policy: {kind: sliding_turns, turns: 6}}}
       - {id: l4-last-3-turns, change: {context_policy: {kind: sliding_turns, turns: 3}}}
       - id: l4-native-compaction
-        change: {context_policy: {kind: native_compaction, enabled: true, token_threshold: 512, token_cap: 512, retention_percentage: 40}}
+        change: {context_policy: {kind: native_compaction, enabled: true, token_threshold: 256, token_cap: 256, retention_percentage: 40}}
         trigger_requirement: Every evaluated long chat must emit or persist evidence that compaction occurred.
   L5_query_reuse:
     affected_calls: [retrieval_query, web_query]

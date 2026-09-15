@@ -1,0 +1,50 @@
+{
+  "cache_key": "315fbcded3aedcffef5fde8503e4a84d274c8270a4d507c37a056c05572e5960",
+  "call_type": "main_chat_context",
+  "case_id": "context-15",
+  "completion_ms": 1054.442,
+  "condition": "l4-last-6-turns",
+  "endpoint": "/api/chat/completions",
+  "objective_score": 0.0,
+  "payload_sha256": "d45f517b57b25e47588082dfd631703e7adbfb49965a9651bf304a735503be9a",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "It seems there might be some confusion as the previous responses did not include specific details about a project name, incident code, or recovery region, as these elements were not mentioned in the context of our conversation. Could you please provide more context or details about what you're looking for so I can assist you better?",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789440788,
+    "id": "qwen2.5:14b-instruct-13c04213-50df-4515-ab9c-1c976c5a6121",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m1s",
+      "completion_tokens": 63,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 63,
+      "eval_duration": 991552000,
+      "input_tokens": 222,
+      "load_duration": 1324300,
+      "output_tokens": 63,
+      "prompt_eval_count": 222,
+      "prompt_eval_duration": 18454000,
+      "prompt_token/s": 12029.91,
+      "prompt_tokens": 222,
+      "response_token/s": 63.54,
+      "total_duration": 1014043600,
+      "total_tokens": 285
+    }
+  },
+  "response_text": "It seems there might be some confusion as the previous responses did not include specific details about a project name, incident code, or recovery region, as these elements were not mentioned in the context of our conversation. Could you please provide more context or details about what you're looking for so I can assist you better?",
+  "retrieved_document_ids": null
+}

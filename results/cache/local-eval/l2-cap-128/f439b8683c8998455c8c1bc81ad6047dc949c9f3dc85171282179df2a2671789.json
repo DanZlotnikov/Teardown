@@ -1,0 +1,50 @@
+{
+  "cache_key": "f439b8683c8998455c8c1bc81ad6047dc949c9f3dc85171282179df2a2671789",
+  "call_type": "tags",
+  "case_id": "tags-01",
+  "completion_ms": 950.245,
+  "condition": "l2-cap-128",
+  "endpoint": "/api/v1/tasks/tags/completions",
+  "objective_score": 1.0,
+  "payload_sha256": "a0f126270471e6e4662e01aa29676f4ae3bd28d3ed4da50abb2d1d4fdbaaed09",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "Based on the chat history, the main theme is related to technology, specifically dealing with web development and server management. Here are the tags:\n\n```json\n{ \"tags\": [\"Technology\", \"Web Development\", \"Server Management\"] }\n```",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789437426,
+    "id": "qwen2.5:14b-instruct-7e70c196-7cff-41b6-bac0-80ea9fbaa79e",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 49,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 49,
+      "eval_duration": 789248000,
+      "input_tokens": 304,
+      "load_duration": 1374900,
+      "output_tokens": 49,
+      "prompt_eval_count": 304,
+      "prompt_eval_duration": 55773000,
+      "prompt_token/s": 5450.67,
+      "prompt_tokens": 304,
+      "response_token/s": 62.08,
+      "total_duration": 890164200,
+      "total_tokens": 353
+    }
+  },
+  "response_text": "Based on the chat history, the main theme is related to technology, specifically dealing with web development and server management. Here are the tags:\n\n```json\n{ \"tags\": [\"Technology\", \"Web Development\", \"Server Management\"] }\n```",
+  "retrieved_document_ids": null
+}

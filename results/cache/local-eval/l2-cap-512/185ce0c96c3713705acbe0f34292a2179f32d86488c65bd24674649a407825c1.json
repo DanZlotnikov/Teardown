@@ -1,0 +1,50 @@
+{
+  "cache_key": "185ce0c96c3713705acbe0f34292a2179f32d86488c65bd24674649a407825c1",
+  "call_type": "title",
+  "case_id": "title-01",
+  "completion_ms": 297.752,
+  "condition": "l2-cap-512",
+  "endpoint": "/api/v1/tasks/title/completions",
+  "objective_score": 1.0,
+  "payload_sha256": "2585e2971151dc6e1d2ae733bc3d9895f71a308e2dc7c9258183ecf965192476",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{ \"title\": \"WebUI Reload Issue\" }",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789437145,
+    "id": "qwen2.5:14b-instruct-18d85720-993b-4330-be23-2b3a2e44503c",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 12,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 12,
+      "eval_duration": 160381000,
+      "input_tokens": 353,
+      "load_duration": 1658100,
+      "output_tokens": 12,
+      "prompt_eval_count": 353,
+      "prompt_eval_duration": 44557000,
+      "prompt_token/s": 7922.44,
+      "prompt_tokens": 353,
+      "response_token/s": 74.82,
+      "total_duration": 240615400,
+      "total_tokens": 365
+    }
+  },
+  "response_text": "{ \"title\": \"WebUI Reload Issue\" }",
+  "retrieved_document_ids": null
+}

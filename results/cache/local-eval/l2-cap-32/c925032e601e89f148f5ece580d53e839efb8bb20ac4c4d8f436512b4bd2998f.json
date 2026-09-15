@@ -1,0 +1,50 @@
+{
+  "cache_key": "c925032e601e89f148f5ece580d53e839efb8bb20ac4c4d8f436512b4bd2998f",
+  "call_type": "retrieval_query",
+  "case_id": "query-13",
+  "completion_ms": 603.249,
+  "condition": "l2-cap-32",
+  "endpoint": "/api/v1/tasks/queries/completions",
+  "objective_score": 0.0,
+  "payload_sha256": "0197f4f794303cba83a8cd738e3906158131af96872053a286c50da91f7c7220",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"queries\": [\"Open WebUI custom automation schedule behavior fix\", \"How to verify custom repeat rule retention in Open WebUI\", \"Open WebUI",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789437646,
+    "id": "qwen2.5:14b-instruct-49ebc01f-1bc3-46cc-9ec7-792ae794fb66",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 32,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 32,
+      "eval_duration": 519397000,
+      "input_tokens": 393,
+      "load_duration": 1754700,
+      "output_tokens": 32,
+      "prompt_eval_count": 393,
+      "prompt_eval_duration": 41847000,
+      "prompt_token/s": 9391.35,
+      "prompt_tokens": 393,
+      "response_token/s": 61.61,
+      "total_duration": 567777500,
+      "total_tokens": 425
+    }
+  },
+  "response_text": "{\n  \"queries\": [\"Open WebUI custom automation schedule behavior fix\", \"How to verify custom repeat rule retention in Open WebUI\", \"Open WebUI",
+  "retrieved_document_ids": null
+}

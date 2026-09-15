@@ -1,0 +1,50 @@
+{
+  "cache_key": "40d713d4c990af44243a4b2939eb71901551a25986dda94c3909c700214c2682",
+  "call_type": "title",
+  "case_id": "title-09",
+  "completion_ms": 256.272,
+  "condition": "l2-cap-32",
+  "endpoint": "/api/v1/tasks/title/completions",
+  "objective_score": 1.0,
+  "payload_sha256": "8823e84e4de0b668d1fc2a064c0aee072d0b85c2130958fb3e72147af65bfdc1",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{ \"title\": \"Translation Updates\" }",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789437616,
+    "id": "qwen2.5:14b-instruct-e0924553-8791-4c31-a3aa-aafaf87bf397",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 10,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 10,
+      "eval_duration": 149438000,
+      "input_tokens": 343,
+      "load_duration": 1528800,
+      "output_tokens": 10,
+      "prompt_eval_count": 343,
+      "prompt_eval_duration": 49698000,
+      "prompt_token/s": 6901.69,
+      "prompt_tokens": 343,
+      "response_token/s": 66.92,
+      "total_duration": 204272300,
+      "total_tokens": 353
+    }
+  },
+  "response_text": "{ \"title\": \"Translation Updates\" }",
+  "retrieved_document_ids": null
+}

@@ -1,0 +1,51 @@
+{
+  "cache_key": "0a89be741132ef660ffb6b0f675287e261769db9527d08bf9bd94b181f4f0086",
+  "call_type": "main_chat_context",
+  "case_id": "context-08",
+  "chat_id": "579bf09c-6f4c-427c-950c-5d59f4cb437e",
+  "compaction_triggered": true,
+  "completion_ms": 1626.336,
+  "condition": "l4-native-compaction",
+  "objective_score": 0.6666666666666666,
+  "persisted_summary_chars": 241,
+  "persisted_summary_sha256": "b944ac851cd1bb0147432ef23d107fa50c3e8a359b7a316bd1d0177cfe296a43",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "The project name is Kestrel-08, the incident code is OWUI-7308, and the recovery region is La Paz.",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789442127,
+    "id": "qwen2.5:14b-instruct-1c6c8879-0384-453a-b58a-f35662d35de5",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 32,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 32,
+      "eval_duration": 481468000,
+      "input_tokens": 191,
+      "load_duration": 1255400,
+      "output_tokens": 32,
+      "prompt_eval_count": 191,
+      "prompt_eval_duration": 77092000,
+      "prompt_token/s": 2477.56,
+      "prompt_tokens": 191,
+      "response_token/s": 66.46,
+      "total_duration": 594313100,
+      "total_tokens": 223
+    }
+  },
+  "response_text": "The project name is Kestrel-08, the incident code is OWUI-7308, and the recovery region is La Paz."
+}

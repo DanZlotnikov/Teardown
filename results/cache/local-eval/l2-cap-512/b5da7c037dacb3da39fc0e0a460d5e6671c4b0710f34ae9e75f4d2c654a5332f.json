@@ -1,0 +1,50 @@
+{
+  "cache_key": "b5da7c037dacb3da39fc0e0a460d5e6671c4b0710f34ae9e75f4d2c654a5332f",
+  "call_type": "tags",
+  "case_id": "tags-06",
+  "completion_ms": 771.576,
+  "condition": "l2-cap-512",
+  "endpoint": "/api/v1/tasks/tags/completions",
+  "objective_score": 1.0,
+  "payload_sha256": "5b51c79d19caa2321bc0aeb75491cc6ad2d9a299f1c7b95e9c8d9d7faa8e28e8",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "Based on the chat history, the primary theme is related to technology, specifically the use and troubleshooting of software applications. Here are the tags:\n\n```json\n{ \"tags\": [\"Technology\", \"Software\", \"WebUI\"] }\n```",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789437156,
+    "id": "qwen2.5:14b-instruct-d5ab3d0e-176e-4791-859e-81df8e395db4",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 48,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 48,
+      "eval_duration": 674898000,
+      "input_tokens": 270,
+      "load_duration": 1577300,
+      "output_tokens": 48,
+      "prompt_eval_count": 270,
+      "prompt_eval_duration": 43408000,
+      "prompt_token/s": 6220.05,
+      "prompt_tokens": 270,
+      "response_token/s": 71.12,
+      "total_duration": 724267400,
+      "total_tokens": 318
+    }
+  },
+  "response_text": "Based on the chat history, the primary theme is related to technology, specifically the use and troubleshooting of software applications. Here are the tags:\n\n```json\n{ \"tags\": [\"Technology\", \"Software\", \"WebUI\"] }\n```",
+  "retrieved_document_ids": null
+}

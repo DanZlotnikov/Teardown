@@ -1,0 +1,37 @@
+{
+  "actual_api_cost_usd": "0",
+  "agreement_warning": "Lexical overlap is diagnostic only. Objective scores drive local grading; semantic pairwise judging remains blocked from paid execution.",
+  "cached_cases": 115,
+  "completed_cases": 115,
+  "condition": "baseline",
+  "counts_by_call_type": {
+    "autocomplete": 10,
+    "main_chat_context": 20,
+    "retrieval": 20,
+    "retrieval_query": 10,
+    "tags": 20,
+    "title": 25,
+    "web_query": 10
+  },
+  "eval_sha256": "4f71a9d609398d9b0794943a4669947ceb38339e9edb4f6a02dd6971d4c0cff6",
+  "lexical_agreement_vs_baseline_by_call_type": {
+    "autocomplete": 1.0,
+    "main_chat_context": 1.0,
+    "retrieval_query": 1.0,
+    "tags": 1.0,
+    "title": 1.0,
+    "web_query": 1.0
+  },
+  "objective_mean_by_call_type": {
+    "autocomplete": 1.0,
+    "main_chat_context": 1.0,
+    "retrieval": 0.075,
+    "retrieval_query": 0.0,
+    "tags": 1.0,
+    "title": 1.0,
+    "web_query": 0.0
+  },
+  "provider": "local_ollama_via_open_webui",
+  "rows": "results/eval/baseline.rows.json",
+  "schema_version": 1
+}

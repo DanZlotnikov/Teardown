@@ -1,0 +1,50 @@
+{
+  "cache_key": "d9fe8836fbb879ad8b92287290f99d5b19a79b1d4944e6c38f78d9bb26feaa18",
+  "call_type": "title",
+  "case_id": "title-20",
+  "completion_ms": 774.178,
+  "condition": "l2-cap-512",
+  "endpoint": "/api/v1/tasks/title/completions",
+  "objective_score": 1.0,
+  "payload_sha256": "b3648593999a306bc4176760aef4a5839dd55cb031984fbe0e51de13399d0ff2",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{ \"title\": \"Calendar Bug\" }",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789437151,
+    "id": "qwen2.5:14b-instruct-15f73fbb-67ab-4713-8769-7b55494b7a9d",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 10,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 10,
+      "eval_duration": 142806000,
+      "input_tokens": 332,
+      "load_duration": 2165800,
+      "output_tokens": 10,
+      "prompt_eval_count": 332,
+      "prompt_eval_duration": 42315000,
+      "prompt_token/s": 7845.92,
+      "prompt_tokens": 332,
+      "response_token/s": 70.03,
+      "total_duration": 731621200,
+      "total_tokens": 342
+    }
+  },
+  "response_text": "{ \"title\": \"Calendar Bug\" }",
+  "retrieved_document_ids": null
+}

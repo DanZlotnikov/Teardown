@@ -1,0 +1,50 @@
+{
+  "cache_key": "d1c1117167ea83b4c2009bedde688e22309d24a4bcb73e1ffcc7ef3652e21602",
+  "call_type": "main_chat_context",
+  "case_id": "context-13",
+  "completion_ms": 1599.514,
+  "condition": "l4-last-6-turns",
+  "endpoint": "/api/chat/completions",
+  "objective_score": 0.0,
+  "payload_sha256": "734651fd0a3071b25c6b43a93cf3a5e6909265acc3fa73b38e6d714b1e28013c",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "It appears there might be a misunderstanding. In the previous responses, I was providing generic information about logging and deployment checks as requested, without referencing any specific project name, incident code, or recovery region since these details were not provided in the initial prompt.\n\nTo directly answer your question, the exact project name, incident code, and recovery region were not specified in any of the earlier turns. Could you please provide these details so I can give you a more accurate response?",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789440785,
+    "id": "qwen2.5:14b-instruct-dfb2284d-b769-4851-9c30-7f53ae4301f4",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m1s",
+      "completion_tokens": 94,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 94,
+      "eval_duration": 1513768000,
+      "input_tokens": 222,
+      "load_duration": 1020700,
+      "output_tokens": 94,
+      "prompt_eval_count": 222,
+      "prompt_eval_duration": 19296000,
+      "prompt_token/s": 11504.98,
+      "prompt_tokens": 222,
+      "response_token/s": 62.1,
+      "total_duration": 1537838700,
+      "total_tokens": 316
+    }
+  },
+  "response_text": "It appears there might be a misunderstanding. In the previous responses, I was providing generic information about logging and deployment checks as requested, without referencing any specific project name, incident code, or recovery region since these details were not provided in the initial prompt.\n\nTo directly answer your question, the exact project name, incident code, and recovery region were not specified in any of the earlier turns. Could you please provide these details so I can give you a more accurate response?",
+  "retrieved_document_ids": null
+}

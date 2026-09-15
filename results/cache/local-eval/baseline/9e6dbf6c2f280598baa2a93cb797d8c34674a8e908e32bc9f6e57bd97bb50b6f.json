@@ -1,0 +1,50 @@
+{
+  "cache_key": "9e6dbf6c2f280598baa2a93cb797d8c34674a8e908e32bc9f6e57bd97bb50b6f",
+  "call_type": "autocomplete",
+  "case_id": "autocomplete-06",
+  "completion_ms": 373.9,
+  "condition": "baseline",
+  "endpoint": "/api/v1/tasks/auto/completions",
+  "objective_score": 1.0,
+  "payload_sha256": "af672ca3ca5e897f4524979dde141a9df37dc35a193a1bb25d625b8eb045939a",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{ \"text\": \"the various health statuses of individuals within a community.\" }",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789436543,
+    "id": "qwen2.5:14b-instruct-5ef49305-3124-4a78-90c1-c2a2373d80e8",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 17,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 17,
+      "eval_duration": 263418999,
+      "input_tokens": 375,
+      "load_duration": 2284400,
+      "output_tokens": 17,
+      "prompt_eval_count": 375,
+      "prompt_eval_duration": 34411000,
+      "prompt_token/s": 10897.68,
+      "prompt_tokens": 375,
+      "response_token/s": 64.54,
+      "total_duration": 304334800,
+      "total_tokens": 392
+    }
+  },
+  "response_text": "{ \"text\": \"the various health statuses of individuals within a community.\" }",
+  "retrieved_document_ids": null
+}

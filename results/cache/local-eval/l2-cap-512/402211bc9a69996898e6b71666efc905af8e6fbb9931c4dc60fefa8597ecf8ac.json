@@ -1,0 +1,50 @@
+{
+  "cache_key": "402211bc9a69996898e6b71666efc905af8e6fbb9931c4dc60fefa8597ecf8ac",
+  "call_type": "autocomplete",
+  "case_id": "autocomplete-03",
+  "completion_ms": 303.688,
+  "condition": "l2-cap-512",
+  "endpoint": "/api/v1/tasks/auto/completions",
+  "objective_score": 1.0,
+  "payload_sha256": "86622dfb374fb748db4a48452e4d70d7e3572aaf1af19ab67c52f061d8269874",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{ \"text\": \"ensure all transactions are recorded accurately and securely.\" }",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789437184,
+    "id": "qwen2.5:14b-instruct-84c40ca5-3351-4088-97c6-74ecfd33a004",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 16,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 16,
+      "eval_duration": 215319000,
+      "input_tokens": 373,
+      "load_duration": 1866600,
+      "output_tokens": 16,
+      "prompt_eval_count": 373,
+      "prompt_eval_duration": 30172000,
+      "prompt_token/s": 12362.46,
+      "prompt_tokens": 373,
+      "response_token/s": 74.31,
+      "total_duration": 249733100,
+      "total_tokens": 389
+    }
+  },
+  "response_text": "{ \"text\": \"ensure all transactions are recorded accurately and securely.\" }",
+  "retrieved_document_ids": null
+}

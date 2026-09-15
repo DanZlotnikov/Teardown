@@ -1,0 +1,50 @@
+{
+  "cache_key": "4087ff50f58ffd3725d15d270dd00740612567b94dff36bb1b86be5afc38d62c",
+  "call_type": "tags",
+  "case_id": "tags-20",
+  "completion_ms": 383.37,
+  "condition": "l2-cap-32",
+  "endpoint": "/api/v1/tasks/tags/completions",
+  "objective_score": 1.0,
+  "payload_sha256": "6ff2eb0d775684701ae8110cbdf4ae01a45909926632b70b488dcfd5092c1132",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "```json\n{ \"tags\": [\"Technology\", \"Software\", \"Programming\"] }\n```",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789437632,
+    "id": "qwen2.5:14b-instruct-339b1b4a-9695-4102-bf37-f7e98d2936b3",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 19,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 19,
+      "eval_duration": 298341000,
+      "input_tokens": 276,
+      "load_duration": 1774400,
+      "output_tokens": 19,
+      "prompt_eval_count": 276,
+      "prompt_eval_duration": 51335000,
+      "prompt_token/s": 5376.45,
+      "prompt_tokens": 276,
+      "response_token/s": 63.69,
+      "total_duration": 354819300,
+      "total_tokens": 295
+    }
+  },
+  "response_text": "```json\n{ \"tags\": [\"Technology\", \"Software\", \"Programming\"] }\n```",
+  "retrieved_document_ids": null
+}

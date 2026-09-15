@@ -1,0 +1,59 @@
+{
+  "cache_key": "4f198aae865a9114b1bac6bd95b527f6b475da59b133373aa33eb953e7d3a833",
+  "call_type": "retrieval",
+  "case_id": "retrieval-r19",
+  "completion_ms": 41.845,
+  "condition": "l6-top-k-2",
+  "endpoint": "/api/v1/retrieval/query/collection",
+  "objective_score": 1.0,
+  "payload_sha256": "3cd79e6a6cacd760c93a9363ab47a4a9386d8e6930e3b816804b4144289f343e",
+  "response": {
+    "distances": [
+      [
+        0.8397201299667358,
+        0.784776508808136
+      ]
+    ],
+    "documents": [
+      [
+        "[DOC_ID:local-ollama] Local Ollama condition  \nA local model condition needs an exact installed model name, digest, quantization, Ollama version, and hardware record. A deployment smoke proves availability only; it does not establish equivalence to a hosted quality test.",
+        "[DOC_ID:quality] Targeted quality evaluation  \nEvaluate only call types affected by each lever. Use objective format, exact-fact, retrieval-overlap, and grounding metrics first. Use a cached non-reasoning judge only when objective comparisons are insufficient."
+      ]
+    ],
+    "metadatas": [
+      [
+        {
+          "content_type": "text/plain; charset=utf-8",
+          "created_by": "b997c815-91d7-4e7f-b9bb-f554a9245ad7",
+          "data": "{}",
+          "embedding_config": "{'engine': 'ollama', 'model': 'nomic-embed-text'}",
+          "file_hash": "5a9e3bfbdd258c5e878b8b4aa7a3b737f1e34ba5015b079a90a23179045e11dd",
+          "file_id": "1f26667b-098c-4e5d-8892-79e8f6557466",
+          "hash": "5a9e3bfbdd258c5e878b8b4aa7a3b737f1e34ba5015b079a90a23179045e11dd",
+          "name": "teardown-local-ollama.txt",
+          "size": 270,
+          "source": "teardown-local-ollama.txt",
+          "start_index": 0
+        },
+        {
+          "content_type": "text/plain; charset=utf-8",
+          "created_by": "b997c815-91d7-4e7f-b9bb-f554a9245ad7",
+          "data": "{}",
+          "embedding_config": "{'engine': 'ollama', 'model': 'nomic-embed-text'}",
+          "file_hash": "01cddb57ba8e51c18e3a7f2a3c46257af80f516da6a1ff1f6306ad80c6c322b9",
+          "file_id": "0b43f959-edd6-4cba-8c80-c42d76fbdeaa",
+          "hash": "01cddb57ba8e51c18e3a7f2a3c46257af80f516da6a1ff1f6306ad80c6c322b9",
+          "name": "teardown-quality.txt",
+          "size": 259,
+          "source": "teardown-quality.txt",
+          "start_index": 0
+        }
+      ]
+    ]
+  },
+  "response_text": "",
+  "retrieved_document_ids": [
+    "local-ollama",
+    "quality"
+  ]
+}

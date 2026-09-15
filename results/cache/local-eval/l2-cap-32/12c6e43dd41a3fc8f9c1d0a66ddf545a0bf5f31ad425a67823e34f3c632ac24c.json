@@ -1,0 +1,50 @@
+{
+  "cache_key": "12c6e43dd41a3fc8f9c1d0a66ddf545a0bf5f31ad425a67823e34f3c632ac24c",
+  "call_type": "web_query",
+  "case_id": "query-10",
+  "completion_ms": 1365.393,
+  "condition": "l2-cap-32",
+  "endpoint": "/api/v1/tasks/queries/completions",
+  "objective_score": 0.0,
+  "payload_sha256": "92862fda20c1e116353162a2273fb55420ed3f0a62a04da74131f24082e4bbc8",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"queries\": [\"Open WebUI calendar event visibility issue fix\", \"How to verify Open WebUI calendar event date change behavior\", \"Open WebUI",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789437644,
+    "id": "qwen2.5:14b-instruct-bf7a5970-a5d3-4a8c-a724-83377753428c",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m1s",
+      "completion_tokens": 32,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 32,
+      "eval_duration": 506908000,
+      "input_tokens": 400,
+      "load_duration": 1557100,
+      "output_tokens": 32,
+      "prompt_eval_count": 400,
+      "prompt_eval_duration": 42960000,
+      "prompt_token/s": 9310.99,
+      "prompt_tokens": 400,
+      "response_token/s": 63.13,
+      "total_duration": 1328837800,
+      "total_tokens": 432
+    }
+  },
+  "response_text": "{\n  \"queries\": [\"Open WebUI calendar event visibility issue fix\", \"How to verify Open WebUI calendar event date change behavior\", \"Open WebUI",
+  "retrieved_document_ids": null
+}

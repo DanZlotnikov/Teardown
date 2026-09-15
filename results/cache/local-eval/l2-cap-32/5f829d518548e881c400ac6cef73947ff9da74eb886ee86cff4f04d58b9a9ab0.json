@@ -1,0 +1,50 @@
+{
+  "cache_key": "5f829d518548e881c400ac6cef73947ff9da74eb886ee86cff4f04d58b9a9ab0",
+  "call_type": "title",
+  "case_id": "title-17",
+  "completion_ms": 267.576,
+  "condition": "l2-cap-32",
+  "endpoint": "/api/v1/tasks/title/completions",
+  "objective_score": 1.0,
+  "payload_sha256": "da7ca6c1b0ab508f1b662fff58ee71d180ace2ef80986617fdff395faf7e528f",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{ \"title\": \"WebUI Behavior\" }",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789437618,
+    "id": "qwen2.5:14b-instruct-26d67a27-82c1-437e-acd6-500e06a5954a",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 11,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 11,
+      "eval_duration": 163568000,
+      "input_tokens": 349,
+      "load_duration": 2084500,
+      "output_tokens": 11,
+      "prompt_eval_count": 349,
+      "prompt_eval_duration": 49850000,
+      "prompt_token/s": 7001.0,
+      "prompt_tokens": 349,
+      "response_token/s": 67.25,
+      "total_duration": 219903900,
+      "total_tokens": 360
+    }
+  },
+  "response_text": "{ \"title\": \"WebUI Behavior\" }",
+  "retrieved_document_ids": null
+}

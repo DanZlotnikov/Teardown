@@ -1,0 +1,50 @@
+{
+  "cache_key": "67c3af47df4432415a0f937831a1d5cd9f5c0bf862fd17d6f8599d217c757198",
+  "call_type": "retrieval_query",
+  "case_id": "query-17",
+  "completion_ms": 636.352,
+  "condition": "l2-cap-512",
+  "endpoint": "/api/v1/tasks/queries/completions",
+  "objective_score": 0.0,
+  "payload_sha256": "30d75c541b5b3edaf6ab36f37e34e53b6401265683dad7c5a6d6f4c7633d091f",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"queries\": [\"Open WebUI long setting values issue fix\", \"how to verify Open WebUI settings row behavior fix\", \"Open WebUI shrink long controls inside available space\"]\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789437181,
+    "id": "qwen2.5:14b-instruct-8ffb6b40-4918-4869-a9cd-d0a087357e1a",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 40,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 40,
+      "eval_duration": 573499000,
+      "input_tokens": 394,
+      "load_duration": 1542900,
+      "output_tokens": 40,
+      "prompt_eval_count": 394,
+      "prompt_eval_duration": 43736000,
+      "prompt_token/s": 9008.6,
+      "prompt_tokens": 394,
+      "response_token/s": 69.75,
+      "total_duration": 622450200,
+      "total_tokens": 434
+    }
+  },
+  "response_text": "{\n  \"queries\": [\"Open WebUI long setting values issue fix\", \"how to verify Open WebUI settings row behavior fix\", \"Open WebUI shrink long controls inside available space\"]\n}",
+  "retrieved_document_ids": null
+}

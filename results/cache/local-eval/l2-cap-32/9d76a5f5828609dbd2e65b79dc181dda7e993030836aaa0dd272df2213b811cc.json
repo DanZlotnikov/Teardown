@@ -1,0 +1,50 @@
+{
+  "cache_key": "9d76a5f5828609dbd2e65b79dc181dda7e993030836aaa0dd272df2213b811cc",
+  "call_type": "web_query",
+  "case_id": "query-08",
+  "completion_ms": 613.523,
+  "condition": "l2-cap-32",
+  "endpoint": "/api/v1/tasks/queries/completions",
+  "objective_score": 0.0,
+  "payload_sha256": "806d3227bd691480ede9dc3c9463a487c12a905a4c37e25fad1f45dfbd044e21",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"queries\": [\"open webui disabled models recovery\", \"how to enable disabled models in open webui\", \"fix for visible disabled models in open",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789437637,
+    "id": "qwen2.5:14b-instruct-9f84dfef-3c87-4891-998c-08b5df1ad974",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 32,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 32,
+      "eval_duration": 509563000,
+      "input_tokens": 408,
+      "load_duration": 1797500,
+      "output_tokens": 32,
+      "prompt_eval_count": 408,
+      "prompt_eval_duration": 47121000,
+      "prompt_token/s": 8658.56,
+      "prompt_tokens": 408,
+      "response_token/s": 62.8,
+      "total_duration": 562769900,
+      "total_tokens": 440
+    }
+  },
+  "response_text": "{\n  \"queries\": [\"open webui disabled models recovery\", \"how to enable disabled models in open webui\", \"fix for visible disabled models in open",
+  "retrieved_document_ids": null
+}

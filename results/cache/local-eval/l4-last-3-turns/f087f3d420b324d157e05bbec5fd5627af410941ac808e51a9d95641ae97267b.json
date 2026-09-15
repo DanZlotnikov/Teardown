@@ -1,0 +1,50 @@
+{
+  "cache_key": "f087f3d420b324d157e05bbec5fd5627af410941ac808e51a9d95641ae97267b",
+  "call_type": "main_chat_context",
+  "case_id": "context-20",
+  "completion_ms": 2152.299,
+  "condition": "l4-last-3-turns",
+  "endpoint": "/api/chat/completions",
+  "objective_score": 0.0,
+  "payload_sha256": "3b40f9c3af30e5908bf1100002cc460c0ee9101ef440f59388c66762c2015d68",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "It seems there was a misunderstanding; you asked for specific details from the first turn of a conversation, but those details were not provided in our interaction up to this point. The project name, incident code, and recovery region are specific pieces of information that would typically be part of a case or incident report in a technical or operational context.\n\nIf you can provide more context or the exact details you're referring to, I can assist you better. For example, if you have the names or codes of a specific project and incident, or if you know the recovery region, please share that information, and I'll be able to provide a more tailored response.",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789441830,
+    "id": "qwen2.5:14b-instruct-5d64600d-6964-4de6-b92b-40be71b83654",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m2s",
+      "completion_tokens": 131,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 131,
+      "eval_duration": 2084288000,
+      "input_tokens": 117,
+      "load_duration": 1700400,
+      "output_tokens": 131,
+      "prompt_eval_count": 117,
+      "prompt_eval_duration": 14909000,
+      "prompt_token/s": 7847.61,
+      "prompt_tokens": 117,
+      "response_token/s": 62.85,
+      "total_duration": 2103302200,
+      "total_tokens": 248
+    }
+  },
+  "response_text": "It seems there was a misunderstanding; you asked for specific details from the first turn of a conversation, but those details were not provided in our interaction up to this point. The project name, incident code, and recovery region are specific pieces of information that would typically be part of a case or incident report in a technical or operational context.\n\nIf you can provide more context or the exact details you're referring to, I can assist you better. For example, if you have the names or codes of a specific project and incident, or if you know the recovery region, please share that information, and I'll be able to provide a more tailored response.",
+  "retrieved_document_ids": null
+}

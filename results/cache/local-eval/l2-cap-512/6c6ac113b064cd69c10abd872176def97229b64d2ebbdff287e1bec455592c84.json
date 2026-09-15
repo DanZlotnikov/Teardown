@@ -1,0 +1,50 @@
+{
+  "cache_key": "6c6ac113b064cd69c10abd872176def97229b64d2ebbdff287e1bec455592c84",
+  "call_type": "title",
+  "case_id": "title-09",
+  "completion_ms": 271.759,
+  "condition": "l2-cap-512",
+  "endpoint": "/api/v1/tasks/title/completions",
+  "objective_score": 1.0,
+  "payload_sha256": "8823e84e4de0b668d1fc2a064c0aee072d0b85c2130958fb3e72147af65bfdc1",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{ \"title\": \"WebUI Translation Updates\" }",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789437147,
+    "id": "qwen2.5:14b-instruct-f713ff92-05f5-4c61-92d5-50383ab3589b",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 12,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 12,
+      "eval_duration": 160588000,
+      "input_tokens": 343,
+      "load_duration": 2243400,
+      "output_tokens": 12,
+      "prompt_eval_count": 343,
+      "prompt_eval_duration": 47886000,
+      "prompt_token/s": 7162.85,
+      "prompt_tokens": 343,
+      "response_token/s": 74.73,
+      "total_duration": 216451100,
+      "total_tokens": 355
+    }
+  },
+  "response_text": "{ \"title\": \"WebUI Translation Updates\" }",
+  "retrieved_document_ids": null
+}

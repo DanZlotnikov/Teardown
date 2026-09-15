@@ -1,0 +1,51 @@
+{
+  "cache_key": "151d7f4f341e0b16a9143450f5732c5c69ba356fbe0c8179af2d0404a67667b5",
+  "call_type": "main_chat_context",
+  "case_id": "context-04",
+  "chat_id": "3ae53d4c-bd8e-4049-a3f1-3fda248ab20e",
+  "compaction_triggered": true,
+  "completion_ms": 2098.54,
+  "condition": "l4-native-compaction",
+  "objective_score": 1.0,
+  "persisted_summary_chars": 351,
+  "persisted_summary_sha256": "f2fd0767ef314cccdd6d329b82ec0b6e77f25521f47f39c50d156853e80e91a2",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "The exact project name from the first turn is Project Kestrel-04, the incident code is OWUI-7304, and the recovery region is La Paz.",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789442118,
+    "id": "qwen2.5:14b-instruct-950d3aa9-666e-41a9-9b7c-588efa59951e",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 38,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 38,
+      "eval_duration": 573328000,
+      "input_tokens": 212,
+      "load_duration": 1564800,
+      "output_tokens": 38,
+      "prompt_eval_count": 212,
+      "prompt_eval_duration": 86543000,
+      "prompt_token/s": 2449.65,
+      "prompt_tokens": 212,
+      "response_token/s": 66.28,
+      "total_duration": 697261200,
+      "total_tokens": 250
+    }
+  },
+  "response_text": "The exact project name from the first turn is Project Kestrel-04, the incident code is OWUI-7304, and the recovery region is La Paz."
+}

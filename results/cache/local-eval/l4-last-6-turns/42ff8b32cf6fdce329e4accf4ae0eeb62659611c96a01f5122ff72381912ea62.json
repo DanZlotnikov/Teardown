@@ -1,0 +1,50 @@
+{
+  "cache_key": "42ff8b32cf6fdce329e4accf4ae0eeb62659611c96a01f5122ff72381912ea62",
+  "call_type": "main_chat_context",
+  "case_id": "context-10",
+  "completion_ms": 1799.416,
+  "condition": "l4-last-6-turns",
+  "endpoint": "/api/chat/completions",
+  "objective_score": 0.0,
+  "payload_sha256": "bb6e1fedaaf9fad715bc6f5137f16f3e41a027fb85bd1fd0abf5a518ee600a8b",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "It seems there might be a misunderstanding. You asked me to discuss generic logging and deployment checks without repeating the project facts in the previous turns, but I don't have any specific project name, incident code, or recovery region details unless you provide them. Since we haven't discussed a specific project, incident, or recovery region in our conversation, I don't have those details to refer back to.\n\nCould you please clarify what specific information you're looking for or provide more context about the project, incident, and recovery region you are referring to?",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789440782,
+    "id": "qwen2.5:14b-instruct-516a243a-bbc3-416d-873a-a0b66c7c7483",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m1s",
+      "completion_tokens": 109,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 109,
+      "eval_duration": 1739973000,
+      "input_tokens": 222,
+      "load_duration": 1182700,
+      "output_tokens": 109,
+      "prompt_eval_count": 222,
+      "prompt_eval_duration": 18740000,
+      "prompt_token/s": 11846.32,
+      "prompt_tokens": 222,
+      "response_token/s": 62.64,
+      "total_duration": 1763265400,
+      "total_tokens": 331
+    }
+  },
+  "response_text": "It seems there might be a misunderstanding. You asked me to discuss generic logging and deployment checks without repeating the project facts in the previous turns, but I don't have any specific project name, incident code, or recovery region details unless you provide them. Since we haven't discussed a specific project, incident, or recovery region in our conversation, I don't have those details to refer back to.\n\nCould you please clarify what specific information you're looking for or provide more context about the project, incident, and recovery region you are referring to?",
+  "retrieved_document_ids": null
+}

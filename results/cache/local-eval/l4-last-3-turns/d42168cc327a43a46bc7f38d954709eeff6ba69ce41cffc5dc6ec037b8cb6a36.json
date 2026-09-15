@@ -1,0 +1,50 @@
+{
+  "cache_key": "d42168cc327a43a46bc7f38d954709eeff6ba69ce41cffc5dc6ec037b8cb6a36",
+  "call_type": "main_chat_context",
+  "case_id": "context-04",
+  "completion_ms": 864.537,
+  "condition": "l4-last-3-turns",
+  "endpoint": "/api/chat/completions",
+  "objective_score": 0.0,
+  "payload_sha256": "cab592fcea310d96aa0b2bb27cf6ad7a1a32e3a76823783e5ff5a9881297016e",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "It seems there might be some confusion because the initial turns of our conversation did not include specific project names, incident codes, or recovery regions. Could you please provide more context or details so I can better assist you with the information you're looking for?",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789441812,
+    "id": "qwen2.5:14b-instruct-9711397f-3143-42f4-93f2-9a3ee0fb7ea6",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 51,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 51,
+      "eval_duration": 782181000,
+      "input_tokens": 117,
+      "load_duration": 1534500,
+      "output_tokens": 51,
+      "prompt_eval_count": 117,
+      "prompt_eval_duration": 14726000,
+      "prompt_token/s": 7945.13,
+      "prompt_tokens": 117,
+      "response_token/s": 65.2,
+      "total_duration": 801258200,
+      "total_tokens": 168
+    }
+  },
+  "response_text": "It seems there might be some confusion because the initial turns of our conversation did not include specific project names, incident codes, or recovery regions. Could you please provide more context or details so I can better assist you with the information you're looking for?",
+  "retrieved_document_ids": null
+}

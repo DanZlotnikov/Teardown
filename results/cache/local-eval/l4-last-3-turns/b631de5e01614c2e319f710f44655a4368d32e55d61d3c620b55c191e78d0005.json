@@ -1,0 +1,50 @@
+{
+  "cache_key": "b631de5e01614c2e319f710f44655a4368d32e55d61d3c620b55c191e78d0005",
+  "call_type": "main_chat_context",
+  "case_id": "context-12",
+  "completion_ms": 1423.132,
+  "condition": "l4-last-3-turns",
+  "endpoint": "/api/chat/completions",
+  "objective_score": 0.0,
+  "payload_sha256": "6499c190f54e17f63c7f5caa616bd083f908a4025e2b0cc47b2d644dd575fa1f",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "It seems there might be some confusion because the initial turns of our conversation did not include specific project names, incident codes, or recovery regions. If you could provide more details or context about what you're looking for, I'd be happy to help you with the information you need. For example, if this is related to a specific project or scenario you're working on, please share those details so I can provide an accurate response.",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789441820,
+    "id": "qwen2.5:14b-instruct-8c2b7f84-4699-45e7-b253-5269bc175b35",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m1s",
+      "completion_tokens": 87,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 87,
+      "eval_duration": 1369816000,
+      "input_tokens": 117,
+      "load_duration": 1034500,
+      "output_tokens": 87,
+      "prompt_eval_count": 117,
+      "prompt_eval_duration": 15820000,
+      "prompt_token/s": 7395.7,
+      "prompt_tokens": 117,
+      "response_token/s": 63.51,
+      "total_duration": 1389962500,
+      "total_tokens": 204
+    }
+  },
+  "response_text": "It seems there might be some confusion because the initial turns of our conversation did not include specific project names, incident codes, or recovery regions. If you could provide more details or context about what you're looking for, I'd be happy to help you with the information you need. For example, if this is related to a specific project or scenario you're working on, please share those details so I can provide an accurate response.",
+  "retrieved_document_ids": null
+}

@@ -1,0 +1,50 @@
+{
+  "cache_key": "8480961b68ca62ee62aea118a9c9bc585ca3d8b4b422b4a77a4a380696437a3a",
+  "call_type": "retrieval_query",
+  "case_id": "query-15",
+  "completion_ms": 566.535,
+  "condition": "l2-cap-512",
+  "endpoint": "/api/v1/tasks/queries/completions",
+  "objective_score": 0.0,
+  "payload_sha256": "ee436b9128033dd6999fe634d89fc1bb31785d01e2c20ac915f1fd34a164cfaf",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"queries\": [\"Open WebUI sidebar folder behavior fix\", \"verify Open WebUI sidebar folder removal\", \"Open WebUI sidebar folder stale issue\"]\n}",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789437180,
+    "id": "qwen2.5:14b-instruct-c421538a-09ac-408f-b0b9-4372b4f3a4a4",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 34,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 34,
+      "eval_duration": 483053000,
+      "input_tokens": 409,
+      "load_duration": 1751700,
+      "output_tokens": 34,
+      "prompt_eval_count": 409,
+      "prompt_eval_duration": 47697000,
+      "prompt_token/s": 8574.96,
+      "prompt_tokens": 409,
+      "response_token/s": 70.39,
+      "total_duration": 536738000,
+      "total_tokens": 443
+    }
+  },
+  "response_text": "{\n  \"queries\": [\"Open WebUI sidebar folder behavior fix\", \"verify Open WebUI sidebar folder removal\", \"Open WebUI sidebar folder stale issue\"]\n}",
+  "retrieved_document_ids": null
+}

@@ -1,0 +1,51 @@
+{
+  "cache_key": "0e9bea877d4e59ea3fa1707a8424bf8c2df127cd550219f027f6e7d215147f05",
+  "call_type": "main_chat_context",
+  "case_id": "context-05",
+  "chat_id": "2e9f3263-fba9-4eac-b16f-d41b79af7699",
+  "compaction_triggered": true,
+  "completion_ms": 2610.182,
+  "condition": "l4-native-compaction",
+  "objective_score": 0.6666666666666666,
+  "persisted_summary_chars": 580,
+  "persisted_summary_sha256": "fb495bd14a76fc7e015f35d0e380bdd333d437e8978283abf125527fee4807af",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "The project name is Kestrel-05, the incident code is OWUI-7305, and the recovery region is Helsinki.",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789442120,
+    "id": "qwen2.5:14b-instruct-b4a02636-c909-4307-bd84-2fcad24c93fb",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 31,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 31,
+      "eval_duration": 476947000,
+      "input_tokens": 252,
+      "load_duration": 1565200,
+      "output_tokens": 31,
+      "prompt_eval_count": 252,
+      "prompt_eval_duration": 95376000,
+      "prompt_token/s": 2642.17,
+      "prompt_tokens": 252,
+      "response_token/s": 65.0,
+      "total_duration": 621801000,
+      "total_tokens": 283
+    }
+  },
+  "response_text": "The project name is Kestrel-05, the incident code is OWUI-7305, and the recovery region is Helsinki."
+}

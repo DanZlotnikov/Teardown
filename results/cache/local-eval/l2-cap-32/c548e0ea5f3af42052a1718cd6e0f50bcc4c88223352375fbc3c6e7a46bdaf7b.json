@@ -1,0 +1,50 @@
+{
+  "cache_key": "c548e0ea5f3af42052a1718cd6e0f50bcc4c88223352375fbc3c6e7a46bdaf7b",
+  "call_type": "web_query",
+  "case_id": "query-12",
+  "completion_ms": 601.817,
+  "condition": "l2-cap-32",
+  "endpoint": "/api/v1/tasks/queries/completions",
+  "objective_score": 0.0,
+  "payload_sha256": "dc141d3073dd967b991923ecf36d52dceb9d12e9c167b1122e29e29cc1f9b3f1",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"queries\": [\"Open WebUI schedule behavior fix\", \"How to verify automation schedule settings in Open WebUI\", \"Open WebUI save feature schedule",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789437645,
+    "id": "qwen2.5:14b-instruct-66b3a13f-5452-4cfc-8d37-e1673121b9f4",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 32,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 32,
+      "eval_duration": 497609000,
+      "input_tokens": 411,
+      "load_duration": 2477800,
+      "output_tokens": 32,
+      "prompt_eval_count": 411,
+      "prompt_eval_duration": 49088000,
+      "prompt_token/s": 8372.72,
+      "prompt_tokens": 411,
+      "response_token/s": 64.31,
+      "total_duration": 554149800,
+      "total_tokens": 443
+    }
+  },
+  "response_text": "{\n  \"queries\": [\"Open WebUI schedule behavior fix\", \"How to verify automation schedule settings in Open WebUI\", \"Open WebUI save feature schedule",
+  "retrieved_document_ids": null
+}

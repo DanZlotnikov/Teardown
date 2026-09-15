@@ -1,0 +1,50 @@
+{
+  "cache_key": "887b95c72347cee47aa34fd7a36e291d69fa5f82905ac4d3d5b309a6d5d32e24",
+  "call_type": "title",
+  "case_id": "title-05",
+  "completion_ms": 285.418,
+  "condition": "baseline",
+  "endpoint": "/api/v1/tasks/title/completions",
+  "objective_score": 1.0,
+  "payload_sha256": "a4335622a50d2091454ecdea797035df21b59316242666d7895482aaa739c687",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{ \"title\": \"WebUI Refresh Optimization\" }",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1789436476,
+    "id": "qwen2.5:14b-instruct-88a84967-edb2-41b5-ba86-9f6ee599d8b5",
+    "model": "qwen2.5:14b-instruct",
+    "object": "chat.completion",
+    "usage": {
+      "approximate_total": "0h0m0s",
+      "completion_tokens": 12,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "eval_count": 12,
+      "eval_duration": 179469000,
+      "input_tokens": 346,
+      "load_duration": 1643800,
+      "output_tokens": 12,
+      "prompt_eval_count": 346,
+      "prompt_eval_duration": 49160000,
+      "prompt_token/s": 7038.24,
+      "prompt_tokens": 346,
+      "response_token/s": 66.86,
+      "total_duration": 233953300,
+      "total_tokens": 358
+    }
+  },
+  "response_text": "{ \"title\": \"WebUI Refresh Optimization\" }",
+  "retrieved_document_ids": null
+}
