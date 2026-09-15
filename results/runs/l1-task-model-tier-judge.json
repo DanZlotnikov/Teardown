@@ -1,0 +1,78 @@
+{
+  "condition": "judge-l1-task-model-tier",
+  "interpretation": "A candidate passes only if the paired bootstrap lower bound is at least -0.25 and all outputs pass deterministic structural validation.",
+  "mean_composite_by_call_type": {
+    "autocomplete": {
+      "baseline": 4.666667,
+      "luna": 5.0,
+      "terra": 4.666667
+    },
+    "follow_up": {
+      "baseline": 4.9,
+      "luna": 4.933333,
+      "terra": 4.8
+    },
+    "retrieval_query": {
+      "baseline": 4.75,
+      "luna": 4.75,
+      "terra": 4.666667
+    },
+    "tags": {
+      "baseline": 2.833333,
+      "luna": 2.666667,
+      "terra": 2.833333
+    },
+    "title": {
+      "baseline": 4.555556,
+      "luna": 4.722222,
+      "terra": 4.777778
+    },
+    "web_query": {
+      "baseline": 4.916667,
+      "luna": 4.583333,
+      "terra": 4.75
+    }
+  },
+  "method": "32 action-level blinded three-way judgments with label order rotated by action ID",
+  "model": "gpt-4o-2024-11-20",
+  "paired_actions": 32,
+  "schema_version": 1,
+  "score_scale": "Mean of task compliance, topical relevance, and usefulness; each 1-5",
+  "systems": {
+    "baseline": {
+      "mean_composite": 4.416667
+    },
+    "luna": {
+      "higher_equal_lower_counts": {
+        "equal": 24,
+        "higher": 4,
+        "lower": 4
+      },
+      "mean_composite": 4.40625,
+      "mean_paired_delta_vs_baseline": -0.010417,
+      "noninferiority_margin_on_5_point_scale": 0.25,
+      "paired_delta_bootstrap_95_percent_ci": [
+        -0.135417,
+        0.114583
+      ],
+      "passes_quality_guard": false,
+      "structural_pass_rate": 0.96875
+    },
+    "terra": {
+      "higher_equal_lower_counts": {
+        "equal": 19,
+        "higher": 6,
+        "lower": 7
+      },
+      "mean_composite": 4.395833,
+      "mean_paired_delta_vs_baseline": -0.020833,
+      "noninferiority_margin_on_5_point_scale": 0.25,
+      "paired_delta_bootstrap_95_percent_ci": [
+        -0.15625,
+        0.104167
+      ],
+      "passes_quality_guard": true,
+      "structural_pass_rate": 1.0
+    }
+  }
+}
