@@ -54,7 +54,11 @@ class Handler(BaseHTTPRequestHandler):
             try:reservation=self.server.guard.reserve_call(phase=self.server.phase,condition=self.server.condition,model=model,input_tokens=estimated,max_output_tokens=maximum,attempt=1)
             except (BudgetStop,KeyError,ValueError) as e:return self.send_error(402,str(e))
             forwarded=json.dumps(fp,separators=(",",":")).encode()
-        headers={k:v for k,v in self.headers.items() if k.lower() not in HOP|{"host","content-length"}}
+        # urllib does not transparently decode every content encoding that an
+        # aiohttp client advertises.  Request an identity body so the capture,
+        # usage parser, and downstream response all see the same JSON bytes.
+        headers={k:v for k,v in self.headers.items() if k.lower() not in HOP|{"host","content-length","accept-encoding"}}
+        headers["Accept-Encoding"]="identity"
         req=urllib.request.Request(self.server.upstream.rstrip("/")+self.path,data=forwarded if self.command=="POST" else None,headers=headers,method=self.command)
         status=502;rh={};body=b"";error=None
         try:

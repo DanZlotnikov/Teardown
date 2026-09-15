@@ -1,0 +1,64 @@
+{
+  "actions": [
+    {
+      "action_id": "9122fcb646466eb961818f156a10e27511c29391457f6360a4d96979cb76653d",
+      "call_type": "main",
+      "conversation_id": "long-09",
+      "endpoint": "/api/chat/completions",
+      "ordinal_within_conversation_and_type": 2
+    },
+    {
+      "action_id": "34eb9ba8a4855485af5b417366502ff0059bed4cc0690e9a1b4893d464aa5513",
+      "call_type": "main",
+      "conversation_id": "long-09",
+      "endpoint": "/api/chat/completions",
+      "ordinal_within_conversation_and_type": 5
+    },
+    {
+      "action_id": "1e4a7e9d38dd23229e20a56b4e3203d6bde7159a4bfd7dd2c9d2cba878357f7d",
+      "call_type": "main",
+      "conversation_id": "long-09",
+      "endpoint": "/api/chat/completions",
+      "ordinal_within_conversation_and_type": 9
+    },
+    {
+      "action_id": "e4a34276baf6b34a95ef5301296995ff5f84c8d24616dd938ff5a88e7086232d",
+      "call_type": "main",
+      "conversation_id": "long-10",
+      "endpoint": "/api/chat/completions",
+      "ordinal_within_conversation_and_type": 2
+    },
+    {
+      "action_id": "541716cddbd4b45cce14ef0c51334509b948d5d9259c2b236810dcf97f6efd6e",
+      "call_type": "main",
+      "conversation_id": "long-10",
+      "endpoint": "/api/chat/completions",
+      "ordinal_within_conversation_and_type": 5
+    },
+    {
+      "action_id": "9e2606582948d99fc3846b68588eae69452f46d0cbffad89afccc992b4a942df",
+      "call_type": "main",
+      "conversation_id": "long-10",
+      "endpoint": "/api/chat/completions",
+      "ordinal_within_conversation_and_type": 9
+    },
+    {
+      "action_id": "1eab97c40a4549a8adc9904916a403112eb10035703eda039a641649d031d4d2",
+      "call_type": "main",
+      "conversation_id": "long-11",
+      "endpoint": "/api/chat/completions",
+      "ordinal_within_conversation_and_type": 2
+    },
+    {
+      "action_id": "04c0c1e8532d998645cc9a53727ca7b4d4ac164433ba32ca5ecc855faf1e0814",
+      "call_type": "main",
+      "conversation_id": "long-11",
+      "endpoint": "/api/chat/completions",
+      "ordinal_within_conversation_and_type": 5
+    }
+  ],
+  "purpose": "Paired L4 long-context main-chat comparison",
+  "scenario_sha256": "f5bcb6f92c23d558fbc36cbbd581f08138568126d89e1698342bcf31269590e3",
+  "schema_version": 1,
+  "selection_frozen_before_comparison_runs": true
+}

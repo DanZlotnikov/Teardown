@@ -193,6 +193,24 @@ class BudgetTestCase(unittest.TestCase):
                 attempt=1,
             )
 
+    def test_core_evidence_gate_preserves_budget(self) -> None:
+        def mutate(data):
+            data["budget"]["smoke_test"]["required_before_batch"] = False
+            data["budget"]["evidence_gate"]["effective_stop"] = 0.068
+
+        self.config(mutate)
+        guard = self.guard()
+        with self.assertRaisesRegex(BudgetStop, "Core-evidence gate"):
+            guard.reserve_call(
+                phase="baseline",
+                condition="evidence-gate",
+                model="gpt-5.6-sol",
+                input_tokens=10,
+                max_output_tokens=10,
+                attempt=1,
+            )
+        self.assertEqual((self.root / "results/spend-log.jsonl").read_text(), "")
+
     def test_concurrent_preflight_cannot_overbook_hard_cap(self) -> None:
         def mutate(data):
             data["budget"]["smoke_test"]["required_before_batch"] = False

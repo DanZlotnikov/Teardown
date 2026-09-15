@@ -66,6 +66,12 @@ class BudgetGuard:
         self.post_soft_stop_auth_path = self.root / paths["post_soft_stop_authorization"]
         self.smoke_config = self.budget["smoke_test"]
         self.smoke_dir = self.root / self.smoke_config["marker_directory"]
+        self.evidence_gate = self.budget.get("evidence_gate")
+        self.evidence_gate_marker = (
+            self.root / self.evidence_gate["completion_marker"]
+            if self.evidence_gate
+            else None
+        )
         self.log_path.parent.mkdir(parents=True, exist_ok=True)
         self.smoke_dir.mkdir(parents=True, exist_ok=True)
         if not self.log_path.exists():
@@ -291,6 +297,16 @@ class BudgetGuard:
             running = self._running_total_unlocked(records)
             outstanding = self._outstanding(records)
             effective = running + outstanding
+            if (
+                self.evidence_gate
+                and not self.evidence_gate_marker.exists()
+                and effective + worst > Decimal(str(self.evidence_gate["effective_stop"]))
+            ):
+                self._write_status_unlocked("Core-evidence preservation gate reached", records)
+                raise BudgetStop(
+                    f"Core-evidence gate would be crossed: ${effective + worst:.6f} > "
+                    f"${Decimal(str(self.evidence_gate['effective_stop'])):.2f}"
+                )
             soft = Decimal(str(self.budget["soft_stop"]))
             hard = Decimal(str(self.budget["hard_stop"]))
             if effective >= soft and not self.post_soft_stop_auth_path.exists():

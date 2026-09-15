@@ -1,0 +1,232 @@
+{
+  "actions": [
+    {
+      "action_id": "2aed9ec02c41c1de480b655e830bb5560c1c024498d59344d7d0e269e209b1ba",
+      "call_type": "follow_up",
+      "conversation_id": "short-01",
+      "endpoint": "/api/v1/tasks/follow_up/completions",
+      "ordinal_within_conversation_and_type": 0
+    },
+    {
+      "action_id": "c3a77a07ff9851f29d82bc138a30e87ab17537a9808d85f3db5a0e716d8182a8",
+      "call_type": "follow_up",
+      "conversation_id": "short-01",
+      "endpoint": "/api/v1/tasks/follow_up/completions",
+      "ordinal_within_conversation_and_type": 1
+    },
+    {
+      "action_id": "c005a4b3b1e8e7d862b8dc5bc0a22f4d7ab56bfaf261ace7026706ba9757c9de",
+      "call_type": "follow_up",
+      "conversation_id": "short-08",
+      "endpoint": "/api/v1/tasks/follow_up/completions",
+      "ordinal_within_conversation_and_type": 1
+    },
+    {
+      "action_id": "2b62a13f854a44b9475c5aa57d5dabeb69eeaf347e3b49ac750909879546870e",
+      "call_type": "follow_up",
+      "conversation_id": "long-09",
+      "endpoint": "/api/v1/tasks/follow_up/completions",
+      "ordinal_within_conversation_and_type": 0
+    },
+    {
+      "action_id": "85cd742891b97504ceb033510c167970381a2a359e8cc48133b3d9059363bd16",
+      "call_type": "follow_up",
+      "conversation_id": "long-09",
+      "endpoint": "/api/v1/tasks/follow_up/completions",
+      "ordinal_within_conversation_and_type": 4
+    },
+    {
+      "action_id": "01757363a088452ca8ff4715ccaf9296bc23a76bced854db7a61103d177fe658",
+      "call_type": "follow_up",
+      "conversation_id": "long-09",
+      "endpoint": "/api/v1/tasks/follow_up/completions",
+      "ordinal_within_conversation_and_type": 9
+    },
+    {
+      "action_id": "0f083dc30831318040f3904289b045c62f86fa0436371bc74fbbcb5e72910568",
+      "call_type": "follow_up",
+      "conversation_id": "long-10",
+      "endpoint": "/api/v1/tasks/follow_up/completions",
+      "ordinal_within_conversation_and_type": 0
+    },
+    {
+      "action_id": "8bfa1cf266921508444a64db5c58c5b54d3b7c44dd1fa4d0f51676dda52631ca",
+      "call_type": "follow_up",
+      "conversation_id": "long-10",
+      "endpoint": "/api/v1/tasks/follow_up/completions",
+      "ordinal_within_conversation_and_type": 4
+    },
+    {
+      "action_id": "c56dd6eaf5c381fde05fcaf38d5ae2a1c8ff91ee433ddcf31cd47a5ec74f7d07",
+      "call_type": "follow_up",
+      "conversation_id": "long-10",
+      "endpoint": "/api/v1/tasks/follow_up/completions",
+      "ordinal_within_conversation_and_type": 9
+    },
+    {
+      "action_id": "e7ac53b5938f75e3a051db55d5e675f2a2025e73aa26d93c374026375ec22f04",
+      "call_type": "follow_up",
+      "conversation_id": "long-11",
+      "endpoint": "/api/v1/tasks/follow_up/completions",
+      "ordinal_within_conversation_and_type": 4
+    },
+    {
+      "action_id": "8ac0003a35dadddb9a8157c6e6c0339a5a4024b39a5e39f0bc0cf374a4dae91f",
+      "call_type": "title",
+      "conversation_id": "short-01",
+      "endpoint": "/api/v1/tasks/title/completions",
+      "ordinal_within_conversation_and_type": 0
+    },
+    {
+      "action_id": "b8d30474e6c85a5ce1ff3ac7f62486685a649a044ac9fd99fe6312dd3fed4ac7",
+      "call_type": "title",
+      "conversation_id": "short-04",
+      "endpoint": "/api/v1/tasks/title/completions",
+      "ordinal_within_conversation_and_type": 0
+    },
+    {
+      "action_id": "ce5adfdb8f17f5b4cbc6c1f5faa4179c0f80952485912ddbbb8de24f9f22823a",
+      "call_type": "title",
+      "conversation_id": "short-08",
+      "endpoint": "/api/v1/tasks/title/completions",
+      "ordinal_within_conversation_and_type": 0
+    },
+    {
+      "action_id": "1932d6dc9b6acf3c0b497395346d3ced486ecfdbb56caf9a03d1d3d42aaf7819",
+      "call_type": "title",
+      "conversation_id": "long-09",
+      "endpoint": "/api/v1/tasks/title/completions",
+      "ordinal_within_conversation_and_type": 0
+    },
+    {
+      "action_id": "5f21d0e5e155967dd2460caf95f868235ea56380864bee4a5ac78614cd6bf1ac",
+      "call_type": "title",
+      "conversation_id": "long-10",
+      "endpoint": "/api/v1/tasks/title/completions",
+      "ordinal_within_conversation_and_type": 0
+    },
+    {
+      "action_id": "273ec780eaf05f9c0d5ddd606164043a92af439a0dedc6c51c0e1b31f0dbcb31",
+      "call_type": "title",
+      "conversation_id": "long-11",
+      "endpoint": "/api/v1/tasks/title/completions",
+      "ordinal_within_conversation_and_type": 0
+    },
+    {
+      "action_id": "e6556fffc6bda2ec42b354996afb2d4f70a694a7f6e5711843bd8665e5ae91b6",
+      "call_type": "tags",
+      "conversation_id": "short-01",
+      "endpoint": "/api/v1/tasks/tags/completions",
+      "ordinal_within_conversation_and_type": 0
+    },
+    {
+      "action_id": "c8ff82269fdcf8e50638fc6cb75ae616c7966fbf57c626aaf7c40d73408ece53",
+      "call_type": "tags",
+      "conversation_id": "short-04",
+      "endpoint": "/api/v1/tasks/tags/completions",
+      "ordinal_within_conversation_and_type": 0
+    },
+    {
+      "action_id": "0e1e0722a206591cbcaa76ba5388e0cee30ba83747bc85c86c65e4aec1cc93e9",
+      "call_type": "tags",
+      "conversation_id": "short-08",
+      "endpoint": "/api/v1/tasks/tags/completions",
+      "ordinal_within_conversation_and_type": 0
+    },
+    {
+      "action_id": "836412b618bc2904cfce3d737e1473cc9b48220e15bb967847bb98650cfa5ba2",
+      "call_type": "tags",
+      "conversation_id": "long-09",
+      "endpoint": "/api/v1/tasks/tags/completions",
+      "ordinal_within_conversation_and_type": 0
+    },
+    {
+      "action_id": "f5e35820e514a93393f0ee48f88f2fe785657f163cdd0522282fc5c4fb326831",
+      "call_type": "tags",
+      "conversation_id": "long-10",
+      "endpoint": "/api/v1/tasks/tags/completions",
+      "ordinal_within_conversation_and_type": 0
+    },
+    {
+      "action_id": "d35492455529b4f097012a5c07a4b58244cb15766b851cb74843bc24021a03aa",
+      "call_type": "tags",
+      "conversation_id": "long-11",
+      "endpoint": "/api/v1/tasks/tags/completions",
+      "ordinal_within_conversation_and_type": 0
+    },
+    {
+      "action_id": "a6c98fa10faeff9e0b305153027e6c52cb239a86312e2639aaf55782b4cb9747",
+      "call_type": "retrieval_query",
+      "conversation_id": "case-20",
+      "endpoint": "/api/v1/tasks/queries/completions",
+      "ordinal_within_conversation_and_type": 0
+    },
+    {
+      "action_id": "28e92d8c94da5d1a9eb4c065c075ac23bd3883581cea90631a278d4ae88501cf",
+      "call_type": "retrieval_query",
+      "conversation_id": "case-21",
+      "endpoint": "/api/v1/tasks/queries/completions",
+      "ordinal_within_conversation_and_type": 0
+    },
+    {
+      "action_id": "4611affde63cb3cef92b91721cea0935de79c8ed3660af3011001aa5f5aa08d1",
+      "call_type": "retrieval_query",
+      "conversation_id": "case-22",
+      "endpoint": "/api/v1/tasks/queries/completions",
+      "ordinal_within_conversation_and_type": 0
+    },
+    {
+      "action_id": "5a08fe6269e79c70c1ccad0cd9bf7152a6cb234b472b512b2fce76d0eb7522e7",
+      "call_type": "retrieval_query",
+      "conversation_id": "case-23",
+      "endpoint": "/api/v1/tasks/queries/completions",
+      "ordinal_within_conversation_and_type": 0
+    },
+    {
+      "action_id": "6372722f3aa52f68cc9f8a34557a3370a2822aef4b3c734db8278f152d65fe37",
+      "call_type": "web_query",
+      "conversation_id": "case-24",
+      "endpoint": "/api/v1/tasks/queries/completions",
+      "ordinal_within_conversation_and_type": 0
+    },
+    {
+      "action_id": "739cd356b47d56f6155e4851c695ac4ac6d991168c7f9082d80f20d8de4751c6",
+      "call_type": "web_query",
+      "conversation_id": "case-25",
+      "endpoint": "/api/v1/tasks/queries/completions",
+      "ordinal_within_conversation_and_type": 0
+    },
+    {
+      "action_id": "8c30f5f1db171c35d2e014ed2bfbc3e31df9890b2005ff158548cf8eb1651d66",
+      "call_type": "web_query",
+      "conversation_id": "case-26",
+      "endpoint": "/api/v1/tasks/queries/completions",
+      "ordinal_within_conversation_and_type": 0
+    },
+    {
+      "action_id": "fc68d41294864a5ba8c359cd2887459a98347da17b8612ab98cf3c3e827177bc",
+      "call_type": "web_query",
+      "conversation_id": "case-27",
+      "endpoint": "/api/v1/tasks/queries/completions",
+      "ordinal_within_conversation_and_type": 0
+    },
+    {
+      "action_id": "da9f50fd480d8d480581ca59e6b8f65063e93d18e706fd26a571452b79779864",
+      "call_type": "autocomplete",
+      "conversation_id": "case-29",
+      "endpoint": "/api/v1/tasks/auto/completions",
+      "ordinal_within_conversation_and_type": 0
+    },
+    {
+      "action_id": "566e4a5888ed06ae83c4e4be2505ed10e48866a805f1c351be8c9f97c987816f",
+      "call_type": "autocomplete",
+      "conversation_id": "case-29",
+      "endpoint": "/api/v1/tasks/auto/completions",
+      "ordinal_within_conversation_and_type": 1
+    }
+  ],
+  "purpose": "Paired L1/L2 task-call comparison",
+  "scenario_sha256": "f5bcb6f92c23d558fbc36cbbd581f08138568126d89e1698342bcf31269590e3",
+  "schema_version": 1,
+  "selection_frozen_before_comparison_runs": true
+}

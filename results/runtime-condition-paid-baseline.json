@@ -1,0 +1,23 @@
+{
+  "autocomplete": true,
+  "condition": "baseline",
+  "context_compaction": {
+    "cap": 80000,
+    "enabled": false,
+    "retention_percentage": 40,
+    "threshold": 80000
+  },
+  "declared_diff": {
+    "change": {},
+    "lever": null
+  },
+  "rag_top_k": 3,
+  "task_model": "",
+  "task_model_params": {},
+  "turn_filter": {
+    "active": false,
+    "global": false,
+    "installed": false,
+    "turns": null
+  }
+}

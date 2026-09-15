@@ -36,6 +36,10 @@ budget:
     max_calls_per_phase: 2
     max_cost_per_phase: 0.05
     marker_directory: results/smoke
+  evidence_gate:
+    effective_stop: 3.0
+    completion_marker: results/CORE-EVIDENCE-COMPLETE
+    note: Preserve budget until at least three useful single-lever conclusions are documented.
 judge:
   model: gpt-4o-2024-11-20
   reasoning: disabled

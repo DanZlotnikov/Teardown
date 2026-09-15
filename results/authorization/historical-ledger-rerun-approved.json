@@ -1,0 +1,8 @@
+{
+  "approved_at": "2026-09-15T01:56:31Z",
+  "approved_scope": "Fresh paid benchmark calls subject to the frozen config.yaml budget and smoke rules",
+  "decision": "Do not accept the historical aggregate as benchmark evidence; rerun the paid baseline and begin the optimization benchmark",
+  "historical_aggregate_is_experimental_evidence": false,
+  "historical_spend_budget_treatment": "Retain USD 0.067766300 solely as a conservative debit against the task hard cap because it was actually spent",
+  "source": "Explicit user instructions in the active Codex thread"
+}

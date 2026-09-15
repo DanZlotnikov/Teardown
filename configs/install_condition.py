@@ -97,7 +97,7 @@ def configure_turn_filter(base: str, token: str, turns: int | None) -> dict:
     }
 
 
-def apply(base: str, condition_id: str) -> dict:
+def apply(base: str, condition_id: str, output: Path | None = None) -> dict:
     base = base.rstrip("/")
     state, diff = resolve_condition(condition_id)
     policy = state.get("context_policy")
@@ -151,7 +151,8 @@ def apply(base: str, condition_id: str) -> dict:
         },
         "turn_filter": filter_state,
     }
-    output = ROOT / "results" / "runtime-condition.json"
+    output = output or ROOT / "results" / "runtime-condition.json"
+    output.parent.mkdir(parents=True, exist_ok=True)
     output.write_text(json.dumps(applied, indent=2, sort_keys=True) + "\n", encoding="utf-8")
     return applied
 
@@ -160,8 +161,9 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("condition")
     parser.add_argument("--base-url", default="http://127.0.0.1:8088")
+    parser.add_argument("--output", type=Path)
     args = parser.parse_args()
-    print(json.dumps(apply(args.base_url, args.condition), indent=2, sort_keys=True))
+    print(json.dumps(apply(args.base_url, args.condition, args.output), indent=2, sort_keys=True))
 
 
 if __name__ == "__main__":
