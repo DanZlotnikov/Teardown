@@ -1,0 +1,122 @@
+{
+  "baseline": {
+    "completion_latency_ms": {
+      "p50": 3679.08,
+      "p95": 5617.985
+    },
+    "counts": {
+      "cached_input_tokens": 0,
+      "calls": 96,
+      "input_tokens": 34806,
+      "output_tokens": 7872
+    },
+    "mean_cost_per_run_usd": "0.098888",
+    "structural_pass_rate": 1.0,
+    "structural_passes": 96,
+    "total_cost_usd": "0.296664"
+  },
+  "baseline_model": "gpt-5.6-sol",
+  "by_call_type": {
+    "autocomplete": {
+      "baseline_cost_usd": "0.029652",
+      "calls_across_repetitions": 6,
+      "candidate_cost_usd": "0.011304",
+      "candidate_structural_pass_rate": 1.0,
+      "cost_saving_percent": 61.877782
+    },
+    "follow_up": {
+      "baseline_cost_usd": "0.136632",
+      "calls_across_repetitions": 30,
+      "candidate_cost_usd": "0.062172",
+      "candidate_structural_pass_rate": 1.0,
+      "cost_saving_percent": 54.49675
+    },
+    "retrieval_query": {
+      "baseline_cost_usd": "0.038544",
+      "calls_across_repetitions": 12,
+      "candidate_cost_usd": "0.018702",
+      "candidate_structural_pass_rate": 1.0,
+      "cost_saving_percent": 51.478829
+    },
+    "tags": {
+      "baseline_cost_usd": "0.026136",
+      "calls_across_repetitions": 18,
+      "candidate_cost_usd": "0.011544",
+      "candidate_structural_pass_rate": 1.0,
+      "cost_saving_percent": 55.831038
+    },
+    "title": {
+      "baseline_cost_usd": "0.027744",
+      "calls_across_repetitions": 18,
+      "candidate_cost_usd": "0.014292",
+      "candidate_structural_pass_rate": 1.0,
+      "cost_saving_percent": 48.486159
+    },
+    "web_query": {
+      "baseline_cost_usd": "0.037956",
+      "calls_across_repetitions": 12,
+      "candidate_cost_usd": "0.018594",
+      "candidate_structural_pass_rate": 1.0,
+      "cost_saving_percent": 51.011698
+    }
+  },
+  "candidate": {
+    "completion_latency_ms": {
+      "p50": 3007.877,
+      "p95": 4334.222
+    },
+    "counts": {
+      "cached_input_tokens": 0,
+      "calls": 96,
+      "input_tokens": 34806,
+      "output_tokens": 5583
+    },
+    "mean_cost_per_run_usd": "0.045536",
+    "structural_pass_rate": 1.0,
+    "structural_passes": 96,
+    "total_cost_usd": "0.136608"
+  },
+  "candidate_model": "gpt-5.6-terra",
+  "condition": "l1-mid-hosted-three-repetition-aggregate",
+  "conditions": [
+    "l1-mid-hosted",
+    "l1-mid-hosted-r2",
+    "l1-mid-hosted-r3"
+  ],
+  "cost_saving_percent": 53.951946,
+  "identical_action_set_across_repetitions": true,
+  "latency_note": "Task endpoints were nonstreaming, so completion latency is measured and TTFT is unavailable.",
+  "lever": "L1_task_model_tier",
+  "main_chat_path_touched": false,
+  "paired_actions_across_repetitions": 96,
+  "paired_actions_per_run": 32,
+  "repeat_cost_saving_percent": {
+    "max": 54.328129,
+    "mean": 53.951946,
+    "min": 53.636437,
+    "population_sd": 0.285623,
+    "values": [
+      53.636437,
+      54.328129,
+      53.891271
+    ]
+  },
+  "run_count": 3,
+  "schema_version": 1,
+  "semantic_quality": {
+    "baseline_mean_composite": 4.416667,
+    "candidate_mean_composite": 4.395833,
+    "judge_model": "gpt-4o-2024-11-20",
+    "judged_repetition": "l1-mid-hosted",
+    "mean_paired_delta_vs_baseline": -0.020833,
+    "noninferiority_margin_on_5_point_scale": 0.25,
+    "note": "Semantic judging covers repetition 1; repetitions 2 and 3 add cost, latency, and structural reliability evidence.",
+    "paired_actions": 32,
+    "paired_delta_bootstrap_95_percent_ci": [
+      -0.15625,
+      0.104167
+    ],
+    "passes_quality_guard": true
+  },
+  "ttft": null
+}

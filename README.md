@@ -14,6 +14,8 @@ Reproducible controlled-ablation study of Open WebUI 0.11.3, pinned to commit `0
 - Lever audit: 7/7 proposed ablation levers checked against the pinned checkout; native L3 token truncation is unsupported.
 - The complete local single-lever screen has run through the real pinned Open WebUI runtime, including 20/20 saved-chat native-compaction triggers.
 - The frozen hosted task baseline sample is complete at 32/32 paired actions; the historical aggregate remains a budget debit only, never benchmark evidence.
+- The optimization decision benchmark is complete. Terra task routing saved 53.95% across three hosted repetitions with 96/96 structurally valid outputs and a passing blinded quality guard; real-path query reuse removed 33.33% of provider-model calls with unchanged objective score.
+- Final decision report: `results/FINAL-OPTIMIZATION-REPORT.md`. Detailed graded scorecard: `results/lever-scorecard.md`.
 - Frozen generative eval mock: 95 cases execute and resume entirely from cache; this validates the harness, not model quality.
 - Pinned Docker runtime build: incomplete at backend dependency step 23/30 after two bounded attempts. See `results/runtime-validation.md`.
 

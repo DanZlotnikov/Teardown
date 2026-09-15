@@ -1,5 +1,7 @@
 # Interim optimization scorecard
 
+> Superseded by `results/lever-scorecard.md`. The figures below are preserved as the auditable core-evidence milestone before repeatability runs.
+
 ## Decision summary
 
 The first reliable deployment recommendation is to route Open WebUI background task calls to `gpt-5.6-terra` while leaving the main chat model unchanged. On the frozen 32-action hosted sample, Terra reduced measured task cost from **$0.098888 to $0.045848 (53.64%)**, produced structurally valid output on **32/32** actions, and passed the paired quality guard.
