@@ -1,0 +1,889 @@
+{
+  "actual_api_calls_represented": 32,
+  "baseline_cost_usd": "0.098888",
+  "baseline_counts": {
+    "cached_input_tokens": 0,
+    "calls": 32,
+    "input_tokens": 11602,
+    "output_tokens": 2624
+  },
+  "baseline_structural_pass_rate": 1.0,
+  "by_call_type": {
+    "autocomplete": {
+      "baseline_cost_usd": "0.009884",
+      "baseline_structural_pass_rate": 1.0,
+      "calls": 2,
+      "candidate_cost_usd": "0.004048",
+      "candidate_structural_pass_rate": 1.0,
+      "cost_saving_percent": 59.044921,
+      "median_lexical_jaccard": 0.379993
+    },
+    "follow_up": {
+      "baseline_cost_usd": "0.045544",
+      "baseline_structural_pass_rate": 1.0,
+      "calls": 10,
+      "candidate_cost_usd": "0.020912",
+      "candidate_structural_pass_rate": 1.0,
+      "cost_saving_percent": 54.083963,
+      "median_lexical_jaccard": 0.413542
+    },
+    "retrieval_query": {
+      "baseline_cost_usd": "0.012848",
+      "baseline_structural_pass_rate": 1.0,
+      "calls": 4,
+      "candidate_cost_usd": "0.006234",
+      "candidate_structural_pass_rate": 1.0,
+      "cost_saving_percent": 51.478829,
+      "median_lexical_jaccard": 0.549473
+    },
+    "tags": {
+      "baseline_cost_usd": "0.008712",
+      "baseline_structural_pass_rate": 1.0,
+      "calls": 6,
+      "candidate_cost_usd": "0.003804",
+      "candidate_structural_pass_rate": 1.0,
+      "cost_saving_percent": 56.336088,
+      "median_lexical_jaccard": 1.0
+    },
+    "title": {
+      "baseline_cost_usd": "0.009248",
+      "baseline_structural_pass_rate": 1.0,
+      "calls": 6,
+      "candidate_cost_usd": "0.00474",
+      "candidate_structural_pass_rate": 1.0,
+      "cost_saving_percent": 48.745675,
+      "median_lexical_jaccard": 0.583333
+    },
+    "web_query": {
+      "baseline_cost_usd": "0.012652",
+      "baseline_structural_pass_rate": 1.0,
+      "calls": 4,
+      "candidate_cost_usd": "0.00611",
+      "candidate_structural_pass_rate": 1.0,
+      "cost_saving_percent": 51.70724,
+      "median_lexical_jaccard": 0.673334
+    }
+  },
+  "candidate_cost_usd": "0.045848",
+  "candidate_counts": {
+    "cached_input_tokens": 0,
+    "calls": 32,
+    "input_tokens": 11602,
+    "output_tokens": 1887
+  },
+  "candidate_latency_ms": {
+    "p50": 3035.392,
+    "p95": 4402.219
+  },
+  "candidate_structural_pass_rate": 1.0,
+  "condition": "l1-mid-hosted",
+  "cost_saving_percent": 53.636437,
+  "lever": "L1_task_model_tier",
+  "paired_actions": 32,
+  "pairs": [
+    {
+      "action_id": "2aed9ec02c41c1de480b655e830bb5560c1c024498d59344d7d0e269e209b1ba",
+      "baseline": {
+        "cached_input_tokens": 0,
+        "completion_ms": 4093.005,
+        "cost_usd": "0.00402",
+        "input_tokens": 315,
+        "model": "gpt-5.6-sol",
+        "output_tokens": 138,
+        "response_text": "{\"follow_ups\":[\"Which database fields or API responses should I inspect to confirm parent-child message links are preserved?\",\"Can you give me a step-by-step test plan for branches, reloads, exports, and later edits?\",\"How can I verify that older chats with missing links are repaired safely when opened?\",\"What logs or browser developer tools should I use to diagnose this behavior?\",\"Are there any migration, cache, or version-specific issues I should check in Open WebUI?\"]}",
+        "structural_valid": true
+      },
+      "call_type": "follow_up",
+      "candidate": {
+        "cached_input_tokens": 0,
+        "completion_ms": 4076.16,
+        "cost_usd": "0.001962",
+        "input_tokens": 315,
+        "model": "gpt-5.6-terra",
+        "output_tokens": 111,
+        "response_text": "{\"follow_ups\":[\"What database fields or schema changes should I inspect to confirm parent-child message links are persisted correctly?\",\"How can I test branch navigation, exports, and reload behavior with an existing chat that has multiple edits?\",\"What steps should I use to verify that older chats with missing links are repaired safely when opened?\",\"Are there logs, API responses, or browser developer tools that can help diagnose broken branch relationships?\",\"What edge cases should I test, such as deleting a parent message or creating several sibling replies?\"]}",
+        "structural_valid": true
+      },
+      "lexical_jaccard": 0.472527
+    },
+    {
+      "action_id": "8ac0003a35dadddb9a8157c6e6c0339a5a4024b39a5e39f0bc0cf374a4dae91f",
+      "baseline": {
+        "cached_input_tokens": 0,
+        "completion_ms": 2208.805,
+        "cost_usd": "0.00154",
+        "input_tokens": 330,
+        "model": "gpt-5.6-sol",
+        "output_tokens": 11,
+        "response_text": "{\"title\":\"Persistent Chat Branches\"}",
+        "structural_valid": true
+      },
+      "call_type": "title",
+      "candidate": {
+        "cached_input_tokens": 0,
+        "completion_ms": 2096.864,
+        "cost_usd": "0.00078",
+        "input_tokens": 330,
+        "model": "gpt-5.6-terra",
+        "output_tokens": 10,
+        "response_text": "{\"title\":\"Chat Branch Persistence\"}",
+        "structural_valid": true
+      },
+      "lexical_jaccard": 0.333333
+    },
+    {
+      "action_id": "e6556fffc6bda2ec42b354996afb2d4f70a694a7f6e5711843bd8665e5ae91b6",
+      "baseline": {
+        "cached_input_tokens": 0,
+        "completion_ms": 2737.076,
+        "cost_usd": "0.001584",
+        "input_tokens": 266,
+        "model": "gpt-5.6-sol",
+        "output_tokens": 26,
+        "response_text": "{\"tags\":[\"General\"]}",
+        "structural_valid": true
+      },
+      "call_type": "tags",
+      "candidate": {
+        "cached_input_tokens": 0,
+        "completion_ms": 1889.297,
+        "cost_usd": "0.00064",
+        "input_tokens": 266,
+        "model": "gpt-5.6-terra",
+        "output_tokens": 9,
+        "response_text": "{\"tags\":[\"General\"]}",
+        "structural_valid": true
+      },
+      "lexical_jaccard": 1.0
+    },
+    {
+      "action_id": "c3a77a07ff9851f29d82bc138a30e87ab17537a9808d85f3db5a0e716d8182a8",
+      "baseline": {
+        "cached_input_tokens": 0,
+        "completion_ms": 3792.238,
+        "cost_usd": "0.004572",
+        "input_tokens": 418,
+        "model": "gpt-5.6-sol",
+        "output_tokens": 145,
+        "response_text": "{\"follow_ups\":[\"Which database fields or message relationships should I inspect to confirm branch links are stored correctly?\",\"Can you provide a step-by-step test plan covering reloads, branch navigation, exports, and edits?\",\"How can I verify that older chats with missing links are repaired without data loss?\",\"What logs, API responses, or browser storage should I check if the issue persists?\",\"Are there automated tests I can add to prevent this branch-linking regression?\"]}",
+        "structural_valid": true
+      },
+      "call_type": "follow_up",
+      "candidate": {
+        "cached_input_tokens": 0,
+        "completion_ms": 3760.011,
+        "cost_usd": "0.002204",
+        "input_tokens": 418,
+        "model": "gpt-5.6-terra",
+        "output_tokens": 114,
+        "response_text": "{\"follow_ups\":[\"Which Open WebUI data fields or database records should I inspect to confirm parent-child branch links are being persisted?\",\"How can I create a minimal test chat with multiple branches and verify the branch arrows survive a reload and export/import?\",\"What migration or repair process should I run for existing chats whose child-message links are missing?\",\"Are there known Open WebUI versions, commits, or configuration settings related to conversation branch persistence?\",\"How can I test that editing or deleting a message does not break the repaired branch structure?\"]}",
+        "structural_valid": true
+      },
+      "lexical_jaccard": 0.3
+    },
+    {
+      "action_id": "b8d30474e6c85a5ce1ff3ac7f62486685a649a044ac9fd99fe6312dd3fed4ac7",
+      "baseline": {
+        "cached_input_tokens": 0,
+        "completion_ms": 1714.715,
+        "cost_usd": "0.001492",
+        "input_tokens": 308,
+        "model": "gpt-5.6-sol",
+        "output_tokens": 13,
+        "response_text": "{\"title\":\"Open WebUI Pipeline Overhead\"}",
+        "structural_valid": true
+      },
+      "call_type": "title",
+      "candidate": {
+        "cached_input_tokens": 0,
+        "completion_ms": 1873.865,
+        "cost_usd": "0.000772",
+        "input_tokens": 308,
+        "model": "gpt-5.6-terra",
+        "output_tokens": 13,
+        "response_text": "{\"title\":\"Open WebUI Pipeline Overhead\"}",
+        "structural_valid": true
+      },
+      "lexical_jaccard": 1.0
+    },
+    {
+      "action_id": "c8ff82269fdcf8e50638fc6cb75ae616c7966fbf57c626aaf7c40d73408ece53",
+      "baseline": {
+        "cached_input_tokens": 0,
+        "completion_ms": 2300.543,
+        "cost_usd": "0.001156",
+        "input_tokens": 244,
+        "model": "gpt-5.6-sol",
+        "output_tokens": 9,
+        "response_text": "{\"tags\":[\"General\"]}",
+        "structural_valid": true
+      },
+      "call_type": "tags",
+      "candidate": {
+        "cached_input_tokens": 0,
+        "completion_ms": 1901.147,
+        "cost_usd": "0.000596",
+        "input_tokens": 244,
+        "model": "gpt-5.6-terra",
+        "output_tokens": 9,
+        "response_text": "{\"tags\":[\"General\"]}",
+        "structural_valid": true
+      },
+      "lexical_jaccard": 1.0
+    },
+    {
+      "action_id": "ce5adfdb8f17f5b4cbc6c1f5faa4179c0f80952485912ddbbb8de24f9f22823a",
+      "baseline": {
+        "cached_input_tokens": 0,
+        "completion_ms": 2819.959,
+        "cost_usd": "0.001708",
+        "input_tokens": 377,
+        "model": "gpt-5.6-sol",
+        "output_tokens": 10,
+        "response_text": "{\"title\":\"Verify Accessibility Fix\"}",
+        "structural_valid": true
+      },
+      "call_type": "title",
+      "candidate": {
+        "cached_input_tokens": 0,
+        "completion_ms": 1728.089,
+        "cost_usd": "0.000874",
+        "input_tokens": 377,
+        "model": "gpt-5.6-terra",
+        "output_tokens": 10,
+        "response_text": "{\"title\":\"Accessibility Mode Verification\"}",
+        "structural_valid": true
+      },
+      "lexical_jaccard": 0.333333
+    },
+    {
+      "action_id": "0e1e0722a206591cbcaa76ba5388e0cee30ba83747bc85c86c65e4aec1cc93e9",
+      "baseline": {
+        "cached_input_tokens": 0,
+        "completion_ms": 3271.037,
+        "cost_usd": "0.001912",
+        "input_tokens": 313,
+        "model": "gpt-5.6-sol",
+        "output_tokens": 33,
+        "response_text": "{\"tags\":[\"General\"]}",
+        "structural_valid": true
+      },
+      "call_type": "tags",
+      "candidate": {
+        "cached_input_tokens": 0,
+        "completion_ms": 1770.084,
+        "cost_usd": "0.000734",
+        "input_tokens": 313,
+        "model": "gpt-5.6-terra",
+        "output_tokens": 9,
+        "response_text": "{\"tags\":[\"General\"]}",
+        "structural_valid": true
+      },
+      "lexical_jaccard": 1.0
+    },
+    {
+      "action_id": "c005a4b3b1e8e7d862b8dc5bc0a22f4d7ab56bfaf261ace7026706ba9757c9de",
+      "baseline": {
+        "cached_input_tokens": 0,
+        "completion_ms": 3407.058,
+        "cost_usd": "0.005048",
+        "input_tokens": 512,
+        "model": "gpt-5.6-sol",
+        "output_tokens": 150,
+        "response_text": "{\"follow_ups\":[\"Can you give me a step-by-step checklist for testing this in both light and dark themes?\",\"Which tools should I use to verify WCAG contrast ratios for text, icons, hover states, and selected items?\",\"How can I test the folder dialog, document previews, and slide previews using only a keyboard and screen reader?\",\"Which browser developer tools or automated accessibility scanners work best with Open WebUI?\",\"What regressions should I check after enabling accessibility mode?\"]}",
+        "structural_valid": true
+      },
+      "call_type": "follow_up",
+      "candidate": {
+        "cached_input_tokens": 0,
+        "completion_ms": 3273.326,
+        "cost_usd": "0.002284",
+        "input_tokens": 512,
+        "model": "gpt-5.6-terra",
+        "output_tokens": 105,
+        "response_text": "{\"follow_ups\":[\"Which specific WCAG contrast ratios should I test for muted text, icons, hover states, and sidebar highlights?\",\"How can I verify the accessibility-mode changes in both light and dark themes?\",\"What keyboard-navigation test steps should I use for document and slide previews?\",\"How do I confirm with a screen reader that the folder dialog close button has the correct accessible name?\",\"Are there browser tools or automated accessibility tests I can run against Open WebUI to catch regressions?\"]}",
+        "structural_valid": true
+      },
+      "lexical_jaccard": 0.528736
+    },
+    {
+      "action_id": "2b62a13f854a44b9475c5aa57d5dabeb69eeaf347e3b49ac750909879546870e",
+      "baseline": {
+        "cached_input_tokens": 0,
+        "completion_ms": 3465.278,
+        "cost_usd": "0.0035",
+        "input_tokens": 305,
+        "model": "gpt-5.6-sol",
+        "output_tokens": 114,
+        "response_text": "{\"follow_ups\":[\"Why are extra commas appearing after the translation update text?\",\"Which Open WebUI files or localization keys should I inspect?\",\"How can I determine whether this issue is caused by missing translation values or UI rendering?\",\"What steps can I use to reproduce and verify the fix locally?\",\"Are there any logs or browser developer tools I should check?\"]}",
+        "structural_valid": true
+      },
+      "call_type": "follow_up",
+      "candidate": {
+        "cached_input_tokens": 0,
+        "completion_ms": 3103.233,
+        "cost_usd": "0.00169",
+        "input_tokens": 305,
+        "model": "gpt-5.6-terra",
+        "output_tokens": 90,
+        "response_text": "{\"follow_ups\":[\"Where in Open WebUI can I verify that the updated translations are being loaded?\",\"How can I switch the interface language to test each affected locale?\",\"What should I do if some translated strings still appear in English or are missing?\",\"Is there a way to compare the translation files before and after the update?\",\"How can I report a translation issue or contribute a correction to Open WebUI?\"]}",
+        "structural_valid": true
+      },
+      "lexical_jaccard": 0.2875
+    },
+    {
+      "action_id": "1932d6dc9b6acf3c0b497395346d3ced486ecfdbb56caf9a03d1d3d42aaf7819",
+      "baseline": {
+        "cached_input_tokens": 0,
+        "completion_ms": 2931.442,
+        "cost_usd": "0.00152",
+        "input_tokens": 320,
+        "model": "gpt-5.6-sol",
+        "output_tokens": 12,
+        "response_text": "{\"title\":\"Open WebUI Translations\"}",
+        "structural_valid": true
+      },
+      "call_type": "title",
+      "candidate": {
+        "cached_input_tokens": 0,
+        "completion_ms": 2750.6,
+        "cost_usd": "0.000784",
+        "input_tokens": 320,
+        "model": "gpt-5.6-terra",
+        "output_tokens": 12,
+        "response_text": "{\"title\":\"Open WebUI Translation Updates\"}",
+        "structural_valid": true
+      },
+      "lexical_jaccard": 0.5
+    },
+    {
+      "action_id": "836412b618bc2904cfce3d737e1473cc9b48220e15bb967847bb98650cfa5ba2",
+      "baseline": {
+        "cached_input_tokens": 0,
+        "completion_ms": 2842.381,
+        "cost_usd": "0.001204",
+        "input_tokens": 256,
+        "model": "gpt-5.6-sol",
+        "output_tokens": 9,
+        "response_text": "{\"tags\":[\"General\"]}",
+        "structural_valid": true
+      },
+      "call_type": "tags",
+      "candidate": {
+        "cached_input_tokens": 0,
+        "completion_ms": 1919.652,
+        "cost_usd": "0.00062",
+        "input_tokens": 256,
+        "model": "gpt-5.6-terra",
+        "output_tokens": 9,
+        "response_text": "{\"tags\":[\"General\"]}",
+        "structural_valid": true
+      },
+      "lexical_jaccard": 1.0
+    },
+    {
+      "action_id": "85cd742891b97504ceb033510c167970381a2a359e8cc48133b3d9059363bd16",
+      "baseline": {
+        "cached_input_tokens": 0,
+        "completion_ms": 4691.57,
+        "cost_usd": "0.004864",
+        "input_tokens": 496,
+        "model": "gpt-5.6-sol",
+        "output_tokens": 144,
+        "response_text": "{\"follow_ups\":[\"How can I confirm which Open WebUI version and translation bundle are currently loaded?\",\"Could stale browser or Docker caches cause the missing translation text, and how should I clear them?\",\"Which logs or developer-console errors should I inspect for localization failures?\",\"How can I compare the affected locale files with the latest upstream translations?\",\"What steps should I use to reproduce and report this issue to the Open WebUI maintainers?\"]}",
+        "structural_valid": true
+      },
+      "call_type": "follow_up",
+      "candidate": {
+        "cached_input_tokens": 0,
+        "completion_ms": 3838.504,
+        "cost_usd": "0.002024",
+        "input_tokens": 496,
+        "model": "gpt-5.6-terra",
+        "output_tokens": 86,
+        "response_text": "{\"follow_ups\":[\"How can I confirm which Open WebUI version includes these translation updates?\",\"Where are the locale or translation files located in an Open WebUI installation?\",\"How can I test that the interface switches correctly between these updated languages?\",\"What should I do if some strings still appear in English or display missing translation keys?\",\"How can I report a translation issue or contribute corrections upstream?\"]}",
+        "structural_valid": true
+      },
+      "lexical_jaccard": 0.268293
+    },
+    {
+      "action_id": "01757363a088452ca8ff4715ccaf9296bc23a76bced854db7a61103d177fe658",
+      "baseline": {
+        "cached_input_tokens": 0,
+        "completion_ms": 4335.364,
+        "cost_usd": "0.004504",
+        "input_tokens": 496,
+        "model": "gpt-5.6-sol",
+        "output_tokens": 126,
+        "response_text": "{\"follow_ups\":[\"How can I confirm that Open WebUI is loading the latest translation files?\",\"Which caches should I clear after updating translations?\",\"How can I identify missing or malformed translation keys causing the stray commas?\",\"Is there a way to compare the affected locale files with the English source strings?\",\"What logs or browser developer tools should I use to verify the fix?\"]}",
+        "structural_valid": true
+      },
+      "call_type": "follow_up",
+      "candidate": {
+        "cached_input_tokens": 0,
+        "completion_ms": 3055.774,
+        "cost_usd": "0.002108",
+        "input_tokens": 496,
+        "model": "gpt-5.6-terra",
+        "output_tokens": 93,
+        "response_text": "{\"follow_ups\":[\"How do I determine which Open WebUI version includes these translation updates?\",\"Where are the locale or translation files located in a self-hosted Open WebUI installation?\",\"How can I force-refresh the browser or clear cached translations after upgrading?\",\"What steps can I use to test each affected language and report any remaining untranslated strings?\",\"Could custom branding or a reverse-proxy cache prevent the updated translations from appearing?\"]}",
+        "structural_valid": true
+      },
+      "lexical_jaccard": 0.270588
+    },
+    {
+      "action_id": "0f083dc30831318040f3904289b045c62f86fa0436371bc74fbbcb5e72910568",
+      "baseline": {
+        "cached_input_tokens": 0,
+        "completion_ms": 4444.045,
+        "cost_usd": "0.00404",
+        "input_tokens": 300,
+        "model": "gpt-5.6-sol",
+        "output_tokens": 142,
+        "response_text": "{\"follow_ups\":[\"Which Open WebUI logs and browser console errors should I inspect when replies stop rendering?\",\"How can I reproduce this issue reliably before testing the fix?\",\"What steps should I use to verify that broken saved chats display and remain editable after the fix?\",\"Could this behavior be caused by a specific Open WebUI version, browser, or extension?\",\"How can I determine whether the failure is in the frontend, backend, or streaming connection?\"]}",
+        "structural_valid": true
+      },
+      "call_type": "follow_up",
+      "candidate": {
+        "cached_input_tokens": 0,
+        "completion_ms": 3728.398,
+        "cost_usd": "0.001752",
+        "input_tokens": 300,
+        "model": "gpt-5.6-terra",
+        "output_tokens": 96,
+        "response_text": "{\"follow_ups\":[\"What are the most likely Open WebUI logs or browser console errors to check for this issue?\",\"How can I reproduce the broken-reply state safely before applying a fix?\",\"Which Open WebUI versions or recent changes are associated with interrupted streaming responses?\",\"What steps can I use to verify that previously affected saved chats are editable again?\",\"Could a reverse proxy, WebSocket configuration, or model backend timeout cause this behavior?\"]}",
+        "structural_valid": true
+      },
+      "lexical_jaccard": 0.4
+    },
+    {
+      "action_id": "5f21d0e5e155967dd2460caf95f868235ea56380864bee4a5ac78614cd6bf1ac",
+      "baseline": {
+        "cached_input_tokens": 0,
+        "completion_ms": 2139.84,
+        "cost_usd": "0.00152",
+        "input_tokens": 315,
+        "model": "gpt-5.6-sol",
+        "output_tokens": 13,
+        "response_text": "{\"title\":\"Open WebUI Reply Failures\"}",
+        "structural_valid": true
+      },
+      "call_type": "title",
+      "candidate": {
+        "cached_input_tokens": 0,
+        "completion_ms": 2209.591,
+        "cost_usd": "0.000774",
+        "input_tokens": 315,
+        "model": "gpt-5.6-terra",
+        "output_tokens": 12,
+        "response_text": "{\"title\":\"Open WebUI Reply Fix\"}",
+        "structural_valid": true
+      },
+      "lexical_jaccard": 0.666667
+    },
+    {
+      "action_id": "f5e35820e514a93393f0ee48f88f2fe785657f163cdd0522282fc5c4fb326831",
+      "baseline": {
+        "cached_input_tokens": 0,
+        "completion_ms": 1957.175,
+        "cost_usd": "0.001684",
+        "input_tokens": 251,
+        "model": "gpt-5.6-sol",
+        "output_tokens": 34,
+        "response_text": "{\"tags\":[\"General\"]}",
+        "structural_valid": true
+      },
+      "call_type": "tags",
+      "candidate": {
+        "cached_input_tokens": 0,
+        "completion_ms": 1729.321,
+        "cost_usd": "0.00061",
+        "input_tokens": 251,
+        "model": "gpt-5.6-terra",
+        "output_tokens": 9,
+        "response_text": "{\"tags\":[\"General\"]}",
+        "structural_valid": true
+      },
+      "lexical_jaccard": 1.0
+    },
+    {
+      "action_id": "8bfa1cf266921508444a64db5c58c5b54d3b7c44dd1fa4d0f51676dda52631ca",
+      "baseline": {
+        "cached_input_tokens": 0,
+        "completion_ms": 4557.849,
+        "cost_usd": "0.005004",
+        "input_tokens": 481,
+        "model": "gpt-5.6-sol",
+        "output_tokens": 154,
+        "response_text": "{\"follow_ups\":[\"Which Open WebUI version includes this fix, and how can I confirm that version is installed?\",\"What browser console and server logs should I inspect if replies still disappear mid-chat?\",\"Can you provide a step-by-step test to reproduce the old issue and verify the fix?\",\"How can I confirm that previously broken saved chats can now be displayed and edited safely?\",\"Are there any cache, database migration, or browser compatibility issues I should check after upgrading?\"]}",
+        "structural_valid": true
+      },
+      "call_type": "follow_up",
+      "candidate": {
+        "cached_input_tokens": 0,
+        "completion_ms": 6479.779,
+        "cost_usd": "0.002402",
+        "input_tokens": 481,
+        "model": "gpt-5.6-terra",
+        "output_tokens": 120,
+        "response_text": "{\"follow_ups\":[\"Which Open WebUI browser console and server logs should I collect to diagnose interrupted streaming replies?\",\"How can I tell whether the issue is caused by Open WebUI, a reverse proxy, or the upstream model provider?\",\"Can you give me a step-by-step test plan to verify streaming and recovery of previously broken chats after upgrading?\",\"What database fields or chat-message records should I inspect or repair for conversations that were saved in a broken state?\",\"Are there specific Open WebUI versions, configuration settings, or proxy timeout values related to this fix?\"]}",
+        "structural_valid": true
+      },
+      "lexical_jaccard": 0.427083
+    },
+    {
+      "action_id": "c56dd6eaf5c381fde05fcaf38d5ae2a1c8ff91ee433ddcf31cd47a5ec74f7d07",
+      "baseline": {
+        "cached_input_tokens": 0,
+        "completion_ms": 3722.613,
+        "cost_usd": "0.004664",
+        "input_tokens": 481,
+        "model": "gpt-5.6-sol",
+        "output_tokens": 137,
+        "response_text": "{\"follow_ups\":[\"Which Open WebUI version includes this fix, and how can I confirm I\u2019m running it?\",\"What browser console and server logs should I inspect if replies still stop mid-chat?\",\"Can you give me a step-by-step test plan to reproduce the old issue and verify the fix?\",\"How can I identify and repair chats that were already saved in the broken state?\",\"Are there any known regressions or browser-specific issues related to this fix?\"]}",
+        "structural_valid": true
+      },
+      "call_type": "follow_up",
+      "candidate": {
+        "cached_input_tokens": 0,
+        "completion_ms": 4230.349,
+        "cost_usd": "0.002294",
+        "input_tokens": 481,
+        "model": "gpt-5.6-terra",
+        "output_tokens": 111,
+        "response_text": "{\"follow_ups\":[\"Which Open WebUI logs and browser console errors should I collect when a reply disappears mid-stream?\",\"How can I reproduce this issue reliably to confirm whether streaming or chat persistence is causing it?\",\"What database fields or saved chat JSON should I inspect for conversations that fail to render?\",\"Can you give me a step-by-step test plan to verify the fix across new and previously broken chats?\",\"Are there known Open WebUI versions, reverse-proxy settings, or model backends associated with this behavior?\"]}",
+        "structural_valid": true
+      },
+      "lexical_jaccard": 0.446809
+    },
+    {
+      "action_id": "273ec780eaf05f9c0d5ddd606164043a92af439a0dedc6c51c0e1b31f0dbcb31",
+      "baseline": {
+        "cached_input_tokens": 0,
+        "completion_ms": 3378.701,
+        "cost_usd": "0.001468",
+        "input_tokens": 312,
+        "model": "gpt-5.6-sol",
+        "output_tokens": 11,
+        "response_text": "{\"title\":\"Reasoning Model Streaming\"}",
+        "structural_valid": true
+      },
+      "call_type": "title",
+      "candidate": {
+        "cached_input_tokens": 0,
+        "completion_ms": 1830.258,
+        "cost_usd": "0.000756",
+        "input_tokens": 312,
+        "model": "gpt-5.6-terra",
+        "output_tokens": 11,
+        "response_text": "{\"title\":\"Reasoning Model Streaming\"}",
+        "structural_valid": true
+      },
+      "lexical_jaccard": 1.0
+    },
+    {
+      "action_id": "d35492455529b4f097012a5c07a4b58244cb15766b851cb74843bc24021a03aa",
+      "baseline": {
+        "cached_input_tokens": 0,
+        "completion_ms": 1808.06,
+        "cost_usd": "0.001172",
+        "input_tokens": 248,
+        "model": "gpt-5.6-sol",
+        "output_tokens": 9,
+        "response_text": "{\"tags\":[\"General\"]}",
+        "structural_valid": true
+      },
+      "call_type": "tags",
+      "candidate": {
+        "cached_input_tokens": 0,
+        "completion_ms": 2428.871,
+        "cost_usd": "0.000604",
+        "input_tokens": 248,
+        "model": "gpt-5.6-terra",
+        "output_tokens": 9,
+        "response_text": "{\"tags\":[\"General\"]}",
+        "structural_valid": true
+      },
+      "lexical_jaccard": 1.0
+    },
+    {
+      "action_id": "e7ac53b5938f75e3a051db55d5e675f2a2025e73aa26d93c374026375ec22f04",
+      "baseline": {
+        "cached_input_tokens": 0,
+        "completion_ms": 4795.331,
+        "cost_usd": "0.005328",
+        "input_tokens": 472,
+        "model": "gpt-5.6-sol",
+        "output_tokens": 172,
+        "response_text": "{\"follow_ups\":[\"Which Open WebUI version includes this streaming fix, and do I need to update my model backend too?\",\"How can I tell whether Open WebUI, the model provider, or a reverse proxy is causing the stream to stall?\",\"Which browser console and server logs should I inspect for interrupted SSE or chunked responses?\",\"Can you provide a simple test prompt and checklist to confirm that reasoning tokens stream continuously?\",\"Are there Nginx, Cloudflare, or Docker settings that might buffer streaming responses?\"]}",
+        "structural_valid": true
+      },
+      "call_type": "follow_up",
+      "candidate": {
+        "cached_input_tokens": 0,
+        "completion_ms": 3827.098,
+        "cost_usd": "0.002192",
+        "input_tokens": 472,
+        "model": "gpt-5.6-terra",
+        "output_tokens": 104,
+        "response_text": "{\"follow_ups\":[\"Which Open WebUI version includes this streaming fix, and how do I upgrade safely?\",\"How can I tell whether the issue is in Open WebUI, the backend model server, or a reverse proxy?\",\"What browser developer tools or server logs should I inspect while testing streaming?\",\"Can you give me a repeatable test prompt for verifying streaming with a reasoning model?\",\"What proxy settings, such as buffering or timeouts, commonly cause streamed responses to appear frozen?\"]}",
+        "structural_valid": true
+      },
+      "lexical_jaccard": 0.436782
+    },
+    {
+      "action_id": "a6c98fa10faeff9e0b305153027e6c52cb239a86312e2639aaf55782b4cb9747",
+      "baseline": {
+        "cached_input_tokens": 0,
+        "completion_ms": 6960.796,
+        "cost_usd": "0.003184",
+        "input_tokens": 356,
+        "model": "gpt-5.6-sol",
+        "output_tokens": 88,
+        "response_text": "{\"queries\":[\"Open WebUI \\\"Moved calendar events stay visible\\\" changing event date fix\",\"Open WebUI calendar moved events remain visible cache sync issue\",\"site:github.com/open-webui/open-webui calendar events date moved issue\"]}",
+        "structural_valid": true
+      },
+      "call_type": "retrieval_query",
+      "candidate": {
+        "cached_input_tokens": 0,
+        "completion_ms": 3119.518,
+        "cost_usd": "0.001612",
+        "input_tokens": 356,
+        "model": "gpt-5.6-terra",
+        "output_tokens": 75,
+        "response_text": "{\"queries\":[\"Open WebUI \\\"Moved calendar events stay visible\\\" changing event date calendar fix\",\"Open WebUI calendar events moved date still visible verify fix\",\"Open WebUI calendar event date change stale events issue release notes\"]}",
+        "structural_valid": true
+      },
+      "lexical_jaccard": 0.52
+    },
+    {
+      "action_id": "28e92d8c94da5d1a9eb4c065c075ac23bd3883581cea90631a278d4ae88501cf",
+      "baseline": {
+        "cached_input_tokens": 0,
+        "completion_ms": 3929.38,
+        "cost_usd": "0.00308",
+        "input_tokens": 365,
+        "model": "gpt-5.6-sol",
+        "output_tokens": 81,
+        "response_text": "{\"queries\":[\"site:github.com/open-webui/open-webui repeating automations fixed number of times count save\",\"Open WebUI automation repeat count reset to single run fix changelog\",\"Open WebUI repeating automations verify fixed run count configuration\"]}",
+        "structural_valid": true
+      },
+      "call_type": "retrieval_query",
+      "candidate": {
+        "cached_input_tokens": 0,
+        "completion_ms": 3009.717,
+        "cost_usd": "0.001594",
+        "input_tokens": 365,
+        "model": "gpt-5.6-terra",
+        "output_tokens": 72,
+        "response_text": "{\"queries\":[\"Open WebUI repeating automations keep their count fixed number of runs automation behavior\",\"Open WebUI automation scheduled repeat count verification regression fix\",\"Open WebUI automations documentation recurring schedules run count\"]}",
+        "structural_valid": true
+      },
+      "lexical_jaccard": 0.382353
+    },
+    {
+      "action_id": "4611affde63cb3cef92b91721cea0935de79c8ed3660af3011001aa5f5aa08d1",
+      "baseline": {
+        "cached_input_tokens": 0,
+        "completion_ms": 5089.809,
+        "cost_usd": "0.003448",
+        "input_tokens": 367,
+        "model": "gpt-5.6-sol",
+        "output_tokens": 99,
+        "response_text": "{\"queries\":[\"Open WebUI automation schedule start date weekly monthly saved falls back to daily raw rule text\",\"site:github.com/open-webui/open-webui automation schedule recurrence start date save bug\",\"Open WebUI release notes schedules survive save automation real schedule list weekly monthly fix\"]}",
+        "structural_valid": true
+      },
+      "call_type": "retrieval_query",
+      "candidate": {
+        "cached_input_tokens": 0,
+        "completion_ms": 3107.807,
+        "cost_usd": "0.001742",
+        "input_tokens": 367,
+        "model": "gpt-5.6-terra",
+        "output_tokens": 84,
+        "response_text": "{\"queries\":[\"Open WebUI automations schedules start date save weekly monthly falls back to daily raw rule text\",\"Open WebUI schedule automation start date real schedule list save verification weekly monthly\",\"Open WebUI changelog automation scheduling start date weekly monthly save fix\"]}",
+        "structural_valid": true
+      },
+      "lexical_jaccard": 0.617647
+    },
+    {
+      "action_id": "5a08fe6269e79c70c1ccad0cd9bf7152a6cb234b472b512b2fce76d0eb7522e7",
+      "baseline": {
+        "cached_input_tokens": 0,
+        "completion_ms": 4186.691,
+        "cost_usd": "0.003136",
+        "input_tokens": 349,
+        "model": "gpt-5.6-sol",
+        "output_tokens": 87,
+        "response_text": "{\"queries\":[\"Open WebUI custom automation schedules stay custom repeat rule editor fix\",\"site:github.com/open-webui/open-webui automation custom repeat rule schedule issue\",\"Open WebUI automation custom repeat schedule verification release notes\"]}",
+        "structural_valid": true
+      },
+      "call_type": "retrieval_query",
+      "candidate": {
+        "cached_input_tokens": 0,
+        "completion_ms": 2622.23,
+        "cost_usd": "0.001286",
+        "input_tokens": 349,
+        "model": "gpt-5.6-terra",
+        "output_tokens": 49,
+        "response_text": "{\"queries\":[\"Open WebUI \\\"Custom automation schedules stay custom\\\"\",\"Open WebUI automation custom repeat rule editor verification\"]}",
+        "structural_valid": true
+      },
+      "lexical_jaccard": 0.578947
+    },
+    {
+      "action_id": "6372722f3aa52f68cc9f8a34557a3370a2822aef4b3c734db8278f152d65fe37",
+      "baseline": {
+        "cached_input_tokens": 0,
+        "completion_ms": 4118.529,
+        "cost_usd": "0.003364",
+        "input_tokens": 356,
+        "model": "gpt-5.6-sol",
+        "output_tokens": 97,
+        "response_text": "{\"queries\":[\"Open WebUI \\\"Accurate admin user counts\\\" Users tabs search reset switch tabs\",\"site:github.com/open-webui/open-webui admin Users tab count search stale unfiltered\",\"Open WebUI admin user management Users tabs search count verification\"]}",
+        "structural_valid": true
+      },
+      "call_type": "web_query",
+      "candidate": {
+        "cached_input_tokens": 0,
+        "completion_ms": 3015.011,
+        "cost_usd": "0.001696",
+        "input_tokens": 356,
+        "model": "gpt-5.6-terra",
+        "output_tokens": 82,
+        "response_text": "{\"queries\":[\"Open WebUI accurate admin user counts Users tabs search reset switch tabs verification\",\"Open WebUI admin Users tab counts follow search stale unfiltered numbers release notes\",\"Open WebUI GitHub issue admin user count search tab switching\"]}",
+        "structural_valid": true
+      },
+      "lexical_jaccard": 0.666667
+    },
+    {
+      "action_id": "739cd356b47d56f6155e4851c695ac4ac6d991168c7f9082d80f20d8de4751c6",
+      "baseline": {
+        "cached_input_tokens": 0,
+        "completion_ms": 3212.937,
+        "cost_usd": "0.003",
+        "input_tokens": 365,
+        "model": "gpt-5.6-sol",
+        "output_tokens": 77,
+        "response_text": "{\"queries\":[\"Open WebUI sidebar folders stale internal sidebar registry removed folder fix\",\"site:github.com/open-webui/open-webui sidebar folder registry removed sidebar actions\",\"Open WebUI verify sidebar folder deletion stale state regression test\"]}",
+        "structural_valid": true
+      },
+      "call_type": "web_query",
+      "candidate": {
+        "cached_input_tokens": 0,
+        "completion_ms": 4043.077,
+        "cost_usd": "0.001474",
+        "input_tokens": 365,
+        "model": "gpt-5.6-terra",
+        "output_tokens": 62,
+        "response_text": "{\"queries\":[\"Open WebUI sidebar folders stale internal sidebar registry removed folder fix verification\",\"site:github.com/open-webui/open-webui sidebar registry folders removed stale sidebar actions\"]}",
+        "structural_valid": true
+      },
+      "lexical_jaccard": 0.714286
+    },
+    {
+      "action_id": "8c30f5f1db171c35d2e014ed2bfbc3e31df9890b2005ff158548cf8eb1651d66",
+      "baseline": {
+        "cached_input_tokens": 0,
+        "completion_ms": 3635.547,
+        "cost_usd": "0.002988",
+        "input_tokens": 352,
+        "model": "gpt-5.6-sol",
+        "output_tokens": 79,
+        "response_text": "{\"queries\":[\"Open WebUI \\\"Readable model list on small screens\\\" model identifier timestamp overlap fix\",\"site:github.com/open-webui/open-webui workspace model list narrow displays model identifier timestamp\",\"Open WebUI responsive workspace model list mobile verify CSS fix\"]}",
+        "structural_valid": true
+      },
+      "call_type": "web_query",
+      "candidate": {
+        "cached_input_tokens": 0,
+        "completion_ms": 2993.594,
+        "cost_usd": "0.001436",
+        "input_tokens": 352,
+        "model": "gpt-5.6-terra",
+        "output_tokens": 61,
+        "response_text": "{\"queries\":[\"Open WebUI readable model list small screens model identifier timestamp overlap model name narrow displays\",\"Open WebUI workspace model list responsive layout fix verify model identifier timestamp overlap\"]}",
+        "structural_valid": true
+      },
+      "lexical_jaccard": 0.68
+    },
+    {
+      "action_id": "fc68d41294864a5ba8c359cd2887459a98347da17b8612ab98cf3c3e827177bc",
+      "baseline": {
+        "cached_input_tokens": 0,
+        "completion_ms": 4692.047,
+        "cost_usd": "0.0033",
+        "input_tokens": 350,
+        "model": "gpt-5.6-sol",
+        "output_tokens": 95,
+        "response_text": "{\"queries\":[\"site:github.com/open-webui/open-webui \\\"Long setting values stop crushing labels\\\"\",\"Open WebUI settings long control values squeezing labels flex shrink fix\",\"Open WebUI settings row label layout long values CSS changelog\"]}",
+        "structural_valid": true
+      },
+      "call_type": "web_query",
+      "candidate": {
+        "cached_input_tokens": 0,
+        "completion_ms": 3188.369,
+        "cost_usd": "0.001504",
+        "input_tokens": 350,
+        "model": "gpt-5.6-terra",
+        "output_tokens": 67,
+        "response_text": "{\"queries\":[\"Open WebUI long setting values stop crushing labels settings rows controls shrink available space\",\"Open WebUI settings long controls squeezing labels verify fix CSS changelog\"]}",
+        "structural_valid": true
+      },
+      "lexical_jaccard": 0.535714
+    },
+    {
+      "action_id": "da9f50fd480d8d480581ca59e6b8f65063e93d18e706fd26a571452b79779864",
+      "baseline": {
+        "cached_input_tokens": 0,
+        "completion_ms": 5617.985,
+        "cost_usd": "0.004232",
+        "input_tokens": 463,
+        "model": "gpt-5.6-sol",
+        "output_tokens": 119,
+        "response_text": "{\"text\":\" Check the dropdown\u2019s collision detection and viewport-boundary positioning logic. Verify it by using a narrow mobile viewport, opening dropdowns near both screen edges, and confirming the menu shifts inward while all option labels remain visible without horizontal scrolling or clipping.\"}",
+        "structural_valid": true
+      },
+      "call_type": "autocomplete",
+      "candidate": {
+        "cached_input_tokens": 0,
+        "completion_ms": 3322.981,
+        "cost_usd": "0.00173",
+        "input_tokens": 463,
+        "model": "gpt-5.6-terra",
+        "output_tokens": 67,
+        "response_text": "{\"text\":\" Check the dropdown positioning/overflow logic and any viewport-boundary handling in the UI component. Verify it by opening dropdowns near the left and right edges on narrow mobile viewports, then confirm the menu shifts inward, remains fully visible, and all option labels can be read and selected without horizontal clipping.\"}",
+        "structural_valid": true
+      },
+      "lexical_jaccard": 0.482759
+    },
+    {
+      "action_id": "566e4a5888ed06ae83c4e4be2505ed10e48866a805f1c351be8c9f97c987816f",
+      "baseline": {
+        "cached_input_tokens": 0,
+        "completion_ms": 4691.018,
+        "cost_usd": "0.005652",
+        "input_tokens": 463,
+        "model": "gpt-5.6-sol",
+        "output_tokens": 190,
+        "response_text": "{\"text\":\"\\n\\nCheck the dropdown\u2019s collision/viewport-boundary logic, especially horizontal shifting near the left and right edges, and make sure no parent container\u2019s `overflow` styles interfere. Verify it by opening dropdowns at both edges in a narrow mobile viewport, confirming the full menu and option labels remain visible, then repeat at different widths and after scrolling or resizing.\"}",
+        "structural_valid": true
+      },
+      "call_type": "autocomplete",
+      "candidate": {
+        "cached_input_tokens": 0,
+        "completion_ms": 4612.282,
+        "cost_usd": "0.002318",
+        "input_tokens": 463,
+        "model": "gpt-5.6-terra",
+        "output_tokens": 116,
+        "response_text": "{\"text\":\" Check the dropdown/popover positioning logic and any recent responsive CSS or Floating UI/Popper configuration changes. Verify that the menu uses viewport-aware collision detection, flipping, or shifting rather than a fixed left/right offset.\\n\\nTo confirm the fix, open Open WebUI in a narrow mobile viewport or resize the browser, then trigger dropdowns near both screen edges. The menu should shift inward or flip as needed, remain fully within the viewport, keep all option labels readable, and still allow every option to be selected without horizontal scrolling or clipping.\"}",
+        "structural_valid": true
+      },
+      "lexical_jaccard": 0.277228
+    }
+  ],
+  "quality_note": "Structural validity is deterministic. Lexical overlap is diagnostic only; semantic quality requires paired judging.",
+  "sample": "scenario/paid-sample-task-32.json",
+  "sample_sha256": "c0f2a270984c8616c32df611ee9cd93f3a4647fd242924291109a10afcff6fc0",
+  "schema_version": 1
+}
