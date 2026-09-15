@@ -65,16 +65,16 @@ class BudgetTestCase(unittest.TestCase):
 
     def test_section_10_budget_policy_is_exact(self) -> None:
         guard = self.guard()
-        self.assertEqual(Decimal(str(guard.budget["soft_stop"])), Decimal("15.0"))
-        self.assertEqual(Decimal(str(guard.budget["hard_stop"])), Decimal("20.0"))
+        self.assertEqual(Decimal(str(guard.budget["soft_stop"])), Decimal("23.0"))
+        self.assertEqual(Decimal(str(guard.budget["hard_stop"])), Decimal("30.0"))
         self.assertEqual(
             guard.budget["phase_caps"],
             {
-                "baseline": 3.0,
+                "baseline": 4.0,
                 "optimized": 1.0,
-                "quality_eval": 12.0,
-                "judge": 2.0,
-                "contingency": 2.0,
+                "quality_eval": 18.0,
+                "judge": 3.0,
+                "contingency": 4.0,
             },
         )
 
@@ -82,10 +82,10 @@ class BudgetTestCase(unittest.TestCase):
         guard = self.guard()
         guard.write_status("policy-test")
         status = guard.status_path.read_text(encoding="utf-8")
-        self.assertIn("Soft stop: $15.00", status)
-        self.assertIn("Hard stop: $20.00", status)
-        self.assertNotIn("$23.00", status)
-        self.assertNotIn("$30.00", status)
+        self.assertIn("Soft stop: $23.00", status)
+        self.assertIn("Hard stop: $30.00", status)
+        self.assertNotIn("$15.00", status)
+        self.assertNotIn("$20.00", status)
 
     def test_soft_stop_requires_durable_authorization_marker(self) -> None:
         def mutate(data):

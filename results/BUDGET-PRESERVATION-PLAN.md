@@ -12,7 +12,7 @@
 
 Until `results/CORE-EVIDENCE-COMPLETE` exists, `BudgetGuard` rejects any request whose reservation could take effective exposure above `$3.00`. The marker may be created only after an interim table documents at least three useful single-lever conclusions with cost and quality evidence.
 
-This leaves at least `$17.00` below the hard cap when the core decision evidence is complete. The existing `$15.00` soft stop remains independently active.
+This leaves at least `$27.00` below the `$30.00` hard cap when the core decision evidence is complete. The `$23.00` soft stop remains independently active. The `$3.00` value is a temporary evidence milestone, not the project budget.
 
 ## Reduced paid design
 
