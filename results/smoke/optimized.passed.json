@@ -1,0 +1,12 @@
+{
+  "calls": 2,
+  "cost_usd": "0.0003366",
+  "mock_dry_run_passed": true,
+  "paid_calls_persisted": true,
+  "phase": "optimized",
+  "resume_check_passed": true,
+  "secrets_scan_passed": true,
+  "spend_log_reconciled": true,
+  "token_usage_present": true,
+  "validated_at": "2026-09-15T14:55:11.909931+00:00"
+}

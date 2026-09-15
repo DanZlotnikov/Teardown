@@ -1,0 +1,25 @@
+{
+  "autocomplete": true,
+  "condition": "l1-small-hosted",
+  "context_compaction": {
+    "cap": 80000,
+    "enabled": false,
+    "retention_percentage": 40,
+    "threshold": 80000
+  },
+  "declared_diff": {
+    "change": {
+      "task_model": "gpt-5.6-luna"
+    },
+    "lever": "L1_task_model_tier"
+  },
+  "rag_top_k": 3,
+  "task_model": "gpt-5.6-luna",
+  "task_model_params": {},
+  "turn_filter": {
+    "active": false,
+    "global": false,
+    "installed": false,
+    "turns": null
+  }
+}
