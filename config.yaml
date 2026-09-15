@@ -46,7 +46,7 @@ budget:
 judge:
   model: gpt-4o-2024-11-20
   reasoning: disabled
-  note: Section 10.5 requires a fast non-reasoning judge; no judge call is authorized yet.
+  note: User authorized the predefined cost rules; paired judge calls remain subject to the judge phase cap and smoke gate.
 brief:
   path: teardown-01-openwebui-agent-prompt.md
   sha256: 694aabface63efab0ea13c5b46d09c5ba72f8369581e06d605e72d91cc0b8db6

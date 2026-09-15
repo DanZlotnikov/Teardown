@@ -90,27 +90,32 @@ def sample_actions(sample_path: Path) -> tuple[list, str]:
     return actions, hashlib.sha256(sample_path.read_bytes()).hexdigest()
 
 
-def load_rows(path: Path, actions: list) -> dict[str, dict]:
+def load_rows(path: Path, actions: list, require_complete: bool = True) -> tuple[dict[str, dict], dict[str, dict], set[str]]:
     expected = {}
     for action in actions:
         payload_sha = hashlib.sha256(json.dumps(action.payload, sort_keys=True, separators=(",", ":")).encode()).hexdigest()
         expected[(action.conversation_id, action.call_type, action.endpoint, payload_sha)] = action_id(action)
+    wanted = set(expected.values())
     selected = {}
+    failures = {}
     for line in path.read_text(encoding="utf-8").splitlines():
         if not line.strip():
             continue
         row = json.loads(line)
-        if row.get("error") or row.get("response") is None:
-            continue
         resolved = row.get("action_id") or expected.get(
             (row.get("conversation_id"), row.get("call_type"), row.get("endpoint"), row.get("payload_sha256"))
         )
-        if resolved in set(expected.values()):
+        if resolved not in wanted:
+            continue
+        if row.get("error") or row.get("response") is None:
+            failures[resolved] = row
+        else:
             selected[resolved] = row
-    if len(selected) != len(expected):
-        missing = sorted(set(expected.values()) - set(selected))
+            failures.pop(resolved, None)
+    missing = wanted - set(selected) - set(failures)
+    if require_complete and len(selected) != len(expected):
         raise RuntimeError(f"{path} is missing {len(missing)} frozen sample rows")
-    return selected
+    return selected, failures, missing
 
 
 def percentile(values: list[float], quantile: float) -> float | None:
@@ -137,13 +142,26 @@ def main() -> None:
     parser.add_argument("--baseline", type=Path, default=Path("results/actions/paid/paid-baseline.jsonl"))
     parser.add_argument("--actions", type=Path)
     parser.add_argument("--sample", type=Path, default=Path("scenario/paid-sample-task-32.json"))
+    parser.add_argument("--allow-incomplete", action="store_true")
     args = parser.parse_args()
 
     config = yaml.safe_load((ROOT / "config.yaml").read_text(encoding="utf-8"))
     actions, sample_sha = sample_actions(ROOT / args.sample if not args.sample.is_absolute() else args.sample)
-    baseline = load_rows(ROOT / args.baseline if not args.baseline.is_absolute() else args.baseline, actions)
+    baseline, baseline_failures, baseline_missing = load_rows(
+        ROOT / args.baseline if not args.baseline.is_absolute() else args.baseline, actions
+    )
+    if baseline_failures or baseline_missing:
+        raise RuntimeError("Baseline sample is not complete")
     action_path = args.actions or Path(f"results/actions/paid/{args.condition}.jsonl")
-    candidate = load_rows(ROOT / action_path if not action_path.is_absolute() else action_path, actions)
+    candidate, candidate_failures, candidate_missing = load_rows(
+        ROOT / action_path if not action_path.is_absolute() else action_path,
+        actions,
+        require_complete=not args.allow_incomplete,
+    )
+    expected_actions = len(actions)
+    actions = [action for action in actions if action_id(action) in candidate]
+    if not actions:
+        raise RuntimeError("No valid paired candidate actions are available")
 
     totals: dict[str, Counter] = {"baseline": Counter(), "candidate": Counter()}
     by_type: dict[str, dict[str, Counter]] = {
@@ -208,10 +226,23 @@ def main() -> None:
         "sample": str(args.sample).replace("\\", "/"),
         "sample_sha256": sample_sha,
         "paired_actions": len(pairs),
+        "expected_actions": expected_actions,
+        "condition_status": "stopped_on_failure" if candidate_failures or candidate_missing else "complete",
+        "disqualified_by_failure": bool(candidate_failures),
+        "failed_actions": [
+            {
+                "action_id": action_id_value,
+                "call_type": row.get("call_type"),
+                "error": row.get("error"),
+            }
+            for action_id_value, row in sorted(candidate_failures.items())
+        ],
+        "unattempted_action_ids": sorted(candidate_missing),
         "actual_api_calls_represented": len(pairs),
         "baseline_cost_usd": format(baseline_cost, "f"),
         "candidate_cost_usd": format(condition_cost, "f"),
         "cost_saving_percent": float(round(saving, 6)),
+        "cost_comparison_scope": "complete_frozen_sample" if len(pairs) == expected_actions else "valid_paired_subset_only",
         "baseline_counts": dict(totals["baseline"]),
         "candidate_counts": dict(totals["candidate"]),
         "baseline_structural_pass_rate": round(sum(p["baseline"]["structural_valid"] for p in pairs) / len(pairs), 6),
