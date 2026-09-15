@@ -51,18 +51,23 @@ def cache_key(namespace,condition,scenario_sha256,profile,a):return hashlib.sha2
 def valid_row(row,key):return isinstance(row,dict) and row.get("cache_key")==key and not row.get("error") and row.get("response") is not None
 def call(base,token,a,timeout,attempts):
     for attempt in range(1,attempts+1):
-        try:return request_json("POST",base+a.endpoint,a.payload,token,timeout),attempt,None
+        started=time.perf_counter()
+        try:return request_json("POST",base+a.endpoint,a.payload,token,timeout),attempt,None,round((time.perf_counter()-started)*1000,3)
         except urllib.error.HTTPError as e:
             detail=e.read().decode(errors="replace")[:2000]
-            if e.code not in {408,409,425,429} and e.code<500:return None,attempt,f"HTTPError: HTTP {e.code}: {detail}"
-            if attempt==attempts:return None,attempt,f"HTTPError: HTTP {e.code}: {detail}"
+            if e.code not in {408,409,425,429} and e.code<500:return None,attempt,f"HTTPError: HTTP {e.code}: {detail}",round((time.perf_counter()-started)*1000,3)
+            if attempt==attempts:return None,attempt,f"HTTPError: HTTP {e.code}: {detail}",round((time.perf_counter()-started)*1000,3)
         except (urllib.error.URLError,TimeoutError,json.JSONDecodeError) as e:
-            if attempt==attempts:return None,attempt,f"{type(e).__name__}: {e}"
+            if attempt==attempts:return None,attempt,f"{type(e).__name__}: {e}",round((time.perf_counter()-started)*1000,3)
         time.sleep(2**(attempt-1))
 def main():
-    p=argparse.ArgumentParser();p.add_argument("--base-url",default="http://127.0.0.1:8088");p.add_argument("--scenario",type=Path,default=Path("scenario/cases.json"));p.add_argument("--retrieval-scenario",type=Path,default=Path("scenario/retrieval-cases.json"));p.add_argument("--retrieval-collection-id");p.add_argument("--retrieval-k",type=int,choices=(1,2,3));p.add_argument("--condition",required=True);p.add_argument("--profile",choices=("baseline","optimized"),required=True);p.add_argument("--phase",choices=("baseline","optimized"),required=True);p.add_argument("--model",default="gpt-4o-mini");p.add_argument("--mode",choices=("mock","paid-smoke","paid-batch"),required=True);p.add_argument("--max-actions",type=int);p.add_argument("--timeout",type=int,default=180);a=p.parse_args()
+    p=argparse.ArgumentParser();p.add_argument("--base-url",default="http://127.0.0.1:8088");p.add_argument("--scenario",type=Path,default=Path("scenario/cases.json"));p.add_argument("--retrieval-scenario",type=Path,default=Path("scenario/retrieval-cases.json"));p.add_argument("--retrieval-collection-id");p.add_argument("--retrieval-k",type=int,choices=(1,2,3));p.add_argument("--condition",required=True);p.add_argument("--profile",choices=("baseline","optimized"),required=True);p.add_argument("--phase",choices=("baseline","optimized"),required=True);p.add_argument("--model",default="gpt-4o-mini");p.add_argument("--mode",choices=("mock","paid-smoke","paid-batch"),required=True);p.add_argument("--call-types",help="Comma-separated affected call types; omitted runs the full workload");p.add_argument("--max-actions",type=int);p.add_argument("--timeout",type=int,default=180);a=p.parse_args()
     if not re.fullmatch(r"[a-z0-9][a-z0-9._-]*",a.condition):p.error("--condition must be a filesystem-safe lowercase identifier")
     root=Path(__file__).parents[1];guard=BudgetGuard(root);scenario_bytes=a.scenario.read_bytes();retrieval_bytes=a.retrieval_scenario.read_bytes();scenario_sha256=hashlib.sha256(scenario_bytes+b"\0"+retrieval_bytes).hexdigest();data=json.loads(scenario_bytes);retrieval_data=json.loads(retrieval_bytes);actions=build_actions(data,a.model,a.profile)+build_retrieval_actions(retrieval_data,a.retrieval_k,a.retrieval_collection_id)
+    if a.call_types:
+        selected={value.strip() for value in a.call_types.split(",") if value.strip()};known={"main","follow_up","title","tags","retrieval_query","web_query","autocomplete","retrieval"};unknown=selected-known
+        if unknown:p.error(f"unknown --call-types values: {sorted(unknown)}")
+        actions=[action for action in actions if action.call_type in selected]
     if a.max_actions is not None:actions=actions[:a.max_actions]
     if a.mode=="paid-smoke" and len(actions)>2:raise SystemExit("paid-smoke refuses more than two actions")
     if a.mode=="paid-batch" and not guard.smoke_passed(a.phase):raise BudgetStop(f"{a.phase} paid batch requires a passed smoke marker")
@@ -87,7 +92,7 @@ def main():
         elif key in existing and valid_row(existing[key],key):
             atomic(cp,existing[key]);done+=1;skipped+=1
         else:
-            response,attempts,error=call(a.base_url,token,action,a.timeout,2 if a.mode=="paid-smoke" else int(guard.budget["max_retries"]));row={"cache_key":key,"namespace":ns,"condition":a.condition,"scenario_sha256":scenario_sha256,"profile":a.profile,"conversation_id":action.conversation_id,"call_type":action.call_type,"endpoint":action.endpoint,"payload_sha256":hashlib.sha256(json.dumps(action.payload,sort_keys=True,separators=(",",":")).encode()).hexdigest(),"response":response,"attempts":attempts,"error":error};atomic(cp,row);append(out,row)
+            response,attempts,error,completion_ms=call(a.base_url,token,action,a.timeout,2 if a.mode=="paid-smoke" else int(guard.budget["max_retries"]));row={"cache_key":key,"namespace":ns,"condition":a.condition,"scenario_sha256":scenario_sha256,"profile":a.profile,"conversation_id":action.conversation_id,"call_type":action.call_type,"endpoint":action.endpoint,"payload_sha256":hashlib.sha256(json.dumps(action.payload,sort_keys=True,separators=(",",":")).encode()).hexdigest(),"response":response,"attempts":attempts,"completion_ms":completion_ms,"error":error};atomic(cp,row);append(out,row)
             if error:raise RuntimeError(f"{action.conversation_id}/{action.call_type} failed after {attempts} attempts: {error}")
             existing[key]=row;done+=1
         msg=guard.progress(done,planned_calls=len(actions))

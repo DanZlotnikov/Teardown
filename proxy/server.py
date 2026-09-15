@@ -25,6 +25,9 @@ def parse_usage(body):
     try: candidates=[json.loads(body)]
     except Exception:candidates=[]
     for item in reversed(candidates):
+        if isinstance(item,dict) and isinstance(item.get("prompt_eval_count"),int):
+            i=item["prompt_eval_count"];o=item.get("eval_count",0);c=item.get("prompt_eval_cached_count",0)
+            if isinstance(o,int):return TokenUsage(i,o,c if isinstance(c,int) else 0)
         u=item.get("usage") if isinstance(item,dict) else None
         if not isinstance(u,dict):continue
         i=u.get("prompt_tokens",u.get("input_tokens"));o=u.get("completion_tokens",u.get("output_tokens"));d=u.get("prompt_tokens_details") or u.get("input_tokens_details") or {};c=d.get("cached_tokens",0) if isinstance(d,dict) else 0

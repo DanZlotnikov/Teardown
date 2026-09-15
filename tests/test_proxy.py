@@ -47,6 +47,15 @@ class ProxyTestCase(unittest.TestCase):
         self.assertEqual(parse_usage(chat).__dict__, {"input_tokens": 10, "output_tokens": 3, "cached_input_tokens": 4})
         self.assertEqual(parse_usage(responses).__dict__, {"input_tokens": 12, "output_tokens": 5, "cached_input_tokens": 0})
 
+    def test_usage_parser_supports_native_ollama_shape(self) -> None:
+        body = json.dumps(
+            {"prompt_eval_count": 15, "prompt_eval_cached_count": 6, "eval_count": 4}
+        ).encode()
+        self.assertEqual(
+            parse_usage(body).__dict__,
+            {"input_tokens": 15, "output_tokens": 4, "cached_input_tokens": 6},
+        )
+
 
 if __name__ == "__main__":
     unittest.main()
